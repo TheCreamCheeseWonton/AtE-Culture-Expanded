@@ -1,0 +1,65 @@
+﻿#####Hispanic#####
+
+ate_spanish = {
+	color = { 254 5 3 }
+	
+	color = castilian
+	created = 800.1.1
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_castilian
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_castle_keepers
+		tradition_chivalry
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	coa_gfx = {
+		chilango_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		chilango_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = caucasian
+		15 = mediterranean
+		20 = mesoamerican_maya
+		20 = mesoamerican_yuto_aztec
+		30 = med_black_ind
+		3 = asian_southern_han
+		2 = asian_austronesian
+		6 = black_white
+		2 = asian
+		5 = multiracial
+	
+}

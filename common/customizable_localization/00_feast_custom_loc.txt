@@ -1,0 +1,802 @@
+﻿exotic_fowl_type = {
+	type = character
+
+	text = {
+		localization_key = fowl_dinner_peacock
+		trigger = {
+			age > 14
+		}
+	}
+	
+	text = {
+		localization_key = fowl_dinner_child
+		trigger = {
+			age < 15
+		}
+	}
+}
+
+
+stew_flood_covered_adjective = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = stew_flood_covered_adjective_wrathful
+		trigger = {
+			has_trait = wrathful
+		}
+	}
+
+	text = {
+		localization_key = stew_flood_covered_adjective_proud
+		trigger = {
+			has_trait = arrogant
+		}
+	}
+
+
+	text = {
+		localization_key = stew_flood_covered_adjective_beautiful
+		trigger = {
+			has_trait_rank = {
+				trait = beauty_good
+				rank >= 1
+			}
+		}
+	}
+
+	text = {
+		localization_key = stew_flood_fallback_adjective
+		fallback = yes
+	}
+}
+
+#Hooks up with determine_artifact_damage_type_effect to determine how the court artifact was defaced
+DamageArtifactAction = {
+	type = artifact
+	random_valid = yes
+
+	text = {
+		trigger = { exists = var:artifact_burned }
+		localization_key = damage_artifact_fire
+	}
+	text = {
+		trigger = { exists = var:artifact_knocked_over }
+		localization_key = damage_artifact_knocked_over
+	}
+	text = {
+		trigger = { exists = var:artifact_knocked_over }
+		localization_key = damage_artifact_toppled
+	}
+	text = {
+		trigger = { exists = var:artifact_smeared_food }
+		localization_key = damage_artifact_smeared_food
+	}
+	text = {
+		trigger = { exists = var:artifact_spilled_drink }
+		localization_key = damage_artifact_spilled_drink
+	}
+	text = {
+		trigger = { exists = var:artifact_tear }
+		localization_key = damage_artifact_tear
+	}
+	text = {
+		trigger = { exists = var:artifact_tear }
+		localization_key = damage_artifact_cut_holes
+	}
+	text = {
+		trigger = { exists = var:artifact_tear_down }
+		localization_key = damage_artifact_tear_down
+	}
+	text = {
+		trigger = { exists = var:artifact_threw_up }
+		localization_key = damage_artifact_threw_up
+	}
+	text = {
+		trigger = { exists = var:artifact_unspeakable }
+		localization_key = damage_artifact_unspeakable
+	}
+	text = {
+		trigger = { exists = var:artifact_damage_fallback }
+		localization_key = damage_artifact_fallback
+	}
+}
+
+DamageArtifactActionFollowup = {
+	type = artifact
+
+	text = {
+		trigger = { exists = var:artifact_burned }
+		localization_key = evidence_artifact_fire
+	}
+	text = {
+		trigger = { exists = var:artifact_knocked_over }
+		localization_key = evidence_artifact_knocked_over
+	}
+	text = {
+		trigger = { exists = var:artifact_smeared_food }
+		localization_key = evidence_artifact_smeared_food
+	}
+	text = {
+		trigger = { exists = var:artifact_spilled_drink }
+		localization_key = evidence_artifact_spilled_drink
+	}
+	text = {
+		trigger = { exists = var:artifact_tear }
+		localization_key = evidence_artifact_tear
+	}
+	text = {
+		trigger = { 
+			OR = {
+				exists = var:artifact_tear_down
+				exists = var:artifact_damage_fallback
+			}
+		}
+		localization_key = evidence_artifact_tear_down
+	}
+	text = {
+		trigger = { exists = var:artifact_threw_up }
+		localization_key = evidence_artifact_threw_up
+	}
+	text = {
+		trigger = { exists = var:artifact_unspeakable }
+		localization_key = evidence_artifact_unspeakable
+	}
+}
+
+GetMedievalDance = {
+	type = character
+	
+	random_valid = yes
+
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				geographical_region = world_europe
+	# 			}
+	# 		}
+	# 		culture = { has_cultural_era_or_later = culture_era_late_medieval }
+	# 	}
+	# 	localization_key = medieval_dance_carole
+	# }
+	
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				geographical_region = world_europe_north
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = medieval_dance_ring
+	# }
+	
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				geographical_region = world_europe
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = medieval_dance_couple
+	# }
+	
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				geographical_region = world_europe_west
+	# 			}
+	# 		}
+	# 		culture = { has_cultural_era_or_later = culture_era_late_medieval }
+	# 	}
+	# 	localization_key = medieval_dance_estampie
+	# }
+
+	# #Byzantine
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				OR = {
+	# 					geographical_region = world_europe_south_east
+	# 					geographical_region = world_asia_minor
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = medieval_dance_syrtos
+	# }
+	# text = {
+	# 	trigger = {
+	# 		liege ?= {
+	# 			capital_province ?= {
+	# 				OR = {
+	# 					geographical_region = world_europe_south_east
+	# 					geographical_region = world_asia_minor
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = medieval_dance_kerchief
+	# }
+	
+	text = {
+		localization_key = medieval_dance_round
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+				root.location.culture = { has_cultural_pillar = heritage_novohispano }
+				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+				root.location.culture = { has_cultural_pillar = heritage_platense }
+			}
+		}
+		localization_key = medieval_dance_macarena
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_chicagoan }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_bayfolk }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_chowderfolk }
+				culture = { has_name_list = name_list_motowner }
+				culture = { has_name_list = name_list_beltway }
+				culture = { has_name_list = name_list_atlantan }
+				culture = { has_name_list = name_list_youser }
+				culture = { has_name_list = name_list_minnesotan }
+			}
+		}		
+		localization_key = medieval_dance_vogue
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+			}
+		}
+		localization_key = medieval_dance_cha_cha_slide
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+			}
+		}
+		localization_key = medieval_dance_ymca
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+				root.location.culture = { has_cultural_pillar = heritage_deep_south }
+			}
+		}
+		localization_key = medieval_dance_square_dance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_cabano }
+				root.location.culture = { has_cultural_pillar = heritage_ciclico }
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+			}
+		}
+		localization_key = medieval_dance_lambada
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+				root.location.culture = { has_cultural_pillar = heritage_serra_do_mar }
+				root.location.culture = { has_cultural_pillar = heritage_paulistanico }
+			}
+		}
+		localization_key = medieval_dance_samba
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_quisqueyano }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_chowderfolk }
+			}
+		}		
+		localization_key = medieval_dance_bachata
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_cubano }
+				culture = { has_name_list = name_list_boricua }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_sunshiner }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_valluno }
+			}
+		}		
+		localization_key = medieval_dance_salsa
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_andino }
+			}
+		}
+		localization_key = medieval_dance_samba
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_sioux }
+				root.location.culture = { has_cultural_pillar = heritage_plains }
+			}
+		}
+		localization_key = medieval_dance_grass_dance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+				root.location.culture = { has_cultural_pillar = heritage_centroamericano }
+				root.location.culture = { has_cultural_pillar = heritage_novohispano }
+				root.location.culture = { has_cultural_pillar = heritage_chileno }
+				root.location.culture = { has_cultural_pillar = heritage_colombian }
+				root.location.culture = { has_cultural_pillar = heritage_venezuelan }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_platense }
+				root.location.culture = { has_cultural_pillar = heritage_bajo_peruano }
+				root.location.culture = { has_cultural_pillar = heritage_nazco }
+				root.location.culture = { has_cultural_pillar = heritage_ecuatoriano }
+				root.location.culture = { has_cultural_pillar = heritage_llanero }
+				root.location.culture = { has_cultural_pillar = heritage_chacoan }
+			}
+		}
+		localization_key = medieval_dance_cumbia
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_sioux }
+				root.location.culture = { has_cultural_pillar = heritage_plains }
+				root.location.culture = { has_cultural_pillar = heritage_plateau }
+				root.location.culture = { has_cultural_pillar = heritage_anishinaabe }
+			}
+		}
+		localization_key = medieval_dance_cumbia
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_porteno }
+				culture = { has_name_list = name_list_litoraleno }
+				culture = { has_name_list = name_list_yorugua }
+			}
+		}		
+		localization_key = medieval_dance_tango
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_chicagoan }
+			}
+		}		
+		localization_key = medieval_dance_lindy_hop
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+			}
+		}
+		localization_key = medieval_dance_contradance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_quisqueyano }
+				culture = { has_name_list = name_list_caraqueno }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_guayasense }
+			}
+		}		
+		localization_key = medieval_dance_merengue
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_novohispano }
+				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+			}
+		}
+		localization_key = medieval_dance_hat_dance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_novohispano }
+				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_centroamericano }
+			}
+		}
+		localization_key = medieval_dance_baile_folklorico
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+				culture = { has_name_list = name_list_cubano }
+			}
+		}
+		localization_key = medieval_dance_conga_line
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+			}
+		}
+		localization_key = medieval_dance_electric_slide
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = culture:venteux
+			}
+		}		
+		localization_key = medieval_dance_kwadril
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+				root.location.culture = { has_cultural_pillar = heritage_louisianais }
+				root.location.culture = { has_cultural_pillar = heritage_atlantic_canadian }
+				root.location.culture = { has_cultural_pillar = heritage_french }
+			}
+		}
+		localization_key = medieval_dance_reel
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+			}
+		}
+		localization_key = medieval_dance_jig
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+			}
+		}
+		localization_key = medieval_dance_hoedown
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_manguetowner }
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+			}
+		}
+		localization_key = medieval_dance_forro
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_laurentian }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_northlake }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+			}
+		}
+		localization_key = medieval_dance_hustle
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_manguetowner }
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+				culture = culture:gaucho
+			}
+		}
+		localization_key = medieval_dance_chula
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_manguetowner }
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+			}
+		}
+		localization_key = medieval_dance_lundu
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_british }
+				root.location.culture = { has_cultural_pillar = heritage_american }
+				culture = { has_name_list = name_list_chicagoan }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_bayfolk }
+				culture = { has_name_list = name_list_sacramentan }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_cascadian }
+ 				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_chowderfolk }
+				culture = { has_name_list = name_list_motowner }
+				culture = { has_name_list = name_list_beltway }
+				culture = { has_name_list = name_list_atlantan }
+				culture = { has_name_list = name_list_youser }
+				culture = { has_name_list = name_list_minnesotan }
+			}
+		}		
+		localization_key = medieval_dance_breakdance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_heartlander }
+				culture = { has_name_list = name_list_grangelander }
+				#culture = { has_name_list = name_list_dairylander }
+				culture = { has_name_list = name_list_buckeye }
+				culture = { has_name_list = name_list_beltway }
+				culture = { has_name_list = name_list_michigander }
+			}
+		}		
+		localization_key = medieval_dance_madison
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_chicagoan }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_bayfolk }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_chowderfolk }
+
+			}
+		}		
+		localization_key = medieval_dance_melbourne_shuffle
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_chicagoan }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_bayfolk }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_chowderfolk }
+				culture = { has_name_list = name_list_butternutter }
+				culture = { has_name_list = name_list_buckeye }
+				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_texan }
+			}
+		}		
+		localization_key = medieval_dance_time_warp
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_yupik }
+			}
+		}		
+		localization_key = medieval_dance_yuraq
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_kalaaleq }
+			}
+		}		
+		localization_key = medieval_dance_uaajeerneq
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_bermudian }
+			}
+		}		
+		localization_key = medieval_dance_gombey
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_jamaican }
+			}
+		}		
+		localization_key = medieval_dance_bruckins
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_greater_antillean }
+			}
+		}
+		localization_key = medieval_dance_bele
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+				root.location.culture = { has_cultural_pillar = heritage_old_south }
+			}
+		}
+		localization_key = medieval_dance_buck_dance
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				culture = { has_name_list = name_list_chicagoan }
+				culture = { has_name_list = name_list_gothamite }
+				culture = { has_name_list = name_list_bayfolk }
+				culture = { has_name_list = name_list_sacramentan }
+				culture = { has_name_list = name_list_angeleno }
+				culture = { has_name_list = name_list_cascadian }
+ 				culture = { has_name_list = name_list_sofloano }
+				culture = { has_name_list = name_list_chowderfolk }
+				culture = { has_name_list = name_list_motowner }
+				culture = { has_name_list = name_list_beltway }
+				culture = { has_name_list = name_list_atlantan }
+				culture = { has_name_list = name_list_youser }
+				culture = { has_name_list = name_list_minnesotan }
+			}
+		}		
+		localization_key = medieval_dance_moonwalk
+	}
+}

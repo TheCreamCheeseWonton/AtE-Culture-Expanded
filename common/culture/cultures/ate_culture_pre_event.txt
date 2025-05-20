@@ -1,0 +1,2476 @@
+﻿#####ENGLISH#####
+
+ate_british = {
+	color = { 226 164 153 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_british
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_hard_working
+		tradition_cosmopolitan_elitism
+		tradition_seafaring
+		tradition_castle_keepers
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		76 = caucasian
+		6 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+####AMERICAN####
+
+ate_american = {
+	color = { 10 49 97 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1776.7.4
+	parents = { ate_british }
+	
+	history_loc_override = american_civil_war_loc
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_hard_working
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+###YANKEE###
+
+ate_yankee = {
+	color = { 0 48 135 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1861.4.12
+	parents = { ate_american }
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_yankee_ingenuity
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##STEELBELT
+
+ate_steelbelter = {
+	color = { 113 121 126 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_yankee }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_metal_craftsmanship
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_northlaker = {
+	color = { 98 108 236 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_northlake
+	language = language_shorespeak
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_steelbelter }
+	
+	history_loc_override = after_event_ate_steelbelter
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_metal_craftsmanship
+		tradition_blitz_tactics
+		tradition_pastoralists
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		minnesotan_coa_gfx
+		midwest_group_gfx
+	}
+	building_gfx = {
+		minnesotan_building_gfx
+		great_lakes_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_northlake_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		minnesotan_clothing_gfx
+		football_helmet_gfx
+		cowboy_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_lakelander = {
+	color = { 18 28 150 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_lakelander
+	language = language_irontongue
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_steelbelter }
+	
+	history_loc_override = after_event_ate_steelbelter
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_metal_craftsmanship
+		tradition_hard_working
+		tradition_cosmopolitan_elitism
+	}
+	
+	coa_gfx = {
+		chicagoan_coa_gfx
+		lakelander_group_gfx
+	}
+	building_gfx = {
+		chicagoan_building_gfx
+		great_lakes_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_lakelander_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		west_slavic_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##END OF STEELBELT
+
+##ATLANTIC
+
+ate_atlantic = {
+	color = { 114 118 191 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_yankee }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_medicinal_plants
+   	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		west_slavic_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_mid_atlantic = {
+	color = { 18 6 85 }
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_mid_atlantic
+	language = language_atlantican
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_atlantic }
+	
+	history_loc_override = after_event_ate_long
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_strength_in_numbers
+		tradition_cosmopolitan_elitism
+		tradition_quarrelsome
+	}
+	
+	coa_gfx = {
+		youser_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		youser_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_new_yankee = {
+	color = { 8 54 18 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_new_englander
+	language = language_yankee
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_atlantic }
+	
+	history_loc_override = after_event_ate_long
+	
+	traditions = {
+		tradition_cosmopolitan_elitism
+		tradition_town_council
+		tradition_yankee_ingenuity
+		tradition_maritime_mercantilism
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_philosopher_culture
+	}
+
+	coa_gfx = {
+		yankee_coa_gfx
+		north_atlantic_coa_gfx
+	}
+	building_gfx = {
+		chowderfolk_building_gfx
+		celtic_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_new_englander_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		northern_clothing_gfx
+	}
+	unit_gfx = {
+		norse_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##END ATLANTIC
+
+###END YANKEE###
+
+###Western###
+
+ate_western = {
+	color = { 161 102 63 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1803.7.4
+	parents = { ate_american }
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_legalistic
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##ROCKALNDER
+
+ate_rocklander = {
+	color = { 114 118 191 }
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_rockland
+	language = language_rockymount
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_western }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+		tradition_cowboys
+		tradition_mountaineer_ruralism
+		tradition_trail_runners
+	}
+	
+	coa_gfx = {
+		coloradan_coa_gfx
+		rockland_group_gfx
+	}
+	building_gfx = {
+		coloradan_building_gfx
+		rockies_building_gfx #Architecture-style
+		na_southwest_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_rockland_building_gfx
+		frontier_west_building_gfx
+		western_us_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		tie_dye_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##PLAINSLANDER
+
+ate_plainslander = {
+	color = { 255 190 56 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_midwestern
+	language = language_plainspeak
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_western }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_agrarian
+		tradition_reverence_for_veterans
+		tradition_cowboys
+		tradition_frontier_folk
+		tradition_pastoralists
+	}
+	
+	coa_gfx = {
+		heartlander_coa_gfx
+		midwest_group_gfx
+	}
+	building_gfx = {
+		heartlander_building_gfx
+		na_middle_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_midwestern_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		cowboy_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##West Coaster
+
+ate_west_coaster = {
+	color = { 0 128 153 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_western }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_legalistic
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_deseretan = {
+	color = { 236 153 51 }
+	
+	ethos = ethos_spiritual
+	heritage = heritage_frontieran
+	language = language_rockymount
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_west_coaster }
+	
+	history_loc_override = after_event_ate_long
+	
+	traditions = {
+		tradition_zealous_people
+		tradition_caravaneers
+		tradition_mountaineer_ruralism
+		tradition_dryland_dwellers
+		tradition_desert_ribat
+	}
+	
+	coa_gfx = {
+		utahn_coa_gfx
+		rockland_group_gfx
+	}
+	building_gfx = {
+		utahn_building_gfx
+		western_frontier_building_gfx #Architecture-style
+		na_southwest_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_frontieran_building_gfx
+		frontier_west_building_gfx
+		western_us_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_californian = {
+	color = { 204 2 204 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_norcalifornine
+	language = language_californine
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_west_coaster }
+	
+	history_loc_override = after_event_ate_long
+	
+	traditions = {
+		tradition_legalistic
+		tradition_family_entrepreneurship
+		tradition_gardening
+		tradition_agrarian
+		tradition_californian_succession
+	}
+	
+	coa_gfx = {
+		valleyan_coa_gfx
+		californian_group_gfx
+	}
+	building_gfx = {
+		valleyan_building_gfx
+		californian_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_norcalifornine_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		floral_clothing_gfx
+		tie_dye_clothing_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		mongol_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_northwestern = {
+	color = { 0 128 204 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_north_pacific
+	language = language_transcascadian
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_west_coaster ate_pacifican }
+	
+	history_loc_override = after_event_ate_combine
+	
+	traditions = {
+		tradition_legalistic
+		tradition_brewmasters
+		tradition_forest_wardens
+		tradition_polygamous
+		tradition_trail_runners
+	}
+	
+	coa_gfx = {
+		cascadian_coa_gfx
+		north_pacific_group_gfx
+	}
+	building_gfx = {
+		cascadian_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_north_pacific_building_gfx
+		western_building_gfx
+		norse_building_gfx
+		nwc_building_gfx
+	}
+	clothing_gfx = {
+		canuck_clothing_gfx
+		fp1_norse_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_borealian = {
+	color = { 0 128 0 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_boreal
+	language = language_arctic
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2126.1.1
+	parents = { ate_west_coaster ate_pacifican }
+	
+	history_loc_override = after_event_ate_combine
+
+	traditions = {
+		tradition_legalistic
+		tradition_forest_wardens
+		tradition_mountain_homes
+		tradition_fishermen
+		tradition_winter_warriors
+		tradition_RICE_whalers
+	}
+	
+	coa_gfx = {
+		alaskan_coa_gfx
+	}
+	building_gfx = {
+		alaskan_building_gfx
+		northern_frontier_building_gfx #Architecture-style
+		boreal_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_boreal_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		harsh_canadian_clothing_gfx
+		canadian_common_clothing_gfx
+		northern_clothing_gfx
+		fp1_norse_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##END WESTCOASTER
+
+###END Western###
+
+###OLD DIXIE###
+
+ate_old_dixie = {
+	color = { 255 246 232 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1861.4.12
+	parents = { ate_american }
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_chivalry
+		tradition_zealous_people
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##OLD TEXAN
+
+ate_old_texan = {
+	color = { 120 74 0 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_texan
+	language = language_cowspoke
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_old_dixie }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_cosmopolitan_elitism
+		tradition_cowboys
+		tradition_stalwart_defenders
+		tradition_six_banners
+		tradition_bbqs
+	}
+	
+	coa_gfx = {
+		texan_coa_gfx
+		texas_group_gfx
+	}
+	building_gfx = {
+		texan_building_gfx
+		southwest_plains_building_gfx #Architecture-style
+		na_southwest_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_texan_building_gfx
+		frontier_west_building_gfx
+		western_us_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		texan_clothing_gfx
+		texas_group_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		mongol_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##DEEP SOUTHERN
+
+ate_deep_southern = {
+	color = { 212 132 0 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_deep_south
+	language = language_deep_southern
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_old_dixie }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_chivalry
+		tradition_zealous_people
+		tradition_welcoming
+		tradition_southern_knights
+	}
+	
+	coa_gfx = {
+		dixie_coa_gfx
+		south_anglo_group_gfx
+	}
+	building_gfx = {
+		dixie_building_gfx
+		deep_southern_building_gfx #Architecture-style
+		na_south_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_deep_south_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		dde_hre_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##FLORIDIAN
+
+ate_floridian = {
+	color = { 212 220 100 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_floridian
+	language = language_deep_southern
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_old_dixie }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		#TODO
+		tradition_wetlanders # changed from tradition_polders
+		tradition_life_is_just_a_joke
+		tradition_battlefield_looters
+		tradition_swords_for_hire
+		tradition_xenophilic
+	}
+	
+	coa_gfx = {
+		gulfard_coa_gfx
+		south_anglo_group_gfx
+	}
+	building_gfx = {
+		sunshiner_building_gfx
+		gulfard_building_gfx #Architecture-style
+		na_south_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_floridian_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		floridian_clothing_gfx
+		floral_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##UPLANDER
+
+ate_uplander = {
+	color = { 66 63 40 }
+	
+	ethos = ethos_communal
+	heritage = heritage_upland
+	language = language_backcountry
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_old_dixie }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		#TODO
+		tradition_resourceful_tinkerers
+		tradition_mountaineer_ruralism
+		tradition_ancient_miners
+		tradition_hit_and_run
+		tradition_brewmasters
+	}
+	
+	coa_gfx = {
+		appalachian_coa_gfx
+	}
+	building_gfx = {
+		appalachian_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_upland_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##OLD SOUTHERN
+
+ate_old_southern = {
+	color = { 82 90 60 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_old_south
+	language = language_tidewater_southern
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_old_dixie }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		#TODO
+		tradition_chivalry
+		tradition_bbqs
+		tradition_southern_knights
+		tradition_esteemed_hospitality
+		tradition_staunch_traditionalists
+	}
+	
+	coa_gfx = {
+		southron_coa_gfx
+		south_anglo_group_gfx
+	}
+	building_gfx = {
+		southron_building_gfx
+		high_southern_building_gfx #Architecture-style
+		na_south_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_old_south_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		dde_hre_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+###END OLD DIXIE###
+
+##African American##
+
+ate_african_american = {
+	color = { 38 30 30 }
+	
+	ethos = ethos_communal
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1865.12.6
+	parents = { ate_american ate_african }
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_equitable
+		tradition_zealous_people
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		55 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		16 = caucasian
+		6 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		12 = multiracial
+	
+	}	
+}
+
+####END AMERICAN #####
+
+###Canadian###
+
+ate_canadian = {
+	color = { 255 0 0 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_british
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1867.7.1
+	parents = { ate_british }
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_hard_working
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_astute_diplomats
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}
+}	
+
+##LAURENTIAN
+
+ate_laurenian = {
+	color = { 255 28 23 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_laurentian
+	language = language_irontongue
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_canadian }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_cosmopolitan_elitism
+		tradition_astute_diplomats
+		tradition_chivalry
+		tradition_winter_warriors
+	}
+	
+	coa_gfx = {
+		ontarian_coa_gfx
+	}
+	building_gfx = {
+		ontarian_building_gfx
+		eastern_canadian_building_gfx #Architecture-style-2
+		great_lakes_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_laurentian_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		furry_canadian_clothing_gfx
+		canadian_common_clothing_gfx
+		canadian_clothing_gfx
+		#fp1_norse_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##ATLANTIC CANADIAN
+
+ate_atlantic_canadian = {
+	color = { 120 194 244 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_atlantic_canadian
+	language = language_maritime
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_canadian }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_astute_diplomats
+		tradition_fishermen
+		tradition_maritime_mercantilism
+		tradition_tribute_to_the_fallen
+		tradition_family_entrepreneurship
+		tradition_RICE_whalers
+	}
+	
+	coa_gfx = {
+		maritimer_coa_gfx
+		north_atlantic_coa_gfx
+	}
+	building_gfx = {
+		maritimer_building_gfx
+		celtic_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_atlantic_canadian_building_gfx
+		western_building_gfx
+		celtic_building_gfx
+	}
+	clothing_gfx = {
+		
+		maritime_canadian_clothing_gfx
+		canadian_clothing_gfx
+		#northern_clothing_gfx
+	}
+	unit_gfx = {
+		norse_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##PRAIRRIER
+
+ate_prairrier = {
+	color = { 95 199 28 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_prairie
+	language = language_prairian
+	martial_custom = martial_custom_male_only
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_canadian }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_astute_diplomats
+		#tradition_pageants
+		tradition_cowboys
+		tradition_pastoralists
+		tradition_agrarian
+	}
+	coa_gfx = {
+		prairielander_coa_gfx
+		prairie_group_gfx
+	}
+	building_gfx = {
+		prairielander_building_gfx
+		na_middle_building_gfx #Architecture-style-2
+		prairies_building_gfx #Architecture-style
+		na_middle_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_prairie_building_gfx
+		prairie_building_gfx
+	}
+	clothing_gfx = {
+		canadian_common_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		mongol_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+##PACIFICAN
+
+ate_pacifican = {
+	color = { 28 182 200 }
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_north_pacific
+	language = language_transcascadian
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_canadian }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_astute_diplomats
+		tradition_cosmopolitan_elitism
+		tradition_xenophilic
+		tradition_forest_folk
+		tradition_seafaring
+	}
+	
+	coa_gfx = {
+		canuck_coa_gfx
+		north_pacific_group_gfx
+	}
+	building_gfx = {
+		canuck_building_gfx
+		cascadian_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_north_pacific_building_gfx
+		western_building_gfx
+		nwc_building_gfx
+	}
+	clothing_gfx = {
+		canuck_clothing_gfx
+		canadian_clothing_gfx
+		#fp1_norse_clothing_gfx
+		#western_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+####END Canadian####
+
+ate_caribbeaner = {
+	color = { 226 164 153 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_british
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1912.1.1
+	parents = { ate_british ate_african }
+	
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_seafaring
+		tradition_fishermen
+		tradition_culinary_art
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		25 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		36 = caucasian
+		6 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		14 = black_white
+		12 = multiracial
+	
+	}	
+}
+
+#####END ENGLISH#####
+
+##French
+
+ate_french = {
+	color = { 0 45 73 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_french
+	language = language_ancient_french
+	martial_custom = martial_custom_equal
+	name_list = name_list_french
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_culinary_art
+		tradition_castle_keepers
+	}
+	
+	coa_gfx = {
+		quebecois_coa_gfx
+		franco_group_gfx
+	}
+	building_gfx = {
+		quebecois_building_gfx
+		eastern_canadian_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_canayen_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		francocanadian_clothing_gfx
+		canadian_common_clothing_gfx
+		canadian_clothing_gfx
+		#western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		76 = caucasian
+		6 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_old_quebecois = {
+	color = { 51 76 103 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_canayen
+	language = language_canadien
+	martial_custom = martial_custom_equal
+	name_list = name_list_french
+	created = 1763.1.1
+	parents = { ate_french }
+	
+	
+	traditions = {
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_culinary_art
+		tradition_castle_keepers
+		tradition_winter_warriors
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_staunch_traditionalists
+	}
+	
+	coa_gfx = {
+		quebecois_coa_gfx
+		franco_group_gfx
+	}
+	building_gfx = {
+		quebecois_building_gfx
+		eastern_canadian_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_canayen_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		francocanadian_clothing_gfx
+		canadian_common_clothing_gfx
+		canadian_clothing_gfx
+		#western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		76 = caucasian
+		6 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
+
+ate_kreyol = {
+	color = { 142 156 200 }
+	
+	ethos = ethos_communal
+	heritage = heritage_french
+	language = language_ancient_french
+	martial_custom = martial_custom_equal
+	name_list = name_list_french
+	created = 1659.1.1
+	parents = { ate_french ate_african }
+	
+	traditions = {
+		tradition_republican_legacy
+		tradition_culinary_art
+		tradition_castle_keepers
+		tradition_storytellers
+		tradition_seafaring
+		tradition_adaptive_skirmishing
+	}
+	
+	coa_gfx = {
+		haitian_coa_gfx
+		antillais_group_gfx
+	}
+	building_gfx = {
+		haitian_building_gfx
+		hispano_caribbean_building_gfx #Architecture-style
+		caribbean_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_greater_antillean_building_gfx
+		indian_building_gfx
+	}
+	clothing_gfx = {
+		antillais_group_gfx
+		indian_clothing_gfx
+	}
+	unit_gfx = {
+		indian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		92 = african
+		2 = arab
+		1 = caucasian
+		5 = black_white
+	
+	}
+}
+
+##Slavic
+
+ate_east_slavic = {
+	color = { 42 108 10 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_slavic
+	language = language_ancient_slavic
+	martial_custom = martial_custom_equal
+	name_list = name_list_slavic
+	
+	traditions = {
+		tradition_collective_lands
+		tradition_staunch_traditionalists
+		tradition_fervent_temple_builders
+		tradition_quarrelsome
+		tradition_agrarian
+	}
+	
+	coa_gfx = {
+		ruteno_coa_gfx
+		sulista_group_gfx
+	}
+	building_gfx = {
+		ruteno_building_gfx
+		brazilian_subtropical_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_sulista_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		sulista_group_gfx
+		#mauricinho_clothing_gfx
+		northern_clothing_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		20 = caucasian
+		70 = slavic
+		10 = amerindian
+	
+	}	
+}
+
+ate_russian = {
+	color = { 24 76 1 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_slavic
+	language = language_ancient_slavic
+	martial_custom = martial_custom_equal
+	name_list = name_list_slavic
+	created = 1237.1.1
+	parents = { ate_east_slavic }
+	
+	
+	traditions = {
+		tradition_collective_lands
+		tradition_staunch_traditionalists
+		tradition_fervent_temple_builders
+		tradition_quarrelsome
+		tradition_cosmopolitan_elitism
+	}
+	
+	coa_gfx = {
+		ruteno_coa_gfx
+		sulista_group_gfx
+	}
+	building_gfx = {
+		ruteno_building_gfx
+		brazilian_subtropical_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_sulista_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		sulista_group_gfx
+		#mauricinho_clothing_gfx
+		northern_clothing_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		20 = caucasian
+		70 = slavic
+		10 = amerindian
+	
+	}	
+}
+
+ate_ukranian= {
+	color = { 255 213 0 }
+	
+	ethos = ethos_communal
+	heritage = heritage_slavic
+	language = language_ancient_slavic
+	martial_custom = martial_custom_equal
+	name_list = name_list_slavic
+	created = 1237.1.1
+	parents = { ate_east_slavic }
+	
+	traditions = {
+		tradition_republican_legacy
+		tradition_collective_lands
+		tradition_fervent_temple_builders
+		tradition_agrarian
+		tradition_cosmopolitan_elitism
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_staunch_traditionalists
+	}
+	
+	coa_gfx = {
+		preiryansky_coa_gfx
+		prairie_group_gfx
+	}
+	building_gfx = {
+		preiryansky_building_gfx
+		na_middle_building_gfx #Architecture-style-2
+		prairies_building_gfx #Architecture-style
+		na_middle_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_prairie_building_gfx
+		prairie_building_gfx
+	}
+	clothing_gfx = {
+		canadian_common_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+	
+		20 = caucasian
+		70 = slavic
+		10 = amerindian
+	
+	}
+}
+
+ate_ashkenazi_jew = {
+	color = { 78 6 6 }
+	
+	ethos = ethos_spiritual
+	heritage = heritage_jewish
+	language = language_yiddish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_yiddish
+	
+	traditions = {
+		tradition_diasporic
+		tradition_zealous_people
+	}
+	dlc_tradition = {
+		trait = tradition_artisans
+		requires_dlc_flag = royal_court
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_philosopher_culture
+	}
+	
+	coa_gfx = {
+		amerodeutsch_group_gfx
+	}
+	building_gfx = {
+		yiddish_building_gfx
+		heritage_shtetl_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		3 = african
+		15 = arab
+		2 = asian
+		30 = caucasian
+		43 = slavic
+		7 = mesoamerican_yuto_aztec
+	
+	}
+}
+
+ate_nordic = {
+	color = { 41 41 194 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_nordic
+	language = language_ancient_nordic
+	martial_custom = martial_custom_male_only
+	name_list = name_list_nordic
+	
+	traditions = {
+		tradition_isolationist
+		tradition_tundra_dwellers
+		tradition_RICE_master_whalers
+	}
+	
+	coa_gfx = {
+		svalbarder_coa_gfx
+		arctic_group_gfx
+		arctic_group_coa_gfx
+	}
+	building_gfx = {
+		svalbarder_building_gfx
+		native_boreal_building_gfx #Style
+		native_cold_building_gfx #Super-style
+		heritage_spitzberger_building_gfx
+		arctic_building_gfx
+		norse_building_gfx
+	}
+	clothing_gfx = {
+		inuit_common_clothing_gfx
+		northern_clothing_gfx
+		fp1_norse_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		60 = caucasian
+		10 = slavic
+		10 = yupik
+		20 = white_asian
+		1 = asian_southeast_asian
+	
+	}
+}
+
+ate_dutch = {
+	color = { 255 79 0 }
+	created = 750.1.1 # Frankish settlements in Frisia from the 6th to 8th century
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_dutch
+	language = language_ancient_dutch
+	martial_custom = martial_custom_male_only
+	parents = { ate_german ate_french }
+	
+	traditions = {
+		tradition_agrarian
+		tradition_parochialism
+		tradition_maritime_mercantilism
+		tradition_polders
+	}
+	
+	name_list = name_list_dutch
+
+	coa_gfx = { frisian_coa_gfx german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+
+	ethnicities = {
+		100 = caucasian
+	}
+}
+
+
+ate_german = {
+	color = { 17 28 77 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_german 
+	language = language_ancient_german
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_astute_diplomats
+		tradition_stand_and_fight
+		tradition_brewmasters
+		tradition_castle_keepers
+	}
+	
+	name_list = name_list_german
+
+	coa_gfx = {
+		deitsch_coa_gfx
+		amerodeutsch_group_gfx
+	}
+	building_gfx = {
+		deitsch_building_gfx
+		na_middle_building_gfx #Architecture-style-2
+		carpenter_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_amish_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		northern_unit_gfx
+	}
+	
+	ethnicities = {
+
+		2 = asian_southeast_asian
+		2 = asian
+		3 = african
+		80 = caucasian
+		5 = mediterranean
+		4 = multiracial
+		4 = mesoamerican_yuto_aztec
+	
+	}
+}
+
+ate_african= {
+	color = { 10 10 10 }
+	
+	ethos = ethos_communal
+	heritage = heritage_african
+	language = language_creole
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 1.1.1
+	parents = { }
+	
+	traditions = {
+		tradition_equitable
+		tradition_zealous_people
+	}
+	
+	coa_gfx = {
+		munduruku_coa_gfx
+		amazonico_group_gfx
+	}
+	building_gfx = {
+		wuyjuyu_building_gfx
+		native_amazonian_building_gfx #Style
+		native_humid_building_gfx #Super-style
+		heritage_madeira_tapajos_building_gfx
+		amazonian_tribal_gfx
+		indian_building_gfx
+	}
+	clothing_gfx = {
+		amazonian_clothing_gfx
+		african_clothing_gfx
+	}
+	unit_gfx = {
+		sub_sahran_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		100 = african
+	}	
+}

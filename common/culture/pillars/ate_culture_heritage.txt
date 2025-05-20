@@ -1,0 +1,277 @@
+﻿### ATE DEV NOTE -
+## ANYTIME YOU ADD A HERITAGE GROUP OR FAMILY:
+## YOU MUST ADD THAT GROUP/FAMILY TO ccu_scripted_effects.txt
+
+heritage_british = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_british
+		}
+	}
+    parameters = {
+		heritage_group_english = yes
+        heritage_family_english = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_american = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_american
+		}
+	}
+    parameters = {
+		heritage_group_english = yes
+		heritage_group_american = yes
+        heritage_family_english = yes
+		heritage_family_american = yes
+    }
+    audio_parameter = european
+}
+
+heritage_french = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_french
+		}
+	}
+    parameters = {
+		heritage_group_french = yes
+		heritage_family_french = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_slavic = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_slavic
+		}
+	}
+    parameters = {
+		heritage_group_slavic = yes
+        heritage_family_slavic = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_jewish = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_jewish
+		}
+	}
+    parameters = {
+		heritage_group_jewish = yes
+        heritage_family_jewish = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_german = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_jewish
+		}
+	}
+    parameters = {
+		heritage_group_german = yes
+		heritage_family_german = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_dutch = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_dutch
+		}
+	}
+    parameters = {
+		heritage_group_dutch = yes
+		heritage_family_german = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_nordic = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_nordic
+		}
+	}
+    parameters = {
+		heritage_group_nordic = yes
+		heritage_family_nordic = yes
+        heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_african  = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_african
+		}
+	}
+    parameters = {
+		heritage_group_african  = yes
+        heritage_family_african  = yes
+    }
+    audio_parameter = european
+}
+
+heritage_spanish = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_spanish
+		}
+	}
+    parameters = {
+		heritage_group_spanish = yes
+        heritage_family_spanish = yes
+		heritage_family_iberian = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_mexican  = { ##Novohispano
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_mexican
+		}
+	}
+    parameters = {
+		heritage_group_mexican  = yes
+        heritage_family_mexican  = yes
+		heritage_family_spanish = yes
+    }
+    audio_parameter = european
+}
+
+heritage_caribe  = { ##Caribeño
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_caribe
+		}
+	}
+    parameters = {
+		heritage_group_caribe  = yes
+        heritage_family_caribe  = yes
+		heritage_family_spanish = yes
+    }
+    audio_parameter = european
+}
+
+heritage_peruvian  = { ##Old Andean
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_peruvian
+		}
+	}
+    parameters = {
+		heritage_group_peruvian  = yes
+        heritage_family_peruvian  = yes
+		heritage_family_spanish = yes
+    }
+    audio_parameter = european
+}
+
+heritage_colombia  = { ##Novogranada
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_colombia
+		}
+	}
+    parameters = {
+		heritage_group_colombia  = yes
+        heritage_family_colombia  = yes
+		heritage_family_spanish = yes
+    }
+    audio_parameter = european
+}
+
+heritage_platense = { ##Old Platense
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_platense
+		}
+	}
+    parameters = {
+		heritage_group_platense = yes
+        heritage_family_platense = yes
+		heritage_family_spanish = yes
+    }
+    audio_parameter = european
+}
+
+heritage_portuguese  = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_portuguese
+		}
+	}
+    parameters = {
+		heritage_group_portuguese = yes
+        heritage_family_portuguese = yes
+		heritage_family_iberian = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_brazilian  = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_brazilian
+		}
+	}
+    parameters = {
+		heritage_group_brazilian = yes
+        heritage_family_brazilian = yes
+		heritage_family_portuguese = yes
+    }
+    audio_parameter = european
+}

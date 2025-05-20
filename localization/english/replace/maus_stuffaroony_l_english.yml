@@ -1,0 +1,9 @@
+﻿l_english:
+ #This shit sucks man I hate loc, all my homies hate loc
+
+ holy_site_americanist_detroit_name:0 "$holy_site_detroit_name$"
+
+americanist_add_detroit_decision: "Sanctify Detroit"
+americanist_add_detroit_decision_desc: "Detroit is a vital location in the history of the America, and within Americanist mythology. Yet, the location is not currently a popular destination for pilgrims due to the dominating spiritual and political power of the city. By returning Detroit to American control, we can make the city once again welcoming to Americans abound."
+americanist_add_detroit_decision_tooltip: "Make Detroit a [holy_site|E] for your [faith|E]"
+americanist_add_detroit_decision_confirm: "Enlighten Detroit!"

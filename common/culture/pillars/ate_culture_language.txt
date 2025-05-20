@@ -1,0 +1,235 @@
+﻿### ATE DEV NOTE -
+## ANYTIME YOU ADD A LANGUAGE GROUP, FAMILY, OR UNION:
+## YOU MUST ADD THAT GROUP/FAMILY/UNION TO ccu_scripted_effects.txt
+
+language_ancient_english = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_english
+        }
+    }
+    parameters = {
+        language_group_ancient_english = yes
+        language_family_englic = yes 
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_english }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_english }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_englic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 226 164 153 }
+}
+
+language_ancient_french = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_french
+        }
+    }
+    parameters = {
+        language_group_ancient_french = yes
+        language_family_francophonic = yes 
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_french }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_french }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_francophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 0 45 73 }
+}
+
+language_ancient_slavic = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_slavic
+        }
+    }
+    parameters = {
+        language_group_ancient_slavic = yes
+        language_family_slavic = yes 
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_slavic }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_slavic }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_slavic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 42 108 10 }
+}
+
+language_ancient_german = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_german
+        }
+    }
+    parameters = {
+        language_group_ancient_german = yes
+        language_family_germanic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_german }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_german }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_germanic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 17 28 77 }
+}
+
+language_ancient_dutch = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_dutch
+        }
+    }
+    parameters = {
+        language_group_ancient_dutch = yes
+        language_family_germanic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_dutch }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_dutch }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_germanic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 255 79 0 }
+}
+
+language_ancient_nordic = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_nordic
+        }
+    }
+    parameters = {
+        language_group_ancient_nordic = yes
+        language_family_germanic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_nordic }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_nordic }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_germanic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 41 41 194 }
+}
+
+language_ancient_spanish = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_spanish
+        }
+    }
+    parameters = {
+        language_group_ancient_spanish = yes
+        language_family_hispanophonic = yes 
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_spanish }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_spanish }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_hispanophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 246 181 17 }
+}
+
+language_ancient_portuguese = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_ancient_portuguese
+        }
+    }
+    parameters = {
+        language_group_ancient_portuguese = yes
+        language_family_lusophonic = yes 
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_ancient_portuguese }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_ancient_portuguese }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_lusophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 191 170 17 }
+}

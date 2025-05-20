@@ -1,0 +1,1532 @@
+﻿### Miscelaneous Triggers
+
+#is_culture_head - is the character a culture head?
+#is_religious_head - is the character a religious head of their own faith?
+
+## Cultural/Religious Head
+is_culture_head = {
+	culture = {
+		save_temporary_scope_as = this_culture
+	}
+	this = scope:this_culture.culture_head
+}
+
+is_religious_head = {
+	faith = {
+		save_temporary_scope_as = this_faith
+	}
+	this = scope:this_faith.religious_head
+}
+
+## Host Feast localisation
+is_barbecue_culture = {
+	is_fish_fry_faith = no
+	OR = {
+		culture = { has_cultural_pillar = heritage_old_south }
+		culture = { has_cultural_pillar = heritage_deep_south }
+		culture = { has_cultural_pillar = heritage_riverine }
+		culture = { has_cultural_pillar = heritage_lumbee }
+		culture = { has_cultural_pillar = heritage_geechee }
+		culture = { has_cultural_pillar = heritage_texan }
+		culture = { has_cultural_pillar = heritage_floridian }
+		culture = { has_cultural_pillar = heritage_upland }
+		culture = culture:gaucho
+		culture = culture:gatewayan
+		culture = culture:matogrossense
+		culture = culture:ate_old_texan
+		culture = culture:ate_old_southern
+	}
+}
+
+is_asado_culture = {
+	is_fish_fry_faith = no
+	OR = {
+		culture = { has_cultural_pillar = heritage_patagon }
+		culture = { has_cultural_pillar = heritage_platense }
+		culture = { has_cultural_pillar = heritage_chileno }
+		culture = { has_cultural_pillar = heritage_mapuche }
+		culture = { has_cultural_pillar = heritage_viejispano }
+		culture = { has_cultural_pillar = heritage_austral }
+		culture = { has_cultural_pillar = heritage_patagon }
+		culture = culture:wladfaeg # Maybe not, don't know much about Welsh Argentinians
+	}
+}
+
+is_fish_fry_faith = {
+	OR = {
+		faith = faith:catholic
+		faith = faith:viking
+		faith = faith:lakeshore
+	}
+}
+
+has_access_to_carnival = {
+	#OR = {
+	#	culture = culture:carioca
+	#	culture = culture:caicara
+	#	culture = culture:ilheense
+	#	culture = culture:reconcavano
+	#	culture = culture:recifolindense
+	#}
+	culture = {
+		has_cultural_parameter = can_celebrate_carnival
+	}
+}
+
+## Americanist Presidency
+can_run_for_americanist_presidency_trigger = {
+	# Basic Triggers
+	age >= 35
+	faith = { has_doctrine_parameter = follows_americanist_presidency }
+	NAND = { exists = var:refuse_to_be_election_candidate has_variable = refuse_to_be_election_candidate }
+	NOT = { has_title = title:k_presidency }
+	is_alive = yes
+
+	OR = { # Either you're a count+, a baron/mayor that's famous/pious, or a courtier that's REALLY famous or pious, or a patrician
+		AND = {
+			is_landed = yes
+			OR = {
+				is_independent_ruler = yes # prevent border gore (a better system will be developed later)
+				highest_held_title_tier = tier_barony
+			}
+			OR = {
+				highest_held_title_tier >= tier_county
+				prestige_level >= 3
+				piety_level >= 3
+			}
+		}
+		prestige_level >= 5
+		piety_level >= 5
+		# is_patrician = yes # This trigger doesn't exist
+	}
+}
+
+## Government Types
+is_tribal_government_type = {
+	OR = {
+		government_has_flag = government_is_tribal
+		government_has_flag = government_is_nomadic
+	}
+}
+
+is_monarchical_government_type = {
+	OR = {
+		government_has_flag = government_is_feudal
+		government_has_flag = government_is_clan
+		government_has_flag = government_is_state_bureaucracy
+		government_has_flag = government_is_imperial
+		government_has_flag = government_is_range
+		vassal_contract_has_flag = has_governorate_contract
+		vassal_contract_has_flag = has_captaincy_contract
+	}
+}
+
+is_high_republic_government_type = {
+	OR = {
+		government_has_flag = government_is_high_republic
+	}
+}
+
+is_republican_government_type = {
+	OR = {
+		has_government = republic_government
+	}
+}
+
+can_eventually_form_republic_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_republic
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_republic
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = scholar
+				has_trait = diplomat
+				#...and is not afraid of trying weird stuff...
+				has_trait = eccentric
+			}
+
+		}
+	}
+}
+
+can_form_republic_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_republic }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonrepublican faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_republic } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_republic }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support republics...
+						culture = { NOT = { has_cultural_parameter = can_form_republic } }
+					}
+				}
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = scholar
+				has_trait = diplomat
+			}
+			#...and is not afraid of trying weird stuff...
+			has_trait = eccentric
+			#...and very prestigious...
+			prestige_level >= 4
+			#...and has maximum authority
+			has_realm_law_flag = max_authority_level
+		}
+	}
+}
+
+can_form_high_republic_trigger = {
+	can_form_republic_trigger = yes
+}
+
+can_eventually_form_feudal_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_feudal
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_feudal
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = overseer
+				has_trait = august
+				#...and is not afraid of trying weird stuff...
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+
+		}
+	}
+}
+
+can_form_feudal_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_feudal }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonfeudalan faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_feudal } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_feudal }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support feudals...
+						culture = { NOT = { has_cultural_parameter = can_form_feudal } }
+					}
+				}
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = overseer
+				has_trait = august
+			}
+			#...and is not afraid of trying weird stuff...
+			OR = {
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+			#...and very prestigious...
+			prestige_level >= 4
+			#...and has maximum authority
+			has_realm_law_flag = max_authority_level
+		}
+	}
+}
+
+
+can_eventually_form_clan_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_clan
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_clan
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = family_first
+				has_trait = pure_blooded
+				#...and is not afraid of trying weird stuff...
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+
+		}
+	}
+}
+
+can_form_clan_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_clan }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonclanan faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_clan } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_clan }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support clans...
+						culture = { NOT = { has_cultural_parameter = can_form_clan } }
+					}
+				}
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = family_first
+				has_trait = pure_blooded
+			}
+			#...and is not afraid of trying weird stuff...
+			OR = {
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+			#...and very prestigious...
+			prestige_level >= 4
+			#...and has maximum authority
+			has_realm_law_flag = max_authority_level
+		}
+	}
+}
+
+
+can_eventually_form_range_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_range
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_range
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = overseer
+				has_trait = gallant
+				#...and is not afraid of trying weird stuff...
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+
+		}
+	}
+}
+
+can_form_range_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_range }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonrangean faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_range } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_range }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support ranges...
+						culture = { NOT = { has_cultural_parameter = can_form_range } }
+					}
+				}
+			}
+		}
+		#TODO add here titles that should allow it
+		#...or you are...
+		AND = {
+			#...someone who admires presidentialism...
+			OR = {
+				has_trait = overseer
+				has_trait = gallant
+			}
+			#...and is not afraid of trying weird stuff...
+			OR = {
+				has_trait = eccentric
+				has_trait = arbitrary
+			}
+			#...and very prestigious...
+			prestige_level >= 4
+			#...and has maximum authority
+			has_realm_law_flag = max_authority_level
+		}
+	}
+}
+
+can_eventually_form_imperial_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_imperial
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_imperial
+			}
+		}
+	}
+}
+
+can_form_imperial_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_imperial }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonimperialan faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_imperial } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_imperial }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support imperials...
+						culture = { NOT = { has_cultural_parameter = can_form_imperial } }
+					}
+				}
+			}
+		}
+		has_title = title:e_brazil
+		has_title = title:e_nordeste
+		has_title = title:e_sudeste
+		has_title = title:e_bahia
+		has_title = title:e_grao_para
+	}
+	highest_held_title_tier = tier_empire
+}
+
+can_eventually_form_state_bureaucracy_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_state_bureaucracy
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_state_bureaucracy
+			}
+		}
+	}
+}
+
+can_form_state_bureaucracy_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_state_bureaucracy }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonstate_bureaucracyan faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_state_bureaucracy } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_state_bureaucracy }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support state_bureaucracys...
+						culture = { NOT = { has_cultural_parameter = can_form_state_bureaucracy } }
+					}
+				}
+			}
+		}
+		#or you have the target title
+		has_title = title:e_california
+	}
+	highest_held_title_tier = tier_empire
+}
+
+can_eventually_form_ayllu_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = {
+				has_doctrine_parameter = can_form_ayllu
+			}
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = {
+				has_cultural_parameter = can_form_ayllu
+			}
+		}
+	}
+}
+
+can_form_ayllu_trigger = {
+	OR = {
+		#either your faith allows it...
+		AND = {
+			faith = { has_doctrine_parameter = can_form_ayllu }
+			#...you are very pious...
+			piety_level >= 4
+			NOT = {
+				#...and none of your powerful vassals are either...
+				any_powerful_vassal = {
+					OR = {
+						#...people who disapprove you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...members of a nonaylluan faith...
+						faith = { NOT = { has_doctrine_parameter = can_form_ayllu } }
+					}
+				}
+			}
+
+		}
+		#...or your culture allows it...
+		AND = {
+			culture = { has_cultural_parameter = can_form_ayllu }
+			#...and you are very prestigious...
+			prestige_level >= 4
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+					OR = {
+						#...either dislikes you or...
+						opinion = {
+							target = root
+							value < 0
+						}
+						#...is from a culture that doesn't support ayllus...
+						culture = { NOT = { has_cultural_parameter = can_form_ayllu } }
+					}
+				}
+			}
+		}
+		#...or you have the title intended to use it
+		has_title = title:e_inca
+	}
+	highest_held_title_tier = tier_empire
+}
+
+can_form_administrative_trigger = {
+	has_ep3_dlc_trigger = yes
+	OR = {
+		AND = {
+			highest_held_title_tier = tier_kingdom
+			culture = { has_cultural_parameter = can_adopt_administrative_government_as_kingdom_tier }
+		}
+		highest_held_title_tier = tier_empire
+	}
+	trigger_if = {
+		limit = {
+			is_independent_ruler = yes
+			is_ai = no
+		}
+		prestige_level >= 3
+	}
+	trigger_if = {
+		limit = {
+			is_independent_ruler = yes
+			is_ai = no
+		}
+		custom_tooltip = {
+			text = all_powerful_vassals_required_tt
+			any_powerful_vassal = {
+				count = all
+				opinion = {
+					target = root
+					value >= 50
+				}
+			}
+		}
+	}
+	trigger_if = {
+		limit = { is_ai = yes }
+		calc_true_if = {
+			amount >= 2
+			culture = { has_cultural_pillar = ethos_bureaucratic }
+			culture = { has_cultural_pillar = ethos_courtly }
+			culture = { has_cultural_pillar = ethos_egalitarian }
+			culture = { has_cultural_tradition = tradition_legalistic }
+			culture = { has_cultural_tradition = tradition_hereditary_hierarchy }
+			has_realm_law = crown_authority_3
+			capital_county = {
+				development_level > medium_development_level
+			}
+			faith = { has_doctrine = tenet_legalism }
+			dynasty = {
+				has_dynasty_perk = erudition_legacy_5
+			}
+			dynasty = {
+				has_dynasty_perk = law_legacy_5
+			}
+		}
+	}
+}
+
+
+
+is_excluded_from_contract_modifications_trigger = {
+	#OR = {
+		government_has_flag = government_is_theocracy
+	#}
+}
+
+## Prevents custom kingdoms being named "The Presidency" or "The Papacy" if made by a President or Pope
+exempt_from_custom_kingdom_naming_trigger = { # Basically every temporal religious head title should go in here
+	OR = {
+		#this = title:k_papal_state
+		this = title:k_presidency
+		this = title:d_caudillo_patria_grande
+	}
+}
+
+## Preventing faiths from spawning when and where they shouldn't
+does_faith_exist_yet_trigger = { # not actually used
+	trigger_if = {
+		limit = {
+			OR = {
+				#this = faith:river_baptist
+				this = faith:redemptionist
+			}
+		}
+		has_global_variable = evangelical_reformation_ongoing
+	}
+	trigger_else = {
+		always = yes
+	}
+}
+
+## Title Creation
+title_can_be_created_trigger = { # not in use, can talk to AOD if you want to get it to work
+	OR = {
+		NOT = { this = title:e_hcc }
+		#NOT = { has_global_variable = hcc_fallen } # if HCC collapses through other means, would prefer it to be restored through this way
+		has_global_variable = hcc_restored
+	}
+}
+
+###country check per culture
+
+has_brazilian_culture = {
+	OR = {
+		has_cultural_pillar = heritage_sulista
+		has_cultural_pillar = heritage_cafe_com_leite
+		has_cultural_pillar = heritage_paulistanico
+		has_cultural_pillar = heritage_western_sertanejo
+		has_cultural_pillar = heritage_serra_do_mar
+		has_cultural_pillar = heritage_costeiro
+		has_cultural_pillar = heritage_northern_sertanejo
+		has_cultural_pillar = heritage_manguetowner
+		has_cultural_pillar = heritage_cabano
+		has_cultural_pillar = heritage_ciclico
+		has_cultural_pillar = heritage_cariri
+		has_cultural_pillar = heritage_geraizeiro
+	}
+}
+
+###christian religions grouped
+is_north_american_catholic = { #st. louis
+	this = faith:catholic
+}
+
+is_north_american_evangelical = { #atlanta
+	OR = {
+		this = faith:evangelical
+		this = faith:river_baptist
+		this = faith:redemptionist
+	}
+}
+
+is_west_south_american_catholic = { #lima
+	OR = {
+		this = faith:tridentinism
+		this = faith:israelite
+		this = faith:jolljepunco
+	}
+}
+
+is_central_american_christian = { #tegucigalpa
+	OR = {
+		this = faith:liberationism
+		this = faith:moravian
+		this = faith:penitents
+		this = faith:mama_tatda
+		this = faith:lamanite
+		this = faith:cruzob
+	}
+}
+
+is_caribbean_christian = { #kingston
+	OR = {
+		this = faith:anglican
+		this = faith:insular_caribbean
+	}
+}
+
+is_east_canadian_christian = { #ottawa
+	OR = {
+		this = faith:ursuline
+		this = faith:united_church
+		this = faith:nnu_asutmamg
+		this = faith:anabaptist
+	}
+}
+
+is_central_canadian_christian = { #saskatoon
+	OR = {
+		this = faith:freedomite
+		#this = faith:peace_church
+	}
+}
+
+is_arctic_christian = { #juneau
+	this = faith:cross_faith
+}
+
+is_north_american_mormon = { #slc
+	OR = {
+		this = faith:mormon
+		this = faith:woolleyite
+		this = faith:ensignite
+		this = faith:strangite
+	}
+}
+
+is_mexican_christian = { #mexico city
+	OR = {
+		this = faith:cristero
+		this = faith:kojtumbrem
+	}
+}
+
+is_southern_cone_christian = { #mercedes
+	OR = {
+		this = faith:particularist
+		this = faith:animism
+		this = faith:celestism
+		this = faith:muckerism
+		this = faith:byzantine_rite
+	}
+}
+
+is_brazilian_christian = { #salvador
+	OR = {
+		this = faith:assembleiano
+		this = faith:apostolicism
+		this = faith:global_throne
+		this = faith:ciceritism
+	}
+}
+
+vaguely_related_to_christianity_trigger = { #for artifacts
+	$CHARACTER$ = {
+		faith = {
+			OR = {
+				religion = religion:catholic_religion
+				religion = religion:protestant_religion
+				religion = religion:mormon_religion
+				religion = religion:eastern_christian_religion
+				religion = religion:divina_patriota_religion
+				religion = religion:intercessory_religion
+				religion = religion:reawakened_religion
+				religion = religion:rastafari_religion
+				religion = religion:sombrism_religion
+				has_doctrine = tenet_christian_syncretism
+			}
+		}
+	}
+}
+
+is_north_american_evangelical_tenet_trigger = {
+	$CHARACTER$ = {
+		faith = {
+			OR = {
+				has_doctrine = special_doctrine_convention_communion
+				has_doctrine = special_doctrine_calvert_camp
+			}
+		}
+	}
+}
+
+americanist_trigger = {
+	$CHARACTER$ = {
+		faith = {
+			religion = religion:americanist_religion
+		}
+	}
+}
+
+#culture_has_squires_trigger = { #commented out since the squire stuff isn't finished
+#	OR = {
+#		has_cultural_tradition = tradition_chivalry
+#		has_cultural_tradition = tradition_southern_knights
+#	}
+#}
+
+is_vaguely_newfie_trigger = {
+	OR = {
+		has_culture = culture:newfie
+		culture = { has_name_list = name_list_newfie }
+	}
+}
+
+is_vaguely_gaidheal_trigger = {
+	OR = {
+		has_culture = culture:gaidheal
+		culture = { has_name_list = name_list_gaidheal }
+	}
+}
+
+is_vaguely_maritimer_trigger = {
+	OR = {
+		has_culture = culture:maritimer
+		culture = { has_name_list = name_list_maritimer }
+	}
+}
+
+is_vaguely_mikmaw_trigger = {
+	OR = {
+		has_culture = culture:mikmaw
+		culture = { has_name_list = name_list_mikmaw }
+	}
+}
+
+is_vaguely_innu_trigger = {
+	OR = {
+		has_culture = culture:innu
+		culture = { has_name_list = name_list_innu }
+
+	}
+}
+
+is_vaguely_cubano_trigger = {
+	OR = {
+		has_culture = culture:cubano
+		culture = { has_name_list = name_list_cubano }
+
+	}
+}
+
+is_vaguely_quisqueyano_trigger = {
+	OR = {
+		has_culture = culture:quisqueyano
+		culture = { has_name_list = name_list_quisqueyano }
+
+	}
+}
+
+is_vaguely_boricua_trigger = {
+	OR = {
+		has_culture = culture:boricua
+		culture = { has_name_list = name_list_boricua }
+
+	}
+}
+
+is_interested_in_general_archaeology_trigger = {
+	always = yes
+}
+
+is_interested_in_anachronous_archaeology_trigger = {
+	faith = {
+		religion = { is_in_family = rf_anachronous }
+	}
+}
+
+is_interested_in_inca_archaeology_trigger = {
+	faith = {
+		religion = religion:andean_religion
+	}
+}
+
+is_interested_in_industrialist_archaeology_trigger = {
+	faith = {
+		religion = religion:industrialist_religion
+	}
+}
+
+is_interested_in_natural_archaeology_trigger = {
+	faith = {
+		religion = religion:naturalist_religion
+	}
+}
+
+is_interested_in_religious_archaeology_trigger = {
+	NOT = {
+		is_interested_in_anachronous_archaeology_trigger = yes
+	}
+}
+
+is_interested_in_saurian_archaeology_trigger = {
+	faith = faith:saurian
+}
+
+## Petition Trigger
+petition_liege_title_create_state_trigger = {
+	OR = {
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:subjugate_california_decision
+				}
+			}
+			completely_controls = title:k_nevada
+			completely_controls = title:k_jefferson
+			completely_controls = title:k_andreas
+			completely_controls = title:k_the_valley
+			completely_controls = title:k_socal
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:subjugate_texas_decision
+				}
+			}
+			completely_controls = title:k_red_river
+			completely_controls = title:k_old_star
+			completely_controls = title:k_rio_grande
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_colorado_decision
+				}
+			}
+			completely_controls = title:d_pueblo
+			completely_controls = title:d_denver
+			completely_controls = title:d_boulder
+			completely_controls = title:d_western_slope
+			completely_controls = title:d_durango_us
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_colorado_wyoming_decision
+				}
+			}
+			completely_controls = title:d_laramie
+			completely_controls = title:d_red_desert
+			completely_controls = title:d_sweetwater
+			completely_controls = title:d_highland_springs
+			completely_controls = title:d_beartooth
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_empire_state_decision
+				}
+			}
+			AND = {
+				completely_controls = title:k_hudsonia
+				title:k_hudsonia = { any_de_jure_county = { exists = this } }
+			}
+			AND = {
+				completely_controls = title:k_gotham
+				title:k_gotham = { any_de_jure_county = { exists = this } }
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_keystone_decision
+				}
+			}
+			AND = {
+				completely_controls = title:k_dutchland
+				title:k_dutchland = { any_de_jure_county = { exists = this } }
+			}
+			AND = {
+				completely_controls = title:k_allegheny
+				title:k_allegheny = { any_de_jure_county = { exists = this } }
+			}
+			AND = {
+				completely_controls = title:d_delaware_valley
+				title:d_delaware_valley = { any_de_jure_county = { exists = this } }
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_oklahoma_decision
+				}
+			}
+			any_county_in_region = {
+				region = custom_oklahoma
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_ohio_decision
+				}
+			}
+			any_county_in_region = {
+				region = custom_ohio
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_grand_virginia_decision
+				}
+			}
+			any_county_in_region = {
+				region = custom_indiana
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_new_jersey_decision
+				}
+			}
+			any_county_in_region = {
+				region = custom_new_jersey
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			has_title = title:k_old_dominion
+			has_title = title:k_kanawha
+			any_county_in_region = {
+				region = custom_grand_virginia
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_oregon_decision
+				}
+			}
+			has_title = title:k_highdesert
+			has_title = title:k_whilamut
+			any_county_in_region = {
+				region = custom_oregon
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_washington_decision
+				}
+			}
+			has_title = title:k_tahoma
+			has_title = title:k_the_columbia
+			any_county_in_region = {
+				region = custom_washington_state
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+		AND = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:form_carolina_decision
+				}
+			}
+			has_title = title:k_tarheel
+			has_title = title:k_palmetto
+			any_county_in_region = {
+				region = custom_carolinas
+				percent >= ate_formable_target_percent_decimal_value
+				OR = {
+					holder = root
+					holder.liege = root
+					holder.liege.liege = root
+				}
+			}
+		}
+	}
+}
+
+#############################
+# patron gods culture triggers
+
+is_vaguely_michigander_trigger = {
+	OR = {
+		has_culture = culture:michigander
+		culture = { has_name_list = name_list_michigander}
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_michigan
+			NOT = {
+				capital_county.duchy = title:d_detroit
+				capital_county.duchy = title:d_upnorth
+			}
+		}
+	}
+}
+
+is_vaguely_buckeye_trigger = {
+	OR = {
+		has_culture = culture:buckeye
+		culture = { has_name_list = name_list_buckeye }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_greater_reserve
+		}
+	}
+}
+
+is_vaguely_yinzer_trigger = {
+	OR = {
+		has_culture = culture:yinzer
+		culture = { has_name_list = name_list_yinzer }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_allegheny
+		}
+	}
+}
+
+is_vaguely_butternut_trigger = {
+	OR = {
+		has_culture = culture:butternutter
+		culture = { has_name_list = name_list_butternutter }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_ohio_valley
+		}
+	}
+}
+
+is_vaguely_chicagoan_trigger = {
+	OR = {
+		has_culture = culture:chicagoan
+		culture = { has_name_list = name_list_chicagoan }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_chicagoland
+		}
+	}
+}
+
+is_vaguely_hoosier_trigger = {
+	OR = {
+		has_culture = culture:hoosier
+		culture = { has_name_list = name_list_hoosier }
+	}
+}
+
+is_vaguely_motowner_trigger = {
+	OR = {
+		has_culture = culture:motowner
+		culture = { has_name_list = name_list_motowner }
+		AND = {
+			is_landed = yes
+			capital_county.duchy = title:d_detroit
+		}
+	}
+}
+
+is_vaguely_upnorther_trigger = {
+	OR = {
+		has_culture = culture:upnorther
+		culture = { has_name_list = name_list_upnorther }
+		AND = {
+			is_landed = yes
+			capital_county.duchy = title:d_upnorth
+		}
+	}
+}
+
+is_vaguely_yooper_trigger = {
+	OR = {
+		has_culture = culture:yooper
+		culture = { has_name_list = name_list_yooper }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_superior
+		}
+	}
+}
+
+is_vaguely_riverlander_trigger = {
+	OR = {
+		has_culture = culture:riverlander
+		culture = { has_name_list = name_list_riverlander }
+		AND = {
+			is_landed = yes
+			capital_county.kingdom = title:k_kentucky
+		}
+	}
+}
+
+favorite_treat_location_trigger = {
+	trigger_if = {
+		limit = {
+			exists = capital_province
+			is_travelling = no
+		}
+		capital_province = {
+			geographical_region = $REGION$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = liege.capital_province
+			is_travelling = no
+		}
+		liege.capital_province = {
+			geographical_region = $REGION$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = location
+		}
+		location = {
+			geographical_region = $REGION$
+		}
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+favorite_treat_namelist_trigger = {
+	trigger_if = {
+		limit = {
+			exists = capital_province
+			is_travelling = no
+		}
+		capital_province.culture = { has_name_list = $NAMES$ }
+	}
+	trigger_else_if = {
+		limit = {
+			exists = liege.capital_province
+			is_travelling = no
+		}
+		liege.capital_province.culture = { has_name_list = $NAMES$ }
+	}
+	trigger_else_if = {
+		limit = {
+			exists = location
+		}
+		location.culture = { has_name_list = $NAMES$ }
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+favorite_treat_pillar_trigger = {
+	trigger_if = {
+		limit = {
+			exists = capital_province
+			is_travelling = no
+		}
+		capital_province.culture = {
+			has_cultural_pillar = $PILLAR$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = liege.capital_province
+			is_travelling = no
+		}
+		liege.capital_province.culture = {
+			has_cultural_pillar = $PILLAR$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = location
+		}
+		location.culture = {
+			has_cultural_pillar = $PILLAR$
+		}
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+favorite_treat_parameter_trigger = {
+	trigger_if = {
+		limit = {
+			exists = capital_province
+			is_travelling = no
+		}
+		capital_province.culture = {
+			has_cultural_parameter = $PM$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = liege.capital_province
+			is_travelling = no
+		}
+		liege.capital_province.culture = {
+			has_cultural_parameter = $PM$
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			exists = location
+		}
+		location.culture = {
+			has_cultural_parameter = $PM$
+		}
+	}
+	trigger_else = {
+		always = no
+	}
+}

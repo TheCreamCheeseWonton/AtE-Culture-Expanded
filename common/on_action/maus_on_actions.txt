@@ -1,0 +1,41 @@
+﻿on_game_start = {
+	on_actions = {
+		maus_do_stuffs
+	}
+}
+
+maus_do_stuffs = { 
+	effect = {
+		faith:libertarian = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:constitutionalist = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:exceptionalist = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:heartful = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:imaginerian = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:mayflower = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:principlist = {
+			deactivate_holy_site = americanist_detroit
+		}
+
+		faith:yeomanist = {
+			deactivate_holy_site = americanist_detroit
+		}
+	}
+}

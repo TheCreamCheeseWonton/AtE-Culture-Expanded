@@ -1,0 +1,3965 @@
+﻿#RegionalDrink
+#RegionalAlcoholicDrink
+#get_region_root_vegetable & get_region_root_vegetable_plural
+#RegionalEdibleAnimal
+#RegionalEdibleMeat
+#FavoriteTreat
+#FavoriteTreatDemand
+#FavoriteTreatUppercase
+#GetLocalStreetFood & GetLocalStreetFoodPlural
+#GetFoodDetail
+#GetExpensiveMeal
+#GetExpensiveMealAlt
+#GetExpensiveDessert
+#GetExpensiveDessertInTheFace
+#GetExpensiveDrink
+#GetExpensiveDrink_Singular
+#RegionalFish
+
+#NOTE! All of these nouns should work with "a" (not "an")
+RegionalDrink = {
+	type = character
+	random_valid = yes
+
+	text = {
+		localization_key = wine
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				OR = {
+					#producers
+					geographical_region = world_us_west_coast
+					geographical_region = world_us_northeast
+					geographical_region = world_us_great_lakes
+					geographical_region = world_mexico_central
+					geographical_region = world_south_america_la_plata
+					geographical_region = world_south_america_patagonia
+					geographical_region = world_south_america_interior
+				}
+			}
+		}
+	}
+
+	text = {
+		localization_key = mead
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				geographical_region = world_us_northeast
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_drink_spiced_wine_singular
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+	}
+	text = {
+		localization_key = tea
+		trigger = {
+			faith = {
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				geographical_region = world_south_america_guyanas
+			}
+		}
+	}
+	text = {
+		localization_key = coffee
+		trigger = {
+			faith = {
+				NOT = { religion_tag = mormon_religion }
+			}	
+			location = {
+				OR = {
+					geographical_region = world_mexico_central
+					geographical_region = world_mexico_yucatan
+					geographical_region = world_central_america
+					geographical_region = world_south_america_andes
+					geographical_region = world_south_america_amazon
+					geographical_region = world_brazil_sudeste
+					geographical_region = world_caribbean
+					geographical_region = world_brazil_nordeste
+					geographical_region = world_south_america_interior
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_drink_chocolate
+		trigger = {
+			location = {
+				OR = {
+					geographical_region = world_mexico_central
+					geographical_region = world_mexico_yucatan
+					geographical_region = world_central_america
+					geographical_region = world_south_america_andes
+					geographical_region = world_south_america_amazon
+					geographical_region = world_caribbean
+					geographical_region = world_brazil_nordeste
+					geographical_region = world_south_america_interior
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = mate
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_brazil_sudeste
+					geographical_region = world_south_america_la_plata
+					geographical_region = world_south_america_patagonia
+					geographical_region = world_south_america_interior
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = lemonade
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_southeast
+					geographical_region = world_us_upland_south
+					geographical_region = world_us_gulf_coast
+					geographical_region = world_us_texas
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = apple_juice
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_eastern_canada
+					geographical_region = world_us_northeast
+					geographical_region = world_us_great_lakes
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = sarsparilla
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_upland_south
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = root_beer
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_upland_south
+				}
+			}
+		}
+	}	
+	text = {
+		localization_key = coke
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_upland_south
+					geographical_region = world_us_southeast
+					geographical_region = world_us_texas
+					geographical_region = world_us_gulf_coast
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = soda
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_northeast
+					geographical_region = ghw_region_andreas
+					geographical_region = ghw_region_the_valley
+					geographical_region = ghw_region_jefferson
+					geographical_region = ghw_region_socal
+					geographical_region = world_us_southwest
+					geographical_region = ghw_region_missouri
+					geographical_region = custom_wisconsin
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = pop
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_great_plains
+					geographical_region = world_us_great_lakes
+					geographical_region = world_us_rockies
+					geographical_region = custom_cascadia_kingdom
+					geographical_region = world_canada_south
+					geographical_region = custom_alaska
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = faygo
+		trigger = { 
+			OR = {
+				culture = { has_name_list = name_list_motowner }
+			}
+		}
+	}
+	text = {
+		localization_key = cheerwine
+		trigger = { 
+			OR = {
+				culture = { has_name_list = name_list_piedmontese }				
+			}
+		}
+	}
+	text = {
+		localization_key = lemonade
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_southeast
+					geographical_region = world_us_upland_south
+					geographical_region = world_us_gulf_coast
+					geographical_region = world_us_texas
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = punch
+	}
+	text = {
+		localization_key = milkshake
+	}	
+	text = {
+		localization_key = sweet_tea
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_southeast
+					geographical_region = world_us_upland_south
+					geographical_region = world_us_gulf_coast
+					geographical_region = world_us_texas
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = ginger_ale
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_eastern_canada
+					geographical_region = world_us_northeast
+					geographical_region = world_us_great_lakes
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = switchel
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_new_englander }
+			}
+		}
+	}
+	text = {
+		localization_key = iced_tea
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_west_coast
+					geographical_region = world_us_rockies
+					geographical_region = world_us_great_plains
+					geographical_region = world_us_great_lakes
+					geographical_region = world_us_northeast
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = orange_juice
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_us_gulf_coast
+					geographical_region = world_us_west_coast
+					geographical_region = world_brazil_o_sul
+					geographical_region = world_us_texas
+				}
+			}
+		}
+	}
+}
+
+RegionalAlcoholicDrink = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = wine
+	}
+
+	text = {
+		localization_key = beer
+	}
+
+	text = {
+		localization_key = cider
+	}
+
+	text = {
+		localization_key = tequila
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_mexico_north
+					geographical_region = world_mexico_central
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = whiskey		
+		trigger = {
+			location = {
+				OR = {
+					geographical_region = world_central_canada
+					geographical_region = world_us_upland_south
+					geographical_region = world_us_great_plains
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = moonshine
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_upland }
+				culture = { has_cultural_pillar = heritage_lakelander }
+				culture = { has_cultural_pillar = heritage_old_south }
+				culture = { has_cultural_pillar = heritage_deep_south }
+				culture = { has_cultural_pillar = heritage_riverine }
+				culture = { has_cultural_pillar = heritage_geechee }
+				culture = { has_cultural_pillar = heritage_lumbee }
+				culture = { has_cultural_pillar = heritage_midwestern }
+				culture = { has_cultural_pillar = heritage_british }
+				culture = { has_cultural_pillar = heritage_american }
+			}
+		}
+	}
+	text = {
+		localization_key = caribou
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_french }
+				culture = { has_cultural_pillar = heritage_canayen }
+			}
+		}
+	}
+	#Byzantine wines
+	# text = {
+	# 	localization_key = macedonian_wine
+	# 	trigger = {
+	# 		faith = {
+	# 			NOT = { religion_tag = islam_religion }
+	# 		}
+	# 		location = {
+	# 			geographical_region = world_europe_south_east
+	# 		}
+	# 	}
+	# }
+	text = {
+
+		localization_key = guaro
+		trigger = { 
+
+			OR = {
+				culture = { has_cultural_pillar = heritage_centroamericano }
+				culture = { has_cultural_pillar = heritage_colombian }
+			}
+		}
+	}
+	text = {
+		localization_key = pulque
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_mesoamerican }
+			}
+		}
+	}	
+	text = {
+		localization_key = parakari
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_roraiman }
+			}
+		}
+	}	
+	text = {
+		localization_key = pozol
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_mesoamerican }
+			}
+		}
+	}	
+	text = {
+		localization_key = rum		
+		trigger = {
+			location = {
+				OR = {
+					geographical_region = world_mexico_yucatan
+					geographical_region = world_caribbean_basin
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = pisco
+		trigger = {
+			location = {
+				OR = {
+					geographical_region = world_greater_andes
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = chicha
+		trigger = {
+			location = {
+				OR = {
+					geographical_region = world_south_america_andes
+					geographical_region = world_south_america_amazon
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = mojitos
+		trigger = { 
+			OR = {
+				culture = culture:sofloano
+				culture = culture:cubano
+			}
+		}
+	}	
+	text = {
+		localization_key = sazerac
+		trigger = { 
+			OR = {
+				culture = culture:nolan			
+			}
+		}
+	}	
+	text = {
+		localization_key = boilo
+		trigger = {
+			OR = {
+				culture = culture:boilo
+			}
+		}
+	}
+	text = {
+		localization_key = rhum_agricole
+		trigger = {
+			OR = {
+				culture = culture:haitian					
+				culture = culture:venteux
+			}
+		}
+	}
+	text = {
+		localization_key = grappa
+		trigger = {
+			OR = {
+					culture = { has_cultural_pillar = heritage_gaucho }
+			}
+		}
+	}	
+	text = {
+		localization_key = grappamiel
+		trigger = {
+			OR = {
+				culture = culture:yorugua
+				culture = culture:guacho					
+			}
+		}
+	}	
+	text = {
+		localization_key = cremas
+		trigger = {
+			OR = {
+				culture = culture:haitian					
+			}
+		}
+	}
+	text = {
+		localization_key = clairin
+		trigger = {
+			OR = {
+				culture = culture:haitian				
+			}
+		}
+	}	
+	text = {
+		localization_key = mamajuana
+		trigger = {
+			OR = {
+				culture = culture:quisqueyano					
+			}
+		}
+	}		
+	text = {
+		localization_key = cauim
+		trigger = {
+			location = {
+			OR = {
+					geographical_region = world_south_america_amazon
+					geographical_region = ghw_region_panama
+					geographical_region = custom_gran_colombia
+				}
+			}
+		}
+	}	
+	text = {
+		localization_key = cachaca
+		trigger = { location = { geographical_region = world_south_america_brasil_coast } } 
+	}
+	text = {
+		localization_key = vodka
+		trigger = { 
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_slavic }
+				culture = culture:doukhobor
+				culture = culture:alaskan
+				culture = culture:yukoner
+				culture = culture:klondiker
+			}
+		}
+	}	
+	text = {
+		localization_key = tiswin
+		trigger = { 
+			OR = {
+				culture = culture:oodham
+			}
+		}
+	}
+	text = {
+		localization_key = applejack
+		trigger = { 
+			OR = {
+				culture = culture:hudsonian				
+				culture = culture:upstater				
+				culture = culture:chowderfolk				
+				culture = culture:lobsterman				
+				culture = culture:hemlocker				
+			}
+		}
+	}
+	text = {
+		localization_key = screech
+		trigger = { 
+			OR = {
+				culture = culture:newfie
+			}
+		}
+	}		
+	text = {
+		localization_key = scotch
+		trigger = { 
+			OR = {
+				culture = culture:gaidheal				
+			}
+		}
+	}
+	text = {
+		localization_key = goslings
+		trigger = { 
+			OR = {
+				culture = culture:bermudian				
+			}
+		}
+	}
+	text = {
+		localization_key = schnapps
+		trigger = { 
+			OR = {
+				culture = culture:hunsrickish				
+				culture = culture:texaner
+				culture = { has_cultural_pillar = heritage_dutch }
+				culture = { has_cultural_pillar = heritage_german }
+			}
+		}
+	}			
+	text = {
+		localization_key = singani
+		trigger = { 
+			OR = {
+				culture = culture:camba				
+				culture = culture:quechua
+				culture = culture:kolla				
+				culture = culture:aymara
+				culture = culture:yungano								
+			}
+		}
+	}	
+	text = {
+		localization_key = cocorocco
+		trigger = { 
+			OR = {
+				culture = culture:camba				
+				culture = culture:quechua
+				culture = culture:kolla				
+				culture = culture:aymara
+				culture = culture:yungano								
+			}
+		}
+	}
+	text = {
+		localization_key = horilka
+		trigger = { 
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_slavic }
+				culture = culture:preiryansky
+				culture = culture:ruteno
+			}
+		}
+	}
+	text = {
+		localization_key = malort
+		trigger = { 
+			OR = {
+				culture = culture:chicagoan
+			}
+		}
+	}
+	text = {
+		localization_key = sake
+		trigger = { 
+			OR = {
+				culture = culture:burajirujin
+			}
+		}
+	}
+	text = {
+		localization_key = pitorro
+		trigger = { 
+			OR = {
+				culture = culture:pitorro
+			}
+		}
+	}
+	text = {
+		localization_key = bourbon
+		trigger = { 
+			OR = {
+				culture = culture:bourbon
+			}
+		}
+	}
+	text = {
+		localization_key = balche
+		trigger = { 
+			OR = {
+				culture = { has_cultural_pillar = heritage_maya }
+			}
+		}
+	}
+}
+
+#Coupled with select_root_vegetable_effect
+get_region_root_vegetable = {
+	type = character 
+	random_valid = yes
+
+	text = {
+		trigger = { location.var:root_vegetable = flag:onion }
+		localization_key = root_vegetable_onion
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:carrot }
+		localization_key = root_vegetable_carrot
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:duck_potato }
+		localization_key = root_vegetable_duck_potato
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:turnip }
+		localization_key = root_vegetable_turnip
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:cassava }
+		localization_key = root_vegetable_cassava
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:sweet_potato }
+		localization_key = root_vegetable_sweet_potato
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:yacon }
+		localization_key = root_vegetable_yacon
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:beet }
+		localization_key = root_vegetable_beet
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:ulluco }
+		localization_key = root_vegetable_ulluco
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:ginger }
+		localization_key = root_vegetable_ginger
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:jicama }
+		localization_key = root_vegetable_jicama
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:horseradish }
+		localization_key = root_vegetable_horseradish
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:oca }
+		localization_key = root_vegetable_oca
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:arracacha }
+		localization_key = root_vegetable_arracacha
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:breadroot }
+		localization_key = root_vegetable_breadroot
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:chinese_yam }
+		localization_key = root_vegetable_chinese_yam
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:burdock }
+		localization_key = root_vegetable_burdock
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:camas }
+		localization_key = root_vegetable_camas
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:taro }
+		localization_key = root_vegetable_taro
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:jerusalem_artichoke }
+		localization_key = root_vegetable_jerusalem_artichoke
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:potato }
+		localization_key = root_vegetable_potato
+	}
+}
+
+get_region_root_vegetable_plural = {
+	type = character 
+	random_valid = yes
+
+	text = {
+		trigger = { location.var:root_vegetable = flag:onion }
+		localization_key = root_vegetable_onion_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:carrot }
+		localization_key = root_vegetable_carrot_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:duck_potato }
+		localization_key = root_vegetable_duck_potato_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:turnip }
+		localization_key = root_vegetable_turnip_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:cassava }
+		localization_key = root_vegetable_cassava_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:sweet_potato }
+		localization_key = root_vegetable_sweet_potato_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:camas }
+		localization_key = root_vegetable_camas_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:water_caltrop }
+		localization_key = root_vegetable_water_caltrop_plural
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:jicama }
+		localization_key = root_vegetable_jicama_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:yacon }
+		localization_key = root_vegetable_yacon_plural
+	}
+	text = {
+		trigger = { location.var:root_vegetable = flag:beet }
+		localization_key = root_vegetable_beet_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:ulluco }
+		localization_key = root_vegetable_ulluco_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:ginger }
+		localization_key = root_vegetable_ginger_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:horseradish }
+		localization_key = root_vegetable_horseradish_plural
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:oca }
+		localization_key = root_vegetable_oca_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:arracacha }
+		localization_key = root_vegetable_arracacha_plural
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:breadroot }
+		localization_key = root_vegetable_breadroot_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:chinese_yam }
+		localization_key = root_vegetable_chinese_yam_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:burdock }
+		localization_key = root_vegetable_burdock_plural
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:jerusalem_artichoke }
+		localization_key = root_vegetable_jerusalem_artichoke_plural
+	}	
+	text = {
+		trigger = { location.var:root_vegetable = flag:taro }
+		localization_key = root_vegetable_taro_plural
+	}		
+	text = {
+		trigger = { location.var:root_vegetable = flag:potato }
+		localization_key = root_vegetable_potato_plural
+	}
+}
+
+# Not coupled with anything! Do you hate having to use an effect to set your root vegetable? Me too!
+## All the same logic, none of the same fuss - basically, the above custom_loc is for use with an artefact and not just generally.
+RegionalRootVegetable = {
+	type = character
+	random_valid = yes
+
+	# Onion
+	text = {
+		# You can find these anywhere.
+		## Much like ogres.
+		localization_key = root_vegetable_onion
+	}
+	# Carrot
+	text = {
+		trigger = {
+			location = { province_has_vegetable_carrot_trigger = yes }
+		}
+		localization_key = root_vegetable_carrot
+	}
+	# duck_potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_duck_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_duck_potato
+	}
+	# Turnip
+	text = {
+		trigger = {
+			location = { province_has_vegetable_turnip_trigger = yes }
+		}
+		localization_key = root_vegetable_turnip
+	}
+	# cassava
+	text = {
+		trigger = {
+			location = { province_has_vegetable_cassavas_trigger = yes }
+		}
+		localization_key = root_vegetable_cassava
+	}
+	# sweet_potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_sweet_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_sweet_potato
+	}
+	# yacon
+	text = {
+		trigger = {
+			location = { province_has_vegetable_yacon_trigger = yes }
+		}
+		localization_key = root_vegetable_yacon
+	}
+    # beet
+	text = {
+		trigger = {
+			location = { province_has_vegetable_beet_trigger = yes }
+		}
+		localization_key = root_vegetable_beet
+	}	
+    # ulluco
+	text = {
+		trigger = {
+			location = { province_has_vegetable_ulluco_trigger = yes }
+		}
+		localization_key = root_vegetable_ulluco
+	}	
+    # ginger
+	text = {
+		trigger = {
+			location = { province_has_vegetable_ginger_trigger = yes }
+		}
+		localization_key = root_vegetable_ginger
+	}	
+    # jicama
+	text = {
+		trigger = {
+			location = { province_has_vegetable_jicama_trigger = yes }
+		}
+		localization_key = root_vegetable_jicama
+	}	
+    # horseradish
+	text = {
+		trigger = {
+			location = { province_has_vegetable_horseradish_trigger = yes }
+		}
+		localization_key = root_vegetable_horseradish
+	}	
+    # oca
+	text = {
+		trigger = {
+			location = { province_has_vegetable_oca_trigger = yes }
+		}
+		localization_key = root_vegetable_oca
+	}	
+    # arracacha
+	text = {
+		trigger = {
+			location = { province_has_vegetable_arracacha_trigger = yes }
+		}
+		localization_key = root_vegetable_arracacha
+	}	
+	# breadroot
+	text = {
+		trigger = {
+			location = { province_has_vegetable_breadroot_trigger = yes }
+		}
+		localization_key = root_vegetable_breadroot
+	}	
+    # chinese yam
+	text = {
+		trigger = {
+			location = { province_has_vegetable_chinese_yam_trigger = yes }
+		}
+		localization_key = root_vegetable_chinese_yam
+	}	
+    # burdock
+	text = {
+		trigger = {
+			location = { province_has_vegetable_burdock_trigger = yes }
+		}
+		localization_key = root_vegetable_burdock
+	}	
+    # water caltrop
+	text = {
+		trigger = {
+			location = { province_has_vegetable_water_caltrop_trigger = yes }
+		}
+		localization_key = root_vegetable_water_caltrop
+	}	
+    # jerusalem artichoke
+	text = {
+		trigger = {
+			location = { province_has_vegetable_jerusalem_artichoke_trigger = yes }
+		}
+		localization_key = root_vegetable_jerusalem_artichoke
+	}	
+    # taro
+	text = {
+		trigger = {
+			location = { province_has_vegetable_taro_trigger = yes }
+		}
+		localization_key = root_vegetable_taro
+	}	
+    # camas
+	text = {
+		trigger = {
+			location = { province_has_vegetable_camas_trigger = yes }
+		}
+		localization_key = root_vegetable_camas
+	}	
+	# potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_potato
+	}
+}
+RegionalRootVegetablePlural = {
+	type = character
+	random_valid = yes
+
+	# Onion
+	text = {
+		# You can find these anywhere.
+		## Much like ogres.
+		localization_key = root_vegetable_onion_plural
+	}
+	# Carrot
+	text = {
+		trigger = {
+			location = { province_has_vegetable_carrot_trigger = yes }
+		}
+		localization_key = root_vegetable_carrot_plural
+	}
+	# duck_potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_duck_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_duck_potato_plural
+	}
+	# Turnip
+	text = {
+		trigger = {
+			location = { province_has_vegetable_turnip_trigger = yes }
+		}
+		localization_key = root_vegetable_turnip_plural
+	}
+	# cassava
+	text = {
+		trigger = {
+			location = { province_has_vegetable_cassavas_trigger = yes }
+		}
+		localization_key = root_vegetable_cassava_plural
+	}
+	# sweet_potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_sweet_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_sweet_potato_plural
+	}
+	# yacon
+	text = {
+		trigger = {
+			location = { province_has_vegetable_yacon_trigger = yes }
+		}
+		localization_key = root_vegetable_yacon_plural
+	}
+	# beet
+	text = {
+		trigger = {
+			location = { province_has_vegetable_beet_trigger = yes }
+		}
+		localization_key = root_vegetable_beet_plural
+	}	
+    # ulluco
+	text = {
+		trigger = {
+			location = { province_has_vegetable_ulluco_trigger = yes }
+		}
+		localization_key = root_vegetable_ulluco_plural
+	}	
+	# ginger
+	text = {
+		trigger = {
+			location = { province_has_vegetable_ginger_trigger = yes }
+		}
+		localization_key = root_vegetable_ginger_plural
+	}	
+    # jicama
+	text = {
+		trigger = {
+			location = { province_has_vegetable_jicama_trigger = yes }
+		}
+		localization_key = root_vegetable_jicama_plural
+	}	
+	# horseradish
+	text = {
+		trigger = {
+			location = { province_has_vegetable_horseradish_trigger = yes }
+		}
+		localization_key = root_vegetable_horseradish_plural
+	}	
+    # oca
+	text = {
+		trigger = {
+			location = { province_has_vegetable_oca_trigger = yes }
+		}
+		localization_key = root_vegetable_oca_plural
+	}			
+    # arracacha
+	text = {
+		trigger = {
+			location = { province_has_vegetable_arracacha_trigger = yes }
+		}
+		localization_key = root_vegetable_arracacha_plural
+	}		
+    # breadroot
+	text = {
+		trigger = {
+			location = { province_has_vegetable_breadroot_trigger = yes }
+		}
+		localization_key = root_vegetable_breadroot_plural
+	}		
+    # chinese yam
+	text = {
+		trigger = {
+			location = { province_has_vegetable_chinese_yam_trigger = yes }
+		}
+		localization_key = root_vegetable_chinese_yam_plural
+	}	
+    # burdock
+	text = {
+		trigger = {
+			location = { province_has_vegetable_burdock_trigger = yes }
+		}
+		localization_key = root_vegetable_burdock_plural
+	}	
+    # water caltrop
+	text = {
+		trigger = {
+			location = { province_has_vegetable_water_caltrop_trigger = yes }
+		}
+		localization_key = root_vegetable_water_caltrop_plural
+	}
+    # camas
+	text = {
+		trigger = {
+			location = { province_has_vegetable_camas_trigger = yes }
+		}
+		localization_key = root_vegetable_camas_plural
+	}
+    # taro
+	text = {
+		trigger = {
+			location = { province_has_vegetable_taro_trigger = yes }
+		}
+		localization_key = root_vegetable_taro_plural
+	}	
+    # jerusalem artichoke
+	text = {
+		trigger = {
+			location = { province_has_vegetable_jerusalem_artichoke_trigger = yes }
+		}
+		localization_key = root_vegetable_jerusalem_artichoke_plural
+	}	
+	# potato
+	text = {
+		trigger = {
+			location = { province_has_vegetable_potato_trigger = yes }
+		}
+		localization_key = root_vegetable_potato_plural
+	}
+}
+
+RegionalEdibleAnimal = {
+	type = character
+	random_valid = yes
+
+	#Hart
+	text = {
+		localization_key = regional_edible_animal_hart
+	}
+
+	#Chicken
+	text = {
+		localization_key = regional_edible_animal_chicken
+	}
+
+	#Hare
+	text = {
+		localization_key = regional_edible_animal_hare
+	}
+
+	#Sheep
+	text = {
+		localization_key = regional_edible_animal_lamb
+	}
+
+	#Pig
+	text = {
+		trigger = {
+			faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+			root.faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+		}
+		localization_key = regional_edible_animal_pig
+	}
+
+	#Beef
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+			root.faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+		}
+		localization_key = regional_edible_animal_ox
+	}
+
+	#Boar
+	text = {
+		trigger = {
+			faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = rastafari_religion
+				}
+			}
+			root.faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = rastafari_religion
+				}
+			}
+		}
+		localization_key = regional_edible_animal_boar
+	}
+
+	#Buffalo
+	text = {
+		trigger = {
+			location = {
+				geographical_region = hunt_animal_bison_region
+			}
+		}
+		localization_key = regional_edible_animal_buffalo
+	}
+
+}
+
+RegionalEdibleMeat = {
+	type = character
+	random_valid = yes
+
+	#Venison
+	text = {
+		localization_key = regional_edible_meat_venison
+	}
+
+	#Chicken
+	text = {
+		localization_key = regional_edible_meat_chicken
+	}
+
+	#Hare
+	text = {
+		localization_key = regional_edible_meat_hare
+	}
+
+	#Sheep
+	text = {
+		localization_key = regional_edible_meat_lamb
+	}
+
+	#Beef
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+			root.faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+		}
+		localization_key = regional_edible_meat_beef
+	}
+
+	#Pork
+	text = {
+		trigger = {
+			faith = {
+				NOT = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = rastafari_religion
+				}
+			}
+			root.faith = {
+				NOT = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = rastafari_religion
+				}
+			}
+		}
+		localization_key = regional_edible_meat_pork
+	}	
+
+}
+
+#Favourite Treat 
+FavoriteTreat = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = treat_sweetroll
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sweetroll
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cookie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cookie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pudding
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pudding
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cake
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_jello
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:jello
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cobbler
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cobbler
+			}
+		}
+	}
+	text = {
+		localization_key = treat_doughnut
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:doughnuts
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bunuelo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bunuelo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sonho
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sonhos
+			}
+		}
+	}
+	text = {
+		localization_key = treat_candy_apple
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:candy_apple
+			}
+		}
+	}
+	text = {
+		localization_key = treat_apple_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:apple_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fry_dough
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fry_dough
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beaver_tail
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beaver_tail
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bannock
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bannock
+			}
+		}
+	}
+	text = {
+		localization_key = treat_dulce_de_leche
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:dulce_de_leche
+			}
+		}
+	}
+	text = {
+		localization_key = treat_flan
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:flan
+			}
+		}
+	}
+	text = {
+		localization_key = treat_tres_leches
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:tres_leches
+			}
+		}
+	}
+	text = {
+		localization_key = treat_churro
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:churro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_canjica
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:canjica
+			}
+		}
+	}
+	text = {
+		localization_key = treat_munguza
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:munguza
+			}
+		}
+	}
+	text = {
+		localization_key = treat_malassada
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:malassada
+			}
+		}
+	}
+	text = {
+		localization_key = treat_whoopie_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:whoopie_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_key_lime_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:key_lime_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_turron
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:turron
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sopaipilla
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sopaipilla
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buckeye
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buckeye
+			}
+		}
+	}
+	text = {
+		localization_key = treat_paczki
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:paczki
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rhubarb_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rhubarb_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_funnel_cake
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:funnel_cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fasnacht 
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fasnacht 
+			}
+		}
+	}
+	text = {
+		localization_key = treat_akutaq
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:akutaq
+			}
+		}
+	}
+	text = {
+		localization_key = treat_butter_tart
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:butter_tart
+			}
+		}
+	}
+	text = {
+		localization_key = treat_ice_cream
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:ice_cream
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pacoca
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pacoca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rapadura
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rapadura
+			}
+		}
+	}
+	text = {
+		localization_key = treat_quindim
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:quindim
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bolo_de_rolo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bolo_de_rolo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pequi_pulp
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pequi_pulp
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buriti_jam
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buriti_jam
+			}
+		}
+	}
+	text = {
+		localization_key = treat_acai_bowl
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:acai_bowl
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cuca
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cuca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pamonha
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pamonha
+			}
+		}
+	}
+	text = {
+		localization_key = treat_brigadeiro
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:brigadeiro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pecan_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pecan_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beignet
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beignet
+			}
+		}
+	}
+	text = {
+		localization_key = treat_peera
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:peera
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bojo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bojo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_nanaimo_bar
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:nanaimo_bar
+			}
+		}
+	}
+	text = {
+		localization_key = treat_chocotorta
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:chocotorta
+			}
+		}
+	}
+	text = {
+		localization_key = treat_koptoplakous
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:koptoplakous
+			}
+		}
+	}
+	text = {
+		localization_key = treat_plakountas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:plakountas
+			}
+		}
+	}
+}
+
+FavoriteTreatDemand = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = treat_sweetrolls
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sweetroll
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cookies
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cookie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pudding
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pudding
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cake
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_jello
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:jello
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cobbler
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cobbler
+			}
+		}
+	}
+	text = {
+		localization_key = treat_doughnuts
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:doughnuts
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bunuelo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bunuelo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sonhos
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sonhos
+			}
+		}
+	}
+	text = {
+		localization_key = treat_candy_apples
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:candy_apple
+			}
+		}
+	}
+	text = {
+		localization_key = treat_apple_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:apple_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fry_dough
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fry_dough
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beaver_tails
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beaver_tail
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bannock
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bannock
+			}
+		}
+	}
+	text = {
+		localization_key = treat_dulce_de_leche
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:dulce_de_leche
+			}
+		}
+	}
+	text = {
+		localization_key = treat_flan
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:flan
+			}
+		}
+	}
+	text = {
+		localization_key = treat_tres_leches
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:tres_leches
+			}
+		}
+	}
+	text = {
+		localization_key = treat_churros
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:churro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_canjica
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:canjica
+			}
+		}
+	}
+	text = {
+		localization_key = treat_munguza
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:munguza
+			}
+		}
+	}
+	text = {
+		localization_key = treat_malassadas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:malassada
+			}
+		}
+	}
+	text = {
+		localization_key = treat_whoopie_pies
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:whoopie_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_key_lime_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:key_lime_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_turron
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:turron
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sopaipillas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sopaipilla
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buckeyes
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buckeye
+			}
+		}
+	}
+	text = {
+		localization_key = treat_paczki
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:paczki
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rhubarb_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rhubarb_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_funnel_cake
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:funnel_cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fasnachts
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fasnacht 
+			}
+		}
+	}
+	text = {
+		localization_key = treat_akutaq
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:akutaq
+			}
+		}
+	}
+	text = {
+		localization_key = treat_butter_tarts
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:butter_tart
+			}
+		}
+	}
+	text = {
+		localization_key = treat_ice_cream
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:ice_cream
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pacoca
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pacoca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rapadura
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rapadura
+			}
+		}
+	}
+	text = {
+		localization_key = treat_quindim
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:quindim
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bolo_de_rolo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bolo_de_rolo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pequi_pulp
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pequi_pulp
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buriti_jam
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buriti_jam
+			}
+		}
+	}
+	text = {
+		localization_key = treat_acai_bowls
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:acai_bowl
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cuca
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cuca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pamonhas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pamonha
+			}
+		}
+	}
+	text = {
+		localization_key = treat_brigadeiros
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:brigadeiro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pecan_pie
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pecan_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beignets
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beignet
+			}
+		}
+	}
+	text = {
+		localization_key = treat_peera
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:peera
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bojo
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bojo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_nanaimo_bars
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:nanaimo_bar
+			}
+		}
+	}
+	text = {
+		localization_key = treat_chocotortas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:chocotorta
+			}
+		}
+	}
+	text = {
+		localization_key = treat_koptoplakous
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:koptoplakous
+			}
+		}
+	}
+	text = {
+		localization_key = treat_plakountas
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:plakountas
+			}
+		}
+	}
+}
+
+FavoriteTreatUppercase = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = treat_sweetroll_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sweetroll
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cookie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cookie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pudding_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pudding
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cake_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_jello_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:jello
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cobbler_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cobbler
+			}
+		}
+	}
+	text = {
+		localization_key = treat_doughnut_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:doughnuts
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bunuelo_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bunuelo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sonho_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sonhos
+			}
+		}
+	}
+	text = {
+		localization_key = treat_candy_apple_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:candy_apple
+			}
+		}
+	}
+	text = {
+		localization_key = treat_apple_pie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:apple_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fry_dough_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fry_dough
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beaver_tail_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beaver_tail
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bannock_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bannock
+			}
+		}
+	}
+	text = {
+		localization_key = treat_dulce_de_leche_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:dulce_de_leche
+			}
+		}
+	}
+	text = {
+		localization_key = treat_flan_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:flan
+			}
+		}
+	}
+	text = {
+		localization_key = treat_tres_leches_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:tres_leches
+			}
+		}
+	}
+	text = {
+		localization_key = treat_churro_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:churro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_canjica_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:canjica
+			}
+		}
+	}
+	text = {
+		localization_key = treat_munguza_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:munguza
+			}
+		}
+	}
+	text = {
+		localization_key = treat_malassada_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:malassada
+			}
+		}
+	}
+	text = {
+		localization_key = treat_whoopie_pie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:whoopie_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_key_lime_pie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:key_lime_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_turron_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:turron
+			}
+		}
+	}
+	text = {
+		localization_key = treat_sopaipilla_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:sopaipilla
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buckeye_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buckeye
+			}
+		}
+	}
+	text = {
+		localization_key = treat_paczki_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:paczki
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rhubarb_pie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rhubarb_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_funnel_cake_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:funnel_cake
+			}
+		}
+	}
+	text = {
+		localization_key = treat_fasnacht_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:fasnacht 
+			}
+		}
+	}
+	text = {
+		localization_key = treat_akutaq_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:akutaq
+			}
+		}
+	}
+	text = {
+		localization_key = treat_butter_tart_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:butter_tart
+			}
+		}
+	}
+	text = {
+		localization_key = treat_ice_cream_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:ice_cream
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pacoca_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pacoca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_rapadura_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:rapadura
+			}
+		}
+	}
+	text = {
+		localization_key = treat_quindim_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:quindim
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bolo_de_rolo_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bolo_de_rolo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pequi_pulp_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pequi_pulp
+			}
+		}
+	}
+	text = {
+		localization_key = treat_buriti_jam_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:buriti_jam
+			}
+		}
+	}
+	text = {
+		localization_key = treat_acai_bowl_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:acai_bowl
+			}
+		}
+	}
+	text = {
+		localization_key = treat_cuca_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:cuca
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pamonha_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pamonha
+			}
+		}
+	}
+	text = {
+		localization_key = treat_brigadeiro_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:brigadeiro
+			}
+		}
+	}
+	text = {
+		localization_key = treat_pecan_pie_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:pecan_pie
+			}
+		}
+	}
+	text = {
+		localization_key = treat_beignet_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:beignet
+			}
+		}
+	}
+	text = {
+		localization_key = treat_peera_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:peera
+			}
+		}
+	}
+	text = {
+		localization_key = treat_bojo_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:bojo
+			}
+		}
+	}
+	text = {
+		localization_key = treat_nanaimo_bar_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:nanaimo_bar
+			}
+		}
+	}
+	text = {
+		localization_key = treat_chocotorta_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:chocotorta
+			}
+		}
+	}
+	text = {
+		localization_key = treat_koptoplakous_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:koptoplakous
+			}
+		}
+	}
+	text = {
+		localization_key = treat_plakountas_uppercase
+		trigger = {
+			OR = {
+				NOT = { has_variable = favorite_treat }
+				var:favorite_treat = flag:plakountas
+			}
+		}
+	}
+}
+
+GetLocalStreetFood = {
+	type = character
+
+
+	random_valid = yes
+
+	text = {
+
+		localization_key = honey_fritter
+	}
+
+	text = {
+		localization_key = pizza
+	}
+
+	text = {
+		trigger = {
+			
+			root.location.culture = { has_cultural_pillar = heritage_texan }
+		}
+		localization_key = chili
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_nordic }
+				root.location.culture = { has_cultural_pillar = heritage_dutch }
+				root.location.culture = { has_cultural_pillar = heritage_german }
+				root.location.culture = { has_cultural_pillar = heritage_jewish }
+				root.location.culture = { has_cultural_pillar = heritage_amish }
+				root.location.culture = { has_cultural_pillar = heritage_mennonite }
+			}
+		}
+		localization_key = scrapple
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_youser }
+		}
+		localization_key = stromboli
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_youser }
+		}
+		localization_key = hoagie
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_yooper }
+			root.location.culture = { has_name_list = name_list_cheesehead }
+			root.location.culture = { has_name_list = name_list_northlander }
+			root.location.culture = { has_name_list = name_list_montaneer }
+			root.location.culture = { has_name_list = name_list_utahn }
+			root.location.culture = { has_name_list = name_list_pocono }
+		}
+		localization_key = pasty
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_beltway }
+		}
+		localization_key = crab_cake
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_upstater }
+		}
+		localization_key = buffalo_wing
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_lakelander }
+		}
+		localization_key = paczki
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_butternutter }
+		}
+		localization_key = goetta
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_butternutter }
+		}
+		localization_key = cheese_coney
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_chowderfolk }
+		}
+		localization_key = boston_baked_beans
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_upland }
+			root.location.culture = { has_cultural_pillar = heritage_atlantic_canadian }
+			root.location.culture = { has_cultural_pillar = heritage_old_south }
+			root.location.culture = { has_cultural_pillar = heritage_floridian }
+			root.location.culture = { has_cultural_pillar = heritage_greater_antillean }
+			root.location.culture = { has_cultural_pillar = heritage_lesser_antillean }
+			root.location.culture = { has_cultural_pillar = heritage_mesanglo }
+		}
+		localization_key = johnnycake
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_prairie }
+			root.location.culture = { has_cultural_pillar = heritage_rockland }
+		}
+		localization_key = mountain_oyster
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_new_englander }
+		}
+		localization_key = chowder
+	}
+
+	text = {
+		trigger = {
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+		}
+		localization_key = chimichanga
+	}
+
+	text = {
+		trigger = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_deep_south }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+				root.location.culture = { has_cultural_pillar = heritage_midwestern }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_riverine }
+		}
+		localization_key = hot_dog
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+			}
+		}
+		localization_key = taco
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+			}
+		}
+		localization_key = nachos
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+			}
+		}
+		localization_key = lo_mein
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_andino }
+		}
+		localization_key = cuy
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_iberian }
+		}
+		localization_key = empanada
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_cabano }
+				root.location.culture = { has_cultural_pillar = heritage_cafe_com_leite }
+				root.location.culture = { has_cultural_pillar = heritage_paulistanico }
+				root.location.culture = { has_cultural_pillar = heritage_ciclico }
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_cariri }
+				root.location.culture = { has_cultural_pillar = heritage_serra_do_mar }
+				root.location.culture = { has_cultural_pillar = heritage_sulista }
+				root.location.culture = { has_cultural_pillar = heritage_western_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_manguetowner }
+				root.location.culture = { has_cultural_pillar = heritage_geraizeiro }
+			}
+		}
+		localization_key = coxinha
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_byzantine }
+		}
+		localization_key = sphoungata
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_byzantine }
+		}
+		localization_key = tarichos
+	}
+
+	text = {
+		localization_key = stew
+	}
+}
+
+GetLocalStreetFoodPlural = {
+	type = character
+
+
+	random_valid = yes
+
+	text = {
+
+		localization_key = honey_fritter_plural
+	}
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_byzantine }
+		}
+		localization_key = sphoungata_plural
+	}
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_byzantine }
+		}
+		localization_key = tarichos
+	}
+
+	text = {
+		localization_key = pizza_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_texan }
+		}
+		localization_key = chili_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_youser }
+		}
+		localization_key = stromboli_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_youser }
+		}
+		localization_key = hoagie_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_yooper }
+			root.location.culture = { has_name_list = name_list_cheesehead }
+			root.location.culture = { has_name_list = name_list_northlander }
+			root.location.culture = { has_name_list = name_list_montaneer }
+			root.location.culture = { has_name_list = name_list_utahn }
+			root.location.culture = { has_name_list = name_list_pocono }
+		}
+		localization_key = pasty_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_beltway }
+		}
+		localization_key = crab_cake_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_upstater }
+		}
+		localization_key = buffalo_wing_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_lakelander }
+		}
+		localization_key = paczki_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_butternutter }
+		}
+		localization_key = cheese_coney_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_butternutter }
+		}
+		localization_key = goetta_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_name_list = name_list_chowderfolk }
+		}
+		localization_key = boston_baked_beans_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_upland }
+			root.location.culture = { has_cultural_pillar = heritage_atlantic_canadian }
+			root.location.culture = { has_cultural_pillar = heritage_old_south }
+			root.location.culture = { has_cultural_pillar = heritage_floridian }
+			root.location.culture = { has_cultural_pillar = heritage_greater_antillean }
+			root.location.culture = { has_cultural_pillar = heritage_lesser_antillean }
+			root.location.culture = { has_cultural_pillar = heritage_mesanglo }
+		}
+		localization_key = johnnycake_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_rockland }
+			root.location.culture = { has_cultural_pillar = heritage_prairie }
+		}
+		localization_key = mountain_oyster_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_andino }
+		}
+		localization_key = cuy_plural
+	}
+
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_new_englander }
+		}
+		localization_key = chowder_plural
+	}
+
+	text = {
+		trigger = {
+			root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+			root.location.culture = { has_cultural_pillar = heritage_frontieran }
+			root.location.culture = { has_cultural_pillar = heritage_texan }
+		}
+		localization_key = chimichanga_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+				root.location.culture = { has_cultural_pillar = heritage_deep_south }
+				root.location.culture = { has_cultural_pillar = heritage_floridian }
+				root.location.culture = { has_cultural_pillar = heritage_lakelander }
+				root.location.culture = { has_cultural_pillar = heritage_rockland }
+				root.location.culture = { has_cultural_pillar = heritage_upland }
+				root.location.culture = { has_cultural_pillar = heritage_midwestern }
+				root.location.culture = { has_cultural_pillar = heritage_new_englander }
+				root.location.culture = { has_cultural_pillar = heritage_riverine }
+			}
+		}
+		localization_key = hot_dog_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+			}
+		}
+		localization_key = taco_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_frontieran }
+				root.location.culture = { has_cultural_pillar = heritage_texan }
+			}
+		}
+		localization_key = nachos_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_norcalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
+				root.location.culture = { has_cultural_pillar = heritage_north_pacific }
+				root.location.culture = { has_cultural_pillar = heritage_mid_atlantic }
+			}
+		}
+		localization_key = lo_mein_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_novohispano }
+				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+			}
+		}
+		localization_key = empanada_plural
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				root.location.culture = { has_cultural_pillar = heritage_cabano }
+				root.location.culture = { has_cultural_pillar = heritage_cafe_com_leite }
+				root.location.culture = { has_cultural_pillar = heritage_paulistanico }
+				root.location.culture = { has_cultural_pillar = heritage_ciclico }
+				root.location.culture = { has_cultural_pillar = heritage_costeiro }
+				root.location.culture = { has_cultural_pillar = heritage_northern_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_cariri }
+				root.location.culture = { has_cultural_pillar = heritage_serra_do_mar }
+				root.location.culture = { has_cultural_pillar = heritage_sulista }
+				root.location.culture = { has_cultural_pillar = heritage_western_sertanejo }
+				root.location.culture = { has_cultural_pillar = heritage_manguetowner }
+				root.location.culture = { has_cultural_pillar = heritage_geraizeiro }
+			}
+		}
+		localization_key = coxinha_plural
+	}
+
+	text = {
+		localization_key = stew_plural
+	}
+}
+
+GetFoodDetail = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = food_detail_cilantro #disgusting
+	}
+
+	text = {
+		localization_key = food_detail_lemon
+	}
+
+	text = {
+		localization_key = food_detail_almond
+	}
+}
+
+GetExpensiveMeal = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_food_roast_swan
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+			location = {
+				geographical_region = custom_old_canada
+				geographical_region = custom_old_usa
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_food_veal_cutlets
+		trigger = {
+			faith = {
+				NOR = {
+					religion_tag = hinduism_religion
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_food_fresh_quail
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+		}
+	}
+	text = {
+		trigger = {
+			location = {
+				geographical_region = custom_old_canada
+				geographical_region = custom_old_usa
+			}
+		}
+		localization_key = expensive_food_baked_truffles
+	}
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = expensive_food_spiced_breads
+	}
+	text = {
+		trigger = {
+			always = no
+		}
+		localization_key = expensive_food_mustard_rolls
+		fallback = yes
+	}
+}
+
+GetExpensiveMealAlt = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_food_fine_cheeses
+	}
+	text = {
+		trigger = {
+			faith = {
+				OR = {
+					religion_tag = catholic_religion #Due to Lent prohibitions.
+					religion_tag = eastern_christian_religion #Due to Lent prohibitions.
+					religion_tag = protestant_religion #Due to Lent prohibitions.
+				}
+			}
+		}
+		localization_key = expensive_food_almond_eggs
+	}
+	text = {
+		trigger = {
+			location = {
+				geographical_region = world_us_west_coast
+			}
+		}
+		localization_key = expensive_food_sturgeon_caviar
+	}
+}
+
+GetExpensiveDessert = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_dessert_saffron_cake
+	}
+	text = {
+		localization_key = expensive_dessert_candied_figs
+	}
+	text = {
+		localization_key = expensive_dessert_pomegranate_cake
+	}
+	text = {
+		localization_key = expensive_dessert_entremets
+	}
+	text = {
+		localization_key = expensive_dessert_quince_tarts
+	}
+}
+
+GetExpensiveDessertInTheFace = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_dessert_saffron_cake_face
+	}
+	text = {
+		localization_key = expensive_dessert_candied_figs_face
+	}
+	text = {
+		localization_key = expensive_dessert_pomegranate_cake_face
+	}
+	text = {
+		localization_key = expensive_dessert_entremets_face
+	}
+	text = {
+		localization_key = expensive_dessert_quince_tarts_face
+	}
+}
+
+GetExpensiveDrink = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				OR = {
+					geographical_region = world_mexico_central
+					geographical_region = world_mexico_north
+				}
+			}
+		}
+		localization_key = expensive_drink_mezcal
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				OR = {
+					geographical_region = world_us_west_coast
+					geographical_region = world_us_northeast
+				}
+			}
+		}
+		localization_key = expensive_drink_IPA
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_mead
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_imported_wine
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_champagne
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				geographical_region = world_mexico_region
+			}
+		}
+		localization_key = expensive_drink_tequila
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+			}
+			current_date > 1340.1.1 #medical properties of alcohol studied by Jean de Roquetaillade
+		}
+		localization_key = expensive_drink_aqua_vitae
+	}
+	text = {
+		localization_key = expensive_drink_brandy
+	}
+	text = {
+		localization_key = expensive_drink_spiced_wine
+	}
+	text = {
+		trigger = {
+			faith = {
+				religion_tag = judaism_religion
+			}
+		}
+		localization_key = expensive_drink_kosher_wine
+	}
+	text = {
+		localization_key = expensive_drink_premium_tea
+	}
+	text = {
+		localization_key = expensive_drink_invigorating_herbal_infusions
+		trigger = {
+			always = yes
+		}
+	}
+	text = {
+		trigger = {
+			faith = {
+				religion_tag = islam_religion # As an alternative to alcohol
+			}
+		}
+		localization_key = expensive_drink_violet_sharbah
+	}
+}
+
+GetExpensiveDrink_Singular = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				OR = {
+					geographical_region = world_us_west_coast
+					geographical_region = world_us_northeast
+				}
+			}
+		}
+		localization_key = expensive_drink_IPA
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_mead
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_imported_wine
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				OR = {
+					geographical_region = world_mexico_central
+					geographical_region = world_mexico_north
+				}
+			}
+		}
+		localization_key = expensive_drink_mezcal
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+		}
+		localization_key = expensive_drink_champagne
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = mormon_religion }
+			}
+			location = {
+				geographical_region = world_mexico_region
+			}
+		}
+		localization_key = expensive_drink_tequila
+	}
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+			}
+			current_date > 1340.1.1 #medical properties of alcohol studied by Jean de Roquetaillade
+		}
+		localization_key = expensive_drink_aqua_vitae
+	}
+	text = {
+		localization_key = expensive_drink_brandy
+	}
+	text = {
+		localization_key = expensive_drink_spiced_wine
+	}
+	text = {
+		trigger = {
+			faith = {
+				religion_tag = judaism_religion
+			}
+		}
+		localization_key = expensive_drink_kosher_wine
+	}
+	text = {
+		localization_key = expensive_drink_premium_tea
+	}
+	text = {
+		localization_key = expensive_drink_invigorating_herbal_infusions
+		trigger = {
+			always = yes
+		}
+	}
+	text = {
+		trigger = {
+			faith = {
+				religion_tag = islam_religion # As an alternative to alcohol
+			}
+		}
+		localization_key = expensive_drink_violet_sharbah
+	}
+}
+
+
+
+
+
+GetFoodDetail = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = food_detail_cilantro
+	}
+
+	text = {
+		localization_key = food_detail_lemon
+	}
+
+	text = {
+		localization_key = food_detail_almond
+	}
+}
+
+GetExpensiveMeal = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_food_roast_swan
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_food_veal_cutlets
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_food_fresh_quail
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+				}
+			}
+		}
+	}
+	# text = {
+	# 	localization_key = expensive_food_sturgeon_cheese
+	# 	trigger = {
+	# 		faith = {
+	# 			NOR = {
+	# 				has_doctrine_parameter = pacifist_opinion_active
+	# 			}
+	# 		}
+	# 		location = {
+	# 			OR = {
+	# 				geographical_region = world_europe_south_east
+	# 				geographical_region = world_asia_minor
+	# 			}
+	# 		}
+	# 	}
+	# }
+	text = {
+		localization_key = expensive_food_honey_pork
+		trigger = {
+			faith = {
+				NOR = {
+					has_doctrine_parameter = pacifist_opinion_active
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+			# location = {
+			# 	OR = {
+			# 		geographical_region = world_europe_south_east
+			# 		geographical_region = world_asia_minor
+			# 	}
+			# }
+		}
+	}
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = expensive_food_spiced_breads
+	}
+	text = {
+		trigger = {
+			always = no
+		}
+		localization_key = expensive_food_mustard_rolls
+		fallback = yes
+	}
+}
+
+GetExpensiveMealAlt = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_food_fine_cheeses
+	}
+	text = {
+		localization_key = expensive_food_sturgeon_caviar
+	}
+}
+
+GetExpensiveDessert = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_dessert_saffron_cake
+	}
+	text = {
+		localization_key = expensive_dessert_candied_figs
+	}
+	text = {
+		localization_key = expensive_dessert_pomegranate_cake
+	}
+
+	text = {
+		trigger = {
+			#location = {
+			#	geographical_region = world_europe_west
+			#}
+		}
+		localization_key = expensive_dessert_entremets
+	}
+	text = {
+		localization_key = expensive_dessert_quince_tarts
+		#trigger = {
+		#	location = {
+		#		geographical_region = world_europe_west
+		#		geographical_region = world_europe_south
+		#	}
+		#}
+	}
+	text = {
+		localization_key = expensive_dessert_honey_pudding
+		trigger = {
+			#location = {
+			#	OR = {
+			#		geographical_region = world_europe_south_east
+			#		geographical_region = world_asia_minor
+			#	}
+			#}
+		}
+	}
+	text = {
+		localization_key = expensive_dessert_quince_spoon
+		trigger = {
+			#location = {
+			#	OR = {
+			#		geographical_region = world_europe_south_east
+			#		geographical_region = world_asia_minor
+			#	}
+			#}
+		}
+	}
+}
+
+GetExpensiveDessertInTheFace = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_dessert_saffron_cake_face
+	}
+	text = {
+		localization_key = expensive_dessert_candied_figs_face
+	}
+	text = {
+		localization_key = expensive_dessert_pomegranate_cake_face
+	}
+	text = {
+		trigger = {
+			#location = {
+			#	geographical_region = world_europe_west
+			#}
+		}
+		localization_key = expensive_dessert_entremets_face
+	}
+	text = {
+		localization_key = expensive_dessert_quince_tarts_face
+		trigger = {
+			#location = {
+			#	OR = {
+			#		geographical_region = world_europe_west
+			#		geographical_region = world_europe_south
+			#	}
+			#}
+		}
+	}
+	text = {
+		localization_key = expensive_dessert_honey_pudding_face
+		trigger = {
+			#location = {
+			#	OR = {
+			#		geographical_region = world_europe_south_east
+			#		geographical_region = world_asia_minor
+			#	}
+			#}
+		}
+	}
+
+}
+
+GetExpensiveDrink = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = expensive_drink_spiced_wine
+	}
+	text = {
+		localization_key = expensive_drink_premium_tea
+	}
+
+}
+
+GetExpensiveDrink_Singular = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+			}
+			#current_date > 1400.1.1 #first mention of brandy is in 1437
+		}
+		localization_key = expensive_drink_singular_brandy
+	}
+	text = {
+		localization_key = expensive_drink_singular_spiced_wine
+		trigger = {
+			faith = {
+				NOT = { religion_tag = islam_religion }
+			}
+		}
+	}
+	text = {
+		localization_key = expensive_drink_invigorating_herbal_infusions
+		trigger = {
+			always = yes
+		}
+	}
+	text = {
+		localization_key = expensive_drink_spiced_wine
+	}
+	text = {
+		localization_key = expensive_drink_premium_tea
+	}
+}
+
+GetRegionalFish = {
+	type = character
+
+	random_valid = yes
+
+	# Sturgeon is always available
+	text = {
+		localization_key = fish_sturgeon
+	}
+
+	# Ocean fishes
+		text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_mackerel
+	}
+
+	text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_bass
+	}
+
+
+	text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_cod
+	}
+
+
+	text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_trout
+	}
+
+
+	text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_tuna
+	}
+
+	text = {
+		trigger = {
+			has_character_flag = ocean
+		}
+		localization_key = fish_whitefish
+	}
+
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = fish_herring
+	}
+
+}
+

@@ -1,0 +1,148 @@
+﻿##adding these "as needed"
+culture_has_pacific_northwest_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_north_pacific }
+		culture = { has_cultural_pillar = heritage_upper_coast }
+		culture = { has_cultural_pillar = heritage_lower_coast }
+		culture = { has_cultural_pillar = heritage_interior }
+		culture = { has_cultural_pillar = heritage_boreal }
+	}
+}
+
+culture_has_canadian_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_canayen }
+		culture = { has_cultural_pillar = heritage_atlantic_canadian }
+		culture = { has_cultural_pillar = heritage_laurentian }
+		culture = { has_cultural_pillar = heritage_anishinaabe }
+		culture = { has_cultural_pillar = heritage_eastern_cree }
+		culture = { has_cultural_pillar = heritage_british }
+	}
+}
+
+culture_has_great_lakes_heritage_pillar_trigger = {
+	OR = {
+
+		culture = { has_cultural_pillar = heritage_lakelander }
+		culture = { has_cultural_pillar = heritage_northlake }
+		culture = { has_cultural_pillar = heritage_anishinaabe }
+
+	}
+}
+
+culture_has_southern_american_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_old_south }
+		culture = { has_cultural_pillar = heritage_deep_south }
+		culture = { has_cultural_pillar = heritage_riverine }
+		culture = { has_cultural_pillar = heritage_lumbee }
+		culture = { has_cultural_pillar = heritage_geechee }
+		culture = { has_cultural_pillar = heritage_floridian }
+		culture = { has_cultural_pillar = heritage_upland }
+	}
+}
+
+culture_has_francophone_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_canayen }
+		culture = { has_cultural_pillar = heritage_louisianais }
+		culture = { has_cultural_pillar = heritage_french }
+	}
+}
+
+
+culture_has_californian_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_norcalifornine }
+		culture = { has_cultural_pillar = heritage_socalifornine }
+
+	}
+}
+
+culture_has_andean_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_bajo_peruano }
+		culture = { has_cultural_pillar = heritage_nazco }
+		culture = { has_cultural_pillar = heritage_andino }
+		culture = { has_cultural_pillar = heritage_selvatico }
+	}
+}
+
+culture_has_brazilian_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_northern_sertanejo }
+		culture = { has_cultural_pillar = heritage_geraizeiro }
+		culture = { has_cultural_pillar = heritage_western_sertanejo }
+		culture = { has_cultural_pillar = heritage_costeiro }
+		culture = { has_cultural_pillar = heritage_manguetowner }
+		culture = { has_cultural_pillar = heritage_selvatico }
+		culture = { has_cultural_pillar = heritage_cafe_com_leite }
+		culture = { has_cultural_pillar = heritage_serra_do_mar }
+		culture = { has_cultural_pillar = heritage_cabano }
+		culture = { has_cultural_pillar = heritage_ciclico }
+		culture = { has_cultural_pillar = heritage_sulista }
+		culture = { has_cultural_pillar = heritage_paulistanico }
+	}
+}
+
+culture_has_southern_cone_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_sulista }
+		culture = { has_cultural_pillar = heritage_gaucho }
+		culture = { has_cultural_pillar = heritage_patagon }
+		culture = { has_cultural_pillar = heritage_austral }
+		culture = { has_cultural_pillar = heritage_mapuche }
+		culture = { has_cultural_pillar = heritage_chileno }
+		culture = { has_cultural_pillar = heritage_viejispano }
+	}
+}
+
+culture_has_indigenous_heritage_pillar_trigger = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_arctic }
+		culture = { has_cultural_pillar = heritage_dene }
+		culture = { has_cultural_pillar = heritage_eastern_cree }
+		culture = { has_cultural_pillar = heritage_plains }
+		culture = { has_cultural_pillar = heritage_plains_sequoyan }
+		culture = { has_cultural_pillar = heritage_sioux }
+		culture = { has_cultural_pillar = heritage_columbian }
+		culture = { has_cultural_pillar = heritage_interior }
+		culture = { has_cultural_pillar = heritage_upper_coast }
+		culture = { has_cultural_pillar = heritage_lower_coast }
+		culture = { has_cultural_pillar = heritage_plateau }
+		culture = { has_cultural_pillar = heritage_anishinaabe }
+		culture = { has_cultural_pillar = heritage_longhouse }
+		culture = { has_cultural_pillar = heritage_seminole }
+		culture = { has_cultural_pillar = heritage_wabanaki }
+		culture = { has_cultural_pillar = heritage_aridomex }
+		culture = { has_cultural_pillar = heritage_cahuilla }
+		#culture = { has_cultural_pillar = heritage_southeast_sequoyan }
+		culture = { has_cultural_pillar = heritage_mesoamerican }
+		culture = { has_cultural_pillar = heritage_maya }
+		culture = { has_cultural_pillar = heritage_japura_negro }
+		culture = { has_cultural_pillar = heritage_auwe_je }
+		culture = { has_cultural_pillar = heritage_indigenous_guyanan }
+		culture = { has_cultural_pillar = heritage_roraiman }
+		culture = { has_cultural_pillar = heritage_indigenous_colombian }
+		culture = { has_cultural_pillar = heritage_chacoan }
+		culture = { has_cultural_pillar = heritage_andino }
+		culture = { has_cultural_pillar = heritage_patagon }
+		culture = { has_cultural_pillar = heritage_austral }
+		culture = { has_cultural_pillar = heritage_guarani }
+		culture = { has_cultural_pillar = heritage_southern_je }
+		culture = { has_cultural_pillar = heritage_cariri }
+		culture = { has_cultural_pillar = heritage_guaicuru }
+		culture = { has_cultural_pillar = heritage_madeira_tapajos }
+		culture = { has_cultural_pillar = heritage_tupian }
+		culture = { has_cultural_pillar = heritage_orinocoan }
+		culture = { has_cultural_pillar = heritage_southern_amazonian }
+		culture = { has_cultural_pillar = heritage_northern_je }
+		culture = { has_cultural_pillar = heritage_upper_amazonian }
+		culture = { has_cultural_pillar = heritage_tehuantepec }
+		culture = { has_cultural_pillar = heritage_panamanian }
+		culture = { has_cultural_pillar = heritage_honduran }
+		culture = { has_cultural_pillar = heritage_californian_indigenous }
+		culture = { has_cultural_pillar = heritage_great_basin }
+		culture = { has_cultural_pillar = heritage_lumbee }
+	}
+}

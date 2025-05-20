@@ -1,0 +1,579 @@
+﻿#Triggers to control Coat of Arms weighting
+# Removed a reference to Sebastianic
+
+ate_coa_dakotas_non_native_trigger = {
+	holder.culture = {
+		NOT = { has_cultural_pillar = heritage_sioux }
+	}
+}
+
+ate_coa_dakotas_native_trigger = {
+	holder.culture = {
+		has_cultural_pillar = heritage_sioux
+	}
+}
+
+ate_coa_governorate_trigger = {
+	holder = {
+		vassal_contract_has_flag = has_governorate_contract
+	}
+}
+
+ate_coa_captaincy_trigger = {
+	holder = {
+		vassal_contract_has_flag = has_captaincy_contract
+	}
+}
+
+ate_coa_neither_trigger = {
+	holder = {
+		NOT = { vassal_contract_has_flag = has_captaincy_contract }
+		NOT = { vassal_contract_has_flag = has_governorate_contract }
+	}
+}
+
+ate_coa_comanche_non_native_trigger = {
+	holder.culture = {
+		NOT = { has_cultural_pillar = heritage_plains_sequoyan  }
+		#NOT = { has_cultural_pillar = heritage_southeast_sequoyan  }
+	}
+}
+
+ate_coa_mexico_nahua_trigger = {
+	holder.culture = {
+		NOT = { has_cultural_pillar = heritage_comanche  }
+	}
+}
+ate_coa_great_coast_non_native_trigger = {
+	holder.culture = {
+		NOT = { has_cultural_pillar = heritage_upper_coast  }
+	}
+}
+
+ate_coa_denendeh_native_trigger = {
+	holder.culture = {
+		has_cultural_pillar = heritage_dene
+	}
+}
+
+ate_coa_maritimes_acadia_trigger = {
+	holder.culture = {
+		has_cultural_pillar = heritage_canayen  
+	}
+}
+
+ate_coa_maritimes_irving_trigger = {
+	holder.dynasty = {
+		this = dynasty:dynn_canada_irving
+	}
+}
+
+ate_coa_ontario_soady_trigger = { #Yooplaw
+	holder.dynasty = {
+		this = dynasty:dynn_canada_soady
+	}
+}
+
+ate_coa_maritimes_wabanaki_trigger = {
+	holder.culture = {
+		has_cultural_pillar = heritage_wabanaki  
+	}
+}
+
+
+ate_coa_iron_conf_cree_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:plains_cree
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:plains_cree
+				}
+			}
+		}
+	}
+}
+
+
+ate_coa_iron_conf_metis_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:metis
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:metis
+				}
+			}
+		}
+	}
+}
+
+ate_coa_mexico_nahua_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:mexicano
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:mexicano
+				}
+			}
+		}
+	}
+	
+}
+
+ate_coa_mexico_mixtec_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:nuu_savi
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:nuu_savi
+				}
+			}
+		}
+	}
+}
+
+ate_coa_mexico_purepecha_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:purhepecha 
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:purhepecha 
+				}
+			}
+		}
+	}
+}
+
+ate_coa_mexico_zapotec_trigger = {
+	holder.culture = {
+		has_cultural_pillar = heritage_tehuantepec
+	}
+}
+
+ate_coa_oklahoma_cherokee_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:cherokee
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:cherokee
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_dhegihan_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:dhegihan
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:dhegihan
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_pawnee_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:pawnee
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:pawnee
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_muscogee_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:muscogee
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:muscogee
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_choctaw_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:choctaw
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:choctaw
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_chickasaw_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:chickasaw 
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:chickasaw 
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_comanche_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:comanche
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:comanche
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_caddo_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:caddo
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:caddo
+				}
+			}
+		}
+	}
+}
+
+ate_coa_oklahoma_kiowa_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:kiowa
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:kiowa
+				}
+			}
+		}
+	}
+}
+
+ate_coa_inca_non_native_trigger = {
+	holder.culture = {
+		NOT = { has_cultural_pillar = heritage_andino }
+	}
+}
+
+ate_coa_rockies_mormon_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:mormon_religion
+		}
+	}
+}
+
+ate_coa_catholic_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:catholic_religion
+		}
+	}
+}
+
+ate_coa_industrialist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:industrialist_religion
+		}
+	}
+}
+
+ate_coa_americanist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:americanist_religion
+		}
+	}
+}
+
+ate_coa_capitalist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:capitalist_religion
+		}
+	}
+}
+
+ate_coa_lacustrine_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:lacustrine_religion
+		}
+	}
+}
+
+ate_coa_guruist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:guruist_religion
+		}
+	}
+}
+
+ate_coa_buddhist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:buddhism_religion
+		}
+	}
+}
+
+ate_coa_nautical_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:nautical_religion
+		}
+	}
+}
+
+ate_coa_trailwalker_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:trailwalker_religion
+		}
+	}
+}
+
+ate_coa_eyefour_mouse_trigger = {
+	holder.dynasty = {
+		this = dynasty:dynn_caribe_waltney
+	}
+}
+
+ate_coa_gutfreund_trigger = {
+	holder.dynasty = {
+		this = dynasty:dynn_noreast_gutfreund
+	}
+}
+
+ate_coa_juneteeth_usa_trigger = {
+	holder.culture = {
+		OR = {
+			this = culture:tuskegean
+			this = culture:gullah
+			this = culture:motowner
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:tuskegean
+					this = culture:gullah
+					this = culture:motowner
+				}
+			}
+		}
+	}
+}
+
+ate_coa_islam_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:islam_religion 
+		}
+	}
+}
+
+ate_coa_french_trigger = {
+	holder.culture = {
+		OR = {
+			has_cultural_pillar = heritage_canayen  
+			has_cultural_pillar = heritage_louisianais
+			has_cultural_pillar = heritage_french 
+		}
+	}
+}
+
+ate_coa_vernacular_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:vernacular_religion
+		}
+	}
+}
+
+ate_coa_egyptologist_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:egyptology
+		}
+	}
+}
+
+ate_coa_cavalier_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:cavalier
+		}
+	}
+}
+
+ate_coa_native_north_american_trigger = {
+	holder.culture = {
+		OR = {
+			has_cultural_parameter = heritage_family_western_indigenous
+			has_cultural_parameter = heritage_family_eastern_indigenous
+		}
+	}
+}
+
+ate_coa_scientific_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:scientific_religion 
+		}
+	}
+}
+
+ate_coa_cipher_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:egyptology
+			this = faith:strangite
+			has_doctrine = special_doctrine_masonic_origins
+		}
+	}
+}
+
+ate_coa_gothic_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:gothic
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:gothic }
+		}
+	}
+}
+
+ate_coa_fathomless_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:fathomless
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:fathomless }
+		}
+	}
+}
+
+ate_coa_mayflower_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:mayflower
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:mayflower }
+		}
+	}
+}
+
+ate_coa_occultist_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:occultist_religion
+		}
+	}
+}
+
+ate_coa_yeomanist_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:yeomanist
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:yeomanist }
+		}
+	}
+}
+
+ate_coa_ozymandian_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:ozymandian
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:ozymandian }
+		}
+	}
+}
+
+ate_coa_vertebralist_trigger = {
+	holder.faith = {
+		OR = {
+			this = faith:vertebralist
+			ate_faith_based_foundational_faith_trigger = { FAITH = faith:vertebralist }
+		}
+	}
+}
+
+ate_coa_californian_trigger = {
+	holder.culture = {
+		OR = {
+			has_cultural_pillar = heritage_norcalifornine
+			has_cultural_pillar = language_californine
+		}
+	}
+}
+
+ate_coa_peace_church_trigger = {
+	holder.faith = {
+		OR = {
+			has_doctrine = special_doctrine_peace_church
+		}
+	}
+}
+
+ate_coa_garfield_trigger = {
+	root.holder = {
+		OR = {
+			has_trait = eccentric
+			has_trait = smoker
+		}
+	}
+}
+
+ate_coa_uruguay_brazilian_trigger = {
+	OR = {
+		root.holder.liege = {
+			has_title = title:e_brazil
+		}
+		root.holder = {
+			AND = {
+				has_title = title:k_uruguay
+				has_title = title:e_brazil
+			}
+		}
+	}
+}
+
+ate_coa_catholic_theocratic_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:catholic_religion
+		}
+	}
+	holder = {
+		has_government = theocracy_government
+	}
+}
+
+ate_coa_argentine_trigger = {
+	holder.culture = {
+		OR = {
+			has_cultural_pillar = heritage_gaucho
+			has_cultural_pillar = heritage_viejispano
+			has_cultural_pillar = heritage_platense
+		}
+	}
+}

@@ -1,0 +1,1266 @@
+﻿americanist_religion = {
+	family = rf_anachronous
+	graphical_faith = americanist_religion_gfx
+
+	doctrine = anachronous_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_temporal_head
+	doctrine = doctrine_gender_equal
+	doctrine = doctrine_pluralism_righteous
+	doctrine = doctrine_theocracy_lay_clergy
+	doctrine = doctrine_pilgrimage_encouraged
+
+	#Marriage
+	doctrine = doctrine_monogamy
+	doctrine = doctrine_divorce_approval
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_restricted
+	doctrine = doctrine_ao_adoption_prevalence_uncommon
+	doctrine = doctrine_ao_adoption_type_familial_child
+
+	#Crimes
+	doctrine = doctrine_homosexuality_indifferent
+	doctrine = doctrine_adultery_men_crime
+	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_kinslaying_extended_family_crime
+	doctrine = doctrine_deviancy_shunned
+	doctrine = doctrine_witchcraft_crime
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_taxation
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	doctrine = doctrine_funeral_consecrative
+	doctrine = doctrine_building_temple_civic
+	
+	# Syncretism
+	doctrine = special_doctrine_is_americanist_faith
+
+	traits = {
+		virtues = { brave just honest ambitious }
+		sins = { craven arbitrary deceitful content }
+	}
+
+	reserved_male_names = {
+		Adam Abe Abraham Abraham_Lincoln Alexander Amicus Amtrak Atlarge Bannister Benjamin Brandon Burr Carter Charles Chester Clark Corpus Daniel Dallas Davy Dwight Eisenhower Filibuster Franklin George Gerald Grover Hamilton Hannibal Harry Herbert Howard Hubert James Jefferson Jimmy John John_Adams Johnny Lewis Lyndon Millard Motion Onus Potus Preamble Rutherford Sam Seward Statute Theodore Thomas Tom Ulysses Union Warren William_Henry Woodrow Writ
+	}
+	reserved_female_names = {
+		Abigail Audit Audita Betsy Betty Carolina Cienen Claudia Columbia Culpa Edith Eleanor Elizabeth Ellen Emancipata Equity Florence Flotus Georgia Gloria Harriet Helen Ida Industria Interdicta Invicta Flotus Frances Jackie Jane Julia Jurisprudence Kennedy Letita Libertas Louisa Lucy Marilyn Martha Mary Pat Peggy Prosperity Publicia Quaraea Regula Respublia Rosalynn Rose Sandra Sarah Scripta Sienbecie Sojourner Subpoena Susan Virtue
+	}
+
+	custom_faith_icons = {
+		custom1 custom2 custom3 custom4 custom5 custom6 custom7 custom8 custom9 custom10 custom11 custom12 custom13 custom14 custom15 custom16 custom17 custom18 custom19 custom20 custom21 custom22 custom23 custom24 custom25 custom26 custom27 custom28 custom29 custom30 custom31 custom32 custom33 custom34 custom35 custom36 custom37 custom38 custom39 custom40 custom41 custom42 custom43 custom44 custom45 custom46 custom47 custom48 custom49 custom50 custom51 custom52 custom53 custom54 custom55 custom56 custom57 custom58 custom59 custom60 custom61 custom62 custom63 custom64 custom65 custom66 custom67 custom68 custom69 custom70 custom71 custom72 custom73 custom74 custom75 custom76 custom77 custom78 custom79 custom80 custom81 custom82 custom83 custom84 custom85 custom86 custom87 custom88 custom89 custom90 custom91 custom92 custom93 custom94 custom95 custom96 custom97 custom98 custom99 custom100 custom101 custom102 custom103 custom104 custom105 custom106 custom107 custom108 custom109 custom110 custom111 custom112 custom113 custom114 custom115 custom116 custom117 custom118 custom119 custom120 custom121 custom122 custom123 custom124 custom125 custom126 custom127 custom128 custom129 custom130 custom131 custom132 custom133 custom134 custom135 custom136 custom137 custom138 custom139 custom140 custom141 custom142 custom143 custom144 custom145 custom146 custom147 custom148 custom149 custom150 custom151 custom152 custom153 custom154 custom155 custom156 custom157 custom158 custom159 custom160 custom161 custom162 custom163 custom164 custom165 custom166 custom167 custom168 custom169 custom170 custom171 custom172 custom173 custom174 custom175 custom176 custom177 custom178 custom179 custom180 custom181 custom182 custom183 custom184 custom185 custom186 custom187 custom188 custom189 custom190 custom191 custom192 custom193 custom194 custom195 custom196 custom197 custom198 custom199 custom200 custom201 custom202 custom203 custom204 custom205 custom206 custom207 custom208 custom209 custom210 custom211 custom212 custom213 custom214 custom215 custom216 custom217 custom218 custom219 custom220 custom221 custom222 custom223 custom224 custom225 custom226 custom227 custom228 custom229 custom230 custom231 custom232 custom233 custom234 custom235 custom236 custom237 custom238 custom239 custom240 custom241 custom242 custom243 custom244 custom245 custom246 custom247 custom248 custom249 custom250 custom251 custom252 custom253 custom254 custom255 custom256 custom257 custom258 custom259 custom260 custom261 custom262 custom263 custom264 custom265 custom266 custom267 custom268 custom269 custom270 custom271 custom272 custom273 custom274 custom275 custom276 custom277 custom278 custom279 custom280 custom281 custom282 custom283 custom284 custom285 custom286 custom287
+    }
+
+	holy_order_names = {
+		{ name = "holy_order_marine_corps" }
+		{ name = "holy_order_secret_service" coat_of_arms = "ho_secret_service" }
+		{ name = "holy_order_minutemen" }
+		{ name = "holy_order_national_guard" }
+		{ name = "holy_order_rough_riders" }
+		{ name = "holy_order_first_team" }
+		{ name = "holy_order_american_legion" }
+	}
+
+	holy_order_maa = { minutemen }
+
+	localization = {
+		HighGodName = americanist_washington
+		HighGodNamePossessive = americanist_washington_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_HE
+		HighGodHerselfHimself = CHARACTER_HIMSELF
+		HighGodHerHis = CHARACTER_HERHIS_HIS
+		HighGodNameAlternate = americanist_the_father_of_the_nation
+		HighGodNameAlternatePossessive = americanist_the_father_of_the_nation_possessive
+
+		#Creator
+		CreatorName = americanist_providence
+		CreatorNamePossessive = americanist_providence_possessive
+		CreatorSheHe = CHARACTER_SHEHE_IT
+		CreatorHerHis = CHARACTER_HERHIS_ITS
+		CreatorHerHim = CHARACTER_HERHIM_IT
+
+		#HealthGod
+		HealthGodName = americanist_roosevelt
+		HealthGodNamePossessive = americanist_roosevelt_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#FertilityGod
+		FertilityGodName = americanist_kennedy
+		FertilityGodNamePossessive = americanist_kennedy_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_HE
+		FertilityGodHerHis = CHARACTER_HERHIS_HIS
+		FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WealthGod
+		WealthGodName = americanist_the_american_dream
+		WealthGodNamePossessive = americanist_the_american_dream
+		WealthGodSheHe = CHARACTER_SHEHE_SHE
+		WealthGodHerHis = CHARACTER_HERHIS_HER
+		WealthGodHerHim = CHARACTER_HERHIM_HER
+
+		#HouseholdGod
+		HouseholdGodName = americanist_lincoln
+		HouseholdGodNamePossessive = americanist_lincoln_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+		#FateGod
+		FateGodName = americanist_lady_liberty
+		FateGodNamePossessive = americanist_lady_liberty_possessive
+		FateGodSheHe = CHARACTER_SHEHE_SHE
+		FateGodHerHis = CHARACTER_HERHIS_HER
+		FateGodHerHim = CHARACTER_HERHIM_HER
+
+		#KnowledgeGod
+		KnowledgeGodName = americanist_the_founders
+		KnowledgeGodNamePossessive = americanist_the_founders_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+		KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+		KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
+
+		#WarGod
+		WarGodName = americanist_washington
+		WarGodNamePossessive = americanist_washington_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = americanist_tricky_dick
+		TricksterGodNamePossessive = americanist_tricky_dick_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_HE
+		TricksterGodHerHis = CHARACTER_HERHIS_HIS
+		TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+		#NightGod
+		NightGodName = americanist_revere
+		NightGodNamePossessive = americanist_revere_possessive
+		NightGodSheHe = CHARACTER_SHEHE_HE
+		NightGodHerHis = CHARACTER_HERHIS_HIS
+		NightGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WaterGod
+		WaterGodName = americanist_ol_ironsides
+		WaterGodNamePossessive = americanist_ol_ironsides_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_HE
+		WaterGodHerHis = CHARACTER_HERHIS_HIS
+		WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+		PantheonTerm = americanist_the_founders
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = {
+			americanist_washington
+			americanist_the_father_of_the_nation
+			americanist_jefferson
+			americanist_franklin
+			americanist_adams
+			americanist_hamilton
+			americanist_lincoln
+			americanist_roosevelt
+			americanist_lady_liberty
+			americanist_revere
+			americanist_kennedy
+			americanist_uncle_sam
+			americanist_the_flag
+			americanist_ol_ironsides
+		}
+		DevilName = americanist_traitors_and_tyrants
+		DevilNamePossessive = americanist_traitors_and_tyrants_possessive
+		DevilSheHe = CHARACTER_SHEHE_THEY
+		DevilHerHis = CHARACTER_HERHIS_THEIR
+		DevilHerselfHimself = CHARACTER_THEMSELF
+		EvilGodNames = {
+			americanist_traitors_and_tyrants
+			americanist_the_tyrant
+		}
+		HouseOfWorship = americanist_house_of_worship
+		HouseOfWorshipPlural = americanist_house_of_worship_plural
+		ReligiousSymbol = americanist_religious_symbol
+		ReligiousText = americanist_religious_text
+		ReligiousHeadName = americanist_religious_head_title
+		ReligiousHeadTitleName = americanist_religious_head_title_name
+		DevoteeMale = americanist_devotee
+		DevoteeMalePlural = americanist_devoteeplural
+		DevoteeFemale = americanist_devotee
+		DevoteeFemalePlural = americanist_devoteeplural
+		DevoteeNeuter = americanist_devotee
+		DevoteeNeuterPlural = americanist_devoteeplural
+		PriestMale = americanist_priest
+		PriestMalePlural = americanist_priest_plural
+		PriestFemale = americanist_priest
+		PriestFemalePlural = americanist_priest_plural
+		PriestNeuter = americanist_priest
+		PriestNeuterPlural = americanist_priest_plural
+		AltPriestTermPlural = americanist_priest_alternate_plural
+		BishopMale = americanist_priest_alternate
+		BishopMalePlural = americanist_priest_alternate_plural
+		BishopFemale = americanist_priest_alternate
+		BishopFemalePlural = americanist_priest_alternate_plural
+		BishopNeuter = americanist_priest_alternate
+		BishopNeuterPlural = americanist_priest_alternate_plural
+		DivineRealm = americanist_divine_realm
+		PositiveAfterLife = americanist_divine_realm
+		NegativeAfterLife = americanist_negative_afterlife
+		DeathDeityName = americanist_lady_justice
+		DeathDeityNamePossessive = americanist_lady_justice_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_SHE
+		DeathDeityHerHis = CHARACTER_HERHIS_HER
+		DeathDeityHerHim = CHARACTER_HERHIM_HER
+		WitchGodName = americanist_the_reds
+		WitchGodSheHe = CHARACTER_SHEHE_THEY
+		WitchGodHerHis = CHARACTER_HERHIS_THEIR
+		WitchGodHerHim = CHARACTER_HERHIM_THEM
+		WitchGodMistressMaster = witch_master
+ 		WitchGodMotherFather = witch_father
+
+		GHWName = ghw_intervention
+		GHWNamePlural = ghw_interventions
+	}
+
+	faiths = {
+		libertarian = { #Children of Liberty
+			color = { 112 112 150 }
+			icon = libertarian
+
+			holy_site = washington
+			holy_site = philadelphia
+			holy_site = manhattan
+			holy_site = boston
+			holy_site = las_vegas
+			holy_site = chicago
+
+			holy_site = americanist_detroit
+
+			#special doctrine
+			doctrine = special_doctrine_executive_overreach
+			doctrine = special_doctrine_one_nation_indivisible
+
+			doctrine = tenet_esotericism
+			doctrine = tenet_option_for_the_poor
+			doctrine = tenet_ritual_hospitality
+
+			#altered doctrines
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_pluralistic
+			doctrine = doctrine_divorce_allowed
+			doctrine = doctrine_homosexuality_accepted
+			doctrine = doctrine_deviancy_accepted
+			doctrine = doctrine_clerical_gender_female_only
+			doctrine = doctrine_clerical_succession_temporal_appointment
+
+			localization = {
+				PantheonTerm = libertarian_the_first_ladies
+
+				HighGodName = americanist_lady_liberty
+				HighGodNamePossessive = americanist_lady_liberty_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_SHE
+				HighGodHerselfHimself = CHARACTER_HERSELF
+				HighGodHerHis = CHARACTER_HERHIS_HER
+				HighGodNameAlternate = libertarian_libertas
+				HighGodNameAlternatePossessive = libertarian_libertas_possessive
+
+				#HealthGod
+				HealthGodName = americanist_lady_liberty
+				HealthGodNamePossessive = americanist_lady_liberty_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
+
+				#FertilityGod
+				FertilityGodName = libertarian_virginia
+				FertilityGodNamePossessive = libertarian_virginia_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				FertilityGodHerHis = CHARACTER_HERHIS_HER
+				FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+				#WealthGod
+				WealthGodName = americanist_lady_liberty
+				WealthGodNamePossessive = americanist_lady_liberty_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_SHE
+				WealthGodHerHis = CHARACTER_HERHIS_HER
+				WealthGodHerHim = CHARACTER_HERHIM_HER
+
+				#KnowledgeGod
+				KnowledgeGodName = libertarian_justitia
+				KnowledgeGodNamePossessive = libertarian_justitia_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+				#WarGod
+				WarGodName = americanist_columbia
+				WarGodNamePossessive = americanist_columbia_possessive
+				WarGodSheHe = CHARACTER_SHEHE_SHE
+				WarGodHerHis = CHARACTER_HERHIS_HER
+				WarGodHerHim = CHARACTER_HERHIM_HER
+
+				#TricksterGod
+				TricksterGodName = americanist_lady_liberty
+				TricksterGodNamePossessive = americanist_lady_liberty_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_SHE
+				TricksterGodHerHis = CHARACTER_HERHIS_HER
+				TricksterGodHerHim = CHARACTER_HERHIM_HER
+
+				#NightGod
+				NightGodName = americanist_lady_liberty
+				NightGodNamePossessive = americanist_lady_liberty_possessive
+				NightGodSheHe = CHARACTER_SHEHE_SHE
+				NightGodHerHis = CHARACTER_HERHIS_HER
+				NightGodHerHim = CHARACTER_HERHIM_HER
+
+				#WaterGod
+				WaterGodName = americanist_lady_liberty
+				WaterGodNamePossessive = americanist_lady_liberty_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_SHE
+				WaterGodHerHis = CHARACTER_HERHIS_HER
+				WaterGodHerHim = CHARACTER_HERHIM_HER
+
+				GoodGodNames = {
+					americanist_lady_liberty
+					libertarian_libertas
+					americanist_columbia
+					libertarian_justitia
+					libertarian_virginia
+					americanist_the_flag
+				}
+			}
+		}
+
+		constitutionalist = {
+			color = { 76 76 204 }
+			icon = constitutionalist
+
+			holy_site = washington
+			holy_site = philadelphia
+			holy_site = manhattan
+			holy_site = boston
+			holy_site = mt_rushmore
+			holy_site = monticello
+
+			holy_site = americanist_detroit
+
+			religious_head = d_constitutionalist
+
+			#special doctrine
+			doctrine = special_doctrine_executive_overreach
+			doctrine = special_doctrine_partisan_politics
+
+			doctrine = tenet_religious_legal_pronouncements
+			doctrine = tenet_bhakti
+			doctrine = tenet_interventionism
+			
+			#Main Group
+			doctrine = doctrine_spiritual_head
+			doctrine = doctrine_gender_male_dominated
+			doctrine = doctrine_pluralism_fundamentalist
+			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_pilgrimage_mandatory
+
+			#Marriage
+			doctrine = doctrine_monogamy
+			doctrine = doctrine_divorce_approval
+			doctrine = doctrine_bastardry_legitimization
+			doctrine = doctrine_consanguinity_restricted
+			doctrine = doctrine_ao_adoption_prevalence_uncommon
+			doctrine = doctrine_ao_adoption_type_familial_child
+
+			#Crimes
+			doctrine = doctrine_adultery_men_crime
+			doctrine = doctrine_adultery_women_crime
+			doctrine = doctrine_kinslaying_extended_family_crime
+			doctrine = doctrine_deviancy_crime
+			doctrine = doctrine_witchcraft_crime
+
+			#Clerical Functions
+			doctrine = doctrine_clerical_function_taxation
+			doctrine = doctrine_clerical_gender_male_only
+			doctrine = doctrine_clerical_marriage_allowed
+			doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+			doctrine = doctrine_funeral_consecrative
+			doctrine = doctrine_building_temple_civic
+			
+			localization = {
+				HighGodName = constitutionalist_high_god_name
+				HighGodNamePossessive = constitutionalist_high_god_name_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_IT
+				HighGodHerselfHimself = CHARACTER_ITSELF
+				HighGodHerHis = CHARACTER_HERHIS_ITS
+				HighGodNameAlternate = constitutionalist_high_god_name_alt
+				HighGodNameAlternatePossessive = constitutionalist_high_god_name_alt_possessive
+
+				#Creator
+				CreatorName = constitutionalist_high_god_name
+				CreatorNamePossessive = constitutionalist_high_god_name_possessive
+				CreatorSheHe = CHARACTER_SHEHE_IT
+				CreatorHerHis = CHARACTER_HERHIS_ITS
+				CreatorHerHim = CHARACTER_HERHIM_IT
+
+				#HealthGod
+				HealthGodName = constitutionalist_health_god_name
+				HealthGodNamePossessive = constitutionalist_health_god_name_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_HE
+				HealthGodHerHis = CHARACTER_HERHIS_HIS
+				HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#FertilityGod
+				FertilityGodName = constitutionalist_fertility_god_name
+				FertilityGodNamePossessive = constitutionalist_fertility_god_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WealthGod
+				WealthGodName = constitutionalist_wealth_god_name
+				WealthGodNamePossessive = constitutionalist_wealth_god_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#HouseholdGod
+				HouseholdGodName = constitutionalist_household_god_name
+				HouseholdGodNamePossessive = constitutionalist_household_god_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#FateGod
+				FateGodName = constitutionalist_wealth_god_name
+				FateGodNamePossessive = constitutionalist_wealth_god_name_possessive
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = constitutionalist_high_god_name
+				KnowledgeGodNamePossessive = constitutionalist_high_god_name_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_IT
+				KnowledgeGodHerHis = CHARACTER_HERHIS_ITS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_IT
+
+				#TricksterGod
+				TricksterGodName = constitutionalist_wealth_god_name
+				TricksterGodNamePossessive = constitutionalist_wealth_god_name_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_HE
+				TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+				#NightGod
+				NightGodName = constitutionalist_fertility_god_name
+				NightGodNamePossessive = constitutionalist_fertility_god_name_possessive
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS
+				NightGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = constitutionalist_high_god_name
+				WaterGodNamePossessive = constitutionalist_high_god_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_IT
+				WaterGodHerHis = CHARACTER_HERHIS_ITS
+				WaterGodHerHim = CHARACTER_HERHIM_IT
+
+
+				PantheonTerm = pantheon_the_original_founders
+				PantheonTermHasHave = pantheon_term_have
+				GoodGodNames = {
+					constitutionalist_high_god_name
+					constitutionalist_high_god_name_alt
+					constitutionalist_fertility_god_name
+					constitutionalist_wealth_god_name
+					constitutionalist_household_god_name
+					constitutionalist_health_god_names
+				}
+				DevilName = constitutionalist_devil_name
+				DevilNamePossessive = constitutionalist_devil_name_possessive
+				DevilSheHe = CHARACTER_SHEHE_THEY
+				DevilHerHis = CHARACTER_HERHIS_THEIR
+				DevilHerselfHimself = CHARACTER_THEMSELVES
+				EvilGodNames = {
+					constitutionalist_devil_name
+					constitutionalist_witch_god_name
+					constitutionalist_evil_god_king_george
+					constitutionalist_evil_god_benedict_arnold
+					constitutionalist_evil_god_the_declaration_of_independence
+				}
+				ReligiousSymbol = constitutionalist_religious_symbol
+				ReligiousHeadName = constitutionalist_religious_head_title
+				ReligiousHeadTitleName = constitutionalist_religious_head_title_name
+				DevoteeMale = constitutionalist_devotee
+				DevoteeMalePlural = constitutionalist_devoteeplural
+				DevoteeFemale = constitutionalist_devotee
+				DevoteeFemalePlural = constitutionalist_devoteeplural
+				DevoteeNeuter = constitutionalist_devotee
+				DevoteeNeuterPlural = constitutionalist_devoteeplural
+				BishopMale = constitutionalist_bishop
+				BishopMalePlural = constitutionalist_bishop_plural
+				BishopFemale = constitutionalist_bishop
+				BishopFemalePlural = constitutionalist_bishop_plural
+				BishopNeuter = constitutionalist_bishop
+				BishopNeuterPlural = constitutionalist_bishop_plural
+				DivineRealm = constitutionalist_divine_realm
+				PositiveAfterLife = constitutionalist_divine_realm
+				WitchGodName = constitutionalist_witch_god_name
+				WitchGodSheHe = CHARACTER_SHEHE_THEY
+				WitchGodHerHis = CHARACTER_HERHIS_THEIR
+				WitchGodHerHim = CHARACTER_HERHIM_THEM
+				WitchGodMistressMaster = witch_spirit
+				WitchGodMotherFather = witch_source
+			}
+			
+		}
+
+		exceptionalist = {
+			color = { 51 51 178 }
+			icon = exceptionalist
+			
+			graphical_faith = americanist_religion_frontier_gfx
+
+			holy_site = washington
+			holy_site = new_orleans_americanist
+			holy_site = west_point
+			holy_site = lexington_concord
+			holy_site = the_alamo
+			holy_site = san_juan_hill
+
+			holy_site = americanist_detroit
+
+			religious_head = k_presidency # set in on_actions
+
+			#special doctrine
+			doctrine = special_doctrine_freedom_of_speech
+			doctrine = special_doctrine_supreme_law
+
+			doctrine = tenet_liberty_or_death
+			doctrine = tenet_interventionism
+			doctrine = tenet_vows_of_poverty
+
+			#altered doctrines
+			doctrine = doctrine_pluralism_fundamentalist
+			doctrine = doctrine_deviancy_crime
+			
+			doctrine = doctrine_homosexuality_shunned
+			reserved_male_names = {
+				Adam Abraham Abraham_Lincoln Alaska Alexander Amicus Amtrak Atlarge Bannister Benjamin Bradley Brandon Chester Clark Corpus Daniel Dallas Davy Douglas Dwight Eisenhower Franklin George George_Washington Gerald Grant Grover Hamilton Hannibal Harry Herbert Howard Hubert Ike James James_Kay Jefferson Jimmy John John_Adams Johnny Jones Joseph Kennedy Lewis Lyman Lyndon MacArthur Marshall Millard Omar Patton Pershing Polk Potus Rutherford Sam Samuel Seward Sherman Simpson Statue Stuart Theodore Thomas Tom Ulysses Union Warren Washington William_Henry Woodrow
+			}
+			reserved_female_names = {
+				Abigail Alaska Amelia Anna Atlantica Audita Betsy Betty Carolina Chaffee Claudia Columbia Edith Edna Eleanor Elizabeth Ellen Emancipata Florence Georgia Gloria Harriet Helen Industria Interdicta Invicta Flotus Frances Jackie Jane Julia Katniss Kennedy Letita Libertas Lizzie Lori Louisa Lucy Mae Marge Marilyn Martha Mary Montana Pacifica Pat Peggy Prosperity Publicia Quaraea Regula Remember-the-Alamo Respublia Rosalynn Rose Rosie Sally Sandra Scout Sojourner Susanna Utah Violet Virginia
+			}
+
+			localization = {
+				#WealthGod
+				WealthGodName = americanist_polk
+				WealthGodNamePossessive = americanist_polk_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = exceptionalist_jones
+				WaterGodNamePossessive = exceptionalist_jones_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+				GoodGodNames = {
+					americanist_polk
+					exceptionalist_jones
+					exceptionalist_von_steuben
+					exceptionalist_sherman
+					exceptionalist_grant
+					exceptionalist_patton
+					exceptionalist_macarthur
+					exceptionalist_bradley
+					americanist_washington
+					americanist_lincoln
+					americanist_eisenhower
+					americanist_roosevelt
+					americanist_lady_liberty
+					americanist_revere
+					americanist_uncle_sam
+					americanist_the_flag
+					americanist_ol_ironsides
+				}
+			}
+		}
+
+		heartful = {
+			color = { 76 112 228 }
+			icon = heartful
+
+			holy_site = abilene_ks
+			holy_site = mt_rushmore
+			holy_site = chicago
+			holy_site = omaha
+			holy_site = denver
+			holy_site = saint_louis
+			
+			holy_site = americanist_detroit
+				
+			religious_head = d_heartful
+			
+			#special doctrine
+			doctrine = special_doctrine_executive_overreach
+			doctrine = special_doctrine_partisan_politics
+
+			doctrine = tenet_christian_syncretism
+			doctrine = tenet_jus_ad_bellum
+			doctrine = tenet_blessings_from_the_barrens
+
+			#Marriage
+			doctrine = doctrine_consanguinity_cousins
+
+			#Crimes
+			doctrine = doctrine_adultery_men_shunned
+			doctrine = doctrine_adultery_women_shunned
+			doctrine = doctrine_kinslaying_shunned
+			doctrine = doctrine_witchcraft_shunned
+
+			#Clerical Functions
+			doctrine = doctrine_clerical_function_alms_and_pacification
+			doctrine = doctrine_clerical_gender_male_only
+			doctrine = doctrine_funeral_stoic
+
+
+			localization = {
+				HighGodName = americanist_providence #just main name change
+				HighGodNamePossessive = americanist_providence_possessive
+
+				#CreatorGod
+				CreatorSheHe = CHARACTER_SHEHE_HE #just pronouns change
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
+
+				#HealthGod
+				HealthGodName = heartful_jesus
+				HealthGodNamePossessive = heartful_jesus_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_HE
+				HealthGodHerHis = CHARACTER_HERHIS_HIS
+				HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#FertilityGod
+				FertilityGodName = heartful_borlaug
+				FertilityGodNamePossessive = heartful_borlaug_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HIMSELF
+				FertilityGodHerHim = CHARACTER_HERHIS_HIS
+
+				#WealthGod
+				WealthGodName = americanist_jefferson
+				WealthGodNamePossessive = americanist_jefferson_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = americanist_john_brown
+				KnowledgeGodNamePossessive = americanist_john_brown_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WarGod
+				WarGodName = americanist_eisenhower
+				WarGodNamePossessive = americanist_eisenhower_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#FateGod
+				FateGodName = americanist_washington
+				FateGodNamePossessive = americanist_washington_possessive
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
+
+				#TricksterGod
+				TricksterGodName = americanist_hoover
+				TricksterGodNamePossessive = americanist_hoover_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_HE
+				TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+				#NightGod
+				NightGodName = heartful_glenn
+				NightGodNamePossessive = heartful_glenn_possessive
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS
+				NightGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = heartful_iowa_and_enterprise
+				WaterGodNamePossessive = heartful_iowa_and_enterprise_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_THEY
+				WaterGodHerHis = CHARACTER_HERHIS_THEIR
+				WaterGodHerHim = CHARACTER_HERHIM_THEM
+
+				#DeathDeity
+				DeathDeityName = heartful_dustbowl
+				DeathDeityNamePossessive = heartful_dustbowl_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_IT
+				DeathDeityHerHis = CHARACTER_HERHIS_ITS
+				DeathDeityHerHim = CHARACTER_HERHIM_IT
+
+				#WitchGod
+				WitchGodName = americanist_hoover
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodHerHim = CHARACTER_HERHIS_HIM		
+				
+				HouseOfWorship = heartful_house_of_worship
+				HouseOfWorshipPlural = heartful_house_of_worship_plural
+				
+				ReligiousHeadName = heartful_religious_head_title
+				ReligiousHeadTitleName = heartful_religious_head_title_name
+				PantheonTerm = americanist_providence
+				PantheonTermHasHave = pantheon_term_has
+
+				GHWName = ghw_great_crusade
+				GHWNamePlural = ghw_great_crusades	
+
+				GoodGodNames = {
+					americanist_providence
+					heartful_jesus
+					americanist_kennedy
+					americanist_roosevelt
+					americanist_lincoln
+					americanist_washington
+					americanist_jefferson
+					americanist_eisenhower
+					heartful_iowa_and_enterprise
+					exceptionalist_grant
+					heartful_martyr_of_the_missouri
+					heartful_glenn
+					heartful_borlaug 
+					americanist_john_brown 
+					heartful_kirkwood
+					heartful_truman
+					heartful_william_jennings_bryan
+					heartful_clark_kent
+				}
+				EvilGodNames = {
+					americanist_the_reds
+					heartful_dustbowl
+					americanist_tyranny
+					heartful_the_copperheads
+				}
+			}
+		}
+
+		imaginerian = {
+			color = { 0 110 153 }
+			icon = imaginerian
+			
+			graphical_faith = americanist_religion_latam_gfx
+
+			holy_site = orlando
+			holy_site = kennedy_space_center #c_palm_bay
+			holy_site = washington
+			holy_site = manhattan
+			holy_site = hollywood
+			holy_site = johnson_space_center
+			holy_site = chicago
+
+			holy_site = americanist_detroit
+
+			religious_head = k_presidency # set in on_actions
+
+			#special doctrine
+			doctrine = special_doctrine_freedom_of_speech
+			doctrine = special_doctrine_living_constitution
+
+			doctrine = tenet_ritual_celebrations
+			doctrine = tenet_inward_perfection
+			doctrine = tenet_armed_pilgrimages
+
+			#Main Group
+			doctrine = doctrine_pluralism_pluralistic
+
+			#Marriage
+			doctrine = doctrine_divorce_disallowed
+
+			#Crimes
+			doctrine = doctrine_homosexuality_accepted
+			doctrine = doctrine_adultery_men_shunned
+			doctrine = doctrine_adultery_women_shunned
+
+			#Clerical Functions
+			doctrine = doctrine_clerical_function_alms_and_pacification
+			
+			reserved_male_names = {
+                Abraham_Lincoln Ajax Aldrin Apollo Armstrong Atlas Buzz Charming Columbus Delta Elias Gemini George_Washington Glenn Hercules Hermes Houston Hubble Javelin Jeb John John_Kennedy Jupiter Kennedy Lincoln Loki Lokidart Mercury Mickey Nasa Neil Nike Nike_Ajax Nike_Hercules Nike_Spartan Nike_Zeus Orlando Oswald Pegasus Perseus Pluto Pollux Poseidon Potus Rover Sam Saturn Scout Spartan Talos Taurus Teddy Thor Thorad Titan Triton Typhon Ulysses Walt Zeus
+			}
+            
+            reserved_female_names = {
+				Adasta Agena Amelia Andromeda Ariel Athena Atlantis Atlasable Atlasagena Aurora Belle Betsy Celeste Christa Cinderella Columbia Democracy Discovery Flotus Gorgonia Halley Hermes Jackie Jackie Kennedy Jasmine Jolyne Juno Justice Kennedy Liberty Luna Mulan Nasa Nike Nova Pegasus Phoebe Sally Snow_White Stella Thorable Thoragena Venus
+			}
+
+
+			localization = {
+				HighGodName = americanist_the_american_dream
+				HighGodNamePossessive = americanist_the_american_dream_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_SHE
+				HighGodHerselfHimself = CHARACTER_HERSELF
+				HighGodHerHis = CHARACTER_HERHIS_HER
+				HighGodNameAlternate = americanist_providence
+				HighGodNameAlternatePossessive = americanist_providence_possessive
+
+				#HealthGod
+				HealthGodName = imaginerian_martyred_columbia
+				HealthGodNamePossessive = imaginerian_martyred_columbia_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
+
+				#FertilityGod
+				FertilityGodName = imaginerian_jfk
+				FertilityGodNamePossessive = imaginerian_jfk_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WealthGod
+				WealthGodName = americanist_the_american_dream
+				WealthGodNamePossessive = americanist_the_american_dream_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_SHE
+				WealthGodHerHis = CHARACTER_HERHIS_HER
+				WealthGodHerHim = CHARACTER_HERHIM_HER
+
+				#KnowledgeGod
+				KnowledgeGodName = imaginerian_the_voyager_twins
+				KnowledgeGodNamePossessive = imaginerian_the_voyager_twins_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+				KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+				KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
+
+				#WarGod
+				WarGodName = imaginerian_apollo
+				WarGodNamePossessive = imaginerian_apollo_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#TricksterGod
+				TricksterGodName = americanist_the_men_in_black
+				TricksterGodNamePossessive = americanist_the_men_in_black_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_THEY
+				TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+				TricksterGodHerHim = CHARACTER_HERHIM_THEM
+
+				#NightGod
+				NightGodName = imaginerian_apollo
+				NightGodNamePossessive = imaginerian_apollo_possessive
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS
+				NightGodHerHim = CHARACTER_HERHIM_HIM
+
+				#DeathDeity
+				DeathDeityName = imaginerian_martyred_columbia
+				DeathDeityNamePossessive = imaginerian_martyred_columbia_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_SHE
+				DeathDeityHerHis = CHARACTER_HERHIS_HER
+				DeathDeityHerHim = CHARACTER_HERHIM_HER
+
+				#WitchGod
+				WitchGodName = imaginerian_oppenheimer
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
+
+				#HouseholdGod
+				HouseholdGodName = imaginerian_walt_the_magician
+				HouseholdGodNamePossessive = imaginerian_walt_the_magician_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = imaginerian_columbus
+				WaterGodNamePossessive = imaginerian_columbus_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+				DivineRealm = imaginerian_divine_realm
+				PositiveAfterLife = imaginerian_divine_realm
+				NegativeAfterLife = imaginerian_negative_afterlife
+				PriestMale = imaginerian_priest
+				PriestMalePlural = imaginerian_priest_plural
+				PriestFemale = imaginerian_priest
+				PriestFemalePlural = imaginerian_priest_plural
+				PriestNeuter = imaginerian_priest
+				PriestNeuterPlural = imaginerian_priest_plural
+				AltPriestTermPlural = imaginerian_priest_alternate_plural
+				BishopMale = imaginerian_priest_alternate
+				BishopMalePlural = imaginerian_priest_alternate_plural
+				BishopFemale = imaginerian_priest_alternate
+				BishopFemalePlural = imaginerian_priest_alternate_plural
+				BishopNeuter = imaginerian_priest_alternate
+				BishopNeuterPlural = imaginerian_priest_alternate_plural
+				ReligiousText = imaginerian_religious_text
+				HouseOfWorship = imaginerian_house_of_worship
+				HouseOfWorshipPlural = imaginerian_house_of_worship_plural
+
+				GoodGodNames = {
+					americanist_the_american_dream
+					americanist_providence
+					americanist_columbia
+					americanist_franklin
+					imaginerian_gemini
+					imaginerian_lovell
+					imaginerian_shepherd
+					imaginerian_ride
+					imaginerian_mcauliffe
+					imaginerian_hercules
+				}
+				EvilGodNames = {
+					americanist_tricky_dick
+					americanist_the_men_in_black
+					americanist_traitors_and_tyrants
+					americanist_the_tyrant
+				}
+			}
+		}
+
+		mayflower = {
+			color = { 44 114 255 }
+			icon = mayflower
+
+			holy_site = boston
+			holy_site = washington
+			holy_site = plymouth
+			holy_site = providence
+			holy_site = philadelphia
+
+			holy_site = americanist_detroit
+
+			#special doctrine
+			doctrine = special_doctrine_sic_semper_tyrannis
+			doctrine = special_doctrine_executive_overreach
+
+			doctrine = tenet_liberty_or_death
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_gnosticism
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_fundamentalist
+
+			#Marriage
+			doctrine = doctrine_divorce_allowed
+
+			#Crimes
+			doctrine = doctrine_homosexuality_accepted
+			doctrine = doctrine_adultery_men_crime
+			doctrine = doctrine_adultery_women_crime
+			doctrine = doctrine_deviancy_crime
+
+			#Clerical Functions
+			doctrine = doctrine_clerical_function_recruitment
+			doctrine = doctrine_funeral_taboo
+
+			reserved_male_names = {
+				Aaron Adam Abraham Abuse-Not Alexander Benjamin Benjamin_Franklin Boston Burr Camden Charles Cocked-Hat Concord Continent Corpus Cowpens Delaware Facing-the-Future Fight-the-Good-Fight-of-Faith Filibuster For-Which-It-Stands Franklin George Green-Mountain-Boy Hamilton Hancock Has-Descendents If-Revere-Had-Not-Ridden-for-Thee-Thou-Hadst-Been-Damned James Jefferson John John_Adams John_Franklin Lafayette Laws-of-Nature Lexington Life Millard Mission-Accomplished No-Taxation-Without-Representation No-We-Cant Not-My-Kid Preamble Princeton Pursuit-of-Happiness Samuel Self-Evident Son-of-Liberty Statute Theodore Thomas Thomas_Benjamin Thomas_Franklin Thomas_Jefferson Tom_Adams Trenton Trial-by-Jury Unalienable-Rights Union Valley-Forge Warren We-Hold-These-Truths-to-be-Self-Evident We-the-People Who-Are-You Worthless Writ
+			}
+			reserved_female_names = {
+				Abigail Achieve-Success All-Created-Equal All-the-Way Alter-or-to-Abolish Amity Angelica Betsy Blessings-of-Liberty Brandy By-the-People Chelsea Chesapeake City-on-a-Hill Claudia Columbia Common_Sense Concordia Daughter-of-the-Revolution Desire Edith Eliza Ellen Emancipation Equity Florence For-the-People Georgia Gloria Gwinnett Happy-Days Helen Hope Hopes-and-Dreams Invicta Frances Julia Jurisprudence Justice-for-All Keep-Hope-Alive Kennedy Lament Letita Liberty Louisa Lucy Madison Martha Mary Meaningful Mercy_Otis More-Perfect-Union Of-the-People Peggy Prosperity Prudence Remember Rose Safety-and-Happiness Sarah Saratoga Scripta Shall-Not-Perish Subpoena Susan Tace Ticonderoga Truth Unalterable-Resolution Unalterable-Will Virtue Wythe Yale Yes-We-Can
+			}
+
+
+			localization = {
+				HighGodName = americanist_providence
+				HighGodNamePossessive = americanist_providence_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_HE
+				HighGodHerselfHimself = CHARACTER_HIMSELF
+				HighGodHerHis = CHARACTER_HERHIS_HIS
+
+				#HealthGod
+				HealthGodName = mayflower_liberty
+				HealthGodNamePossessive = mayflower_liberty_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
+
+				#FertilityGod
+				FertilityGodName = americanist_kennedy
+				FertilityGodNamePossessive = americanist_kennedy_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				FertilityGodHerHim = CHARACTER_HERHIS_HIM
+
+				#WealthGod
+				WealthGodName = americanist_franklin
+				WealthGodNamePossessive = americanist_franklin_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = mayflower_the_spirit_of_76
+				KnowledgeGodNamePossessive = mayflower_the_spirit_of_76_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_IT
+				KnowledgeGodHerHis = CHARACTER_HERHIS_ITS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_IT
+
+				#TricksterGod
+				TricksterGodName = americanist_providence
+				TricksterGodNamePossessive = americanist_providence_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_HE
+				TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+				#DeathDeity
+				DeathDeityName = americanist_providence
+				DeathDeityNamePossessive = americanist_providence_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_HE
+				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
+
+				#WitchGod
+				WitchGodName = mayflower_corey
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodHerHim = CHARACTER_HERHIS_HIM
+
+				#HouseholdGod
+				HouseholdGodName = mayflower_the_pilgrims
+				HouseholdGodNamePossessive = mayflower_the_pilgrims_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+				HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+				HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+
+				#WaterGod
+				WaterGodName = mayflower_mayflower
+				WaterGodNamePossessive = mayflower_mayflower_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_SHE
+				WaterGodHerHis = CHARACTER_HERHIS_HER
+				WaterGodHerHim = CHARACTER_HERHIM_HER
+				
+				DevilName = americanist_tyranny
+				DevilNamePossessive = americanist_tyranny_possessive
+				DevilSheHe = CHARACTER_SHEHE_HE
+				DevilHerHis = CHARACTER_HERHIS_HIS
+				DevilHerselfHimself = CHARACTER_HIMSELF
+				
+				HouseOfWorship = mayflower_house_of_worship
+				HouseOfWorshipPlural = mayflower_house_of_worship_plural
+
+				GoodGodNames = {
+					americanist_providence
+					americanist_kennedy
+					mayflower_the_spirit_of_76
+					mayflower_the_pilgrims
+					mayflower_mayflower
+					americanist_franklin
+					americanist_washington
+					americanist_revere
+				}
+				EvilGodNames = {
+					americanist_tyranny
+					mayflower_corey
+				}
+			}
+		}
+
+		principlist = {
+			color = { 102 102 230 }
+			icon = principlist
+
+			holy_site = washington
+			holy_site = philadelphia
+			holy_site = manhattan
+			holy_site = boston
+			holy_site = mt_rushmore
+			holy_site = chicago
+
+			holy_site = americanist_detroit
+
+			religious_head = k_presidency # set in on_actions
+
+			#special doctrine
+			doctrine = special_doctrine_freedom_of_speech
+			doctrine = special_doctrine_living_constitution
+
+			doctrine = tenet_legalism
+			doctrine = tenet_volunteer_forces
+			doctrine = tenet_interventionism
+			
+			doctrine = doctrine_adultery_men_shunned
+			doctrine = doctrine_adultery_women_shunned
+			doctrine = doctrine_deviancy_shunned
+			doctrine = doctrine_witchcraft_shunned
+			doctrine = doctrine_homosexuality_accepted
+		}
+
+		yeomanist = {
+			color = { 191 172 0 }
+			icon = yeomanist
+
+			holy_site = astoria
+			holy_site = independence_hall_west
+			holy_site = yreka
+			holy_site = nisqually
+			holy_site = mt_rushmore
+			holy_site = placer
+
+			holy_site = americanist_detroit
+
+			#special doctrine
+			doctrine = special_doctrine_executive_overreach
+			doctrine = special_doctrine_partisan_politics
+
+			doctrine = tenet_liberty_or_death
+			doctrine = tenet_pastoral_isolation
+			doctrine = tenet_cthonic_redoubts
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_fundamentalist
+
+			#Marriage
+			doctrine = doctrine_divorce_allowed
+
+			#Crimes
+			doctrine = doctrine_homosexuality_shunned
+			doctrine = doctrine_adultery_men_shunned
+
+			#Clerical Functions
+			doctrine = doctrine_clerical_function_recruitment
+			doctrine = doctrine_funeral_stoic
+
+			reserved_male_names = {
+				Adam Abe Benjamin Bryan Clark Clay Daniel Dallas Davy Franklin Henry Houston Howard James James_Kay Jefferson John John_Adams Lewis Lewison Millard Polk Quincy Quincy_Adams Sam Tom William William_Jennings
+			}
+			reserved_female_names = {
+				Abigail Audita Ayn Betsy Carolina Eliza Emancipata Florence Georgia Gloria Harriet Frances Jane Julia Libertas Louisa Lucy Madison Martha Mary Prosperity Rose Sarah Susan Virginia Virtue
+			}
+
+
+			localization = {
+				HighGodName = americanist_jefferson
+				HighGodNamePossessive = americanist_jefferson_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_HE
+				HighGodHerselfHimself = CHARACTER_HIMSELF
+				HighGodHerHis = CHARACTER_HERHIS_HIS
+
+				#HealthGod
+				HealthGodName = americanist_jefferson
+				HealthGodNamePossessive = americanist_jefferson_possessive
+				HealthGodSheHe = CHARACTER_SHEHE_HE
+				HealthGodHerHis = CHARACTER_HERHIS_HIS
+				HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#FertilityGod
+				FertilityGodName = yeomanist_sacagawea
+				FertilityGodNamePossessive = yeomanist_sacagawea_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				FertilityGodHerHis = CHARACTER_HERHIS_HER
+				FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+				#WealthGod
+				WealthGodName = yeomanist_astor
+				WealthGodNamePossessive = yeomanist_astor_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = americanist_franklin
+				KnowledgeGodNamePossessive = americanist_franklin_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WarGod
+				WarGodName = americanist_polk
+				WarGodNamePossessive = americanist_polk_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#TricksterGod
+				TricksterGodName = americanist_washington
+				TricksterGodNamePossessive = americanist_washington_possessive
+				TricksterGodSheHe = CHARACTER_SHEHE_HE
+				TricksterGodHerHis = CHARACTER_HERHIS_HIS
+				TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+				#NightGod
+				NightGodName = yeomanist_lewison_clark
+				NightGodNamePossessive = yeomanist_lewison_clark_possessive
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS
+				NightGodHerHim = CHARACTER_HERHIM_HIM
+
+				#DeathDeity
+				DeathDeityName = americanist_providence
+				DeathDeityNamePossessive = americanist_providence_possessive
+				DeathDeitySheHe = CHARACTER_SHEHE_HE
+				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
+
+				#WitchGod
+				WitchGodName = yeomanist_britannia
+				WitchGodSheHe = CHARACTER_SHEHE_SHE
+				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHim = CHARACTER_HERHIM_HER
+				WitchGodMistressMaster = mistress
+				WitchGodMotherFather = mother
+
+				#HouseholdGod
+				HouseholdGodName = americanist_jefferson
+				HouseholdGodNamePossessive = americanist_jefferson_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = yeomanist_hudson
+				WaterGodNamePossessive = yeomanist_hudson_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				
+				DevilName = yeomanist_the_overreacher
+				DevilNamePossessive = yeomanist_the_overreacher_possessive
+				DevilSheHe = CHARACTER_SHEHE_HE
+				DevilHerHis = CHARACTER_HERHIS_HIS
+				DevilHerselfHimself = CHARACTER_HIMSELF
+				
+				PriestMale = yeomanist_priest
+				PriestMalePlural = yeomanist_priest_plural
+				PriestFemale = yeomanist_priest
+				PriestFemalePlural = yeomanist_priest_plural
+				PriestNeuter = yeomanist_priest
+				PriestNeuterPlural = yeomanist_priest_plural
+				BishopMale = yeomanist_priest
+				BishopMalePlural = yeomanist_priest_plural
+				BishopFemale = yeomanist_priest
+				BishopFemalePlural = yeomanist_priest_plural
+				BishopNeuter = yeomanist_priest
+				BishopNeuterPlural = yeomanist_priest_plural
+				ReligiousText = yeomanist_religious_text
+				HouseOfWorship = yeomanist_house_of_worship
+				HouseOfWorshipPlural = yeomanist_house_of_worship_plural
+
+				GoodGodNames = {
+					americanist_jefferson
+					yeomanist_sacagawea
+					yeomanist_hudson
+					americanist_franklin
+				}
+				EvilGodNames = {
+					yeomanist_the_overreacher
+					yeomanist_britannia
+				}
+			}
+		}
+	}
+}
