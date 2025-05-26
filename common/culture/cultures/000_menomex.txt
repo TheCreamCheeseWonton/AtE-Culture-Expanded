@@ -7,7 +7,7 @@
 	martial_custom = martial_custom_male_only
 	name_list = name_list_menomex
 	created = 2066.1.1
-	parents = { ate_german }
+	parents = { ate_german ate_viejomexicano }
 	
 	history_loc_override = after_event_ate_diaspora_menomex
 	

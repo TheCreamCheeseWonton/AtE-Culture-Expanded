@@ -7,7 +7,7 @@
 	martial_custom = martial_custom_male_only
 	name_list = name_list_estacadan
 	created = 2266.1.1
-	parents = { ate_old_texan }
+	parents = { ate_old_texan ate_viejomexicano }
 	
 	history_loc_override = after_event_ate_combine_spanish
 	

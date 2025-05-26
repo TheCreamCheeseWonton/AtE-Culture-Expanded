@@ -2474,3 +2474,99 @@ ate_african= {
 		100 = african
 	}	
 }
+
+ate_welsh = {
+	color = { 0 177 64 }
+	
+	ethos = ethos_communal
+	heritage = heritage_welsh
+	language = language_cymraeg
+	martial_custom = martial_custom_male_only
+	name_list = name_list_wladfaeg
+	
+	traditions = {
+		tradition_seafaring
+		#tradition_longbow_competitions
+		tradition_poetry
+		tradition_pastoralists
+		tradition_castle_keepers
+	}
+	
+	coa_gfx = {
+		wladfaeg_coa_gfx
+		british_group_gfx
+	}
+	building_gfx = {
+		wladfaeg_building_gfx
+		native_austral_building_gfx #Style
+		native_cold_building_gfx #Super-style
+		heritage_patagon_building_gfx
+		western_building_gfx
+		celtic_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		30 = caucasian
+		10 = patagonian
+		10 = white_indigenous
+		10 = med_black_ind
+	
+	}	
+}
+
+ate_italian = {
+	color = italian
+	created = 476.11.4
+	
+	ethos = ethos_spiritual
+	heritage = heritage_italian
+	language = language_ancient_italian
+	martial_custom = martial_custom_male_only
+	name_list = name_list_italian
+	
+	traditions = {
+		tradition_formation_fighting
+		tradition_republican_legacy
+		tradition_poetry
+		tradition_culinary_art
+	}
+	
+	coa_gfx = {
+		talian_coa_gfx
+		sulista_group_gfx
+	}
+	building_gfx = {
+		talian_building_gfx
+		brazilian_subtropical_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_sulista_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		sulista_group_gfx
+		#mauricinho_clothing_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = arab
+		15 = byzantine
+		20 = caucasian
+		55 = mediterranean
+		3 = black_white
+		2 = med_black_ind
+	
+	}	
+}

@@ -61,5 +61,1233 @@ ate_spanish = {
 		6 = black_white
 		2 = asian
 		5 = multiracial
+	}
+}
+
+ate_caribeno = {
+	color = { 0 214 121 }
 	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_cubano
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_welcoming
+		tradition_coffee_making
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_music_theory
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		cubano_coa_gfx
+		caribeno_group_gfx
+	}
+	building_gfx = {
+		cubano_building_gfx
+		hispano_caribbean_building_gfx #Architecture-style
+		caribbean_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_greater_antillean_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		caribeno_group_gfx
+		indian_clothing_gfx
+	}
+	unit_gfx = {
+		indian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		14 = african
+		5 = arab
+		1 = asian
+		4 = asian_southern_han
+		1 = caucasian
+		20 = mediterranean
+		10 = mesoamerican_yuto_aztec
+		28 = black_white
+	
+	}
+}
+
+ate_venezolano = {
+	color = { 207 19 43 }
+	
+	created = 1898.1.1
+	parents = { ate_caribeno ate_novogranadan }
+	
+	history_loc_override = spanish_colony_colapse_merg_loc
+
+	ethos = ethos_courtly
+	heritage = heritage_venezuelan
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_cubano
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_festivities
+		tradition_coffee_making
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_music_theory
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		guaro_coa_gfx
+		costero_group_gfx
+	}
+	building_gfx = {
+		guaro_building_gfx
+		gran_colombian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_venezuelan_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		caribbean_sa_clothing_gfx
+		western_clothing_gfx
+		indian_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		20 = mediterranean
+		40 = mesoamerican_yuto_aztec
+		25 = black_white
+	
+	}
+}
+
+ate_novogranadan = {
+	color = { 244 228 0 }
+	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_costeno
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_brewmasters
+		tradition_coffee_making
+		tradition_carnival
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_music_theory
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		costeno_coa_gfx
+		costero_group_gfx
+	}
+	building_gfx = {
+		costeno_building_gfx
+		gran_colombian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_colombian_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		costeno_clothing_gfx
+		colombian_clothes_gfx
+		western_clothing_gfx
+		indian_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+		
+	ethnicities = {
+			
+		8 = african
+		15 = arab
+		3 = asian_southern_han
+		1 = asian_austronesian
+		1 = white_asian
+		18 = mediterranean
+		25 = mesoamerican_yuto_aztec
+		5 = black_white
+		2 = indian
+		5 = multiracial
+		5 = caucasian
+		5 = black_indigenous
+		
+	}
+}
+
+ate_colombiano = {
+	color = { 255 205 0 }
+	
+	created = 1898.1.1
+	parents = { ate_novogranadan }
+	
+	history_loc_override = spanish_colony_colapse_loc
+
+	ethos = ethos_courtly
+	heritage = heritage_colombian
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_costeno
+	
+	traditions = {
+		tradition_brewmasters
+		tradition_coffee_making
+		tradition_carnival
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_music_theory
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		costeno_coa_gfx
+		costero_group_gfx
+	}
+	building_gfx = {
+		costeno_building_gfx
+		gran_colombian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_colombian_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		costeno_clothing_gfx
+		colombian_clothes_gfx
+		western_clothing_gfx
+		indian_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+		
+	ethnicities = {
+			
+		8 = african
+		15 = arab
+		3 = asian_southern_han
+		1 = asian_austronesian
+		1 = white_asian
+		18 = mediterranean
+		25 = mesoamerican_yuto_aztec
+		5 = black_white
+		2 = indian
+		5 = multiracial
+		5 = caucasian
+		5 = black_indigenous
+		
+	}
+}
+
+ate_ecuatoriano = {
+	color = { 3 78 162 }
+	
+	created = 1898.1.1
+	parents = { ate_novogranadan }
+	
+	history_loc_override = spanish_colony_colapse_loc
+
+	ethos = ethos_egalitarian
+	heritage = heritage_ecuatoriano
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_costeno
+	
+	traditions = {
+		tradition_carnival
+		tradition_fishermen
+		tradition_highland_warriors
+		tradition_republican_legacy
+	}
+	
+	coa_gfx = {
+		guayanenese_coa_gfx
+		ecuatoriano_group_gfx
+	}
+	building_gfx = {
+		guayasense_building_gfx
+		gran_colombian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_ecuatoriano_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = asian
+		9 = african
+		25 = mediterranean
+		9 = caucasian
+		10 = andean
+		68 = mesoamerican_yuto_aztec
+		5 = black_white
+		1 = asian_austronesian
+	
+	}
+}
+
+ate_novospanish = {
+	color = { 254 75 43 }
+	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_castilian
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_castle_keepers
+		tradition_chivalry
+		tradition_coffee_making
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	coa_gfx = {
+		chilango_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		chilango_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = caucasian
+		15 = mediterranean
+		20 = mesoamerican_maya
+		20 = mesoamerican_yuto_aztec
+		30 = med_black_ind
+		3 = asian_southern_han
+		2 = asian_austronesian
+		6 = black_white
+		2 = asian
+		5 = multiracial
+	}
+}
+
+ate_centralamericano = {
+	color = { 0 188 228 }
+	
+	created = 1810.1.1
+	parents = { ate_novospanish }
+	
+	history_loc_override = spanish_colony_colapse_loc
+
+	ethos = ethos_communal
+	heritage = heritage_centroamericano
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_nica
+	
+	traditions = {
+		tradition_coffee_making
+		tradition_adaptive_skirmishing
+		tradition_poetry
+		tradition_castle_keepers
+	}
+	
+	coa_gfx = {
+		nica_coa_gfx
+		centrano_group_gfx
+	}
+	building_gfx = {
+		nica_building_gfx
+		mexican_south_building_gfx #Architecture-style
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_centroamericano_building_gfx
+		indian_building_gfx
+	}
+	clothing_gfx = {
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+		camisablanca_clothing_gfx
+	}
+	unit_gfx = {
+		indian_unit_gfx
+	}
+	
+	ethnicities = {
+	
+		5 = arab
+		1 = asian
+		1 = asian_austronesian
+		25 = mediterranean
+		15 = caucasian
+		30 = centralamerican_chibchan
+		5 = byzantine
+		10 = african
+	
+	}
+}
+
+ate_viejomexicano = {
+	color = { 0 104 71 }
+	
+	created = 1810.1.1
+	parents = { ate_novospanish }
+	
+	history_loc_override = mexican_independence_loc
+
+	ethos = ethos_bureaucratic
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_castilian
+	
+	traditions = {
+		tradition_warrior_monks
+		tradition_dia_de_muertos
+		tradition_castle_keepers
+		tradition_medicinal_plants
+	}
+
+	coa_gfx = {
+		chilango_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		chilango_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = caucasian
+		15 = mediterranean
+		20 = mesoamerican_maya
+		20 = mesoamerican_yuto_aztec
+		30 = med_black_ind
+		3 = asian_southern_han
+		2 = asian_austronesian
+		6 = black_white
+		2 = asian
+		5 = multiracial
+	
+	}
+}
+
+ate_mexicano = {
+	color = { 20 124 91 }
+	created = 2266.1.1
+	parents = { ate_viejomexicano }
+	
+	history_loc_override = after_event_ate
+
+	ethos = ethos_bureaucratic
+	heritage = heritage_novohispano
+	language = language_metropolitano
+	martial_custom = martial_custom_male_only
+	name_list = name_list_chilango
+	
+	traditions = {
+		tradition_warrior_monks
+		tradition_dia_de_muertos
+		tradition_medicinal_plants
+		tradition_culinary_art
+	}
+
+	coa_gfx = {
+		chilango_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		chilango_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = caucasian
+		15 = mediterranean
+		20 = mesoamerican_maya
+		20 = mesoamerican_yuto_aztec
+		30 = med_black_ind
+		3 = asian_southern_han
+		2 = asian_austronesian
+		6 = black_white
+		2 = asian
+		5 = multiracial
+	
+	}
+}
+
+ate_metropolitano = {
+	color = { 50 154 121 }
+	created = 2266.1.1
+	parents = { ate_mexicano }
+	
+	history_loc_override = after_event_ate_long
+
+	ethos = ethos_bureaucratic
+	heritage = heritage_novohispano
+	language = language_metropolitano
+	martial_custom = martial_custom_male_only
+	name_list = name_list_chilango
+	
+	traditions = {
+		tradition_warrior_monks
+		tradition_dia_de_muertos
+		tradition_medicinal_plants
+		tradition_aztec_legacy
+	}
+
+	coa_gfx = {
+		chilango_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		chilango_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = caucasian
+		15 = mediterranean
+		20 = mesoamerican_maya
+		20 = mesoamerican_yuto_aztec
+		30 = med_black_ind
+		3 = asian_southern_han
+		2 = asian_austronesian
+		6 = black_white
+		2 = asian
+		5 = multiracial
+	
+	}
+}
+
+ate_norteno = {
+	color = { 52 64 0 }
+	created = 2266.1.1
+	parents = { ate_viejomexicano }
+	
+	history_loc_override = after_event_ate
+
+	ethos = ethos_bellicose
+	heritage = heritage_vaquero
+	language = language_norteno
+	martial_custom = martial_custom_male_only
+	name_list = name_list_altiplanense
+	
+	traditions = {
+		tradition_warrior_monks
+		tradition_warriors_of_the_dry
+		tradition_corridos
+		tradition_soldados_de_cuera
+		tradition_soldaderas
+	}
+	
+	coa_gfx = {
+		altiplanense_coa_gfx
+		norteno_group_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		altiplanense_building_gfx
+		mexican_north_building_gfx #Architecture-style
+		mexican_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_vaquero_building_gfx
+		iranian_building_gfx
+		mena_building_gfx
+	}
+	clothing_gfx = {
+		vaquero_clothes_gfx
+		mexicano_group_gfx
+		mena_clothing_gfx
+	}
+	unit_gfx = {
+		mena_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = asian
+		10 = caucasian
+		30 = mediterranean
+		4 = mesoamerican_maya
+		10 = mesoamerican_yuto_aztec
+		55 = aridoamerican_chichimec
+	
+	}
+}
+
+ate_amazonico = {
+	color = { 27 130 111 }
+	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_stoic
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_charapa
+	
+	traditions = {
+		tradition_hidden_cities
+		tradition_sacred_groves
+		tradition_llaneros
+		tradition_RICE_expert_apiculture
+	}
+	
+	coa_gfx = {
+		charapa_coa_gfx
+		amazonico_group_gfx
+	}
+	building_gfx = {
+		charapa_building_gfx
+		peru_bolivian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_selvatico_building_gfx
+		indian_building_gfx
+	}
+	clothing_gfx = {
+		charapa_clothing_gfx
+		amazonian_clothing_gfx
+		african_clothing_gfx
+	}
+	unit_gfx = {
+		sub_sahran_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = asian
+		3 = asian_southern_han
+		1 = caucasian
+		5 = mediterranean
+		5 = andean
+		70 = amazonian
+		20 = mesoamerican_yuto_aztec
+		5 = med_black_ind
+	
+	}
+}
+
+ate_viehoadino = {
+	color = { 191 121 69 }
+	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_castilian
+	
+	traditions = {
+		tradition_martial_admiration
+		tradition_castle_keepers
+		tradition_mountain_homes
+		tradition_mountaineers
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	
+	coa_gfx = {
+		huascareno_coa_gfx
+		peruano_group_gfx
+	}
+	building_gfx = {
+		huascareno_building_gfx
+		peru_bolivian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_bajo_peruano_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		indian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = african
+		1 = asian
+		1 = caucasian
+		5 = mediterranean
+		68 = andean
+		5 = amazonian
+		15 = mesoamerican_yuto_aztec
+		1 = white_asian
+		2 = black_indigenous
+		1 = multiracial
+	
+	}
+}
+
+ate_peruano = {
+	color = { 189 170 64 }
+	
+	created = 1810.1.1
+	parents = { ate_viehoadino }
+	
+	history_loc_override = spanish_colony_colapse_loc
+
+	ethos = ethos_stoic
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_huascareno
+	
+	traditions = {
+		tradition_mountain_homes
+		tradition_adaptive_skirmishing
+		tradition_mountaineers
+		tradition_zealous_people
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	
+	coa_gfx = {
+		huascareno_coa_gfx
+		peruano_group_gfx
+	}
+	building_gfx = {
+		huascareno_building_gfx
+		peru_bolivian_building_gfx #Architecture-style
+		sa_north_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_bajo_peruano_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		indian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = african
+		1 = asian
+		1 = caucasian
+		5 = mediterranean
+		68 = andean
+		5 = amazonian
+		15 = mesoamerican_yuto_aztec
+		1 = white_asian
+		2 = black_indigenous
+		1 = multiracial
+	
+	}
+}
+
+ate_viejoplatense = {
+	color = { 202 157 214 }
+	
+	created = 1493.7.4
+	parents = { ate_spanish }
+	
+	history_loc_override = spanish_colonization_americas_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_spanish
+	language = language_ancient_spanish
+	martial_custom = martial_custom_male_only
+	name_list = name_list_castilian
+	
+	traditions = {
+		tradition_mercenary_soccer
+		tradition_castle_keepers
+		tradition_agrarian
+		tradition_materos
+	}
+	
+	coa_gfx = {
+		litoraleno_coa_gfx
+		rioplatense_group_gfx
+	}
+	building_gfx = {
+		litoraleno_building_gfx
+		platinean_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_platense_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		rioplatense_group_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = arab
+		2 = asian
+		15 = caucasian
+		41 = mediterranean
+		5 = slavic
+		5 = amazonian
+		25 = mesoamerican_yuto_aztec
+		5 = white_indigenous	
+	}
+}
+
+ate_chileno = {
+	color = { 127 29 25 }
+	
+	created = 1810.1.1
+	parents = { ate_viejoplatense }
+	
+	history_loc_override = spanish_colony_colapse_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_chileno
+	language = language_chileno
+	martial_custom = martial_custom_male_only
+	name_list = name_list_almagreno
+	
+	traditions = {
+		tradition_hill_dwellers
+		tradition_adaptive_skirmishing
+		tradition_mendicant_mystics
+	}
+	dlc_tradition = {
+		trait = tradition_artisans
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		atacameno_coa_gfx
+	}
+	building_gfx = {
+		almagreno_building_gfx
+		southern_cone_dry_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_chileno_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		10 = byzantine
+		5 = caucasian
+		54 = mediterranean
+		25 = andean
+		10 = mesoamerican_yuto_aztec
+		1 = black_indigenous
+	
+	}
+}
+
+ate_viejispano = {
+	color = { 255 246 151 }
+	
+	created = 1810.1.1
+	parents = { ate_viejoplatense }
+	
+	history_loc_override = spanish_colony_colapse_loc
+	
+	ethos = ethos_spiritual
+	heritage = heritage_viejispano
+	language = language_mendozino
+	martial_custom = martial_custom_male_only
+	name_list = name_list_cuyano
+	
+	traditions = {
+		tradition_gaucho_legacy
+		tradition_zealous_people
+		tradition_materos
+		tradition_RICE_expert_apiculture
+	}
+	
+	coa_gfx = {
+		cuyano_coa_gfx
+		interiorano_group_gfx
+	}
+	building_gfx = {
+		cuyano_building_gfx
+		southern_cone_dry_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_viejispano_building_gfx
+		steppe_building_gfx
+	}
+	clothing_gfx = {
+		mongol_clothing_gfx
+	}
+	unit_gfx = {
+		mongol_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		10 = caucasian
+		30 = mediterranean
+		50 = mesoamerican_yuto_aztec
+	
+	}
+}
+
+ate_rioplantese = {
+	color = { 130 70 124 }
+	
+	created = 1810.1.1
+	parents = { ate_viejoplatense }
+	
+	history_loc_override = spanish_colony_colapse_loc
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_platense
+	language = language_rioplatense
+	martial_custom = martial_custom_male_only
+	name_list = name_list_litoraleno
+	
+	traditions = {
+		#TODO
+		tradition_mercenary_soccer
+		tradition_gaucho_legacy
+		tradition_agrarian
+		tradition_materos
+	}
+	
+	coa_gfx = {
+		litoraleno_coa_gfx
+		rioplatense_group_gfx
+	}
+	building_gfx = {
+		litoraleno_building_gfx
+		platinean_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_platense_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		rioplatense_group_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = arab
+		2 = asian
+		15 = caucasian
+		41 = mediterranean
+		5 = slavic
+		5 = amazonian
+		25 = mesoamerican_yuto_aztec
+		5 = white_indigenous	
+	}
+}
+
+ate_patagon = {
+	color = { 199 90 117 }
+	
+	created = 2066.1.1
+	parents = { ate_rioplantese }
+	
+	history_loc_override = after_event_ate
+	
+	ethos = ethos_courtly
+	heritage = heritage_patagon
+	language = language_patagon
+	martial_custom = martial_custom_male_only
+	name_list = name_list_santacruceno
+	
+	traditions = {
+		tradition_mystical_ancestors
+		tradition_gaucho_legacy
+		tradition_seafaring
+		tradition_pastoralists
+	}
+	
+	coa_gfx = {
+		santacruceno_coa_gfx
+		patagon_group_gfx
+	}
+	building_gfx = {
+		santacruceno_building_gfx
+		native_austral_building_gfx #Style
+		native_cold_building_gfx #Super-style
+		heritage_patagon_building_gfx
+		steppe_building_gfx
+	}
+	clothing_gfx = {
+		mongol_clothing_gfx
+	}
+	unit_gfx = {
+		mongol_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = byzantine
+		15 = caucasian
+		40 = mediterranean
+		10 = patagonian
+		10 = slavic
+		5 = mesoamerican_yuto_aztec
+		2 = asian_southern_han
+	
+	}
+}
+
+ate_platense = {
+	color = { 144 206 255 }
+	
+	created = 2066.1.1
+	parents = { ate_rioplantese }
+	
+	history_loc_override = after_event_ate
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_platense
+	language = language_rioplatense
+	martial_custom = martial_custom_male_only
+	name_list = name_list_litoraleno
+	
+	traditions = {
+		#TODO
+		tradition_mercenary_soccer
+		tradition_cosmopolitan_elitism
+		tradition_agrarian
+		tradition_materos
+	}
+	
+	coa_gfx = {
+		litoraleno_coa_gfx
+		rioplatense_group_gfx
+	}
+	building_gfx = {
+		litoraleno_building_gfx
+		platinean_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_platense_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		rioplatense_group_gfx
+		byzantine_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		2 = arab
+		2 = asian
+		15 = caucasian
+		41 = mediterranean
+		5 = slavic
+		5 = amazonian
+		25 = mesoamerican_yuto_aztec
+		5 = white_indigenous	
+	}
+}
+
+ate_gaucho = {
+	color = { 127 112 212 }
+	
+	created = 2066.1.1
+	parents = { ate_rioplantese }
+	
+	history_loc_override = after_event_ate
+	
+	ethos = ethos_bellicose
+	heritage = heritage_gaucho
+	language = language_rioplatense
+	martial_custom = martial_custom_male_only
+	name_list = name_list_pampeano
+	
+	traditions = {
+		#TODO
+		tradition_gaucho_legacy
+		tradition_modest
+		tradition_mystical_ancestors
+		tradition_bbqs
+	}
+	
+	coa_gfx = {
+		pampeano_coa_gfx
+		rioplatense_group_gfx
+	}
+	building_gfx = {
+		pampeano_building_gfx
+		gaucho_building_gfx #Architecture-style
+		sa_south_building_gfx #Style
+		latam_building_gfx #Super-style
+		heritage_gaucho_building_gfx
+		mediterranean_building_gfx
+	}
+	clothing_gfx = {
+		rioplatense_group_gfx
+		byzantine_clothing_gfx
+		gaucho_clothing_gfx
+	}
+	unit_gfx = {
+		eastern_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = asian
+		1 = arab
+		20 = caucasian
+		55 = mediterranean
+		5 = slavic
+		10 = mesoamerican_yuto_aztec
+		5 = white_indigenous
+		2 = black_white
+		2 = white_asian
+	
+	}
 }

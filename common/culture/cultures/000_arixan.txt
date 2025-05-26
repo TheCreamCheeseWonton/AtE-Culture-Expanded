@@ -7,7 +7,7 @@
 	martial_custom = martial_custom_equal
 	name_list = name_list_arixan
 	created = 2266.1.1
-	parents = { ate_deseretan }
+	parents = { ate_deseretan ate_viejomexicano }
 	
 	history_loc_override = after_event_ate_combine_spanish
 	

@@ -71,15 +71,10 @@ ccu_initialize_heritage_group = {
 	else_if = { limit = { has_cultural_parameter = heritage_group_dutch } set_variable = { name = heritage_group value = flag:dutch } }
 	else_if = { limit = { has_cultural_parameter = heritage_group_nordic } set_variable = { name = heritage_group value = flag:nordic } }
 	else_if = { limit = { has_cultural_parameter = heritage_group_portuguese } set_variable = { name = heritage_group value = flag:portuguese } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_brazilian } set_variable = { name = heritage_group value = flag:brazilian } }
 	else_if = { limit = { has_cultural_parameter = heritage_group_spanish } set_variable = { name = heritage_group value = flag:spanish } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_platense } set_variable = { name = heritage_group value = flag:platense } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_span_amazonian } set_variable = { name = heritage_group value = flag:span_amazonian } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_colombia } set_variable = { name = heritage_group value = flag:colombia } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_caribe } set_variable = { name = heritage_group value = flag:caribe } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_mexican } set_variable = { name = heritage_group value = flag:mexican } }
-	else_if = { limit = { has_cultural_parameter = heritage_group_peruvian } set_variable = { name = heritage_group value = flag:peruvian } }
 	else_if = { limit = { has_cultural_parameter = heritage_group_african } set_variable = { name = heritage_group value = flag:african } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_welsh } set_variable = { name = heritage_group value = flag:welsh } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_italian } set_variable = { name = heritage_group value = flag:italian } }
 
 }
 
@@ -112,13 +107,7 @@ ccu_initialize_heritage_family = {
 	else_if = { limit = { has_cultural_parameter = heritage_family_iberian } set_variable = { name = heritage_family value = flag:iberian } }
 	else_if = { limit = { has_cultural_parameter = heritage_family_spanish } set_variable = { name = heritage_family value = flag:spanish } }
 	else_if = { limit = { has_cultural_parameter = heritage_family_portuguese } set_variable = { name = heritage_family value = flag:portuguese } }
-	else_if = { limit = { has_cultural_parameter = heritage_family_mexican } set_variable = { name = heritage_family value = flag:mexican } }
-	else_if = { limit = { has_cultural_parameter = heritage_family_colombia } set_variable = { name = heritage_family value = flag:colombia } }
-	else_if = { limit = { has_cultural_parameter = heritage_family_span_amazonian } set_variable = { name = heritage_family value = flag:span_amazonian } }
-	else_if = { limit = { has_cultural_parameter = heritage_family_caribe } set_variable = { name = heritage_family value = flag:caribe } }
-	else_if = { limit = { has_cultural_parameter = heritage_family_platense } set_variable = { name = heritage_family value = flag:platense } }
     else_if = { limit = { has_cultural_parameter = heritage_family_african } set_variable = { name = heritage_family value = flag:african } }
-	 else_if = { limit = { has_cultural_parameter = heritage_family_peruvian } set_variable = { name = heritage_family value = flag:peruvian } }
 }
 
 
@@ -262,6 +251,7 @@ ccu_initialize_language_group = {
 	else_if = { limit = { has_cultural_parameter = language_group_ancient_dutch } set_variable = { name = language_group value = flag:ancient_dutch } }
 	else_if = { limit = { has_cultural_parameter = language_group_ancient_nordic } set_variable = { name = language_group value = flag:ancient_nordic } }
 	else_if = { limit = { has_cultural_parameter = language_group_ancient_spanish } set_variable = { name = language_group value = flag:ancient_spanish } }
+	else_if = { limit = { has_cultural_parameter = language_group_ancient_italian } set_variable = { name = language_group value = flag:ancient_italian } }
 }
 
 

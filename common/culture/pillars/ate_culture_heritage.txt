@@ -163,86 +163,6 @@ heritage_spanish = {
     audio_parameter = european
 }
 
-heritage_mexican  = { ##Novohispano
-    type = heritage
-    
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_mexican
-		}
-	}
-    parameters = {
-		heritage_group_mexican  = yes
-        heritage_family_mexican  = yes
-		heritage_family_spanish = yes
-    }
-    audio_parameter = european
-}
-
-heritage_caribe  = { ##Caribeño
-    type = heritage
-    
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_caribe
-		}
-	}
-    parameters = {
-		heritage_group_caribe  = yes
-        heritage_family_caribe  = yes
-		heritage_family_spanish = yes
-    }
-    audio_parameter = european
-}
-
-heritage_peruvian  = { ##Old Andean
-    type = heritage
-    
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_peruvian
-		}
-	}
-    parameters = {
-		heritage_group_peruvian  = yes
-        heritage_family_peruvian  = yes
-		heritage_family_spanish = yes
-    }
-    audio_parameter = european
-}
-
-heritage_colombia  = { ##Novogranada
-    type = heritage
-    
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_colombia
-		}
-	}
-    parameters = {
-		heritage_group_colombia  = yes
-        heritage_family_colombia  = yes
-		heritage_family_spanish = yes
-    }
-    audio_parameter = european
-}
-
-heritage_platense = { ##Old Platense
-    type = heritage
-    
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_platense
-		}
-	}
-    parameters = {
-		heritage_group_platense = yes
-        heritage_family_platense = yes
-		heritage_family_spanish = yes
-    }
-    audio_parameter = european
-}
-
 heritage_portuguese  = {
     type = heritage
     
@@ -255,23 +175,40 @@ heritage_portuguese  = {
 		heritage_group_portuguese = yes
         heritage_family_portuguese = yes
 		heritage_family_iberian = yes
+		heritage_family_brazilian = yes
 		heritage_family_european = yes
     }
     audio_parameter = european
 }
 
-heritage_brazilian  = {
+heritage_welsh = {
     type = heritage
     
 	is_shown = {
 		heritage_is_shown_trigger = {
-			HERITAGE = heritage_brazilian
+			HERITAGE = heritage_welsh
 		}
 	}
     parameters = {
-		heritage_group_brazilian = yes
-        heritage_family_brazilian = yes
-		heritage_family_portuguese = yes
+		heritage_group_celtic = yes
+		heritage_family_celtic = yes
+		heritage_family_european = yes
+    }
+    audio_parameter = european
+}
+
+heritage_italian = {
+    type = heritage
+    
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_italian
+		}
+	}
+    parameters = {
+		heritage_group_italian = yes
+		heritage_family_italian = yes
+		heritage_family_european = yes
     }
     audio_parameter = european
 }
