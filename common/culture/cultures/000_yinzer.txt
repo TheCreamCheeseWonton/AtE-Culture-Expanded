@@ -10,10 +10,11 @@
 	name_list = name_list_yinzer
 	
 	traditions = {
+		tradition_steelworkers
 		#TODO
 		tradition_sorcerous_metallurgy
 		tradition_city_keepers
-		tradition_hard_working
+		tradition_unions
 		tradition_highland_warriors
 	}
 	

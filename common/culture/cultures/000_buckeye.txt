@@ -13,7 +13,7 @@
 	
 	traditions = {
 		tradition_parochialism
-		tradition_hard_working
+		tradition_unions
 		tradition_agrarian
 	}
 	

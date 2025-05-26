@@ -14,7 +14,7 @@
 	traditions = {
 		tradition_blitz_tactics
 		tradition_pastoralists
-		tradition_modest
+		tradition_mn_nice
 		tradition_tribe_unity #tradition_strong_kinship
 		tradition_fp1_northern_stories
 	}

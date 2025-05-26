@@ -17,7 +17,7 @@
 		#TODO
 		tradition_sorcerous_metallurgy
 		tradition_stand_and_fight
-		tradition_hard_working
+		tradition_unions
 		tradition_city_keepers
 		tradition_parochialism
 	}

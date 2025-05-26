@@ -14,7 +14,7 @@
 	traditions = {
 		#TODO
 		tradition_wetlanders # changed from tradition_polders
-		tradition_life_is_just_a_joke
+		tradition_imaginerians
 		tradition_battlefield_looters
 		tradition_swords_for_hire
 		tradition_xenophilic

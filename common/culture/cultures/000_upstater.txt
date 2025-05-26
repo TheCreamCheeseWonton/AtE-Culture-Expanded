@@ -15,7 +15,7 @@
 		#TODO
 		tradition_chivalry
 		tradition_hit_and_run
-		tradition_hard_working
+		tradition_unions
 		tradition_loyal_soldiers
 	}
 	

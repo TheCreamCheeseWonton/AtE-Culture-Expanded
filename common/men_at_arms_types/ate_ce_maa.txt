@@ -1,0 +1,41 @@
+﻿usa_secret_service = {
+	type = heavy_infantry
+	
+	damage = 65
+	toughness = 40
+	pursuit = 10
+	screen = 0
+	
+	can_recruit = {
+		# valid_for_maa_trigger = { PARAMETER = unlock_maa_secret_service }
+		# Pretty sure this is how this is supposed to be #fune
+		valid_for_maa_trigger = { PARAMETER = unlock_maa_secret_service }
+	}
+	
+	terrain_bonus = {
+		farmlands = { damage = 6 toughness = 4 }
+		plains = { damage = 6 toughness = 4 }
+		hills = { damage = 6 toughness = 4 }
+	}
+	
+	counters = {
+		skirmishers = 1
+		pikemen = 1
+		heavy_cavalry = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { toughness = -2 screen = -2 }
+		harsh_winter = { toughness = -2 screen = -2 }
+	}
+	
+	buy_cost = { gold = huscarls_recruitment_cost }
+	low_maintenance_cost = { gold = huscarls_low_maint_cost }
+	high_maintenance_cost = { gold = huscarls_high_maint_cost }
+	
+	max_sub_regiments = 5
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_infantry
+}

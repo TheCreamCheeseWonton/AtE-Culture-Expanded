@@ -15,7 +15,7 @@
 		tradition_city_keepers
 		tradition_parochialism
 		tradition_cosmopolitan_elitism
-		tradition_warrior_monks
+		tradition_papal_legacy
 	}
 	
 	coa_gfx = {

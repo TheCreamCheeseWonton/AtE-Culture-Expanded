@@ -14,7 +14,7 @@
 	traditions = {
 		tradition_equal_inheritance
 		tradition_cosmopolitan_elitism
-		tradition_metal_craftsmanship
+		tradition_steelworkers
 	}
 	
 	dlc_tradition = {

@@ -14,7 +14,7 @@
 	traditions = {
 		#TODO
 		tradition_seafaring
-		tradition_metal_craftsmanship
+		tradition_steelworkers
 		tradition_stalwart_defenders
 		tradition_forest_fighters
 		

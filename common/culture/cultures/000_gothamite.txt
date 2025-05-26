@@ -14,7 +14,7 @@
 	traditions = {
 		tradition_maritime_mercantilism
 		tradition_strength_in_numbers
-		tradition_cosmopolitan_elitism
+		tradition_cosmopolitan_yorkism
 		tradition_quarrelsome
 	}
 	

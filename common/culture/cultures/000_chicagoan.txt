@@ -13,7 +13,7 @@
 	
 	traditions = {
 		#TODO
-		tradition_hard_working
+		tradition_unions
 		tradition_culinary_art
 		tradition_cosmopolitan_elitism
 		tradition_winter_warriors

@@ -12,7 +12,7 @@
 	traditions = {
 		tradition_ancient_miners
 		tradition_esteemed_hospitality
-		tradition_hard_working
+		tradition_unions
 		tradition_hill_dwellers
 	}
 	

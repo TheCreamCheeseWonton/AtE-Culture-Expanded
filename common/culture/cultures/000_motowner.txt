@@ -13,7 +13,7 @@
 	
 	traditions = {
 		#TODO
-		tradition_metal_craftsmanship
+		tradition_steelworkers
 		tradition_maritime_mercantilism
 		tradition_talent_acquisition
 	}
