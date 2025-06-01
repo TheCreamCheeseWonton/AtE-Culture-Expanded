@@ -14,7 +14,7 @@
 	traditions = {
 		tradition_brewmasters
 		tradition_forest_wardens
-		tradition_polygamous
+		tradition_cascadian_liberalism
 		tradition_trail_runners
 	}
 	dlc_tradition = {

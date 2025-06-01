@@ -359,3 +359,8 @@
  name_list_american:0 "American"
  name_list_nordic:0 "Nordic"
  name_list_slavic:0 "Slavic"
+
+ #pARAMETERS 
+ culture_parameter_forest_syrup_extraction:0 "The #V $building_type_plantation_maple_01$#! line of [buildings|E] have additional bonuses in [counties|E] of this [culture|E]"
+ culture_parameter_ce_logging_furnace_bonuses:0 "The #V $building_type_logging_camps_01$#! line of [buildings|E] have additional bonuses in [counties|E] of this [culture|E]"
+ culture_parameter_wind_furnace_bonuses:0 "The #V $building_type_wind_furnace_01$#! line of [buildings|E] have additional bonuses in [counties|E] of this [culture|E]"

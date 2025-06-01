@@ -17,6 +17,7 @@
 		tradition_religion_blending
 		tradition_chivalry
 		tradition_winter_warriors
+		tradition_syrup_makers
 	}
 	
 	coa_gfx = {

@@ -17,6 +17,7 @@
 		tradition_religion_blending
 		tradition_mountaineer_ruralism
 		tradition_trail_runners
+		tradition_skiiing_mountains
 	}
 	
 	coa_gfx = {

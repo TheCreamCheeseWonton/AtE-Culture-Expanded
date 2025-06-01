@@ -13,7 +13,7 @@
 	
 	traditions = {
 		tradition_loyal_soldiers
-		tradition_city_keepers
+		tradition_keepers_of_brazilia
 		tradition_fervent_temple_builders
 		tradition_parochialism
 	}

@@ -12,10 +12,10 @@
 	history_loc_override = after_event_ate_morman_ewww
 	traditions = {
 		#TODO
-		tradition_zealous_people
-		tradition_tribe_unity
+		tradition_new_cannan
 		#tradition_strong_kinship
 		tradition_charitable
+		tradition_skiiing_mountains
 	}
 	
 	dlc_tradition = {

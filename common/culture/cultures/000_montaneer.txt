@@ -16,6 +16,7 @@
 		tradition_frugal_armorsmiths
 		tradition_ancient_miners
 		tradition_RICE_expert_apiculture
+		tradition_skiiing_mountains
 	}
 	
 	coa_gfx = {

@@ -17,7 +17,7 @@
 		tradition_equitable
 		tradition_town_council
 		tradition_yankee_ingenuity
-		#tradition_syrup_makers
+		tradition_syrup_makers
 	}
 	dlc_tradition = {
 		trait = tradition_fp3_pragmatic_creed

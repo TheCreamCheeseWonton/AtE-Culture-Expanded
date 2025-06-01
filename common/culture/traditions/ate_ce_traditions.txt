@@ -436,7 +436,7 @@ tradition_american_legacy = {
 	layers = {
 		0 = steward
 		1 = indian
-		4 = laurel.dds
+		4 = aemricansts.dds
 	}
 
 	is_shown = {
@@ -467,7 +467,7 @@ tradition_american_legacy = {
 	character_modifier = {
 		monthly_piety_gain_mult = 0.1
 		diplomacy_per_piety_level = 1
-        americanist_religion_opinion = 5
+        americanist_religion_opinion = 10
 		city_holding_build_gold_cost = -0.05
 		city_holding_holding_build_gold_cost = -0.05
 		barons_and_minor_landholders_opinion = -20
@@ -669,12 +669,22 @@ tradition_papal_legacy = {
 }
 
 tradition_imaginerians = {
-	category = societal
+	category = regional
+	
+	is_shown = {
+		has_cultural_tradition = tradition_imaginerians
+	}
+
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:ate_floridian
+		}
+	}
 
 	layers = {
 		0 = intrigue
 		1 = western
-		4 = noble.dds
+		4 = imagineering.dds
 	}
 	
 	parameters = {
@@ -748,105 +758,739 @@ tradition_imaginerians = {
 	ai_will_do = { value = 0 } # The AI never pick this
 }
 
-#tradition_syrup_makers = {
-#	category = realm
-#
-#	layers = {
-#		0 = steward
-#		1 = western
-#		4 = forest.dds
-#	}
-#
-#	is_shown = {
-#		OR = {
-#			has_cultural_pillar = heritage_canayen
-#			has_cultural_pillar = heritage_laurentian
-#			has_cultural_pillar = heritage_new_englander
-#			any_culture_county = {
-#				any_county_province = {
-#					geographical_region = commodity_region_maple
-#				}
-#			}
-#		}
-#	}
-#	can_pick = {
-#		custom_description = {
-#			text = culture_in_forest_desc
-#			any_culture_county = {
-#				percent >= 0.4
-#				any_county_province = {
-#					geographical_region = commodity_region_maple
-#				}
-#			}
-#		}
-#	}
-#
-#	parameters = {
-#		forest_syrup_extraction = yes
-#		#can_use_maple_syrup = yes
-#	}
-#	character_modifier = {
-#		stress_gain_mult = -0.1
-#	}
-#
-#	cost = {
-#		prestige = {
-#			add = {
-#				value = tradition_base_cost
-#				desc = BASE
-#				format = "BASE_VALUE_FORMAT"
-#			}
-#			if = {
-#				limit = {
-#					NOR = {
-#						culture_pillar:ethos_courtly = { is_in_list = traits }
-#						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
-#					}
-#				}
-#				add = {
-#					value = tradition_incompatible_ethos_penalty
-#					desc = not_courtly_or_bureaucratic_desc
-#				}
-#			}
-#			if = {
-#				limit = {
-#					NOT = {
-#						any_culture_county = {
-#							percent >= 0.3
-#							any_county_province = {
-#								OR = {
-#									terrain = forest
-#								}
-#							}
-#						}
-#					}
-#				}
-#				add = {
-#					value = tradition_unfulfilled_criteria_penalty
-#					desc = forest_percentage_desc
-#				}
-#			}
-#			multiply = tradition_replacement_cost_if_relevant
-#		}
-#	}
-#
-#	ai_will_do = {
-#		value = 100
-#		if = {
-#			limit = {
-#				NOT = {
-#					scope:character = {
-#						any_sub_realm_county = {
-#							percent >= 0.2
-#							culture = scope:character.culture
-#							any_county_province = {
-#								terrain = forest
-#							}
-#						}
-#					}
-#				}
-#			}
-#			multiply = 0
-#		}
-#	}
-#}
+tradition_skiiing_mountains = {
+	category = regional
+
+	layers = {
+		0 = learning
+		1 = western
+		4 = skiing.dds
+	}
+	
+	is_shown = {
+		has_cultural_tradition = tradition_skiiing_mountains
+	}
+
+	can_pick = {
+		AND = { 
+			any_parent_culture_or_above = {
+				OR = { 
+					this = culture:ate_rocklander
+					this = culture:ate_deseretan
+				}
+			}
+			custom_description = {
+				text = culture_in_mountains_desc
+				any_culture_county = {
+					any_county_province = {
+						OR = {
+							terrain = mountains
+							terrain = desert_mountains
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		strong_traits_more_valued = yes
+		strong_traits_more_common = yes
+	}
+	province_modifier = {
+		mountains_tax_mult = 0.05
+		mountains_development_growth_factor = 0.05
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOT = {
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.3
+							any_county_province = {
+								OR = {
+									terrain = mountains
+									terrain = desert_mountains
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = mountain_percentage_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = { culture_pillar:ethos_spiritual = { is_in_list = traits } }
+			}
+			multiply = 0.25
+		}
+		else_if = {
+			limit = {
+				scope:character ?= {
+					piety_level >= 3
+				}
+			}
+			multiply = scope:character.piety_level
+		}
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							percent >= 0.3
+							culture = scope:character.culture
+							any_county_province = {
+								OR = {
+									terrain = mountains
+									terrain = desert_mountains
+								}
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+		else_if = {
+			limit = {
+				any_culture_county = {
+					percent >= 0.6
+					any_county_province = {
+						OR = {
+							terrain = mountains
+							terrain = desert_mountains
+						}
+					}
+				}
+			}
+			multiply = 2
+		}
+	}
+}
+
+tradition_new_cannan = {
+	category = regional
+	
+	is_shown = {
+		has_cultural_tradition = tradition_new_cannan
+	}
+
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:ate_deseretan
+		}
+	}
+
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = speech.dds
+	}
+	
+	parameters = {
+		zealous_trait_more_common = yes
+		humble_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+		harder_to_convert_county_faith = yes
+		supports_theodemocracy = yes
+		bonuses_from_patriarch_matriarch_trait = yes
+		cultural_house_personal_scheme_success_chance = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		loyal_trait_more_valued = yes
+		tribal_holding_stationed_bonus = yes
+	}
+	character_modifier = {
+		opinion_of_different_faith = -15
+		ai_zeal = 25
+		dynasty_house_opinion = 10
+		opinion_of_liege = -5
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_spiritual_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = zealous
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_zealous_desc
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_variable = defensive_traditionalist_discount
+						has_variable = aggressive_traditionalist_discount
+					}
+				}
+				add = {
+					value = traditionalist_discount
+					desc = traditionalist_discount_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				OR = {
+					culture_tradition:tradition_welcoming = { is_in_list = traits }
+					culture_tradition:tradition_eye_for_an_eye = { is_in_list = traits }
+					culture_tradition:tradition_forbearing = { is_in_list = traits }
+					culture_tradition:tradition_equitable = { is_in_list = traits }
+					culture_tradition:tradition_charitable = { is_in_list = traits }
+					culture_tradition:tradition_modest = { is_in_list = traits }
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+tradition_cascadian_liberalism = {
+	category = societal
+
+	layers = {
+		0 = intrigue
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	is_shown = {
+		has_cultural_tradition = tradition_cascadian_liberalism
+	}
+	
+	parameters = {
+		number_of_spouses = 4
+		ao_shared_fertility = yes
+		ao_fecund_trait_more_valued = yes
+		ao_same_sex_marriage_if_accepted = yes
+	}
+
+	character_modifier = {
+		monthly_county_control_growth_add = -0.1
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_or_egalitarian_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = { scope:character = { allowed_to_marry_same_sex_trigger = yes } }
+			add = 100
+		}
+	}
+}
+
+tradition_keepers_of_brazilia = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = brazilia.dds
+	}
+	
+	is_shown = {
+		has_cultural_tradition = tradition_keepers_of_brazilia
+	}
+	
+	parameters = {
+		next_level_guild_halls = yes
+		city_buildings_more_county_opinion = yes
+		ai_more_likely_to_city = yes
+		architect_trait_prestige = yes
+		watermills_windmills_cities = yes
+		can_form_republic = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		more_parochial_vassals = yes
+		next_level_cities = yes
+		republican_vassals_pay_more = yes
+	}
+	
+	character_modifier = {
+		castle_holding_holding_build_gold_cost = -0.1
+		castle_holding_build_speed = -0.25
+		city_holding_build_speed = -0.25
+		city_holding_holding_build_gold_cost = -0.1
+		barons_and_minor_landholders_opinion = -20
+		parochial_opinion = -20
+		parochial_tax_contribution_mult = 0.1
+		parochial_levy_contribution_mult = 0.1
+		city_holding_build_gold_cost = -0.1
+		parochial_opinion = -20
+		domain_limit = -2
+	}
+
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			# Ethos requirements.
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_courtly_or_egalitarian_desc
+				}
+			}
+			# Requires communal government innovation.
+			if = {
+				limit = {
+					NOT = { has_innovation = innovation_development_02 }
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_development_02_innovation_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = { 
+		value = 400
+		add = {
+			value = scope:character.ai_sociability
+			divide = 2
+		}
+		if = {
+			limit = {
+				NOT = { has_innovation = innovation_development_02 }
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_apalachian_ruralism = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = ruuralism.dds
+	}
+	
+	is_shown = {
+		has_cultural_tradition = tradition_apalachian_ruralism
+	}
+	
+	parameters = {
+		unlock_maa_mountaineers = yes
+		quarries_building_bonuses = yes
+		hill_farms_building_bonuses = yes
+		rough_terrain_expert_trait_more_common = yes
+		mountain_trait_bonuses = yes
+		can_recruit_mountain_specialist = yes
+		close_family_better_councillors = yes
+		close_family_better_court_positions = yes
+		penalty_for_revoking_titles_from_close_family = yes
+	}
+	character_modifier = {
+		mountains_travel_danger = mountains_high_danger_reduction
+		hills_travel_danger = hills_high_danger_reduction
+		close_relative_opinion = 5
+		cultural_head_fascination_mult = -0.1
+	}
+
+	county_modifier = {
+		hills_development_growth_factor = 0.1
+		mountains_development_growth_factor = 0.1
+	}
+	
+	province_modifier = {
+		mountains_construction_gold_cost = -0.05
+		mountains_holding_construction_gold_cost = -0.05
+		hills_construction_gold_cost = -0.05
+		hills_holding_construction_gold_cost = -0.05
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOT = {
+						culture_pillar:ethos_stoic = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_stoic_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.3
+							any_county_province = {
+								terrain = mountains
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = mountain_true_percentage_desc
+				}
+			}
+
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = {
+		value = 400
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							culture = scope:character.culture
+							any_county_province = {
+								OR = {
+									terrain = mountains
+									terrain = hills
+								}
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+		else_if = {
+			limit = {
+				any_culture_county = {
+					percent >= 0.6
+					any_county_province = {
+						OR = {
+							terrain = mountains
+							terrain = hills
+						}
+					}
+				}
+			}
+			multiply = 8
+		}
+	}
+}
+
+tradition_syrup_makers = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = western
+		4 = maple_syurip.dds
+	}
+
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_canayen
+			has_cultural_pillar = heritage_laurentian
+			has_cultural_pillar = heritage_new_englander
+			any_culture_county = {
+				any_county_province = {
+					geographical_region = commodity_region_maple
+				}
+			}
+		}
+	}
+	can_pick = {
+		custom_description = {
+			text = culture_in_forest_desc
+			any_culture_county = {
+				percent >= 0.4
+				any_county_province = {
+					geographical_region = commodity_region_maple
+				}
+			}
+		}
+	}
+
+	parameters = {
+		forest_syrup_extraction = yes
+		ce_logging_furnace_bonuses = yes 
+		#can_use_maple_syrup = yes
+	}
+	character_modifier = {
+		stress_gain_mult = -0.1
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_or_bureaucratic_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.3
+							any_county_province = {
+								OR = {
+									terrain = forest
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = forest_percentage_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							percent >= 0.2
+							culture = scope:character.culture
+							any_county_province = {
+								terrain = forest
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_college_legacy = { # Offshoot of tradition_philosopher_culture
+	category = societal
+
+	layers = {
+		0 = learning
+		1 = mena
+		4 = beacon_of_learning.dds
+	}
+	
+	is_shown = {
+		has_cultural_tradition = tradition_college_legacy
+	}
+	
+	parameters = {
+		pensive_trait_more_common = yes
+		rowdy_trait_less_common = yes
+		innovation_from_learning_traits = yes
+		can_appoint_court_scholar = yes
+		guardian_education_better_outcomes = yes
+	}
+
+	character_modifier = {
+		cultural_head_fascination_mult = 0.15
+		monthly_learning_lifestyle_xp_gain_mult = 0.25
+		learning_per_piety_level = 1
+		learning_per_prestige_level = 1
+		learning_per_stress_level = 1
+		stress_gain_mult = 0.20
+		knight_effectiveness_mult = -0.1
+		maa_toughness_add = -2
+		levy_toughness = -2
+		heavy_cavalry_toughness_add = -4
+		pikemen_toughness_add = -1
+		heavy_infantry_toughness_add = -1
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = scholar
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_scholar_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 200
+		if = {
+			limit = {
+				NOR = {
+					culture_pillar:ethos_courtly = { is_in_list = traits }
+					culture_pillar:ethos_communal = { is_in_list = traits }
+					culture_pillar:ethos_spiritual = { is_in_list = traits }
+				}
+			}
+			multiply = 0
+		}
+	}
+}

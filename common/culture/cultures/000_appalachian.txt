@@ -14,7 +14,7 @@
 	traditions = {
 		#TODO
 		tradition_resourceful_tinkerers
-		tradition_mountaineer_ruralism
+		tradition_apalachian_ruralism
 		tradition_tribe_unity
 		tradition_ancient_miners
 	}
