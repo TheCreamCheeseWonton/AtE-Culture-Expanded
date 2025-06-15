@@ -468,12 +468,137 @@ tradition_american_legacy = {
 		monthly_piety_gain_mult = 0.1
 		diplomacy_per_piety_level = 1
         americanist_religion_opinion = 10
-		city_holding_build_gold_cost = -0.05
-		city_holding_holding_build_gold_cost = -0.05
 		barons_and_minor_landholders_opinion = -20
 		parochial_opinion = -20
 		parochial_tax_contribution_mult = 0.1
 		parochial_levy_contribution_mult = 0.1
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_sub_realm_county = {
+								percent >= 0.9
+								culture = scope:character.culture
+								any_county_province = {
+									has_holding_type = city_holding
+								}
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = 90_percent_cities_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 200
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							percent >= 0.15
+							culture = scope:character.culture
+							any_county_province = {
+								has_holding_type = city_holding
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_vassal = {
+							primary_title.tier > tier_county
+							government_has_flag = government_is_republic
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_heart_of_nation = {
+	category = regional
+
+	layers = {
+		0 = steward
+		1 = indian
+		4 = aemricansts.dds
+	}
+
+	is_shown = {
+		has_cultural_tradition = tradition_american_legacy
+	}
+
+	can_pick = {
+		OR = { 
+			has_cultural_pillar = heritage_american
+			any_parent_culture_or_above = {
+				this = culture:beltway
+			}
+		}
+	}
+	
+	parameters = {
+		unlock_maa_secret_service = yes
+		can_make_republican_vassals = yes
+		unlock_innovation_pike_columns = yes
+		city_buildings_more_powerful = yes
+		city_buildings_less_control = yes
+		republican_vassals_pay_more = yes
+		more_parochial_vassals = yes
+		can_form_republic = yes
+		next_level_cities = yes
+
+	}
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+        americanist_religion_opinion = 10
+		barons_and_minor_landholders_opinion = -20
+		castle_holding_holding_build_gold_cost = -0.05
+		city_holding_holding_build_gold_cost = -0.05
+		parochial_opinion = -20
+		parochial_tax_contribution_mult = 0.1
+		parochial_levy_contribution_mult = 0.1
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.05
 	}
 	
 	cost = {
@@ -1109,7 +1234,7 @@ tradition_keepers_of_brazilia = {
 		parochial_levy_contribution_mult = 0.1
 		city_holding_build_gold_cost = -0.1
 		parochial_opinion = -20
-		domain_limit = -2
+		domain_limit = -1
 	}
 
 	culture_modifier = {

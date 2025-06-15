@@ -6,4 +6,3 @@ tags={
 }
 name="AtE: Culture Expanded"
 supported_version="1.15.0*"
-remote_file_id="3476766342"
