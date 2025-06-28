@@ -1,0 +1,170 @@
+﻿##Illinois
+form_illinois_decision_effects = {
+	save_scope_as = illinois_former
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = title_change
+		add_claim_on_loss = no
+	}
+	title:k_illinois = {
+		change_title_holder = {
+			holder = scope:illinois_former
+			change = scope:title_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:title_change
+
+	title:d_kankakee = { set_de_jure_liege_title = title:k_illinois }
+	title:d_peoria = { set_de_jure_liege_title = title:k_illinois }
+	title:d_chicagoland = { set_de_jure_liege_title = title:k_illinois }
+	title:k_illinois = { set_de_jure_liege_title = title:e_steel_belt }
+
+	if = {
+		limit = {
+			title:k_illinois = { de_jure_liege != title:e_usa }
+			title:k_illinois.holder.liege ?= { has_title = title:e_usa }
+		}
+		title:k_illinois = { set_de_jure_liege_title = title:e_usa }
+	}
+
+	#Can only happen once
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:unite_illinois_decision
+	}
+	set_global_variable = {
+		name = form_illinois_decision
+		value = scope:illinois_former
+	}
+}
+
+form_illinois_decision_effects_1 = {
+	save_scope_as = illinois_former
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = title_change
+		add_claim_on_loss = no
+	}
+	title:k_illinois = {
+		change_title_holder = {
+			holder = scope:illinois_former
+			change = scope:title_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:title_change
+	
+	title:k_illinois = { set_de_jure_liege_title = title:e_steel_belt }
+
+	if = {
+		limit = {
+			title:k_illinois = { de_jure_liege != title:e_usa }
+			title:k_illinois.holder.liege ?= { has_title = title:e_usa }
+		}
+		title:k_illinois = { set_de_jure_liege_title = title:e_usa }
+	}
+
+	#Can only happen once
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:unite_illinois_decision
+	}
+	set_global_variable = {
+		name = form_illinois_decision
+		value = scope:illinois_former
+	}
+}
+
+expand_the_steelbelt_decision_effects = {
+	scope:expand_the_steelbelt_former = {
+		if = {
+			limit = { has_title = title:e_northwoods }
+			destroy_title = title:e_northwoods
+		}
+		resolve_title_and_vassal_change = scope:title_change
+
+		title:k_north_star = { set_de_jure_liege_title = title:e_steel_belt }
+		title:k_superior = { set_de_jure_liege_title = title:e_steel_belt }
+		title:k_wisconsin = { set_de_jure_liege_title = title:e_steel_belt }
+		title:k_aurora = { set_de_jure_liege_title = title:e_canada }
+	}
+}
+
+restore_the_great_lakes_decision_effects = {
+	scope:restore_the_great_lakes_former = {
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_great_lakes = {
+			change_title_holder = {
+				holder = scope:restore_the_great_lakes_former
+				change = scope:title_change
+			}
+			if = {
+				limit = {
+					OR = {
+						scope:restore_the_great_lakes_former.culture = { has_cultural_pillar = heritage_anishinaabe }
+						scope:restore_the_great_lakes_former.culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				set_title_name = e_tecumsia
+				#set_title_prefix = e_tecumsia_article
+				set_coa = e_tecumsia
+				scope:restore_the_great_lakes_former = { set_variable = flavourise_tecumsia_confederation }
+			}
+			update_dynamic_coa = yes
+			if = {
+				limit = {
+					OR = {
+						scope:restore_the_great_lakes_former.culture = { has_cultural_pillar = heritage_anishinaabe }
+						scope:restore_the_great_lakes_former.culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				set_title_name = e_tecumsia
+				#set_title_prefix = e_tecumsia_article
+				set_coa = e_tecumsia
+				scope:restore_the_great_lakes_former = { set_variable = flavourise_tecumsia_confederation }
+			}
+		}
+		#if = {
+		#	limit = {
+		#		NOT = {
+		#			title:e_steel_belt = {
+		#				OR = {
+		#					is_de_jure_liege_or_above_target = title:k_ontario
+		#					is_de_jure_liege_or_above_target = title:k_dutchland
+		#					is_de_jure_liege_or_above_target = title:k_hudsonia
+		#					is_de_jure_liege_or_above_target = title:k_kanawha
+		#				}
+		#			}
+		#		}
+		#	}
+		#	title:k_allegheny = { set_de_jure_liege_title = title:d_finger_lakes.de_jure_liege.de_jure_liege }
+		#}
+		if = {
+			limit = { has_title = title:e_northwoods }
+			destroy_title = title:e_northwoods
+		}
+		if = {
+			limit = { has_title = title:e_steel_belt }
+			destroy_title = title:e_steel_belt
+		}
+		resolve_title_and_vassal_change = scope:title_change
+
+		title:k_ohio_valley = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_ohio = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_illinois = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_indiana = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_greater_reserve = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_chicagoland = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_michigan = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_superior = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_wisconsin = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_north_star = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_aurora = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_ontario = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_hudsonia = { set_de_jure_liege_title = title:e_great_lakes }
+		title:k_allegheny = { set_de_jure_liege_title = title:e_great_lakes }
+	}
+}

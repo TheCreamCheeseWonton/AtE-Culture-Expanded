@@ -1,0 +1,3623 @@
+﻿# Geographical regions
+# Regions can be declared with one or more of the following fields:
+#	duchies = { }, takes duchy title names declared in landed_titles.txt
+#	counties = { }, takes county title names declared in landed_titles.txt
+#	provinces = { }, takes province id numbers declared in /history/provinces
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region.
+#		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
+
+###########################################################################
+# World Regions
+#	These groups are mutually exclusive on the same tier & should cover every part of the map
+###########################################################################
+
+#world_far_north
+	#world_arctic
+	#world_canada_south
+		#world_eastern_canada
+		#world_central_canada
+		#world_western_canada
+
+#world_us_region
+	#world_us_eastern
+		#world_us_great_lakes
+		#world_us_northeast
+		#world_us_southeast
+		#world_us_upland_south
+		#world_us_gulf_coast
+	#world_us_middle
+		#world_us_great_plains
+		#world_us_texas
+	#world_us_western
+		#world_us_rockies
+		#world_us_southwest
+		#world_us_west_coast
+
+#world_mexico_region
+	#world_mexico_north
+	#world_mexico_central
+	#world_mexico_yucatan
+
+#world_caribbean_basin
+	#world_caribbean
+	#world_central_america
+	#world_spanish_main
+	#world_south_america_guyanas
+
+#world_brazil_region
+	#world_south_america_amazon
+	#world_south_america_interior
+	#world_south_america_brasil_coast
+		#world_brazil_nordeste
+		#world_brazil_sudeste
+			#world_brazil_minas_gerais
+		#world_brazil_o_sul
+
+#world_greater_andes
+	#world_south_america_andes
+	#world_south_america_la_plata
+	#world_south_america_patagonia
+
+
+world_arctic = {
+	duchies = {
+		d_avannaata d_tunu d_sermersooq d_kujalleq d_svalbard d_labrador d_nunatsiavut d_caniapiscau d_kativik d_iqaluit d_iglulik d_kivalliq d_kitikmeot d_inuvik d_chipewyan d_dogrib d_deh_cho d_great_bear d_liard d_yukon d_shakwak d_goldfields d_gwichin d_north_slope d_nome d_koyukuk d_yukon_delta d_kuskokwim d_kenai d_aleutians d_chukotka
+	}
+}
+
+world_eastern_canada = {
+	duchies = {
+		d_notre_dame_bay d_avalon d_long_range d_cape_breton d_prince_edward_island d_nova_scotia d_north_shore d_petitcodiac d_new_brunswick d_miramichi d_restigouche d_magdalen d_cote_nord d_gaspesia d_sept_rivieres d_bas_saint_laurent d_saguenay d_quebec d_chaudiere_appalaches d_estrie d_mauricie d_montreal d_monteregie d_laurentides d_outaouais d_united_counties d_rideau d_upper_ottawa d_massasauga d_algonquin d_trent d_greater_toronto d_huronia d_grand_river d_thames
+	}
+}
+
+world_central_canada = {
+	duchies = {
+		d_james_bay d_eeyou_istchee d_abitibi d_nickel_belt d_algoma d_clay_belt d_thunder d_kenora d_winnipeg d_interlake d_parkland d_keewatin d_nelson d_flin_flon d_patricia
+	}
+}
+
+world_western_canada = {
+	duchies = {
+		d_cannington d_black_earth d_north_saskatchewan d_saskatoon d_regina d_assiniboia d_palliser d_ca_ab_calgary d_chinook d_upper_athabasca d_edmonton d_desnethe d_lower_athabasca d_smoky_river d_lower_peace d_upper_peace d_kootenay d_omineca d_monashee d_okanagan d_cariboo d_lower_mainland d_central_coast d_vancouver_island d_upper_coast d_haida_gwaii d_alexander d_juneau d_stikine
+	}
+}
+
+world_canada_south = {
+	regions = {
+		world_eastern_canada world_central_canada world_western_canada
+	}
+}
+
+world_far_north = {
+	regions = {
+		world_canada_south world_arctic
+	}
+}
+
+world_us_great_lakes = {
+	duchies = {
+	    d_till_plains d_lower_ohio d_the_wilds d_arrowhead d_copperland d_marquette d_hiawatha d_green_bay d_northwoods d_chippewa d_lakefront d_badgerland d_chicagoland d_peoria d_forgottonia d_sangamon d_chambana d_kankakee d_little_egypt d_wabash d_michiana d_kentuckiana d_monroe d_indianapolis d_detroit d_midmichigan d_west_michigan d_mount_pleasant d_saginaw d_upnorth d_maumee d_the_reserve d_upper_ohio d_olentangy d_miami_valley d_erie d_westsylvania d_allegheny d_driftless
+	}
+}
+
+world_us_northeast = {
+	duchies = {
+		d_penobscot d_maine d_somerset_maine d_boston d_cape_cod d_connecticut d_rhode_island d_massachusetts d_new_hampshire d_green_mountains d_the_taconics d_long_island d_new_york d_hudson_valley d_albany d_champlain d_adirondack d_st_lawrence d_oneida d_catskill d_finger_lakes d_raritan d_south_jersey d_delaware_valley d_upper_susquehanna d_lower_susquehanna d_maryland d_delmarva d_capital d_ramapo d_coalland d_new_haven
+	}
+}
+
+world_us_southeast = {
+	duchies = {
+		d_tidewater d_piedmont d_nova d_roanoke d_shenandoah d_southside d_outer_banks d_inner_banks d_triangle d_cape_fear d_piedmont_crescent d_lowcountry d_midcountry d_upcountry d_sandhills d_savannah d_altamaha d_augusta d_peachtree d_ocmulgee d_sowega
+	}
+}
+
+world_us_upland_south = {
+	duchies = {
+		d_monongahela d_west_virginia d_clinch d_blue_ridge d_east_tennessee d_cumberland d_bluegrass d_kentucky d_coal_fields d_middle_tennessee d_west_tennessee d_arkansas_delta d_arkansas d_turner_ward_knob d_timberland d_sequoyah d_north_ozarks d_bootheel d_lead_belt d_gateway d_mid_missouri d_kawsmouth d_green_hills d_neosho
+	}
+}
+
+world_us_gulf_coast = {
+	duchies = {
+		d_muskogee d_miami d_suncoast d_eyefour d_first_coast d_florabama d_wiregrass d_birmingham d_canebreak d_gulfcoast d_conecuh d_pine_belt d_jackson d_yazoo d_north_mississippi d_homochitto d_west_florida d_new_orleans d_acadiana d_kisatchie d_ouachita d_nickajack d_huntsville
+	}
+}
+
+world_us_eastern = {
+	regions = {
+		world_us_great_lakes world_us_northeast world_us_southeast world_us_upland_south world_us_gulf_coast
+	}
+}
+
+world_us_great_plains = {
+	duchies = {
+		d_decorah d_kansas d_chisholm d_west_kansas d_republican d_omaha d_platte d_niobrara d_hawkeye d_des_moines d_siouxland d_minnesota d_twin_cities d_cuyuna d_itasca d_fargo d_coteau_des_prairies d_south_dakota d_north_dakota d_black_hills d_sheyenne d_fort_berthold d_powder_river d_eastern_montana d_peck_lake d_hi_line d_western_montana 
+	}
+}
+
+world_us_texas = {
+	duchies = {
+		d_greater_houston d_galveston d_golden_crescent d_violet_crown d_brazos d_piney_woods d_neches d_nueces d_alamo d_middle_rio d_hill_country d_petroplex d_trans_pecos d_big_country d_metroplex d_arklatex d_rolling_plains d_washita d_oklahoma d_panhandle d_amarillo d_permia d_las_cruces d_albuquerque d_new_mexico
+	}
+}
+
+world_us_middle = {
+	regions = {
+		world_us_great_plains world_us_texas
+	}
+}
+
+world_us_rockies = {
+	duchies = {
+		d_western_slope d_durango_us d_boulder d_denver d_pueblo d_us_ut_washington d_green_river d_sevier d_wasatch d_uintah d_us_ut_cache d_sweetwater d_laramie d_red_desert d_beartooth d_highland_springs d_east_snake d_silver_bow d_treasure_valley d_north_idaho d_glacier d_nez_perce
+	}
+}
+
+world_us_southwest = {
+	duchies = {
+		d_the_colorado d_gadsden d_arizona d_saguaro d_hopi d_navajoland d_us_nm_san_juan d_apacheria d_gila
+	}
+}
+
+world_us_west_coast = {
+	duchies = {
+		d_san_joaquin d_san_diego d_inland d_strip d_southland d_transverse d_death_valley d_kern d_salinas d_fresno d_motherlode d_sierra_nevada d_sacramento d_north_valley d_us_ca_yolo d_wineland d_east_bay d_goldengate d_redwoods d_shasta_cascade d_modoc d_nevada d_us_nv_churchill d_northern_basin d_klamath d_rogue d_deschutes d_malheur d_blue_mountains d_siuslaw d_willamette d_tillamook d_portlandia d_willapa d_rainier d_olympus d_puget d_yakima d_columbia_valley d_palouse d_colville d_mojave
+	}
+}
+
+world_us_western = {
+	regions = {
+		world_us_rockies world_us_southwest world_us_west_coast
+	}
+}
+
+world_us_region = {
+	regions = {
+		world_us_eastern world_us_middle world_us_western
+	}
+}
+
+world_mexico_north = {
+	duchies = {
+		d_nogales d_mexicali d_tamaulipas d_huasteca_menor d_pilon d_valle_de_andalucia d_rio_bravo d_piedras_negras d_coahuila d_nueva_extremadura d_conchos d_comarca_lagunera d_durango d_sierra_tarahumara d_chihuahua d_baja_california_norte d_baja_california_sur d_sonora d_cahita d_sinaloa d_lomerias d_zacatecas d_mazatlan d_cortes
+	}
+}
+
+world_mexico_central = {
+	duchies = {
+		d_totonacapan d_papaloapan d_tierra_caliente d_pais_monarca d_altos_de_jalisco d_nayarit d_costalegre d_colima d_de_ruffo d_tequila d_guadalajara d_san_luis_potosi d_el_potosi d_alta_huasteca d_aguascalientes d_guanajuato d_queretaro d_atoyac d_michoacan d_lerma d_costa_grande d_la_montana d_edomex d_valle_de_mexico d_hidalgo d_puebla d_tlaxcala d_baja_huasteca d_sotavento d_sierra_madre_del_sur d_mixteca d_istmo d_olmeca
+	}
+}
+
+world_mexico_yucatan = {
+	duchies = {
+		d_riviera_yucatan d_riviera_maya d_quintana_roo d_puuc d_cozumel d_valladolid d_campeche d_laguna_de_terminos d_tabasco d_depresion_de_chiapas d_soconusco d_los_altos_de_chiapas d_calakmul
+	}
+}
+
+world_mexico_region = {
+	regions = {
+		world_mexico_north world_mexico_central world_mexico_yucatan
+	}
+}
+
+world_caribbean = {
+	duchies = {
+		d_pinar_del_rio d_havana d_matanzas d_las_villas d_camaguey d_oriente d_the_bahamas d_jamaica d_cayman_islands d_port_au_prince d_gonave d_tortuga d_el_cibao d_enriquillo d_ozama d_puerto_rico d_leeward_islands d_french_antilles d_windward_islands d_trinidad_and_tobago d_abc_islands d_bermuda
+	}
+}
+
+world_central_america = {
+	duchies = {
+		d_sula d_copan d_verapaz d_guatemala d_los_altos d_san_salvador d_comayagua d_olancho d_managua d_matagalpa d_gracias_a_dios d_mosquito_coast d_guanacaste d_san_jose d_chiriqui d_cocle d_panama d_belize d_peten_itza
+	}
+}
+
+world_spanish_main = {
+	duchies = {
+		d_choco d_pacifico d_cauca d_co_20_pasto d_caqueta d_co_28_ibagu_ d_eje_cafetero d_antioquia d_magdalena_medio d_cundinamarca d_santander d_boyaca d_cordova d_macondo d_magdalena d_cesar d_guajira d_zulia d_los_andes d_aguas d_falcon d_lara d_portuguesa d_barinas d_apure d_casanare d_meta d_vichada d_calabozo d_guarico d_gran_caracas d_anzoategui d_sucre d_monagas
+	}
+}
+
+world_south_america_guyanas = {
+	duchies = {
+		d_amapa d_cayenne d_oyapock d_demerara d_essequibo d_suriname d_sipaliwini d_guainia d_delta_amacuro 
+	}
+}
+
+world_caribbean_basin = {
+	regions = {
+		world_caribbean world_central_america world_spanish_main world_south_america_guyanas
+	}
+}
+
+world_south_america_amazon = {
+	duchies = {
+		d_pamboapy d_marajo d_belem d_tucuria d_altamira d_tapajos d_itacoatiara d_cabeca_da_raposa d_roraima d_takutu d_manaus d_aironia d_cabeca_do_cachorro d_purus d_vale_do_bia d_copea d_vaupes d_tres_fronteras d_igarape_mamoria d_guapore d_lesser_acre d_pando d_loreto d_tambopata d_ucayali d_amazonas d_taumaturgia
+	}
+}
+
+world_south_america_interior = {
+	duchies = {
+		d_madre_de_dios d_aquidaban d_yungas d_chuquisaca d_tarija d_salta d_beni d_santa_cruz d_guarayos d_chiquitania d_alto_paraguay d_chaco_oriental d_formosa d_chaco_austral d_lower_parana d_paraguay d_upper_parana d_brilhante d_bodoquena d_pantanal d_maracaju d_sicuriu d_ji_parana d_juruena d_serra_do_cachimbo d_barra_das_garcas d_carajas d_araguaia d_javaes d_tocantins d_planalto_central d_rio_verde d_catalao d_chapada_dos_veadeiros d_the_district d_sinopia d_guimarania
+	}
+}
+
+world_brazil_nordeste = {
+	duchies = {
+		d_diamantina d_feira_de_santana d_br_06_russas d_br_06_sobral d_br_06_fortaleza d_br_06_quixada d_br_06_juazeiro_do_norte d_br_22_mossor_ d_br_22_caic_ d_br_22_natal d_br_17_jo_o_pessoa d_princesa d_br_17_patos d_br_30_recife d_br_30_caruaru d_br_30_serra_talhada d_br_30_petrolina d_alagoas d_br_28_aracaju d_juazeiro d_sete_passagens d_todos_os_santos d_xique_xique d_lapa d_remanso d_barreiras d_ilheus d_itapetinga d_sertao_da_ressaca d_porto_seguro d_picos d_br_13_s_o_lu_s d_caxias d_br_13_pinheiro d_br_13_imperatriz d_br_13_balsas d_br_13_barra_do_corda d_teresina d_serra_da_capivara
+	}
+}
+
+brazil_cerrado_proper = {
+	duchies = {
+		d_rio_verde d_the_district d_catalao d_planalto_central d_chapada_dos_veadeiros d_guimarania d_sinopia d_barra_das_garcas d_juruena d_serra_do_cachimbo d_tocantins d_araguaia d_javaes d_pontal_da_prata d_araxas d_paracatu d_sertao_de_minas d_medio_sao_francisco
+	}
+}
+
+world_brazil_minas_gerais = {
+	duchies = {
+		d_belzonte d_paraibuna d_ferroquadro d_piranga d_alto_sao_francisco d_vertentes d_vale_do_rio_doce d_caparao d_alta_mantiqueira d_canastra d_sapucai d_pontal_da_prata d_araxas d_pontal_do_triangulo d_verde_grande d_vale_do_mucuri d_paracatu d_vale_do_jequitinhonha d_sertao_de_minas d_alto_jequitinhonha d_medio_sao_francisco
+	}
+}
+
+world_brazil_sudeste = {
+	regions = {
+		world_brazil_minas_gerais
+	}
+	duchies = {
+		d_soorotema d_costa_capixaba d_pomerania d_goytacazia d_costa_do_sol d_serra_dos_orgaos d_medio_paraiba d_grande_rio d_costa_verde d_alto_paraiba d_santos d_grande_sao_paulo d_ribeira d_campinas d_sorocaba d_itapeva d_medio_tiete d_cuesta d_rio_pardo d_rio_preto d_aracatuba d_marilia d_alto_pontal
+	}
+}
+
+world_brazil_o_sul = {
+	duchies = {
+		d_curitiba d_paranapanema d_apucarana d_nova_rutenia d_ivai d_guayra d_vale_do_iguacu d_vale_do_itajai d_greater_florianopolis d_sambaquis d_lages d_contestado d_campos_de_vacaria d_porto_alegre d_costa_doce d_vale_do_rio_pardo d_missoes d_boca_do_monte d_tapes d_campanha d_coxilhas d_alto_uruguai d_planalto_medio
+	}
+}
+
+world_south_america_brasil_coast = {
+	regions = {
+		world_brazil_nordeste world_brazil_sudeste world_brazil_o_sul
+	}
+}
+
+world_brazil_region = { #spills out, so "old brazil" is still needed separately
+	regions = {
+		world_south_america_amazon world_south_america_interior world_south_america_brasil_coast
+	}
+}
+
+world_south_america_andes = {
+	duchies = {
+		d_manabi d_pichincha d_sucumbios d_tungurahua d_guayas d_azuay d_amotape d_chaparri d_moche d_ancash d_lima d_mantaro d_chanchamayo d_ica d_choquequirao d_ayacucho d_camana d_arequipa d_puno d_vilcanota d_la_paz d_cochabamba d_potosi d_chichas d_tarapaca d_antofagasta d_copiapo d_antofalla d_tucuman d_catamarca d_la_rioja d_san_juan d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_nuble d_galapagos
+	}
+}
+
+world_south_america_la_plata = {
+	duchies = {
+		d_misiones d_corrientes d_enterrios d_atlantico d_interior d_litoral d_montevideo d_yi d_olimar d_baires d_junin d_mardel d_azul d_blanca d_santa_fe d_santiago_del_estero d_anejo d_cordoba d_rio_tercero d_rio_cuarto d_rosario d_san_luis d_mendoza d_san_rafael d_parana_mouth
+	}
+}
+
+world_south_america_patagonia = {
+	duchies = {
+		d_la_pampa d_trenque_lauquen d_patagones d_neuquen d_bariloche d_chos_malal d_rawson d_san_jorge d_futaleufu d_valle_medio d_viedma d_san_matias d_magallanes d_tierra_del_fuego d_aysen d_capitan_prat d_santa_cruz_de_patagonia d_deseado d_lago_argentino d_falkland_islands d_biobio d_araucania d_los_lagos d_los_rios
+	}
+}
+
+world_greater_andes = { #kind of awkward - if the vanilla map gets expanded and the game has a few more top-level region based events etc, we can make a new world_la_plata_valley out of la plata, o sul and maybe some parts of interior, leave this one tidier. For now I'm setting up 6 top-level regions to make it a little easier to adapt vanilla content that's "one thing per region" - Meri
+	regions = {
+		world_south_america_andes world_south_america_la_plata world_south_america_patagonia
+	}
+}
+
+#####################
+# GHW Targeting Regions
+#	Moved to the top so they can be used in other regions, as this includes a full list of kingdoms - more legible than duchies in many cases
+#####################
+
+ghw_region_greenland = {
+	duchies = {
+		d_sermersooq d_kujalleq d_avannaata d_tunu d_svalbard
+	}
+}
+
+ghw_region_nunavik = {
+	duchies = {
+		d_caniapiscau d_labrador d_kativik d_nunatsiavut
+	}
+}
+
+ghw_region_nunavut = {
+	duchies = {
+		d_iqaluit d_iglulik d_inuvik d_kivalliq d_kitikmeot
+	}
+}
+
+ghw_region_jamesie = {
+	duchies = {
+		d_abitibi d_eeyou_istchee d_james_bay
+	}
+}
+
+ghw_region_keewatin = {
+	duchies = {
+		d_nelson d_flin_flon d_keewatin d_patricia
+	}
+}
+
+ghw_region_alaska = {
+	duchies = {
+		d_kenai d_aleutians d_kuskokwim d_yukon_delta d_koyukuk
+	}
+}
+
+ghw_region_yukon = {
+	duchies = {
+		d_goldfields d_yukon d_shakwak d_gwichin
+	}
+}
+
+ghw_region_great_coast = {
+	duchies = {
+		d_juneau d_upper_coast d_alexander d_stikine d_haida_gwaii
+	}
+}
+
+ghw_region_inupiaq = {
+	duchies = {
+		d_nome d_north_slope
+	}
+}
+
+ghw_region_chukotka = {
+	duchies = {
+		d_chukotka
+	}
+}
+
+ghw_region_peace = {
+	duchies = {
+		d_smoky_river d_lower_athabasca d_desnethe d_upper_peace d_lower_peace
+	}
+}
+
+ghw_region_denendeh = {
+	duchies = {
+		d_dogrib d_liard d_deh_cho d_chipewyan d_great_bear
+	}
+}
+
+ghw_region_ontario = {
+	duchies = {
+		d_greater_toronto d_grand_river d_rideau d_thames d_massasauga d_trent d_united_counties d_huronia d_upper_ottawa d_algonquin
+	}
+}
+
+ghw_region_upper_quebec = {
+	duchies = {
+		d_montreal d_monteregie d_estrie d_outaouais d_mauricie d_laurentides
+	}
+}
+
+ghw_region_lower_quebec = {
+	duchies = {
+		d_quebec d_chaudiere_appalaches d_bas_saint_laurent d_gaspesia d_saguenay d_sept_rivieres d_cote_nord
+	}
+}
+
+ghw_region_maritimes = {
+	duchies = {
+		d_nova_scotia d_new_brunswick d_petitcodiac d_north_shore d_cape_breton d_miramichi d_prince_edward_island d_restigouche d_magdalen
+	}
+}
+
+ghw_region_newfoundland = {
+	duchies = {
+		d_avalon d_long_range d_notre_dame_bay
+	}
+}
+
+ghw_region_north_star = {
+	duchies = {
+		d_twin_cities d_minnesota d_cuyuna d_itasca
+	}
+}
+
+ghw_region_wisconsin = {
+	duchies = {
+		d_lakefront d_badgerland d_green_bay d_chippewa d_driftless d_northwoods
+	}
+}
+
+ghw_region_superior = {
+	duchies = {
+		d_arrowhead d_marquette d_copperland d_hiawatha
+	}
+}
+
+ghw_region_aurora = {
+	duchies = {
+		d_nickel_belt d_kenora d_thunder d_algoma d_clay_belt
+	}
+}
+
+ghw_region_saskatchewan = {
+	duchies = {
+		d_regina d_saskatoon d_north_saskatchewan d_cannington d_black_earth d_assiniboia
+	}
+}
+
+ghw_region_alberta = {
+	duchies = {
+		d_ca_ab_calgary d_edmonton d_palliser d_upper_athabasca d_chinook
+	}
+}
+
+ghw_region_the_dakotas = {
+	duchies = {
+		d_coteau_des_prairies d_black_hills d_north_dakota d_fort_berthold d_south_dakota d_sheyenne d_fargo
+	}
+}
+
+ghw_region_manitoba = {
+	duchies = {
+		d_winnipeg d_parkland d_interlake
+	}
+}
+
+ghw_region_big_sky = {
+	duchies = {
+		d_eastern_montana d_western_montana d_hi_line d_powder_river d_peck_lake
+	}
+}
+
+ghw_region_whilamut = {
+	duchies = {
+		d_tillamook d_portlandia d_siuslaw d_willamette
+	}
+}
+
+ghw_region_tahoma = {
+	duchies = {
+		d_puget d_willapa d_olympus d_rainier
+	}
+}
+
+ghw_region_beecee = {
+	duchies = {
+		d_lower_mainland d_vancouver_island d_central_coast
+	}
+}
+
+ghw_region_the_columbia = {
+	duchies = {
+		d_palouse d_yakima d_columbia_valley d_colville
+	}
+}
+
+ghw_region_caledonia = {
+	duchies = {
+		d_okanagan d_omineca d_kootenay d_monashee d_cariboo
+	}
+}
+
+ghw_region_highdesert = {
+	duchies = {
+		d_deschutes d_blue_mountains d_klamath d_malheur
+	}
+}
+
+ghw_region_socal = {
+	duchies = {
+		d_southland d_mojave d_inland d_san_diego d_transverse
+	}
+}
+
+ghw_region_andreas = {
+	duchies = {
+		d_east_bay d_goldengate d_wineland d_salinas
+	}
+}
+
+ghw_region_the_valley = {
+	duchies = {
+		d_sacramento d_kern d_motherlode d_fresno d_north_valley d_san_joaquin d_us_ca_yolo d_sierra_nevada
+	}
+}
+
+ghw_region_baja_california = {
+	duchies = {
+		d_mexicali d_baja_california_norte d_baja_california_sur
+	}
+}
+
+ghw_region_jefferson = {
+	duchies = {
+		d_rogue d_shasta_cascade d_redwoods d_modoc
+	}
+}
+
+ghw_region_nevada = {
+	duchies = {
+		d_nevada d_death_valley d_northern_basin d_us_nv_churchill d_strip
+	}
+}
+
+ghw_region_utah = {
+	duchies = {
+		d_wasatch d_us_ut_washington d_us_ut_cache d_sevier d_green_river d_uintah
+	}
+}
+
+ghw_region_idaho = {
+	duchies = {
+		d_treasure_valley d_east_snake d_glacier d_north_idaho d_nez_perce d_silver_bow
+	}
+}
+
+ghw_region_navajoland = {
+	duchies = {
+		d_apacheria d_us_nm_san_juan d_hopi d_durango_us d_navajoland
+	}
+}
+
+ghw_region_great_divide = {
+	duchies = {
+		d_western_slope d_red_desert d_sweetwater d_beartooth d_highland_springs
+	}
+}
+
+ghw_region_missouri = {
+	duchies = {
+		d_kawsmouth d_gateway d_mid_missouri d_bootheel d_green_hills d_lead_belt
+	}
+}
+
+ghw_region_iowa = {
+	duchies = {
+		d_hawkeye d_des_moines d_decorah d_siouxland
+	}
+}
+
+ghw_region_nebraska = {
+	duchies = {
+		d_omaha d_platte d_republican d_niobrara
+	}
+}
+
+ghw_region_kansas = {
+	duchies = {
+		d_chisholm d_kansas d_west_kansas d_neosho
+	}
+}
+
+ghw_region_front_range = {
+	duchies = {
+		d_denver d_boulder d_pueblo d_laramie
+	}
+}
+
+ghw_region_chicagoland = {
+	duchies = {
+		d_chicagoland d_peoria d_kankakee d_michiana 
+	}
+}
+
+ghw_region_greater_reserve = {
+	duchies = {
+		d_the_reserve d_till_plains d_olentangy d_maumee d_upper_ohio
+	}
+}
+
+ghw_region_michigan = {
+	duchies = {
+		d_detroit d_midmichigan d_west_michigan d_saginaw d_upnorth d_mount_pleasant
+	}
+}
+
+ghw_region_allegheny = {
+	duchies = {
+		d_westsylvania d_erie d_allegheny d_the_wilds
+	}
+}
+
+ghw_region_tennessee = {
+	duchies = {
+		d_west_tennessee d_middle_tennessee d_east_tennessee d_huntsville
+	}
+}
+
+ghw_region_kentucky = {
+	duchies = {
+		d_bluegrass d_kentucky d_coal_fields d_cumberland
+	}
+}
+
+ghw_region_kanawha = {
+	duchies = {
+		d_shenandoah d_monongahela d_west_virginia d_clinch
+	}
+}
+
+ghw_region_ohio_valley = {
+	duchies = {
+		d_indianapolis d_kentuckiana d_wabash d_monroe d_miami_valley d_lower_ohio
+	}
+}
+
+ghw_region_illinois = {
+	duchies = {
+		d_sangamon d_little_egypt d_chambana d_forgottonia
+	}
+}
+
+ghw_region_ivyland = {
+	duchies = {
+		d_boston d_rhode_island d_connecticut d_massachusetts d_cape_cod
+	}
+}
+
+ghw_region_twin_crowns = {
+	duchies = {
+		d_new_hampshire d_green_mountains
+	}
+}
+
+ghw_region_maine = {
+	duchies = {
+		d_maine d_penobscot d_somerset_maine
+	}
+}
+
+ghw_region_gotham = {
+	duchies = {
+		d_new_york d_new_haven d_hudson_valley d_long_island d_ramapo d_raritan
+	}
+}
+
+ghw_region_hudsonia = {
+	duchies = {
+		d_finger_lakes d_albany d_oneida d_catskill d_the_taconics d_champlain d_st_lawrence d_adirondack
+	}
+}
+
+ghw_region_the_chesapeake = {
+	duchies = {
+		d_maryland d_delaware_valley d_south_jersey d_delmarva d_capital
+	}
+}
+
+ghw_region_dutchland = {
+	duchies = {
+		d_upper_susquehanna d_coalland d_lower_susquehanna
+	}
+}
+
+ghw_region_old_dominion = {
+	duchies = {
+		d_tidewater d_nova d_piedmont d_roanoke d_southside
+	}
+}
+
+ghw_region_grand_bermuda = {
+	duchies = {
+		d_bermuda
+	}
+}
+
+ghw_region_tarheel = {
+	duchies = {
+		d_piedmont_crescent d_triangle d_cape_fear d_inner_banks d_outer_banks d_blue_ridge
+	}
+}
+
+ghw_region_georgia = {
+	duchies = {
+		d_peachtree d_ocmulgee d_savannah d_altamaha d_sowega d_augusta
+	}
+}
+
+ghw_region_alabama = {
+	duchies = {
+		d_birmingham d_nickajack d_conecuh d_wiregrass d_gulfcoast d_canebreak
+	}
+}
+
+ghw_region_palmetto = {
+	duchies = {
+		d_lowcountry d_upcountry d_midcountry d_sandhills
+	}
+}
+
+ghw_region_ozarks = {
+	duchies = {
+		d_sequoyah d_north_ozarks d_arkansas d_arkansas_delta d_timberland d_turner_ward_knob
+	}
+}
+
+ghw_region_louisiana = {
+	duchies = {
+		d_new_orleans d_west_florida d_acadiana d_ouachita d_kisatchie
+	}
+}
+
+ghw_region_magnolia = {
+	duchies = {
+		d_pine_belt d_jackson d_north_mississippi d_yazoo d_homochitto
+	}
+}
+
+ghw_region_florida = {
+	duchies = {
+		d_miami d_suncoast d_eyefour d_first_coast d_muskogee d_florabama
+	}
+}
+
+ghw_region_cuba = {
+	duchies = {
+		d_havana d_oriente d_las_villas d_camaguey d_pinar_del_rio d_matanzas
+	}
+}
+
+ghw_region_domingo = {
+	duchies = {
+		d_ozama d_el_cibao d_enriquillo
+	}
+}
+
+ghw_region_haiti = {
+	duchies = {
+		d_port_au_prince d_gonave d_tortuga
+	}
+}
+
+ghw_region_antilles = {
+	duchies = {
+		d_puerto_rico d_french_antilles d_trinidad_and_tobago d_abc_islands d_windward_islands d_leeward_islands
+	}
+}
+
+ghw_region_west_indies = {
+	duchies = {
+		d_jamaica d_the_bahamas d_cayman_islands
+	}
+}
+
+ghw_region_red_river = {
+	duchies = {
+		d_metroplex d_oklahoma d_arklatex d_washita d_big_country d_rolling_plains
+	}
+}
+
+ghw_region_old_star = {
+	duchies = {
+		d_greater_houston d_violet_crown d_galveston d_brazos d_neches d_golden_crescent d_piney_woods
+	}
+}
+
+ghw_region_rio_grande = {
+	duchies = {
+		d_alamo d_nueces d_petroplex d_middle_rio d_hill_country d_trans_pecos
+	}
+}
+
+ghw_region_estacado = {
+	duchies = {
+		d_albuquerque d_permia d_amarillo d_las_cruces d_new_mexico d_panhandle
+	}
+}
+
+ghw_region_nuevo_leon = {
+	duchies = {
+		d_valle_de_andalucia d_tamaulipas d_coahuila d_huasteca_menor d_rio_bravo d_piedras_negras d_pilon d_el_potosi
+	}
+}
+
+ghw_region_arixo = {
+	duchies = {
+		d_arizona d_saguaro d_the_colorado d_gadsden d_gila
+	}
+}
+
+ghw_region_nueva_navarra = {
+	duchies = {
+		d_sinaloa d_sonora d_cahita d_mazatlan d_nogales d_cortes
+	}
+}
+
+ghw_region_altiplano = {
+	duchies = {
+		d_chihuahua d_comarca_lagunera d_durango d_conchos d_sierra_tarahumara d_nueva_extremadura
+	}
+}
+
+ghw_region_mexico_valley = {
+	duchies = {
+		d_valle_de_mexico d_edomex d_puebla d_tlaxcala d_hidalgo
+	}
+}
+
+ghw_region_el_bajio = {
+	duchies = {
+		d_guanajuato d_lerma d_queretaro d_aguascalientes d_altos_de_jalisco
+	}
+}
+
+ghw_region_jalisco = {
+	duchies = {
+		d_guadalajara d_nayarit d_colima d_de_ruffo d_costalegre d_tequila
+	}
+}
+
+ghw_region_veracruz = {
+	duchies = {
+		d_sotavento d_totonacapan d_olmeca d_baja_huasteca
+	}
+}
+
+ghw_region_michoacan = {
+	duchies = {
+		d_michoacan d_pais_monarca d_atoyac
+	}
+}
+
+ghw_region_gran_chichimeca = {
+	duchies = {
+		d_san_luis_potosi d_alta_huasteca d_zacatecas d_lomerias
+	}
+}
+
+ghw_region_oaxaca = {
+	duchies = {
+		d_sierra_madre_del_sur d_papaloapan d_istmo d_mixteca
+	}
+}
+
+ghw_region_guerrero = {
+	duchies = {
+		d_la_montana d_tierra_caliente d_costa_grande
+	}
+}
+
+ghw_region_campeche = {
+	duchies = {
+		d_campeche d_laguna_de_terminos d_tabasco d_calakmul
+	}
+}
+
+ghw_region_chiapas = {
+	duchies = {
+		d_depresion_de_chiapas d_soconusco d_los_altos_de_chiapas
+	}
+}
+
+ghw_region_yucatan = {
+	duchies = {
+		d_riviera_yucatan d_riviera_maya d_quintana_roo d_puuc d_cozumel d_valladolid
+	}
+}
+
+ghw_region_peten = {
+	duchies = {
+		d_belize d_peten_itza
+	}
+}
+
+ghw_region_guatemala = {
+	duchies = {
+		d_guatemala d_los_altos d_verapaz
+	}
+}
+
+ghw_region_honduras = {
+	duchies = {
+		d_comayagua d_sula d_copan d_olancho
+	}
+}
+
+ghw_region_el_salvador = {
+	duchies = {
+		d_san_salvador
+	}
+}
+
+ghw_region_nicaragua = {
+	duchies = {
+		d_managua d_matagalpa
+	}
+}
+
+ghw_region_costa_rica = {
+	duchies = {
+		d_san_jose d_guanacaste
+	}
+}
+
+ghw_region_miskito = {
+	duchies = {
+		d_mosquito_coast d_gracias_a_dios
+	}
+}
+
+ghw_region_panama = {
+	duchies = {
+		d_panama d_cocle d_chiriqui
+	}
+}
+
+ghw_region_cundiboyaca = {
+	duchies = {
+		d_cundinamarca d_santander d_boyaca
+	}
+}
+
+ghw_region_el_caribe = {
+	duchies = {
+		d_macondo d_cordova d_magdalena d_cesar
+	}
+}
+
+ghw_region_antioquia = {
+	duchies = {
+		d_antioquia d_eje_cafetero d_magdalena_medio
+	}
+}
+
+ghw_region_el_pacifico = {
+	duchies = {
+		d_cauca d_pacifico d_choco
+	}
+}
+
+ghw_region_tierradentro = {
+	duchies = {
+		d_co_28_ibagu_ d_co_20_pasto d_caqueta
+	}
+}
+
+ghw_region_ecuador = {
+	duchies = {
+		d_guayas d_pichincha d_manabi d_azuay d_tungurahua d_sucumbios
+	}
+}
+
+ghw_region_galapagos = {
+	duchies = {
+		d_galapagos
+	}
+}
+
+ghw_region_venezuela = {
+	duchies = {
+		d_gran_caracas d_lara d_anzoategui d_monagas d_falcon d_sucre
+	}
+}
+
+ghw_region_zulia = {
+	duchies = {
+		d_zulia d_los_andes d_aguas d_guajira
+	}
+}
+
+ghw_region_zamora = {
+	duchies = {
+		d_barinas d_portuguesa d_calabozo d_guarico
+	}
+}
+
+ghw_region_los_llanos = {
+	duchies = {
+		d_meta d_casanare d_apure d_vichada
+	}
+}
+
+ghw_region_bolivar = {
+	duchies = {
+		d_guainia d_delta_amacuro
+	}
+}
+
+ghw_region_oyapock = {
+	duchies = {
+		d_amapa d_cayenne d_oyapock
+	}
+}
+
+ghw_region_guyana = {
+	duchies = {
+		d_demerara d_essequibo
+	}
+}
+
+ghw_region_suriname = {
+	duchies = {
+		d_suriname d_sipaliwini
+	}
+}
+
+ghw_region_roraima = {
+	duchies = {
+		d_roraima d_cabeca_da_raposa
+	}
+}
+
+ghw_region_amazonas = {
+	duchies = {
+		d_manaus d_itacoatiara d_purus d_igarape_mamoria d_aironia
+	}
+}
+
+ghw_region_rio_negro_e_solimoes = {
+	duchies = {
+		d_copea d_cabeca_do_cachorro d_vale_do_bia d_vaupes d_tres_fronteras
+	}
+}
+
+ghw_region_rondonia = {
+	duchies = {
+		d_guapore d_ji_parana
+	}
+}
+
+ghw_region_acre = {
+	duchies = {
+		d_lesser_acre d_taumaturgia
+	}
+}
+
+ghw_region_omagua = {
+	duchies = {
+		d_loreto d_amazonas d_ucayali d_tambopata
+	}
+}
+
+ghw_region_para = {
+	duchies = {
+		d_belem d_carajas d_tapajos d_tucuria d_altamira d_pamboapy d_marajo
+	}
+}
+
+ghw_region_maranhao = {
+	duchies = {
+		d_br_13_s_o_lu_s d_caxias d_br_13_pinheiro
+	}
+}
+
+ghw_region_bons_pastos = {
+	duchies = {
+		d_br_13_imperatriz d_br_13_balsas d_br_13_barra_do_corda
+	}
+}
+
+ghw_region_piaui = {
+	duchies = {
+		d_teresina d_serra_da_capivara d_picos
+	}
+}
+
+ghw_region_pernambuco = {
+	duchies = {
+		d_br_30_recife d_br_30_caruaru
+	}
+}
+
+ghw_region_ceara = {
+	duchies = {
+		d_br_06_fortaleza d_br_06_sobral d_br_06_quixada d_br_06_russas
+	}
+}
+
+ghw_region_baixo_sao_francisco = {
+	duchies = {
+		d_alagoas d_br_28_aracaju
+	}
+}
+
+ghw_region_cariris = {
+	duchies = {
+		d_br_06_juazeiro_do_norte d_br_17_patos d_br_30_serra_talhada d_br_30_petrolina
+	}
+}
+
+ghw_region_paraiba = {
+	duchies = {
+		d_br_17_jo_o_pessoa d_princesa
+	}
+}
+
+ghw_region_rio_grande_do_norte = {
+	duchies = {
+		d_br_22_natal d_br_22_mossor_ d_br_22_caic_
+	}
+}
+
+ghw_region_chapada = {
+	duchies = {
+		d_sertao_da_ressaca d_diamantina d_lapa
+	}
+}
+
+ghw_region_salvador = {
+	duchies = {
+		d_todos_os_santos d_feira_de_santana d_sete_passagens d_juazeiro d_xique_xique
+	}
+}
+
+ghw_region_ilheus = {
+	duchies = {
+		d_ilheus d_porto_seguro d_itapetinga
+	}
+}
+
+ghw_region_sao_francisco = {
+	duchies = {
+		d_barreiras d_remanso
+	}
+}
+
+ghw_region_minas_gerais = {
+	duchies = {
+		d_belzonte d_paraibuna d_ferroquadro d_piranga d_alto_sao_francisco d_vertentes d_vale_do_rio_doce d_caparao
+	}
+}
+
+ghw_region_sudiminas = {
+	duchies = {
+		d_alta_mantiqueira d_canastra d_sapucai
+	}
+}
+
+ghw_region_triangle = {
+	duchies = {
+		d_pontal_da_prata d_araxas d_pontal_do_triangulo
+	}
+}
+
+ghw_region_espinhaco = {
+	duchies = {
+		d_verde_grande d_vale_do_mucuri d_paracatu d_vale_do_jequitinhonha d_sertao_de_minas d_alto_jequitinhonha d_medio_sao_francisco
+	}
+}
+
+ghw_region_espirito_santo = {
+	duchies = {
+		d_costa_capixaba d_pomerania d_soorotema
+	}
+}
+
+ghw_region_rio_de_janeiro = {
+	duchies = {
+		d_grande_rio d_medio_paraiba d_goytacazia d_serra_dos_orgaos d_costa_do_sol d_costa_verde
+	}
+}
+
+ghw_region_sao_paulo = {
+	duchies = {
+		d_grande_sao_paulo d_alto_paraiba d_ribeira d_santos d_campinas d_rio_pardo d_sorocaba d_cuesta d_medio_tiete d_itapeva
+	}
+}
+
+ghw_region_tiete = {
+	duchies = {
+		d_rio_preto d_marilia d_aracatuba d_alto_pontal
+	}
+}
+
+ghw_region_goias = {
+	duchies = {
+		d_rio_verde d_the_district d_catalao d_planalto_central d_chapada_dos_veadeiros
+	}
+}
+
+ghw_region_mato_grosso_do_sul = {
+	duchies = {
+		d_maracaju d_brilhante d_pantanal d_sicuriu d_bodoquena
+	}
+}
+
+ghw_region_mato_grosso = {
+	duchies = {
+		d_guimarania d_sinopia d_barra_das_garcas d_juruena d_serra_do_cachimbo
+	}
+}
+
+ghw_region_tocantins = {
+	duchies = {
+		d_tocantins d_araguaia d_javaes
+	}
+}
+
+ghw_region_piratini = {
+	duchies = {
+		d_porto_alegre d_costa_doce d_vale_do_rio_pardo
+	}
+}
+
+ghw_region_planalto = {
+	duchies = {
+		d_campos_de_vacaria d_missoes d_planalto_medio d_alto_uruguai
+	}
+}
+
+ghw_region_parana = {
+	duchies = {
+		d_curitiba d_paranapanema d_guayra d_ivai d_nova_rutenia d_vale_do_iguacu d_apucarana
+	}
+}
+
+ghw_region_campanha = {
+	duchies = {
+		d_boca_do_monte d_coxilhas d_tapes d_campanha
+	}
+}
+
+ghw_region_santa_catarina = {
+	duchies = {
+		d_greater_florianopolis d_vale_do_itajai d_sambaquis d_contestado d_lages
+	}
+}
+
+ghw_region_paraguay = {
+	duchies = {
+		d_paraguay d_upper_parana d_lower_parana d_aquidaban
+	}
+}
+
+ghw_region_grigota = {
+	duchies = {
+		d_santa_cruz d_madre_de_dios d_guarayos d_beni d_pando d_chiquitania
+	}
+}
+
+ghw_region_chaco = {
+	duchies = {
+		d_chaco_austral d_formosa d_chaco_oriental d_alto_paraguay
+	}
+}
+
+ghw_region_buenos_aires = {
+	duchies = {
+		d_baires d_mardel d_blanca d_parana_mouth d_azul d_junin
+	}
+}
+
+ghw_region_uruguay = {
+	duchies = {
+		d_montevideo d_interior d_olimar d_yi d_litoral d_atlantico
+	}
+}
+
+ghw_region_mesopotamia = {
+	duchies = {
+		d_enterrios d_misiones d_corrientes
+	}
+}
+
+ghw_region_la_pampa = {
+	duchies = {
+		d_la_pampa d_trenque_lauquen d_patagones
+	}
+}
+
+ghw_region_neuquen = {
+	duchies = {
+		d_neuquen d_bariloche d_chos_malal
+	}
+}
+
+ghw_region_chubut = {
+	duchies = {
+		d_rawson d_san_jorge d_futaleufu
+	}
+}
+
+ghw_region_rio_negro = {
+	duchies = {
+		d_valle_medio d_viedma d_san_matias
+	}
+}
+
+ghw_region_magallanes = {
+	duchies = {
+		d_magallanes d_tierra_del_fuego d_aysen d_capitan_prat
+	}
+}
+
+ghw_region_santa_cruz_de_patagonia = {
+	duchies = {
+		d_santa_cruz_de_patagonia d_deseado d_lago_argentino
+	}
+}
+
+ghw_region_the_falklands = {
+	duchies = {
+		d_falkland_islands
+	}
+}
+
+ghw_region_cordoba = {
+	duchies = {
+		d_cordoba d_rio_cuarto d_rio_tercero d_rosario d_santa_fe d_santiago_del_estero d_anejo
+	}
+}
+
+ghw_region_norte_viejo = {
+	duchies = {
+		d_tucuman d_salta d_catamarca d_antofalla
+	}
+}
+
+ghw_region_cuyo = {
+	duchies = {
+		d_mendoza d_san_juan d_san_luis d_la_rioja d_san_rafael
+	}
+}
+
+ghw_region_chile = {
+	duchies = {
+		d_santiago d_valparaiso d_maule d_ohiggins d_nuble
+	}
+}
+
+ghw_region_araucania = {
+	duchies = {
+		d_biobio d_araucania d_los_lagos d_los_rios
+	}
+}
+
+ghw_region_atacama = {
+	duchies = {
+		d_antofagasta d_coquimbo d_tarapaca d_copiapo
+	}
+}
+
+ghw_region_peru = {
+	duchies = {
+		d_lima d_mantaro d_ica d_chanchamayo
+	}
+}
+
+ghw_region_cusco = {
+	duchies = {
+		d_arequipa d_choquequirao d_puno d_vilcanota d_ayacucho d_camana
+	}
+}
+
+ghw_region_collao = {
+	duchies = {
+		d_cochabamba d_la_paz d_tarija d_chuquisaca d_potosi d_chichas d_yungas
+	}
+}
+
+ghw_region_sipan = {
+	duchies = {
+		d_amotape d_moche d_chaparri d_ancash
+	}
+}
+
+##################
+# Custom Regions #
+##################
+
+custom_brazil_cerrado = {
+	duchies = {
+		d_rio_verde d_the_district d_catalao d_planalto_central d_chapada_dos_veadeiros d_maracaju d_brilhante d_pantanal d_sicuriu d_bodoquena d_guimarania d_sinopia d_barra_das_garcas d_juruena d_serra_do_cachimbo d_tocantins d_araguaia d_javaes
+	}
+}
+
+custom_brazil_e_amazon = {
+	duchies = {
+		d_itacoatiara d_manaus d_aironia d_cabeca_do_cachorro d_purus d_vale_do_bia d_copea d_vaupes d_tres_fronteras d_igarape_mamoria d_guapore d_lesser_acre d_loreto d_tambopata d_ucayali d_amazonas d_taumaturgia d_ji_parana
+	}
+}
+
+custom_brazil_imperial_para = {
+	duchies = {
+		d_amapa d_marajo d_belem d_tucuria d_br_13_s_o_lu_s d_caxias d_br_13_pinheiro d_br_13_imperatriz d_br_13_balsas d_br_13_barra_do_corda d_teresina d_serra_da_capivara d_picos
+	}
+}
+
+custom_up_la_plata = {
+	duchies = {
+		d_misiones d_corrientes d_enterrios d_baires d_junin d_mardel d_azul d_blanca d_santa_fe d_santiago_del_estero d_anejo d_cordoba d_rio_tercero d_rio_cuarto d_rosario d_san_luis d_trenque_lauquen d_la_pampa d_patagones d_mendoza d_valle_medio d_san_rafael d_chos_malal d_neuquen d_bariloche d_viedma d_rawson d_san_jorge d_futaleufu d_deseado d_lago_argentino d_santa_cruz_de_patagonia d_tierra_del_fuego d_falkland_islands d_san_matias d_parana_mouth
+
+	}
+}
+
+custom_metis_confederacy = {
+	duchies = {
+		d_parkland d_winnipeg d_interlake d_flin_flon d_keewatin d_patricia d_nelson d_assiniboia d_north_saskatchewan d_cannington d_black_earth d_regina d_saskatoon d_edmonton d_palliser d_upper_athabasca d_ca_ab_calgary d_chinook
+	}
+}
+
+custom_us_restore = {
+	duchies = {
+		d_penobscot d_maine d_somerset_maine d_boston d_cape_cod d_connecticut d_rhode_island d_massachusetts d_new_hampshire d_green_mountains d_the_taconics d_long_island d_new_york d_hudson_valley d_albany d_champlain d_adirondack d_st_lawrence d_oneida d_catskill d_finger_lakes d_raritan d_south_jersey d_delaware_valley d_upper_susquehanna d_lower_susquehanna d_maryland d_delmarva d_capital d_ramapo d_coalland d_new_haven
+		d_tidewater d_piedmont d_nova d_roanoke d_shenandoah d_southside d_outer_banks d_inner_banks d_triangle d_cape_fear d_piedmont_crescent d_lowcountry d_midcountry d_upcountry d_sandhills d_savannah d_altamaha d_augusta d_peachtree d_ocmulgee d_sowega
+
+	}
+}
+
+custom_gran_colombia = {
+	duchies = {
+		d_choco d_pacifico d_cauca d_co_20_pasto d_caqueta d_co_28_ibagu_ d_eje_cafetero d_antioquia d_magdalena_medio d_cundinamarca d_santander d_boyaca d_cordova d_macondo d_magdalena d_cesar d_guajira d_zulia d_los_andes d_aguas d_falcon d_lara d_portuguesa d_barinas d_apure d_casanare d_meta d_vichada d_calabozo d_guarico d_gran_caracas d_anzoategui d_sucre d_monagas d_manabi d_pichincha d_sucumbios d_tungurahua d_guayas d_azuay
+	}
+}
+
+custom_caqueta = {
+	duchies = {
+		d_caqueta d_vaupes d_guainia d_cabeca_do_cachorro d_vale_do_bia
+	}
+}
+
+custom_portia_invasion = {
+	duchies = {
+		d_pinar_del_rio d_havana d_matanzas d_las_villas d_camaguey d_oriente d_the_bahamas d_jamaica d_cayman_islands d_port_au_prince d_gonave d_tortuga d_el_cibao d_enriquillo d_ozama d_puerto_rico d_leeward_islands d_french_antilles d_windward_islands
+	}
+}
+
+custom_hispaniola = {
+	duchies = {
+		d_port_au_prince d_gonave d_tortuga d_el_cibao d_enriquillo d_ozama
+	}
+}
+
+custom_peruvian_kingdoms = {
+	regions = {
+		ghw_region_omagua ghw_region_sipan ghw_region_cusco ghw_region_peru
+	}
+}
+
+custom_cascadia_kingdom = {
+	duchies = {
+		#Cascadia
+		d_siuslaw d_willamette d_tillamook d_portlandia d_rainier d_willapa d_olympus d_puget
+	}
+}
+
+custom_nicaragua = {
+	duchies = {
+		d_managua d_matagalpa d_mosquito_coast d_gracias_a_dios
+	}
+}
+
+custom_e_chile = {
+	regions = {
+		ghw_region_chile ghw_region_araucania ghw_region_atacama
+	}
+}
+
+custom_carolinas = {
+	duchies = {
+		#Tarheel
+		d_outer_banks d_inner_banks d_triangle d_cape_fear d_piedmont_crescent d_blue_ridge
+
+		#Palmetto
+		d_lowcountry d_midcountry d_sandhills d_upcountry
+	}
+}
+
+custom_keystone = {
+	duchies = {
+		d_lower_susquehanna d_upper_susquehanna d_coalland d_allegheny d_westsylvania d_the_wilds d_erie d_delaware_valley
+	}
+}
+
+custom_bolivia_formable = {
+	duchies = {
+		#Collao
+		d_yungas d_la_paz d_cochabamba d_potosi d_chichas d_chuquisaca d_tarija
+
+		#Grigota
+		d_pando d_madre_de_dios d_beni d_santa_cruz d_guarayos d_chiquitania
+	}
+}
+
+custom_rio_negro_colorado = {
+	duchies = {
+		#La Pampa
+		d_patagones d_la_pampa d_trenque_lauquen
+
+		#Rio Negro
+		d_valle_medio d_viedma d_san_matias
+
+		#Neuquen
+		d_chos_malal d_neuquen d_bariloche
+	}
+}
+
+custom_new_england = {
+	regions = {
+		ghw_region_maine ghw_region_twin_crowns ghw_region_ivyland
+	}
+}
+
+custom_region_south_patagonia = {
+	duchies = {
+		#Chubut
+		d_rawson d_san_jorge d_futaleufu
+
+		#Santa Cruz de Patagonia
+		d_lago_argentino d_deseado d_santa_cruz_de_patagonia
+
+		#Magallanes
+		d_aysen d_capitan_prat d_magallanes d_tierra_del_fuego
+	}
+}
+
+custom_paulistania_formable = {
+	duchies = {
+		#São Paulo
+		d_grande_sao_paulo d_alto_paraiba d_ribeira d_santos d_campinas d_rio_pardo d_sorocaba d_cuesta d_medio_tiete d_itapeva
+		#Tiete
+		d_rio_preto d_marilia d_aracatuba d_alto_pontal
+	}
+}
+
+custom_gerais_formable = {
+	duchies = {
+		#Minas
+		d_belzonte d_paraibuna d_ferroquadro d_piranga d_alto_sao_francisco d_vertentes d_vale_do_rio_doce d_caparao
+		#Sudiminas
+		d_alta_mantiqueira d_canastra d_sapucai
+		#Triangulo
+		d_pontal_da_prata d_araxas d_pontal_do_triangulo
+		#Espinhaço
+		d_verde_grande d_vale_do_mucuri d_paracatu d_vale_do_jequitinhonha d_sertao_de_minas d_alto_jequitinhonha d_medio_sao_francisco
+	}
+}
+
+custom_parana_formable = {
+	duchies = {
+		#Paraná
+		d_curitiba d_paranapanema d_guayra d_ivai d_nova_rutenia d_vale_do_iguacu d_apucarana
+		#Mesopotamia
+		d_enterrios d_misiones d_corrientes
+		#Paraguay
+		d_paraguay d_upper_parana d_lower_parana d_aquidaban
+	}
+}
+
+custom_uruguay_formable = {
+	duchies = {
+		#Uruguay
+		d_montevideo d_interior d_olimar d_yi d_litoral d_atlantico
+		#Mesopotamia
+		d_enterrios d_misiones d_corrientes
+		#Campanha
+		d_boca_do_monte d_coxilhas d_tapes d_campanha
+	}
+}
+
+struggle_mexico_cornucopia = {
+	duchies = {
+		d_papaloapan d_tierra_caliente d_pais_monarca d_altos_de_jalisco d_nayarit d_costalegre d_colima d_de_ruffo d_tequila d_guadalajara d_san_luis_potosi d_el_potosi d_alta_huasteca d_aguascalientes d_guanajuato d_queretaro d_atoyac d_michoacan d_lerma d_costa_grande d_la_montana d_edomex d_valle_de_mexico d_hidalgo d_puebla d_tlaxcala d_baja_huasteca d_sierra_madre_del_sur d_mixteca d_istmo
+		d_nogales d_cortes d_tamaulipas d_huasteca_menor d_pilon d_valle_de_andalucia d_rio_bravo d_piedras_negras d_coahuila d_nueva_extremadura d_conchos d_comarca_lagunera d_durango d_sierra_tarahumara d_chihuahua d_sonora d_cahita d_sinaloa d_lomerias d_zacatecas d_totonacapan d_mazatlan d_olmeca d_sotavento
+	}
+}
+
+###########################################################################
+# Material Regions
+###########################################################################
+
+material_woods_ash = {
+	regions = {
+		world_canada_south
+		world_us_region
+		world_mexico_north
+	}
+}
+
+material_woods_oak = { #default in game
+	regions = {
+		world_eastern_canada
+		world_western_canada
+		world_us_region
+		world_mexico_north
+		world_mexico_central
+		ghw_region_cuba
+	}
+}
+
+# Widespread Regional - Pines and Firs - most of North America
+material_woods_pine_and_fir = {
+	regions = {
+		world_far_north
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_rockies
+		world_us_west_coast
+		world_mexico_north
+		world_mexico_central
+		world_caribbean
+		world_central_america
+		world_brazil_sudeste
+		world_brazil_o_sul
+		world_south_america_andes
+	}
+}
+
+ # Widespread Regional - Elm - temperate and tropical-montane North America; seems to be focused in the east
+material_wood_elm = {
+	regions = {
+		world_eastern_canada
+		world_central_canada
+		world_us_eastern
+		world_us_middle
+		world_us_southwest
+		world_mexico_central
+	}
+}
+
+ # Widespread Regional - Walnut - scatter across New World
+material_wood_walnut = {
+	regions = {
+		world_eastern_canada
+		world_western_canada
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_middle
+		world_us_southwest
+		world_us_west_coast
+		world_mexico_north
+		world_spanish_main
+		world_south_america_guyanas
+		world_greater_andes
+	}
+}
+
+ # Widespread Regional - Maple - North America
+material_wood_maple = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+		world_us_great_plains
+		world_us_rockies
+		world_us_west_coast
+		world_mexico_north
+		world_mexico_central
+	}
+}
+
+
+# Widespread Regional
+material_woods_sycamore = { #North America
+	regions = {
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_texas
+		world_us_southwest
+		world_us_west_coast
+		world_mexico_north
+		world_mexico_central
+	}
+}
+
+material_woods_tulipwood = { #changed from Fleroya
+	regions = {
+		world_eastern_canada
+		world_us_eastern
+		world_mexico_central
+		world_caribbean_basin
+		world_brazil_sudeste
+	}
+}
+
+material_woods_padauk = { #brazilwood
+	regions = {
+		world_south_america_brasil_coast
+	}
+}
+
+# Widespread Regional - tropics
+material_woods_logwood = { #changed from sal
+	regions = {
+		world_mexico_central
+		world_mexico_yucatan
+		world_caribbean
+		world_central_america
+	}
+}
+
+material_woods_rosewood = {
+	regions = {
+		world_mexico_central
+		world_mexico_yucatan
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_south_america_amazon
+		world_south_america_interior
+		world_brazil_nordeste
+		world_brazil_sudeste
+		world_south_america_andes
+	}
+}
+
+material_woods_satinwood = {
+	regions = {
+		world_caribbean
+	}
+}
+
+material_woods_teak = {
+	regions = {
+		world_mexico_central
+		world_caribbean
+		world_central_america
+	}
+}
+
+# Regional - France, England, Wales, Ireland
+material_woods_yew = {
+	regions = {
+		world_eastern_canada
+		world_western_canada
+		world_us_great_lakes
+		world_us_northeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_west_coast
+		world_mexico_central
+	}
+}
+
+# Regional - Mediterranean
+material_woods_olivewood = {
+	regions = {
+		custom_e_chile
+		world_mexico_north
+		world_us_west_coast
+	}
+}
+
+material_woods_coromandel = { #purpleheart
+	regions = {
+		world_mexico_central
+		world_mexico_yucatan
+		world_caribbean_basin
+		world_south_america_amazon
+		world_south_america_interior
+		ghw_region_florida
+	}
+}
+
+material_woods_ebony = { #lignum vitae
+	regions = {
+		world_us_texas
+		world_mexico_north
+		world_caribbean_basin
+	}
+}
+
+material_woods_tupelo = {
+	regions = {
+		world_us_eastern
+		world_us_great_plains
+	}
+}
+
+material_woods_bamboo = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_texas
+		world_mexico_central
+		world_mexico_yucatan
+		world_caribbean_basin
+		world_brazil_region
+		world_greater_andes
+	}
+}
+
+material_woods_dogwood = {
+	regions = {
+		world_far_north
+		world_us_eastern
+		world_us_great_plains
+		world_us_rockies
+		world_us_west_coast
+		world_mexico_central
+	}
+}
+
+material_woods_redbud = {
+	regions = {
+		world_far_north
+		world_us_eastern
+		world_us_great_plains
+		world_us_rockies
+		world_us_west_coast
+		world_mexico_central
+	}
+}
+
+material_woods_redbud = {
+	regions = {
+		world_us_eastern
+		world_us_middle
+		custom_california
+		ghw_region_nuevo_leon
+		ghw_region_navajoland
+	}
+	duchies = {
+		d_greater_toronto
+	}
+}
+
+material_woods_hazel = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+		world_us_great_plains
+		world_us_west_coast
+	}
+}
+
+material_woods_hackberry = {
+	regions = {
+		world_eastern_canada
+		world_us_eastern
+		world_us_middle
+		world_us_rockies
+        world_mexico_north
+		world_mexico_central
+		ghw_region_buenos_aires
+		ghw_region_chaco
+		ghw_region_cordoba
+		ghw_region_mesopotamia
+		ghw_region_norte_viejo
+	}
+}
+
+material_woods_sumac = {
+	regions = {
+		world_eastern_canada
+		world_us_eastern
+		world_us_middle
+		world_us_rockies
+		world_mexico_north
+		world_mexico_central
+	}
+}
+
+material_woods_sumac = {
+	regions = {
+		world_us_eastern
+		world_us_middle
+		world_mexico_north
+		world_mexico_central
+	}
+}
+
+material_woods_willow = {
+	regions = {
+		world_far_north
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_western
+		world_mexico_central
+		world_greater_andes
+	}
+}
+
+material_woods_elder = {
+	regions = {
+		world_canada_south
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_western
+	}
+}
+
+material_woods_loquat = {
+	regions = {
+		ghw_region_florida
+	}
+}
+material_woods_buttonwood = {
+	regions = {
+		world_mexico_yucatan
+		world_caribbean
+		ghw_region_galapagos
+	}
+}
+material_woods_gumbo_limbo = {
+	regions = {
+		ghw_region_florida
+		world_mexico_central
+		world_caribbean
+		world_central_america
+	}
+}
+material_woods_sheoak = {
+	regions = {
+		ghw_region_florida
+		world_mexico_central
+		world_caribbean
+		world_south_america_brasil_coast
+	}
+}
+material_woods_hornbeam = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+	}
+}
+material_woods_serviceberry = {
+	regions = {
+		world_canada_south
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_western
+	}
+}
+material_woods_aspen = {
+	regions = {
+		world_canada_south
+		world_us_great_lakes
+		world_us_northeast
+		world_us_western
+	}
+}
+material_woods_pawpaw = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		ghw_region_gotham
+		ghw_region_the_chesapeake
+		custom_michigan
+		ghw_region_illinois
+	}
+	duchies = {
+		d_chicagoland
+	}
+}
+material_woods_rhododendron = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+	}
+}
+material_woods_magnolia = {
+	regions = {
+		world_us_eastern
+		custom_gran_colombia
+	}
+}
+material_woods_catalpa = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+		world_us_middle
+		custom_california
+		custom_cascadia
+		custom_colorado
+	}
+}
+material_woods_catalpa = {
+	regions = {
+		world_central_canada
+	}
+}
+material_woods_osage_orange = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_texas
+		custom_michigan
+		ghw_region_ohio_valley
+		ghw_region_the_chesapeake
+		ghw_region_gotham
+		ghw_region_the_valley
+		ghw_region_buenos_aires
+	}
+}
+material_woods_persimmon = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_texas
+		ghw_region_ohio_valley
+		ghw_region_the_chesapeake
+		ghw_region_gotham
+	}
+}
+material_woods_hawthorn = {
+	regions = {
+		world_canada_south
+		world_us_eastern
+		world_us_rockies
+		world_us_southwest
+		world_us_west_coast
+		world_mexico_central
+		custom_old_chile
+	}
+}
+material_woods_mulberry = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_middle
+		world_us_western
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_brazil_region
+		world_greater_andes
+	}
+}
+material_woods_alder = {
+	regions = {
+		world_far_north
+		world_us_great_lakes
+		world_us_northeast
+		world_us_southeast
+		world_us_upland_south
+		world_us_western
+		world_mexico_central
+		world_south_america_andes
+		ghw_region_araucania
+	}
+}
+material_woods_poplar = {
+	regions = {
+		ghw_region_alaska
+		world_canada_south
+		world_us_eastern
+		world_us_western
+		world_mexico_north
+		world_south_america_la_plata
+		world_south_america_patagonia
+	}
+}
+material_woods_manzanita = {
+	regions = {
+		world_us_western
+		world_mexico_north
+		world_mexico_central
+	}
+}
+material_woods_chinquapin = {
+	regions = {
+		ghw_region_whilamut
+		ghw_region_highdesert
+		ghw_region_andreas
+		ghw_region_the_valley
+		ghw_region_jefferson
+	}
+}
+material_woods_madrone = {
+	regions = {
+		world_us_west_coast
+		ghw_region_beecee
+	}
+}
+material_woods_beech = {
+	regions = {
+		world_eastern_canada
+		world_us_great_lakes
+		world_us_northeast
+		world_us_upland_south
+		ghw_region_chile
+		ghw_region_araucania
+		ghw_region_magallanes
+	}
+}
+material_woods_locust = {
+	regions = {
+		world_eastern_canada
+		world_western_canada
+		world_us_great_lakes
+		world_us_northeast
+		world_us_upland_south
+		world_us_western
+	}
+}
+material_woods_eucalyptus = {
+	regions = {
+		custom_california
+		world_mexico_central
+		ghw_region_costa_rica
+	}
+	duchies = {
+		d_puerto_rico
+	}
+}
+material_woods_redwood = {
+	regions = {
+		ghw_region_andreas
+		ghw_region_jefferson
+	}
+}
+material_woods_imbuia = {
+	regions = {
+		world_brazil_o_sul
+	}
+}
+material_woods_paineira = {
+	regions = {
+		ghw_region_rio_de_janeiro
+		ghw_region_sao_paulo
+		world_brazil_o_sul
+		ghw_region_collao
+		ghw_region_buenos_aires
+		ghw_region_mesopotamia
+	}
+}
+material_woods_palm = {
+	regions = {
+		world_us_gulf_coast
+		world_us_texas
+		custom_california
+		custom_cascadia
+		custom_colorado
+		world_caribbean
+	}
+}
+
+#material_woods_hawthorn = {
+#	regions = {
+#		world_canada_south
+#		world_us_eastern
+#		world_us_western
+#		world_mexico_region
+#		world_central_america
+#		world_spanish_main
+#		world_south_america_guyanas
+#		world_brazil_region
+#		world_greater_andes
+#	}
+#}
+
+
+
+material_cloth_silk = { #Brazil and Colombia appear to be the only big producers
+	regions = {
+		world_us_west_coast
+		world_mexico_central
+		world_spanish_main
+		world_south_america_brasil_coast
+	}
+}
+
+material_cloth_linen = {
+	regions = {
+		world_canada_south
+		world_us_region
+		world_mexico_central
+		world_mexico_yucatan
+		world_spanish_main
+		world_south_america_guyanas
+		world_greater_andes
+	}
+}
+
+material_cloth_cotton = {
+	regions = {
+		world_us_southeast
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_texas
+		world_us_west_coast
+		world_caribbean
+		world_spanish_main
+		world_south_america_guyanas
+		world_south_america_interior
+		world_brazil_nordeste
+		world_brazil_sudeste
+		world_south_america_andes
+	}
+}
+
+material_cloth_worsted_wool = {
+	duchies = {
+		d_falkland_islands
+	}
+}
+
+material_cloth_wool = {
+	regions = {
+		world_us_rockies
+		world_us_southwest
+		world_us_northeast
+	}
+}
+
+##########################################
+# HSB = Horn, Shell, Bone.
+##########################################
+
+material_hsb_llama_bone = {
+	regions = {
+		world_south_america_andes
+	}
+}
+
+material_hsb_deer_antler = {
+	regions = {
+		custom_old_canada
+		custom_old_usa
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_brazil_region
+		world_south_america_andes
+	}
+}
+
+material_hsb_boar_tusk = {
+	regions = {
+		world_central_canada
+		world_us_great_lakes
+		world_us_northeast
+		world_us_upland_south
+		world_us_middle
+		world_us_southwest
+		world_brazil_sudeste
+		world_brazil_o_sul
+	}
+}
+
+material_hsb_seashell = {
+	regions = {
+		world_arctic
+		world_eastern_canada
+		world_western_canada
+		world_us_northeast
+		world_us_southeast
+		world_us_gulf_coast
+		world_us_texas
+		world_us_west_coast
+		world_mexico_central
+		world_mexico_yucatan
+		world_caribbean_basin
+		world_south_america_brasil_coast
+		world_greater_andes
+	}
+}
+
+material_hsb_tortoiseshell = {
+	regions = {
+		world_caribbean
+		world_south_america_andes
+	}
+}
+
+material_hsb_mother_of_pearl = {
+	regions = {
+		world_us_west_coast
+		world_mexico_region
+		world_us_gulf_coast
+		world_caribbean
+	}
+}
+
+material_hsb_ivory_native = {
+	regions = {
+		world_arctic
+	}
+}
+
+material_hsb_ivory_imported = {
+	regions = {
+		world_canada_south
+		world_us_northeast
+		world_us_great_lakes
+	}
+	duchies = { d_siuslaw d_willamette d_tillamook d_portlandia d_willapa d_rainier d_olympus d_puget d_yakima d_columbia_valley d_palouse d_colville }
+}
+
+material_metal_wootz = {
+	regions = {
+		world_us_great_lakes
+	}
+}
+
+material_metal_damascus = {
+	regions = {
+		world_us_great_lakes
+	}
+}
+
+material_metal_bulat = {
+	regions = {
+		world_us_great_lakes
+	}
+}
+
+###########################################################################
+# Custom Regions
+###########################################################################
+custom_old_usa = {
+	regions = {
+		world_us_region
+	}
+	duchies = {
+		d_juneau
+		d_kenai
+		d_shakwak
+		d_goldfields
+		d_gwichin
+		d_north_slope
+		d_koyukuk
+		d_nome
+		d_yukon_delta
+		d_kuskokwim
+		d_aleutians
+	}
+}
+
+custom_old_canada = {
+	regions = {
+		world_eastern_canada
+		world_central_canada
+	}
+	duchies = {
+		d_labrador
+		d_nunatsiavut
+		d_caniapiscau
+		d_kativik
+		d_iqaluit
+		d_iglulik
+		d_kivalliq
+		d_kitikmeot
+		d_inuvik
+		d_chipewyan
+		d_dogrib
+		d_deh_cho
+		d_great_bear
+		d_liard
+		d_yukon
+		d_cannington
+		d_black_earth
+		d_north_saskatchewan
+		d_saskatoon
+		d_regina
+		d_assiniboia
+		d_palliser
+		d_ca_ab_calgary
+		d_chinook
+		d_upper_athabasca
+		d_edmonton
+		d_desnethe
+		d_lower_athabasca
+		d_smoky_river
+		d_lower_peace
+		d_upper_peace
+		d_kootenay
+		d_omineca
+		d_monashee
+		d_okanagan
+		d_cariboo
+		d_lower_mainland
+		d_central_coast
+		d_vancouver_island
+		d_upper_coast
+		d_haida_gwaii
+		d_alexander
+	}
+}
+
+custom_old_brazil = {
+	regions = {
+		world_south_america_brasil_coast
+	}
+	duchies = {
+		d_amapa d_oyapock d_marajo d_belem d_tucuria d_araguaia d_tocantins d_chapada_dos_veadeiros d_the_district d_catalao d_rio_verde d_planalto_central d_javaes d_carajas d_barra_das_garcas d_juruena d_serra_do_cachimbo d_sinopia d_pantanal d_maracaju d_sicuriu d_brilhante d_ji_parana d_guapore d_lesser_acre d_taumaturgia d_tres_fronteras d_vaupes d_cabeca_do_cachorro d_vale_do_bia d_copea d_igarape_mamoria d_aironia d_manaus d_purus d_roraima d_takutu d_cabeca_da_raposa d_itacoatiara d_tapajos d_pamboapy d_altamira d_guimarania
+	}
+}
+
+custom_mercenary_zone = {
+	duchies = { d_atlantico d_interior d_litoral d_montevideo d_campanha d_tapes d_costa_doce d_coxilhas d_boca_do_monte d_vale_do_rio_pardo d_porto_alegre d_campos_de_vacaria d_planalto_medio d_alto_uruguai d_missoes d_misiones d_corrientes d_enterrios d_yi d_olimar d_baires d_mardel d_parana_mouth d_junin d_azul d_blanca }
+}
+
+custom_canoe_zone = {
+	regions = { world_far_north world_us_great_lakes }
+	duchies = { d_siuslaw d_willamette d_tillamook d_portlandia d_willapa d_rainier d_olympus d_puget d_yakima d_columbia_valley d_palouse d_colville }
+}
+
+custom_cascadia = {
+	regions = {
+		world_western_canada
+	}
+	duchies = {
+		d_siuslaw d_willamette d_tillamook d_portlandia d_willapa d_rainier d_olympus d_puget d_yakima d_columbia_valley d_palouse d_colville
+	}
+}
+
+custom_california = {
+	duchies = {
+		d_rogue d_modoc d_shasta_cascade d_redwoods d_us_ca_yolo d_north_valley d_sierra_nevada d_sacramento d_motherlode d_san_joaquin d_fresno d_kern d_wineland d_goldengate d_east_bay d_salinas d_transverse d_southland d_san_diego d_inland d_mojave d_mexicali d_baja_california_norte d_baja_california_sur d_death_valley d_nevada d_us_nv_churchill d_northern_basin d_strip
+	}
+}
+
+custom_old_chile = {
+	duchies = {
+		d_tarapaca d_antofagasta d_copiapo d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_nuble d_biobio d_araucania d_los_rios d_los_lagos d_aysen d_capitan_prat d_magallanes
+	}
+}
+
+custom_oregon = {
+	duchies = {
+		d_portlandia d_tillamook d_siuslaw d_willamette d_rogue d_deschutes d_klamath d_malheur d_blue_mountains
+	}
+}
+
+custom_washington_state = {
+	duchies = {
+		d_puget d_olympus d_rainier d_willapa d_yakima d_columbia_valley d_colville d_palouse
+	}
+}
+
+custom_inland_nw = {
+	duchies = {
+		d_colville d_palouse d_columbia_valley d_yakima d_blue_mountains d_malheur d_deschutes d_klamath
+	}
+}
+
+custom_quebec = {
+	duchies = {
+		d_outaouais d_laurentides d_mauricie d_montreal d_monteregie d_estrie d_quebec d_chaudiere_appalaches d_saguenay d_bas_saint_laurent d_sept_rivieres d_gaspesia d_cote_nord
+	}
+}
+
+custom_ohio = {
+	duchies = {
+		d_olentangy d_miami_valley d_maumee d_lower_ohio d_upper_ohio d_the_reserve d_till_plains
+	}
+}
+custom_indiana = {
+	duchies = {
+		d_michiana d_indianapolis d_wabash d_monroe d_kentuckiana
+	}
+	counties = {
+		c_gary
+	}
+}
+custom_illinois = {
+	duchies = {
+		d_chicagoland d_peoria d_kankakee d_sangamon d_little_egypt d_chambana d_forgottonia
+	}
+}
+
+custom_colorado = {
+	duchies = {
+		d_pueblo d_denver d_boulder d_western_slope d_durango_us
+	}
+}
+
+custom_wyoming = {
+	duchies = {
+		d_laramie d_red_desert d_sweetwater d_highland_springs d_beartooth
+	}
+}
+
+custom_oklahoma = {
+	duchies = {
+		d_sequoyah d_oklahoma d_washita d_panhandle
+	}
+}
+
+custom_huasteca = {
+	duchies = {
+		d_baja_huasteca d_alta_huasteca d_huasteca_menor
+	}
+}
+
+custom_rio_grande_do_sul = {
+	duchies = {
+		d_costa_doce d_porto_alegre d_vale_do_rio_pardo d_tapes d_campanha d_boca_do_monte d_coxilhas d_missoes d_planalto_medio d_alto_uruguai d_campos_de_vacaria
+	}
+}
+
+
+custom_alaska = {
+	duchies = {
+		d_alexander d_juneau d_kenai d_aleutians d_kuskokwim d_yukon_delta d_koyukuk d_nome d_north_slope d_gwichin d_goldfields d_shakwak
+	}
+}
+
+custom_michigan = {
+	duchies = {
+		d_west_michigan d_mount_pleasant d_upnorth d_saginaw d_midmichigan d_detroit d_hiawatha d_marquette d_copperland
+	}
+}
+
+custom_wisconsin = {
+	duchies = {
+		d_lakefront d_badgerland d_driftless d_chippewa d_northwoods d_green_bay
+	}
+}
+
+custom_new_jersey = {
+	duchies = {
+		d_south_jersey d_raritan d_ramapo
+	}
+}
+
+custom_west_virginia = {
+	duchies = {
+		d_monongahela d_shenandoah d_west_virginia
+	}
+}
+
+custom_grand_virginia = {
+	duchies = {
+		d_monongahela d_shenandoah d_west_virginia d_nova d_piedmont d_tidewater d_southside
+	}
+}
+
+custom_paraguay = {
+	duchies = {
+		d_lower_parana d_paraguay d_aquidaban d_chaco_austral d_formosa d_chaco_oriental d_alto_paraguay d_upper_parana
+	}
+}
+
+custom_argentina = {
+	duchies = {
+		d_parana_mouth d_salta d_antofalla d_catamarca d_la_rioja d_tucuman d_san_juan d_mendoza d_san_rafael d_san_luis d_anejo d_santiago_del_estero d_santa_fe d_cordoba d_rio_tercero d_rio_cuarto d_rosario d_enterrios d_corrientes d_misiones d_baires d_junin d_azul d_mardel d_blanca d_trenque_lauquen d_la_pampa d_patagones d_valle_medio d_chos_malal d_neuquen d_bariloche d_futaleufu d_lago_argentino d_tierra_del_fuego d_santa_cruz_de_patagonia d_deseado d_san_jorge d_rawson d_san_matias d_viedma
+	}
+}
+
+custom_laplata = {
+	duchies = {
+		d_montevideo d_litoral d_interior d_atlantico d_yi d_olimar d_salta d_antofalla d_catamarca d_la_rioja d_tucuman d_san_juan d_mendoza d_san_rafael d_san_luis d_anejo d_santiago_del_estero d_santa_fe d_cordoba d_rio_tercero d_rio_cuarto d_rosario d_enterrios d_corrientes d_misiones d_baires d_junin d_azul  d_mardel d_blanca d_trenque_lauquen d_la_pampa d_patagones
+	}
+}
+
+custom_soflo = {
+	duchies = {
+		d_miami d_eyefour d_suncoast
+	}
+}
+
+custom_bigfoot_zone = {
+	regions = {
+		world_far_north
+		world_us_great_lakes
+		world_us_great_plains
+		world_us_gulf_coast
+		world_us_northeast
+		world_us_southeast
+		world_us_texas
+		world_us_upland_south
+		world_us_western
+	}
+}
+
+custom_amber_zone = {
+	regions = {
+		world_central_canada
+		ghw_region_domingo
+		custom_new_jersey
+		world_south_america_andes
+	}
+}
+
+custom_amethyst_zone = {
+	regions = {
+		world_brazil_region
+		world_south_america_andes
+		ghw_region_uruguay
+	}
+}
+
+custom_carnelian_zone = {
+	regions = {
+		custom_new_jersey
+		world_brazil_o_sul
+		world_south_america_andes
+	}
+}
+
+custom_fluorite_zone = {
+	regions = {
+		ghw_region_newfoundland
+		ghw_region_illinois
+		world_us_rockies
+	}
+}
+
+custom_moonstone_zone = {
+	regions = {
+		world_us_southwest
+		world_mexico_region
+	}
+}
+
+custom_deseret_zone = {
+	regions = {
+		world_us_southwest
+		ghw_region_socal
+		ghw_region_utah
+		ghw_region_nevada
+	}
+}
+
+custom_region_spanish_america = { #for broad loc triggers. Excluding the caribbean, since hard borders would be odd with such a small area if cultures move. Will use language instead for "spanish caribbean" when needed
+	regions = {
+		world_mexico_region
+		world_central_america
+		world_greater_andes
+		ghw_region_cundiboyaca
+		ghw_region_el_caribe
+		ghw_region_antioquia
+		ghw_region_el_pacifico
+		ghw_region_tierradentro
+		ghw_region_venezuela
+		ghw_region_zulia
+		ghw_region_zamora
+		ghw_region_los_llanos
+		ghw_region_bolivar
+		custom_paraguay
+		ghw_region_omagua
+	}
+}
+
+custom_region_anglo_french_na = { #for broad loc triggers
+	regions = {
+		world_canada_south
+		world_us_region
+		ghw_region_alaska
+		ghw_region_yukon
+	}
+}
+
+#Disease
+custom_marsh_fever_zone_high = {
+	regions = {
+		world_us_southeast
+		world_us_gulf_coast
+		world_mexico_yucatan
+		world_caribbean_basin
+		world_south_america_amazon
+	}
+}
+
+custom_marsh_fever_zone_low = {
+	regions = {
+		world_us_great_lakes
+		world_us_upland_south
+		world_us_northeast
+		world_us_texas
+		world_us_western
+		world_mexico_north
+		world_mexico_central
+		world_south_america_brasil_coast
+	}
+}
+
+
+custom_red_death_zone = {
+	regions = {
+		world_mexico_yucatan
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+	}
+}
+
+custom_northern_black_death_zone = {
+	regions = {
+		world_us_western
+	}
+}
+
+custom_southern_black_death_zone = {
+	regions = {
+		world_south_america_andes
+		world_south_america_interior
+		world_brazil_sudeste
+	}
+}
+
+custom_bolsonaro_influenza_memorial_zone = {
+	duchies = {
+		d_grande_sao_paulo
+	}
+}
+
+#custom_smallpox_returns_zone
+
+
+dlc_fp1_region_haida_pool = {
+	duchies = {
+		d_haida_gwaii d_upper_coast d_central_coast d_alexander
+	}
+}
+
+########################################################
+# Location based event regions
+########################################################
+
+custom_salmon_run = {
+	duchies = {
+		d_north_slope
+		d_nome
+		d_chukotka
+		d_koyukuk
+		d_gwichin
+		d_yukon_delta
+		d_kuskokwim
+		d_aleutians
+		d_kenai
+		d_goldfields
+		d_yukon
+		d_shakwak
+		d_stikine
+		d_juneau
+		d_alexander
+		d_upper_coast
+		d_haida_gwaii
+		d_omineca
+		d_cariboo
+		d_central_coast
+		d_vancouver_island
+		d_lower_mainland
+		d_okanagan
+		d_monashee
+		d_puget
+		d_olympus
+		d_willapa
+		d_rainier
+		d_colville
+		d_yakima
+		d_columbia_valley
+		d_palouse
+		d_tillamook
+		d_portlandia
+		d_willamette
+		d_siuslaw
+		d_deschutes
+		d_blue_mountains
+		d_treasure_valley
+		d_rogue
+		d_thunder
+		d_arrowhead
+		d_copperland
+		d_marquette
+		d_hiawatha
+		d_algoma
+		d_new_brunswick
+		d_penobscot
+		d_maine
+		d_somerset_maine
+		d_gaspesia
+		d_bas_saint_laurent
+		d_chaudiere_appalaches
+		d_estrie
+		d_monteregie
+		d_montreal
+		d_united_counties
+		d_st_lawrence
+		d_rideau
+		d_trent
+		d_greater_toronto
+		d_erie
+		d_finger_lakes
+		d_oneida
+		d_adirondack
+		d_boston
+		d_new_hampshire
+		d_massachusetts
+		d_connecticut
+		d_rhode_island
+		d_cape_cod
+		d_new_haven
+		d_grand_river
+	}
+}
+
+
+
+### Hunts
+
+# Deer Spread
+hunt_animal_deer_region = {
+	duchies = {
+		d_denver
+		d_boulder
+		d_pueblo
+		d_laramie
+		d_beartooth
+		d_glacier
+		d_north_idaho
+		d_nez_perce
+		d_silver_bow
+		d_highland_springs
+		d_liard
+	}
+	regions = {
+		world_canada_south
+		world_us_eastern
+		world_us_middle
+		world_us_southwest
+		custom_cascadia_kingdom
+		custom_inland_nw
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+	}
+}
+
+# Antelope Spread
+hunt_animal_antelope_region = { #pronghorns
+	regions = {
+		world_mexico_north
+		world_us_western
+		world_us_middle
+	}
+	duchies = {
+		d_cannington
+		d_regina
+		d_assiniboia
+		d_palliser
+		d_saskatoon
+	}
+}
+
+# Boar Spread
+hunt_animal_boar_region = {
+	regions = {
+		world_canada_south
+		world_us_texas
+		world_us_southeast
+		world_us_upland_south
+		world_us_southwest
+		world_us_west_coast
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_brazil_region
+		world_greater_andes
+	}
+}
+
+# Bear Spread
+hunt_animal_bear_region = {
+	regions = {
+		world_far_north
+		world_us_eastern
+		world_us_middle
+		world_us_west_coast
+		world_us_rockies
+		world_mexico_north
+
+		custom_peruvian_kingdoms
+		ghw_region_tierradentro
+		ghw_region_el_pacifico
+		ghw_region_antioquia
+		ghw_region_el_caribe
+		ghw_region_zulia
+		ghw_region_cundiboyaca
+		ghw_region_ecuador
+	}
+}
+
+# Big Cat Spread
+hunt_animal_big_cat_region = { #cougars, pumas, jaguars
+	regions = {
+		world_canada_south
+		world_us_region
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_greater_andes
+		world_brazil_region
+	}
+}
+
+# Bison Spread
+hunt_animal_bison_region = {
+	regions = {
+		world_central_canada
+		world_western_canada
+		world_us_great_lakes
+		world_us_upland_south
+		world_us_gulf_coast
+		world_us_southeast
+		world_us_southwest
+		world_us_middle
+		world_us_rockies
+		world_mexico_north
+		world_south_america_amazon
+		world_spanish_main
+		world_south_america_guyanas
+		world_brazil_nordeste
+		world_south_america_interior
+		world_brazil_sudeste
+	}
+}
+
+hunt_animal_reindeer_region = { #caribou
+	regions = {
+		world_far_north
+	}
+}
+
+hunt_animal_elk_region = { #not moose, elk
+	regions = {
+		world_central_canada
+		world_western_canada
+		world_us_great_lakes
+		world_us_great_plains
+		world_us_southeast
+		world_us_upland_south
+		world_us_western
+	}
+}
+
+
+region_animal_jaguar = {
+	regions = {
+		world_mexico_region
+		world_central_america
+		world_spanish_main
+		world_south_america_guyanas
+		world_brazil_region
+		world_greater_andes
+		world_us_texas
+		world_us_southwest
+	}
+}
+
+hunt_animal_lynx_region = {
+	regions = {
+		world_far_north
+		world_us_region
+		world_mexico_north
+		world_mexico_central
+	}
+}
+
+hunt_animal_hippo_region = {
+	regions = {
+		ghw_region_antioquia
+		ghw_region_el_caribe
+		ghw_region_zulia
+		ghw_region_cundiboyaca
+	}
+}
+
+####
+
+groundhog_counties = {
+	counties = {
+		c_venango
+		c_staten_island
+		c_bruce
+		c_chicago
+		c_hants
+		c_forillon
+		c_washington
+		c_raleigh
+		c_mansfield
+		c_nanaimo
+		c_winnipeg
+		c_monongalia
+		c_atlanta
+		c_madison
+		c_dallas
+	}
+}
+
+#####
+
+commodity_region_coffee_north = {
+	regions = {
+		world_caribbean
+		#Mexico
+		ghw_region_mexico_valley
+		ghw_region_michoacan
+		ghw_region_guerrero
+		ghw_region_oaxaca
+		ghw_region_veracruz
+		ghw_region_campeche
+		ghw_region_chiapas
+		ghw_region_peten
+		#Central America
+		ghw_region_guatemala
+		ghw_region_honduras
+		ghw_region_el_salvador
+		ghw_region_nicaragua
+		ghw_region_costa_rica
+		ghw_region_miskito
+		ghw_region_panama
+		#Colombia
+		ghw_region_el_pacifico
+		ghw_region_antioquia
+		ghw_region_el_caribe
+		ghw_region_cundiboyaca
+		#Venezuala
+		ghw_region_zulia
+		ghw_region_venezuela
+
+	}
+}
+
+commodity_region_coffee_south = {
+	regions = {
+		world_brazil_sudeste
+	}
+}
+
+commodity_region_coffee_all = {
+	regions = {
+		commodity_region_coffee_north
+		commodity_region_coffee_south
+	}
+}
+
+commodity_region_olive_north = {
+	regions = {
+		#Aridoamerica
+		ghw_region_arixo
+		ghw_region_nueva_navarra
+		#California
+		ghw_region_socal
+		ghw_region_andreas
+		ghw_region_jefferson
+		ghw_region_baja_california
+		#Cascadia - yes really
+		ghw_region_whilamut
+	}
+}
+
+commodity_region_olive_south = {
+	regions = {
+		#Chile
+		ghw_region_araucania
+		ghw_region_chile
+		#La Plata
+		ghw_region_la_pampa
+		#Patagonia
+		ghw_region_rio_negro
+	}
+}
+
+commodity_region_olive_all = {
+	regions = {
+		commodity_region_olive_north
+		commodity_region_olive_south
+	}
+}
+
+commodity_region_tobacco_north = {
+	regions = {
+		world_us_southeast
+		ghw_region_alabama
+		ghw_region_magnolia
+		ghw_region_kentucky
+	}
+}
+
+commodity_region_tobacco_central = {
+	regions = {
+		world_caribbean
+	}
+}
+
+commodity_region_tobacco_south = {
+	regions = {
+		world_brazil_o_sul
+	}
+}
+
+commodity_region_tobacco_all = {
+	regions = {
+		commodity_region_tobacco_north
+		commodity_region_tobacco_central
+		commodity_region_tobacco_south
+	}
+}
+
+commodity_region_sugar_cane_north = {
+	regions = {
+		world_us_gulf_coast
+		ghw_region_old_star
+		ghw_region_rio_grande
+	}
+}
+
+commodity_region_sugar_cane_central = {
+	regions = {
+		#Mexico - Gulf of Mexico Coast
+		ghw_region_nuevo_leon
+		ghw_region_veracruz
+		ghw_region_campeche
+		ghw_region_yucatan
+		ghw_region_peten
+		#Central America
+		ghw_region_miskito
+		#world_caribbean
+		world_spanish_main
+	}
+	duchies = {
+		#Caribbean MINUS the western most bit of of Cuba
+		#d_pinar_del_rio 
+		d_havana 
+		d_matanzas 
+		d_las_villas 
+		d_camaguey 
+		d_oriente 
+		
+		d_the_bahamas 
+		d_jamaica 
+		d_cayman_islands 
+		d_port_au_prince 
+		d_gonave 
+		d_tortuga 
+		d_el_cibao 
+		d_enriquillo 
+		d_ozama 
+		d_puerto_rico 
+		d_leeward_islands 
+		d_french_antilles 
+		d_windward_islands 
+		d_trinidad_and_tobago 
+		d_abc_islands 
+		d_bermuda
+	}
+}
+
+commodity_region_sugar_cane_south = {
+	regions = {
+		custom_brazil_imperial_para
+		world_brazil_nordeste
+		world_brazil_sudeste
+		commodity_region_sugar_cane_custom_brazil
+	}
+}
+
+commodity_region_sugar_cane_custom_brazil = {
+	regions = {
+		ghw_region_triangle
+		ghw_region_tiete
+	}
+	duchies = {
+		d_cuesta
+		d_medio_tiete
+		d_rio_pardo
+	}
+}
+
+commodity_region_sugar_cane_all = {
+	regions = {
+		commodity_region_sugar_cane_north
+		commodity_region_sugar_cane_central
+		commodity_region_sugar_cane_south
+	}
+}
+
+commodity_region_wine_north = {
+	regions = {
+		custom_california
+		ghw_region_hudsonia
+		ghw_region_the_columbia
+	}
+}
+
+commodity_region_wine_south = {
+	regions = {
+		#Argentina
+		ghw_region_cordoba
+		ghw_region_cuyo
+		ghw_region_la_pampa
+		ghw_region_norte_viejo
+		ghw_region_rio_negro
+
+	}
+	duchies = {
+		#Argentina
+		d_chaco_austral
+		d_formosa
+
+		#Brazil
+		d_vale_do_itajai
+		d_lages
+		d_campos_de_vacaria
+		d_nova_rutenia
+		d_vale_do_iguacu
+		
+		#Bolivia
+		d_santa_cruz
+
+		#Chile
+		d_copiapo
+		d_coquimbo
+		d_maule
+		d_nuble
+		d_ohiggins
+		d_santiago
+		d_valparaiso
+
+		#Tawantinsuyu
+		d_chichas
+		d_tarija
+	}
+}
+
+commodity_region_wine_all = {
+	regions = {
+		commodity_region_wine_north
+		commodity_region_wine_south
+	}
+}
+
+commodity_region_maple = {
+	regions = {
+		world_eastern_canada
+		world_us_great_lakes
+		world_us_northeast
+	}
+	duchies = {
+		d_algoma
+		d_clay_belt
+		d_nickel_belt
+	}
+}
+
+commodity_region_mate = {
+	regions = {
+		world_brazil_o_sul
+	}
+	duchies = {
+		#Mesopotamia
+		d_corrientes
+		d_enterrios
+		d_misiones
+
+		#Paraguay
+		d_aquidaban
+		d_paraguay
+		d_upper_parana
+		d_lower_parana
+
+		#Uruguay
+		d_atlantico
+		d_interior
+		d_litoral
+		d_montevideo
+		d_olimar
+		d_yi
+	}
+}
+
+commodity_region_cocoa_north = {
+	regions = {
+		ghw_region_ecuador
+		ghw_region_yucatan
+	}
+	duchies = {
+		#
+	}
+}
+
+commodity_region_cocoa_south = {
+	regions = {
+		world_brazil_nordeste
+	}
+	duchies = {
+		#Maranho
+		d_br_13_pinheiro
+		d_br_13_s_o_lu_s #who the hell named this
+		d_caxias
+		
+		#Para
+		d_altamira
+		d_belem
+		d_carajas
+		d_marajo
+		d_pamboapy
+		d_tapajos
+		d_tucuria
+
+		#Piaui
+		d_teresina
+	}
+}
+
+commodity_region_cocoa_all = {
+	regions = {
+		commodity_region_cocoa_north
+		commodity_region_cocoa_south
+	}
+}
+
+commodity_region_old_south = {
+	regions = {
+		commodity_region_tobacco_north
+		commodity_region_sugar_cane_north
+	}
+}
+
+commodity_region_hacienda = {
+	regions = {
+		commodity_region_coffee_north
+		commodity_region_tobacco_central
+		commodity_region_sugar_cane_central
+		commodity_region_cocoa_north
+		commodity_region_mate
+	}
+}
+
+commodity_region_fazenda = {
+	regions = {
+		commodity_region_coffee_south
+		commodity_region_tobacco_south
+		commodity_region_sugar_cane_south
+		commodity_region_cocoa_south
+	}
+}
+
+#Cochineal may deserve to be expanded in where it can be produced - reexamine presence in United States
+commodity_region_cochineal_north = {
+	regions = {
+		#Aridoamerica
+			ghw_region_altiplano
+			ghw_region_arixo
+			ghw_region_nueva_navarra
+			ghw_region_nuevo_leon
+		#California
+			ghw_region_nevada
+			ghw_region_socal
+			ghw_region_the_valley
+			ghw_region_andreas
+		#Central America
+			world_central_america
+		#Mexico
+			world_mexico_north
+			world_mexico_central
+			world_mexico_yucatan
+				#ghw_region_gran_chichimeca
+				#ghw_region_el_bajio
+				#ghw_region_mexico_valley
+				#ghw_region_jalisco
+				#ghw_region_michoacan
+				#ghw_region_guerrero
+				#ghw_region_oaxaca
+				#ghw_region_veracruz
+
+		#Rockies
+			#ghw_region_navajoland
+		#Texas
+			#ghw_region_estacado
+			ghw_region_rio_grande
+	}
+}
+
+commodity_region_cochineal_south = {
+	regions = {
+		#Colombia
+		ghw_region_el_pacifico
+		ghw_region_antioquia
+		ghw_region_el_caribe
+		ghw_region_cundiboyaca
+		#Venezuala
+		ghw_region_zulia
+		ghw_region_venezuela
+		#Ecuador
+		ghw_region_ecuador
+		#Inca
+		ghw_region_sipan
+		ghw_region_peru
+		ghw_region_cusco
+		ghw_region_collao
+		#Chile
+		ghw_region_atacama
+		ghw_region_chile
+		#Zondia
+		ghw_region_norte_viejo
+		ghw_region_cuyo
+	}
+}
+
+commodity_region_cochineal_all = {
+	regions = {
+		commodity_region_cochineal_north
+		commodity_region_cochineal_south
+	}
+}
+
+commodity_region_tixinda = {
+	regions = {
+		#Mexico
+		#ghw_region_baja_california - Overlaps with Wine/Olive/Cochineal too much
+		#ghw_region_nueva_navarra
+		ghw_region_jalisco
+		ghw_region_michoacan
+		ghw_region_guerrero
+		ghw_region_oaxaca
+		ghw_region_chiapas
+		#South America
+		ghw_region_el_pacifico
+		ghw_region_ecuador
+		ghw_region_sipan
+		ghw_region_peru
+		ghw_region_cusco
+	}
+	duchies = {
+		d_los_altos
+		d_guatemala
+		d_san_salvador
+		d_comayagua
+		d_managua
+		d_guanacaste
+		#Both Pacific and Atlantic - cut the Atlantic baronies
+		d_san_jose
+		d_chiriqui
+		d_cocle #No Atlantic coast to remove
+		d_panama
+	}
+}
+
+
+world_horse_buildings_in_hills_and_mountains = {
+	regions = {
+		world_western_canada
+		world_us_western
+		world_south_america_la_plata
+		world_south_america_patagonia
+	}
+}
+
+
+
+###########################################################################
+# Graphical Regions
+###########################################################################
+
+graphical_western = {
+	graphical = yes
+	color = { 255 0 0 }
+	regions = {
+		world_arctic
+		world_eastern_canada
+		world_western_canada
+		world_us_eastern
+		world_us_texas
+		world_us_rockies
+		world_south_america_andes
+		world_south_america_interior
+	}
+}
+
+graphical_india = {
+	graphical = yes
+	color = { 0 255 0 }
+	regions = {
+		world_spanish_main
+		world_south_america_guyanas
+		world_central_america
+		world_south_america_amazon
+	}
+}
+
+graphical_mediterranean = {
+	graphical = yes
+	color = { 0 0 255 }
+	regions = {
+		world_us_west_coast
+		world_mexico_central
+		world_mexico_yucatan
+		world_caribbean
+		world_south_america_brasil_coast
+		world_south_america_la_plata
+		world_south_america_patagonia
+	}
+}
+
+graphical_mena = {
+	graphical = yes
+	color = { 255 255 0 }
+	regions = {
+		world_mexico_north
+		world_us_southwest
+	}
+}
+
+graphical_steppe = {
+	graphical = yes
+	color = { 0 255 255 }
+	regions = {
+		world_us_great_plains world_central_canada
+	}
+}
+
+#keeping these for ease of use, but these aren't "proper" graphical regions, so they shouldn't get the above stuff. each region needs to be in one of the "proper" regions for non-DLC havers; these are done differently.
+graphical_scandinavia = {
+	regions = {
+		world_us_great_lakes
+	}
+}
+
+graphical_iberia = {
+	regions = {
+		world_mexico_central
+		world_caribbean
+	}
+}
+
+graphical_iran = {
+	regions = {
+		world_mexico_north
+		world_us_southwest
+	}
+}
+
+#DONT USE DUCHIES FOR THIS!!!!!!!!
+
+
+divergence_island_regions = {
+	duchies = {
+		d_iqaluit
+		d_haida_gwaii
+		d_the_bahamas
+		d_bermuda
+		d_jamaica
+		d_puerto_rico
+		d_leeward_islands
+		d_windward_islands
+		d_trinidad_and_tobago
+		d_abc_islands
+		d_galapagos
+		d_falkland_islands
+		d_tierra_del_fuego
+		d_long_island
+		d_prince_edward_island
+		d_magdalen
+	}
+}
+
+#cp4_music_area = {
+#	duchies = {
+#		# Sapmi
+#		d_aarjetje d_duortnoseatnu d_giemajohka d_guoldat d_vuovdisamieana
+#		# Dulo
+#		d_kazan
+#		# Perm
+#		d_udmurtia d_ural d_perm
+#		# Vladimir
+#		d_nizhny_novgorod
+#		# Bjarmalan
+#		d_vologda d_chudia d_ustyug d_biarmia
+#		# Novgorod
+#		d_vepsia d_novgorod d_luki d_opolye
+#		# Norway
+#		d_halogaland d_bergslagen d_trandalog d_jamtland d_dalir d_vestlandi d_agder d_viken d_skane
+#		# Siberia
+#		d_martyuba d_ostyaki d_pelym d_konda d_kazym d_sibir d_ishim d_tara d_vasyugan_mire d_baraba_steppe d_kulyndy_steppe
+#	}
+#	regions = {
+#		custom_swedish
+#		custom_eastern_baltic
+#		
+#	}
+#}

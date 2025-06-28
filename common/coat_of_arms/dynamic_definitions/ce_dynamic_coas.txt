@@ -1,0 +1,14 @@
+﻿e_great_lakes = {
+	item = {
+		trigger = {
+			ate_coa_americanist_trigger = yes
+		}
+		coat_of_arms = e_great_lakes_americanist
+	}
+	item = {
+		trigger = {
+			ate_coa_industrialist_trigger = yes 
+		}
+		coat_of_arms = e_great_lakes_industrial
+	}
+}

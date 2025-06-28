@@ -1,0 +1,1448 @@
+﻿# Form Ohio
+form_ohio_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 8
+	desc = form_ohio_decision_desc
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			is_independent_ruler = yes
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+			liege ?= { has_title = title:e_usa }
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_ohio_decision
+			}
+		}
+		NOT = { exists = title:k_ohio.holder }
+		OR = {
+			# Must be in the vague region.
+			AND = {
+				OR = { 
+					has_title = title:e_usa
+					has_title = title:e_steel_belt
+					has_title = title:e_great_lakes
+				}
+				any_vassal_or_below = {
+					any_held_title = {
+						tier = tier_county
+						title_province = { geographical_region = custom_ohio }
+					}
+				}
+			}
+			any_held_title = {
+				tier = tier_county
+				title_province = { geographical_region = custom_ohio }
+			}
+		}	
+	}
+
+	is_valid = {
+
+		trigger_if = {
+			limit = {
+				is_independent_ruler = no
+				liege ?= { has_title = title:e_usa }
+			}
+			custom_tooltip = {
+				text = ate_vassal_ask_president_form
+				always = no
+			}
+		}
+
+		OR = {
+			highest_held_title_tier <= tier_kingdom
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+		}
+
+		trigger_if = {
+			limit = { is_independent_ruler = no }
+			custom_tooltip = {
+				text = form_ohio_decision_tt
+				any_county_in_region = {
+					region = custom_ohio
+					percent >= ate_formable_target_percent_decimal_value
+					OR = {
+						holder = root
+						holder.liege = root
+						holder.liege.liege = root
+					}
+				}
+			}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = form_ohio_decision_tt
+				any_county_in_region = {
+					region = custom_ohio
+					percent >= ate_formable_target_percent_decimal_value
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			form_ohio_decision_effects = yes
+		}
+		if = {
+			limit = { NOT = { has_title = title:e_usa } }
+			give_nickname = nick_the_restorer
+		} 
+
+		#Events
+		
+		trigger_event = ate_form.0022
+	}
+
+	cost = { 
+		gold = { value = 300 } 
+		prestige = { value = 1000 }
+	}
+
+	ai_potential = {
+		is_independent_ruler = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Form Indiana
+form_indiana_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 8
+	desc = form_indiana_decision_desc
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			is_independent_ruler = yes
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+			liege ?= { has_title = title:e_usa }
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_indiana_decision
+			}
+		}
+		NOT = { exists = title:k_indiana.holder }
+		OR = {
+			# Must be in the vague region.
+			AND = {
+				OR = { 
+					has_title = title:e_usa
+					has_title = title:e_steel_belt
+					has_title = title:e_great_lakes
+				}
+				any_vassal_or_below = {
+					any_held_title = {
+						tier = tier_county
+						title_province = { geographical_region = custom_indiana }
+					}
+				}
+			}
+			any_held_title = {
+				tier = tier_county
+				title_province = { geographical_region = custom_indiana }
+			}
+		}	
+	}
+
+	is_valid = {
+
+		trigger_if = {
+			limit = {
+				is_independent_ruler = no
+				liege ?= { has_title = title:e_usa }
+			}
+			custom_tooltip = {
+				text = ate_vassal_ask_president_form
+				always = no
+			}
+		}
+
+		OR = {
+			highest_held_title_tier <= tier_kingdom
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+		}
+
+		trigger_if = {
+			limit = { is_independent_ruler = no }
+			custom_tooltip = {
+				text = form_indiana_decision_tt
+				any_county_in_region = {
+					region = custom_indiana
+					percent >= ate_formable_target_percent_decimal_value
+					OR = {
+						holder = root
+						holder.liege = root
+						holder.liege.liege = root
+					}
+				}
+			}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = form_indiana_decision_tt
+				any_county_in_region = {
+					region = custom_indiana
+					percent >= ate_formable_target_percent_decimal_value
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			form_indiana_decision_effects = yes
+		}
+		if = {
+			limit = { NOT = { has_title = title:e_usa } }
+			give_nickname = nick_the_restorer
+		} 
+
+		#Events
+		
+		trigger_event = ate_form.0023
+	}
+
+	cost = { 
+		gold = { value = 300 } 
+		prestige = { value = 1000 }
+	}
+
+	ai_potential = {
+		# Only for the AI if independent ruler
+		is_independent_ruler = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Unite Illinois
+unite_illinois_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 8
+	desc = unite_illinois_decision_desc
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			is_independent_ruler = yes
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+			liege ?= { has_title = title:e_usa }
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:unite_illinois_decision
+			}
+		}
+		OR = { 
+			NOT = { exists = title:k_illinois.holder }
+			has_title = title:k_illinois
+			any_vassal_or_below = {
+				has_title = title:k_illinois
+			}
+		}
+		OR = {
+			# Must be in the vague region.
+			AND = {
+				OR = { 
+					has_title = title:e_usa
+					has_title = title:e_steel_belt
+					has_title = title:e_great_lakes
+				}
+				any_vassal_or_below = {
+					any_held_title = {
+						tier = tier_county
+						title_province = { geographical_region = custom_illinois }
+					}
+				}
+			}
+			any_held_title = {
+				tier = tier_county
+				title_province = { geographical_region = custom_illinois }
+			}
+		}	
+	}
+
+	is_valid = {
+
+		trigger_if = {
+			limit = {
+				is_independent_ruler = no
+				liege ?= { has_title = title:e_usa }
+			}
+			custom_tooltip = {
+				text = ate_vassal_ask_president_form
+				always = no
+			}
+		}
+
+		OR = {
+			highest_held_title_tier <= tier_kingdom
+			OR = { 
+				has_title = title:e_usa
+				has_title = title:e_steel_belt
+				has_title = title:e_great_lakes
+			}
+		}
+
+		trigger_if = {
+			limit = { is_independent_ruler = no }
+			custom_tooltip = {
+				text = unite_illinois_decision_tt
+				any_county_in_region = {
+					region = custom_illinois
+					percent >= ate_formable_target_percent_decimal_value
+					OR = {
+						holder = root
+						holder.liege = root
+						holder.liege.liege = root
+					}
+				}
+			}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = unite_illinois_decision_tt
+				any_county_in_region = {
+					region = custom_illinois
+					percent >= ate_formable_target_percent_decimal_value
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		#hidden_effect = {
+		#	form_illinois_decision_effects = yes
+		#}
+		#if = {
+		#	limit = { NOT = { has_title = title:e_usa } }
+		#	give_nickname = nick_the_restorer
+		#} 
+
+		#Events
+		if = {
+			limit = { NOT = { has_title = title:e_usa } }
+			give_nickname = nick_the_restorer
+		} 
+		trigger_event = ate_ce_custom.001
+	}
+
+	cost = { 
+		gold = { value = 300 } 
+		prestige = { value = 1000 }
+	}
+
+	ai_potential = {
+		# Only for the AI if independent ruler
+		is_independent_ruler = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Restore the Haudenosaunee Confederacy
+restore_haudenosaunee_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = restore_haudenosaunee_decision_desc
+	selection_tooltip = restore_haudenosaunee_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval = 8
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_haudenosaunee_decision
+			}
+		}
+		OR = {
+			faith = {
+				OR = {
+					ate_is_faith_or_descendant_trigger = { FAITH = faith:gaiwiio }
+					ate_is_faith_or_descendant_trigger = { FAITH = faith:niionkwarihotens }
+				}
+			} 
+			culture = { has_cultural_pillar = language_haudenosaunee }
+		}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = restore_haudenosaunee_decision_tt
+			OR = {
+				faith = {
+					OR = {
+						ate_is_faith_or_descendant_trigger = { FAITH = faith:gaiwiio }
+						ate_is_faith_or_descendant_trigger = { FAITH = faith:niionkwarihotens }
+					}
+				} 
+				culture = { has_cultural_pillar = language_haudenosaunee }
+			}
+		}
+		has_title = title:k_allegheny
+		has_title = title:k_hudsonia
+		has_title = title:k_ontario
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		custom_tooltip = restore_haudenosaunee_decision_effect_tooltip
+		hidden_effect = {
+			restore_haudenosaunee_decision_effects = yes
+		}
+		give_nickname = nick_orenda
+		trigger_event = {
+			id = ate_form.0003
+		}
+		add_legitimacy = 500
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_haudenosaunee
+					founder = root
+				}
+			}
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_haudenosaunee_decision
+			}
+			set_global_variable = {
+				name = restore_haudenosaunee_decision
+				value = root
+			}
+		}
+	}
+	cost = { 
+		prestige = { value = 1000 }
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+restore_the_old_northwest_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 12
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_anishinaabe }
+						culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				desc = restore_the_old_northwest_decision_desc_native
+			}
+			desc = restore_the_old_northwest_decision_desc
+		}
+	}
+	selection_tooltip = restore_the_old_northwest_decision_tooltip
+	is_shown = {
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_old_northwest_decision
+			}
+		}
+		NOT = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_great_lakes_decision
+			}
+		}
+		NOT = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_the_steelbelt_decision
+			}
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northlake }
+			culture = { has_cultural_pillar = heritage_lakelander }
+			culture = { has_cultural_pillar = heritage_anishinaabe }
+			culture = { has_cultural_pillar = heritage_plains_sequoyan }
+			culture = culture:butternutter
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:butternutter
+				}
+			}
+			culture = culture:heartlander
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:heartlander
+				}
+			}
+			culture = culture:gatewayan
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:gatewayan
+				}
+			}
+		}
+		OR = {
+			has_title = title:k_ohio_valley
+			has_title = title:k_ohio
+			has_title = title:k_illinois
+			has_title = title:k_indiana
+			has_title = title:k_greater_reserve
+			has_title = title:k_chicagoland
+			has_title = title:k_michigan
+			has_title = title:k_superior
+			has_title = title:k_wisconsin
+			has_title = title:e_steel_belt
+			has_title = title:e_northwoods
+		}
+	}
+	is_valid = {
+		is_independent_ruler = yes
+		OR = {
+			custom_tooltip = {
+				text = restore_the_old_northwest_decision_tooltip_primary_titles
+				OR = {
+					primary_title = title:k_ohio_valley
+					primary_title = title:k_ohio
+					primary_title = title:k_illinois
+					primary_title = title:k_indiana
+					primary_title = title:k_greater_reserve
+					primary_title = title:k_chicagoland
+					primary_title = title:k_michigan
+					primary_title = title:k_superior
+					primary_title = title:k_wisconsin
+					primary_title = title:e_steel_belt
+					primary_title = title:e_northwoods
+				}
+			}
+		}
+		AND = {
+			completely_controls = title:k_illinois
+			completely_controls = title:k_michigan
+			completely_controls = title:k_wisconsin
+		}
+		trigger_if = {
+			limit = {
+				title:d_chicagoland.de_jure_liege = title:k_chicagoland
+			}
+			completely_controls = title:k_chicagoland
+		}
+		trigger_if = {
+			limit = {
+				title:d_miami_valley.de_jure_liege = title:k_ohio_valley
+			}
+			completely_controls = title:k_ohio_valley
+		}
+		trigger_if = {
+			limit = {
+				title:d_the_reserve.de_jure_liege = title:k_greater_reserve
+			}
+			completely_controls = title:k_greater_reserve
+		}
+		trigger_if = {
+			limit = {
+				title:d_marquette.de_jure_liege = title:k_superior
+			}
+			completely_controls = title:k_superior
+		}
+		trigger_if = {
+			limit = {
+				title:d_indianapolis.de_jure_liege = title:k_indiana
+			}
+			completely_controls = title:k_indiana
+		}
+		trigger_if = {
+			limit = {
+				title:d_olentangy.de_jure_liege = title:k_ohio
+			}
+			completely_controls = title:k_ohio
+		}
+	}
+
+	effect = {
+		save_scope_as = restore_the_old_northwest_former
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_old_northwest_decision
+			}
+			set_global_variable = {
+				name = restore_the_old_northwest_decision
+				value = root
+			}
+		}
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_old_northwest
+					founder = root
+				}
+			}
+		}
+		restore_the_old_northwest_decision_effects = yes
+		trigger_event = {
+			id = ate_form.0043
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = { 
+		prestige = { value = 750 }
+		gold = { value = 750 }
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+expand_the_steelbelt_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 12
+	selection_tooltip = expand_the_steelbelt_decision_tooltip
+	is_shown = {
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_old_northwest_decision
+			}
+		}
+		NOT = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_the_steelbelt_decision
+			}
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northlake }
+			culture = { has_cultural_pillar = heritage_lakelander }
+		}
+		OR = {
+			has_title = title:k_ohio_valley
+			has_title = title:k_ohio
+			has_title = title:k_illinois
+			has_title = title:k_indiana
+			has_title = title:k_greater_reserve
+			has_title = title:k_chicagoland
+			has_title = title:k_michigan
+			has_title = title:e_steel_belt
+		}
+	}
+	is_valid = {
+		is_independent_ruler = yes
+		OR = {
+			custom_tooltip = {
+				text = restore_the_steelbelt_decision_tooltip_primary_titles
+				OR = {
+					has_title = title:k_ohio_valley
+					has_title = title:k_ohio
+					has_title = title:k_illinois
+					has_title = title:k_indiana
+					has_title = title:k_greater_reserve
+					has_title = title:k_chicagoland
+					has_title = title:k_michigan
+					has_title = title:e_steel_belt
+				}
+			}
+		}
+		AND = {
+			completely_controls = title:k_michigan
+			completely_controls = title:k_wisconsin
+			completely_controls = title:k_north_star
+		}
+		trigger_if = {
+			limit = {
+				title:k_illinois.de_jure_liege = title:e_steel_belt
+			}
+			completely_controls = title:k_illinois
+		}
+		trigger_if = {
+			limit = {
+				title:d_chicagoland.de_jure_liege = title:k_chicagoland
+			}
+			completely_controls = title:k_chicagoland
+		}
+		trigger_if = {
+			limit = {
+				title:d_miami_valley.de_jure_liege = title:k_ohio_valley
+			}
+			completely_controls = title:k_ohio_valley
+		}
+		trigger_if = {
+			limit = {
+				title:d_the_reserve.de_jure_liege = title:k_greater_reserve
+			}
+			completely_controls = title:k_greater_reserve
+		}
+		trigger_if = {
+			limit = {
+				title:d_marquette.de_jure_liege = title:k_superior
+			}
+			completely_controls = title:k_superior
+		}
+		trigger_if = {
+			limit = {
+				title:d_indianapolis.de_jure_liege = title:k_indiana
+			}
+			completely_controls = title:k_indiana
+		}
+		trigger_if = {
+			limit = {
+				title:d_olentangy.de_jure_liege = title:k_ohio
+			}
+			completely_controls = title:k_ohio
+		}
+	}
+
+	effect = {
+		save_scope_as = expand_the_steelbelt_former
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_the_steelbelt_decision
+			}
+			set_global_variable = {
+				name = expand_the_steelbelt_decision
+				value = root
+			}
+		}
+		expand_the_steelbelt_decision_effects = yes
+		trigger_event = {
+			id = ate_ce_custom.002
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = { 
+		prestige = { value = 750 }
+		gold = { value = 750 }
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+restore_the_great_lakes_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 12
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_anishinaabe }
+						culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				desc = restore_the_great_lakes_decision_desc_native
+			}
+			desc = restore_the_great_lakes_decision_desc
+		}
+	}
+	selection_tooltip = restore_the_great_lakes_decision_tooltip
+	is_shown = {
+		NOT = {  #Can only do it once and cannot do old northwest
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_old_northwest_decision
+			}
+		}
+		NOT = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_great_lakes_decision
+			}
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northlake }
+			culture = { has_cultural_pillar = heritage_lakelander }
+			culture = { has_cultural_pillar = heritage_laurentian}
+			culture = { has_cultural_pillar = heritage_anishinaabe }
+			culture = { has_cultural_pillar = heritage_plains_sequoyan }
+		}
+		OR = {
+			has_title = title:k_ohio_valley
+			has_title = title:k_ohio
+			has_title = title:k_illinois
+			has_title = title:k_indiana
+			has_title = title:k_greater_reserve
+			has_title = title:k_chicagoland
+			has_title = title:k_michigan
+			has_title = title:k_superior
+			has_title = title:k_wisconsin
+			has_title = title:k_north_star
+			has_title = title:k_aurora
+			has_title = title:k_ontario
+			has_title = title:k_hudsonia
+			has_title = title:e_steel_belt
+			has_title = title:e_northwoods
+		}
+	}
+	is_valid = {
+		is_independent_ruler = yes
+		OR = {
+			custom_tooltip = {
+				text = restore_the_great_lakes_decision_tooltip_primary_titles
+				OR = {
+					has_title = title:k_ohio_valley
+					has_title = title:k_ohio
+					has_title = title:k_illinois
+					has_title = title:k_indiana
+					has_title = title:k_greater_reserve
+					has_title = title:k_chicagoland
+					has_title = title:k_michigan
+					has_title = title:k_superior
+					has_title = title:k_wisconsin
+					has_title = title:k_north_star
+					has_title = title:k_aurora
+					has_title = title:k_ontario
+					has_title = title:k_hudsonia
+					has_title = title:k_allegheny
+					has_title = title:e_steel_belt
+					has_title = title:e_northwoods	
+				}
+			}
+		}
+		AND = {
+			completely_controls = title:k_illinois
+			completely_controls = title:k_michigan
+			completely_controls = title:k_wisconsin
+			completely_controls = title:k_north_star
+			completely_controls = title:k_ontario
+			completely_controls = title:k_aurora
+		}
+		trigger_if = {
+			limit = {
+				title:d_chicagoland.de_jure_liege = title:k_chicagoland
+			}
+			completely_controls = title:k_chicagoland
+		}
+		trigger_if = {
+			limit = {
+				title:d_miami_valley.de_jure_liege = title:k_ohio_valley
+			}
+			completely_controls = title:k_ohio_valley
+		}
+		trigger_if = {
+			limit = {
+				title:d_the_reserve.de_jure_liege = title:k_greater_reserve
+			}
+			completely_controls = title:k_greater_reserve
+		}
+		trigger_if = {
+			limit = {
+				title:d_westsylvania.de_jure_liege = title:k_allegheny
+			}
+			completely_controls = title:k_allegheny
+		}
+		trigger_if = {
+			limit = {
+				title:d_albany.de_jure_liege = title:k_hudsonia
+			}
+			completely_controls = title:k_hudsonia
+		}
+		trigger_if = {
+			limit = {
+				title:d_marquette.de_jure_liege = title:k_superior
+			}
+			completely_controls = title:k_superior
+		}
+		trigger_if = {
+			limit = {
+				title:d_indianapolis.de_jure_liege = title:k_indiana
+			}
+			completely_controls = title:k_indiana
+		}
+		trigger_if = {
+			limit = {
+				title:d_olentangy.de_jure_liege = title:k_ohio
+			}
+			completely_controls = title:k_ohio
+		}
+	}
+
+	effect = {
+		save_scope_as = restore_the_great_lakes_former
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:restore_the_great_lakes_decision
+			}
+			set_global_variable = {
+				name = restore_the_great_lakes_decision
+				value = root
+			}
+		}
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_great_lakes
+					founder = root
+				}
+			}
+		}
+		restore_the_great_lakes_decision_effects = yes
+		trigger_event = {
+			id = ate_ce_custom.003
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	cost = { 
+		prestige = { value = 1750 }
+		gold = { value = 1750 }
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+retake_northlands_decision = { #North Star integrates Fargo, Duluth, and Tettegouche
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = retake_northlands_decision_desc
+	selection_tooltip = retake_northlands_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval = 48
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		has_title = title:k_north_star
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:retake_northlands_decision
+			}
+		}
+	}
+
+	is_valid = {
+		has_title = title:k_north_star
+		completely_controls = title:d_fargo
+		completely_controls = title:c_duluth
+		completely_controls = title:c_tettegouche
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		custom_tooltip = retake_northlands_decision_effect_tooltip
+		hidden_effect = {
+			retake_northlands_decision_effects = yes
+		}
+		give_nickname = nick_the_gopher
+		trigger_event = {
+			id = ate_form.0025
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:retake_northlands_decision
+			}
+			set_global_variable = {
+				name = retake_northlands_decision
+				value = root
+			}
+		}
+	}
+	cost = { 
+		gold = { value = 650 }
+		piety = { value = 100 }
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 75
+	}
+}
+
+retake_toledo_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = retake_toledo_decision_desc
+	selection_tooltip = retake_toledo_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval = 8
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		primary_title = title:k_michigan
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:retake_toledo_decision
+			}
+		}
+	}
+
+	is_valid = {
+		has_title = title:k_michigan
+		completely_controls = title:c_toledo_strip
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		custom_tooltip = retake_toledo_decision_effect_tooltip
+		hidden_effect = {
+			retake_toledo_decision_effects = yes
+		}
+		give_nickname = nick_the_wolverine
+		trigger_event = {
+			id = ate_form.0010
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:retake_toledo_decision
+			}
+			set_global_variable = {
+				name = retake_toledo_decision
+				value = root
+			}
+		}
+	}
+	cost = { 
+		gold = { value = 200 }
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+seize_superior_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					primary_title = title:k_wisconsin
+				}
+				desc = seize_superior_decision_wisconsin
+			}
+			desc = seize_superior_decision_michigan
+		}
+	}
+	selection_tooltip = seize_superior_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval = 8
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			primary_title = title:k_michigan
+			primary_title = title:k_wisconsin
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:seize_superior_decision
+			}
+		}
+	}
+
+	is_valid = {
+		OR = {
+			custom_tooltip = {
+				text = seize_superior_primary_title_michigan
+				primary_title = title:k_michigan
+			}
+			custom_tooltip = {
+				text = seize_superior_primary_title_wisconsin
+				primary_title = title:k_wisconsin
+			}
+		}
+		is_independent_ruler = yes
+		completely_controls = title:d_marquette
+		completely_controls = title:d_copperland
+		completely_controls = title:d_hiawatha
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+	}
+
+	effect = {
+		save_scope_as = superior_seizer
+		seize_superior_decision_effects = yes
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:seize_superior_decision
+			}
+			set_global_variable = {
+				name = seize_superior_decision
+				value = root
+			}
+		}
+	}
+	cost = { 
+		prestige = { value = 500 }
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+assert_yooper_dominance_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = assert_yooper_dominance_decision_desc
+	selection_tooltip = assert_yooper_dominance_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval = 8
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			culture = culture:yooper
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:yooper
+				}
+			}
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:assert_yooper_dominance_decision
+			}
+		}
+	}
+
+	is_valid = {
+		OR = {
+			culture = culture:yooper
+			custom_tooltip = {
+				text = assert_yooper_dominance_yooper_descent
+				culture = {
+					any_parent_culture_or_above = {
+						this = culture:yooper
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = assert_yooper_dominance_primary_title
+			primary_title = title:k_superior
+		}
+		completely_controls = title:k_michigan
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		save_scope_as = yooper_dominator
+		assert_yooper_dominance_decision_effects = yes
+		give_nickname = nick_da_yooper
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:assert_yooper_dominance_decision
+			}
+			set_global_variable = {
+				name = assert_yooper_dominance_decision
+				value = root
+			}
+		}
+	}
+	cost = { 
+		prestige = { value = 500 }
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Council of Three Fires
+reform_council_of_three_fires_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 8
+	desc = reform_council_of_three_fires_decision_desc
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:reform_council_of_three_fires_decision
+			}
+		}
+		OR = {
+			culture = { has_cultural_pillar = language_anishinaabeg }
+			culture = { has_cultural_pillar = language_potawatomi }
+		}
+	}
+
+	is_valid = {
+		prestige_level >= max_prestige_level
+		highest_held_title_tier >= tier_kingdom
+		is_independent_ruler = yes
+
+		OR = {
+			culture = { has_cultural_pillar = language_anishinaabeg }
+			culture = { has_cultural_pillar = language_potawatomi }
+		}
+		
+		any_vassal = {
+			is_powerful_vassal = yes
+			custom_description = {
+				text = reform_council_of_three_fires_decision_potawatomi_vassal
+				culture = {
+					OR = {
+						this = culture:potawatomi
+						any_parent_culture_or_above = { this = culture:potawatomi } 
+					}
+				}
+			}
+			opinion = {
+				target = root
+				value >= high_positive_opinion
+			}
+		}
+		any_vassal = {
+			is_powerful_vassal = yes
+			custom_description = {
+				text = reform_council_of_three_fires_decision_ojibwe_vassal
+				culture = {
+					OR = {
+						this = culture:ojibwe
+						any_parent_culture_or_above = { this = culture:ojibwe } 
+					}
+				}
+			}
+			opinion = {
+				target = root
+				value >= high_positive_opinion
+			}
+		}
+		any_vassal = {
+			is_powerful_vassal = yes
+			custom_description = {
+				text = reform_council_of_three_fires_decision_odawa_vassal
+				culture = {
+					OR = {
+						this = culture:odawa
+						any_parent_culture_or_above = { this = culture:odawa } 
+					}
+				}
+			}
+			opinion = {
+				target = root
+				value >= high_positive_opinion
+			}
+		}
+	}
+	effect = {
+		save_scope_as = council_of_three_fires_former
+		reform_council_of_three_fires_effects = yes
+
+		#Events
+		trigger_event = {
+			id = ate_form.0044
+		}
+
+		add_legitimacy = 500
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_iron_confederacy
+					founder = root
+				}
+			}
+		}
+
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:reform_council_of_three_fires_decision
+		}
+		set_global_variable = {
+			name = reform_council_of_three_fires_decision
+			value = scope:council_of_three_fires_former
+		}
+	}
+	cost = { 
+		gold = { value = 600 } 
+	}
+	ai_potential = {
+		# Only for the AI if independent ruler
+		is_independent_ruler = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

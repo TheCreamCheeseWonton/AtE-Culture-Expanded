@@ -1,0 +1,81 @@
+﻿
+namespace = ate_ce_custom
+
+##Illinois
+
+ate_ce_custom.001 = {
+	type = character_event
+	title = illinois_reforged.t
+	desc = illinois_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king 
+	}
+	##Unite Chicagoland with Illinois
+	option = {
+		name = illinois_reforged.a
+		form_illinois_decision_effects = yes
+	}
+	##Keep Separate
+	option = {
+		name = illinois_reforged.b
+		form_illinois_decision_effects_1 = yes
+	}
+}
+
+#Steelbelt
+ate_ce_custom.002 = {
+	type = character_event
+	title = steelbelt_formed.t
+	desc = steelbelt_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:expand_the_steelbelt_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = expand_the_steelbelt_former
+	}
+	option = {
+		name = steelbelt_formed.a
+	}
+}
+
+#Great Lakes
+ate_ce_custom.003 = {
+	type = character_event
+	title = great_lakes_formed.t
+	desc = {
+		first_valid = {
+		# Doing it as anyone
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_anishinaabe }
+						culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				desc = great_lakes_formed.desc.native
+			}
+			desc = great_lakes_formed.desc
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:restore_the_great_lakes_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = restore_the_great_lakes_former
+	}
+	option = {
+		name = great_lakes_formed.a
+	}
+}

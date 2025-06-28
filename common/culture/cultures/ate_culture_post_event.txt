@@ -1,0 +1,62 @@
+﻿#####ENGLISH#####
+
+ate_steelbelter = {
+	color = { 113 121 126 }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_american
+	language = language_ancient_english
+	martial_custom = martial_custom_equal
+	name_list = name_list_american
+	created = 2066.1.1
+	parents = { ate_yankee }
+	
+	history_loc_override = after_event_ate
+	
+	traditions = {
+		tradition_maritime_mercantilism
+		tradition_metal_craftsmanship
+		tradition_cosmopolitan_elitism
+		tradition_republican_legacy
+		tradition_reverence_for_veterans
+	}
+	
+	coa_gfx = {
+		gothamite_coa_gfx
+		mid_atlantic_group_gfx
+	}
+	building_gfx = {
+		gothamite_building_gfx
+		federal_building_gfx #Architecture-style
+		na_north_building_gfx #Style
+		anglo_building_gfx #Super-style
+		heritage_mid_atlantic_building_gfx
+		western_building_gfx
+	}
+	clothing_gfx = {
+		western_clothing_gfx
+	}
+	unit_gfx = {
+		western_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		15 = african
+		4 = asian
+		2 = arab
+		1 = asian_austronesian
+		2 = asian_southern_han
+		2 = asian_southeast_asian
+		2 = byzantine
+		56 = caucasian
+		16 = mediterranean
+		3 = asian_austronesian
+		5 = indian
+		6 = slavic
+		2 = mesoamerican_yuto_aztec
+		4 = black_white
+		2 = multiracial
+	
+	}	
+}
