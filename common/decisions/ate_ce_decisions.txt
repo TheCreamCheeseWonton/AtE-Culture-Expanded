@@ -1,0 +1,144 @@
+﻿decision_reunify_steelbelter = {
+
+	title = decision_reunify_steelbelter
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_decision_hold_triumph.dds"
+	}
+	sort_order = 110
+	selection_tooltip = decision_reunify_steelbelter_tooltip
+	desc = decision_reunify_steelbelter_desc
+	confirm_text = decision_reunify_steelbelter_confirm
+	decision_group_type = major
+
+	# IS_SHOWN
+	is_shown = {
+		OR = { 
+			has_title = title:e_great_lakes
+			has_title = title:e_steel_belt
+		}
+
+		highest_held_title_tier >= tier_empire
+		
+		OR = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_the_steelbelt_decision
+			}
+			has_title = title:e_great_lakes
+		}
+		OR = { 
+			culture = { has_cultural_pillar = heritage_northlake }
+			culture = { has_cultural_pillar = heritage_lakelander }
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_reunify_steelbelter
+			}
+		}
+	}
+	
+	# IS_VALID
+	is_valid = {
+		prestige_level >= 5
+		piety_level >= 4
+		custom_tooltip = {
+			text = "decision_reunify_steelbelter_own_all_steelbelter_provinces"
+			any_realm_county = {
+				count = number_of_steelbelter_culture_provinces
+				my_steelbelter_culture_trigger = yes
+				any_county_province = { geographical_region = custom_region_anglo_french_na }
+			}
+		}
+		culture = { cultural_acceptance = { target = culture:northlander value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:minnesotan value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:yooper value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:cheesehead value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:chicagoan value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:hoosier value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:buckeye value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:motowner value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:michigander value >= 40 } }
+		culture = { cultural_acceptance = { target = culture:upnorther value >= 40 } }
+
+	}
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+	
+	# EFFECT 
+	effect = {
+		##Quonton
+		culture:ate_new_steelbelter = {
+			culture:ate_new_steelbelter = { save_temporary_scope_as = steelbelter_culture }
+			culture:northlander = { save_temporary_scope_as = northlander_culture }
+			culture:minnesotan = { save_temporary_scope_as = minnesotan_culture }
+			culture:yooper = { save_temporary_scope_as = yooper_culture }
+			culture:cheesehead = { save_temporary_scope_as = cheesehead_culture }
+			culture:chicagoan = { save_temporary_scope_as = chicagoan_culture }
+			culture:hoosier = { save_temporary_scope_as = hoosier_culture }
+			culture:buckeye = { save_temporary_scope_as = buckeye_culture }
+			culture:motowner = { save_temporary_scope_as = motowner_culture }
+			culture:michigander = { save_temporary_scope_as = michigander_culture }
+			culture:upnorther = { save_temporary_scope_as = upnorther_culture }
+			# Needs to be above the 'custom_tooltip'
+			custom_tooltip = decision_reunify_steelbelter_get_innovations
+			hidden_effect = {
+				reset_culture_creation_date = yes
+				get_all_innovations_from = culture:northlander
+				get_all_innovations_from = culture:minnesotan
+				get_all_innovations_from = culture:yooper
+				get_all_innovations_from = culture:cheesehead
+				get_all_innovations_from = culture:chicagoan
+				get_all_innovations_from = culture:hoosier
+				get_all_innovations_from = culture:buckeye
+				get_all_innovations_from = culture:motowner
+				get_all_innovations_from = culture:michigander
+				get_all_innovations_from = culture:upnorther
+			}
+		}
+		trigger_event = ate_ce_custom.004  # Restore Steelbelter Identity flavour
+		
+		every_living_character = { 
+			custom = decision_reunify_steelbelter_characters_custom
+			limit = { 
+				OR = { 
+					culture = { has_cultural_pillar = heritage_northlake }
+					culture = { has_cultural_pillar = heritage_lakelander }
+				}
+			}
+			set_culture = culture:ate_new_steelbelter
+		}
+
+		#Flip Counties
+		every_county = {
+			custom = decision_reunify_steelbelter_county_custom
+			limit = {
+				OR = { 
+					culture = { has_cultural_pillar = heritage_northlake }
+					culture = { has_cultural_pillar = heritage_lakelander }
+				}
+			}
+			set_county_culture = culture:ate_new_steelbelter
+		}
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_reunify_steelbelter
+		}
+	}
+	
+	cost = { 
+		piety = { value = 750 }
+		prestige = { value = 750 }
+		gold = { value = 500 }
+	}
+
+
+	# AI
+	ai_goal = yes
+	ai_potential = { always = yes }
+	ai_will_do = { base = 100 }
+}

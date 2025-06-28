@@ -397,3 +397,8 @@
  tradition_apalachian_ruralism_desc:0 "The people of Appalachia are a hardy folk, living in a land rich with mystery and ancient lore. Kin stick together like glue in these rugged hills, adapting to the challenging and unforgiving terrain. Communities tend to keep to themselves, for no one can truly know what secrets lie beyond the rolling, tree-covered crests. It is said that every hill holds a story, and every mountain carries a song, echoes of a past woven deep into the land itself."
  tradition_college_legacy_name:0 "Legacy of the Colleges"
  tradition_college_legacy_desc:0 "Massachusetts, with Boston at its heart, has for centuries stood as one of the greatest centers of learning in the Americas. From the ever-prestigious halls of Harvard to the innovative runecraft laboratories of MIT, the legacy of education runs deep in the spirit of its people. Unlike much of the rest of America, literacy is the norm here, and every child is expected to receive at least some form of formal education, making knowledge a cherished and shared treasure. However, this strong emphasis on education and progress often leads many to shy away from involvement in military affairs."
+
+ ##New Cultures
+ ate_new_steelbelter:0 "New Steelbelter"
+ ate_new_steelbelter_collective_noun:0 "Steelbelters"
+ ate_new_steelbelter_prefix:0 "Steelbelter"

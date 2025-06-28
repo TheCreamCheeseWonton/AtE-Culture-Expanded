@@ -79,3 +79,67 @@ ate_ce_custom.003 = {
 		name = great_lakes_formed.a
 	}
 }
+
+ate_ce_custom.004 = { # Unify Culture Flavor
+	content_source = realms_dlc
+	type = character_event
+	title = reunity_steelbelter_flavor.t
+	desc = reunity_steelbelter_flavor.desc
+	theme = stewardship_duty_focus
+	override_background = { reference = bp1_courtyard_indian }
+
+	left_portrait = {
+		character = root
+		animation = steward
+	}
+
+	option = {
+		name = reunity_steelbelter_flavor.a
+		trigger_event = ate_ce_custom.005 # Restore Steelbelter Identity flavour - langauge choice
+	}
+}
+
+ate_ce_custom.005 = { # Different language Question
+	content_source = realms_dlc
+	type = character_event
+	title = reunity_steelbelter_langauge.t
+	desc = reunity_steelbelter_langauge.desc
+	theme = stewardship_duty_focus
+	override_background = { reference = bp1_courtyard_indian }
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = reunity_steelbelter_langauge.a
+		custom_tooltip = reunity_steelbelter_language_irontongue
+		hidden_effect = {
+			culture:ate_new_steelbelter = {
+				set_culture_pillar = language_irontongue
+			}
+		}
+	}
+
+	option = {
+		name = reunity_steelbelter_langauge.b
+		custom_tooltip = reunity_steelbelter_language_shorespeak
+		hidden_effect = {
+			culture:ate_new_steelbelter = {
+				set_culture_pillar = language_shorespeak
+			}
+		}
+	}
+	
+	option = {
+		name = reunity_steelbelter_langauge.c
+		custom_tooltip = reunity_steelbelter_language_ancient_english
+		hidden_effect = {
+			culture:ate_new_steelbelter = {
+				set_culture_pillar = language_ancient_english
+			}
+		}
+		remove_short_term_gold = 100
+	}
+}

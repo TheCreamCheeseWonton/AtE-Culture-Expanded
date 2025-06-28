@@ -1,0 +1,6 @@
+﻿my_steelbelter_culture_trigger = {
+    OR = {
+        culture = { has_cultural_pillar = heritage_northlake }
+		culture = { has_cultural_pillar = heritage_lakelander }
+    }                
+}

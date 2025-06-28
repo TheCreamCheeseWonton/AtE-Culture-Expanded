@@ -32,3 +32,14 @@ ate_formable_illinois_value = {
 		add = 1
 	}
 }
+
+number_of_steelbelter_culture_provinces = {
+    value = 0
+    every_county_in_region = {
+        region = custom_region_anglo_french_na
+        limit = { 
+            my_steelbelter_culture_trigger = yes
+        }
+        add = 1
+    }
+}
