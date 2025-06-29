@@ -48,6 +48,23 @@ americanist_add_detroit_decision_confirm: "Enlighten Detroit!"
  decision_reunify_steelbelter_characters_custom:0 "All Lakelander or Northlaker [heritage|E] [characters|e]"
  decision_reunify_steelbelter_county_custom:0 "All Lakelander or Northlaker [heritage|E] [counties|e]"
  decision_reunify_steelbelter_own_all_steelbelter_provinces:0 "You must own all Lakelander or Northlaker [heritage|E] [counties|e] in the [GetGeographicalRegion('custom_region_anglo_french_na').GetName] [region|E]"
- special_nie_extra:0 "the Greater [numenorean|E] Colonies"
 
 custom_region_anglo_french_na:0 "Anglo-French North America"
+
+ reunity_steelbelter_flavor.t:0 "Sons of Steel"
+ reunity_steelbelter_flavor.desc:0 "For too long have the people of the Steelbelt remained divided, their ancient bonds broken by time and circumstance. With the mending of the once-sundered realms, we stand ready to reclaim our glorious ancestry!\n\nUnited by our heritage, we embrace our shared legacy as people of the Steelbelt.\n\nTogether, as one people united in purpose and destiny, let this be the age where the spirit of Industry, Steel, and America rises anew for generations yet unborn to marvel at and emulate."
+ reunity_steelbelter_flavor.a:0 "Today marks the restoration of our Steelbelt heritage."
+
+ reunity_steelbelter_langauge.t:0 "The Language Question"
+ reunity_steelbelter_langauge.desc:0 "Now that the people of the Steelbelt have been reunited, a question has arisen on what language our people will use, with there being many different voices in the matter. Some wish for us to revive the language of our Old American forefathers, Ancient English, which has been dead since [the_event_ate|E]. The Northlakers wish for us to use Shorespeak, language of the Vikings, while the Lakelanders wish to use Irontongue, language of the Unions. Which of these languages should we use?"
+ reunity_steelbelter_langauge.a:0 "Shorespeak, language of the Vikings, shall be our language!"
+ reunity_steelbelter_langauge.b:0 "Irontongue, language of the Unions, shall be our language!"
+ reunity_steelbelter_langauge.c:0 "Ancient English, language of our Old American forefathers, shall be our language!"
+
+ reunity_steelbelter_language_shorespeak:0 "The Steelbelters shall adopt Shorespeak as its day-to-day tongue" 
+ reunity_steelbelter_language_irontongue:0 "The Steelbelters shall adopt Irontongue as its day-to-day tongue"
+ reunity_steelbelter_language_ancient_english:0 "The Steelbelters shall adopt Ancient English as its day-to-day tongue"
+
+ restore_america_flavor.t:0 "The Stars and Stripes Forever"
+ restore_america_flavor.desc:0 "America lives again! What a joyous occasion! The lands of the United States’ founding are, for the first time in half a millennia, united under a single banner. From North to South along the entire Eastern Seaboard, the Stars and Stripes once again proudly wave. A nation believed buried beneath 600 years of rubble now breathes with renewed vitality. Tremble tyrants, dictators, feudal lords, and all manner of evil across this continent, for Uncle Sam is back! And now, the United States of America shall never fall again, for Democracy and Freedom will forever reign over these lands. The road ahead will be challenging, especially as the world seeks to extinguish our glorious flame of freedom, but we will never waver when the American Dream calls upon us. Long live the Republic!"
+ restore_america_flavor.a:0 "From Sea to Shining Sea"

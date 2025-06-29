@@ -565,12 +565,7 @@ tradition_heart_of_nation = {
 	}
 
 	can_pick = {
-		OR = { 
-			has_cultural_pillar = heritage_american
-			any_parent_culture_or_above = {
-				this = culture:beltway
-			}
-		}
+		has_cultural_pillar = heritage_american
 	}
 	
 	parameters = {
@@ -589,10 +584,8 @@ tradition_heart_of_nation = {
 		monthly_piety_gain_mult = 0.1
 		diplomacy_per_piety_level = 1
         americanist_religion_opinion = 10
-		barons_and_minor_landholders_opinion = -20
 		castle_holding_holding_build_gold_cost = -0.05
 		city_holding_holding_build_gold_cost = -0.05
-		parochial_opinion = -20
 		parochial_tax_contribution_mult = 0.1
 		parochial_levy_contribution_mult = 0.1
 	}
@@ -600,7 +593,7 @@ tradition_heart_of_nation = {
 	county_modifier = {
 		development_growth_factor = 0.05
 	}
-	
+
 	cost = {
 		prestige = {
 			add = {

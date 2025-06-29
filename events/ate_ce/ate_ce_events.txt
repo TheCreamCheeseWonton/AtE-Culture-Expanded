@@ -81,7 +81,6 @@ ate_ce_custom.003 = {
 }
 
 ate_ce_custom.004 = { # Unify Culture Flavor
-	content_source = realms_dlc
 	type = character_event
 	title = reunity_steelbelter_flavor.t
 	desc = reunity_steelbelter_flavor.desc
@@ -100,7 +99,6 @@ ate_ce_custom.004 = { # Unify Culture Flavor
 }
 
 ate_ce_custom.005 = { # Different language Question
-	content_source = realms_dlc
 	type = character_event
 	title = reunity_steelbelter_langauge.t
 	desc = reunity_steelbelter_langauge.desc
@@ -114,20 +112,20 @@ ate_ce_custom.005 = { # Different language Question
 
 	option = {
 		name = reunity_steelbelter_langauge.a
-		custom_tooltip = reunity_steelbelter_language_irontongue
+		custom_tooltip = reunity_steelbelter_language_shorespeak
 		hidden_effect = {
 			culture:ate_new_steelbelter = {
-				set_culture_pillar = language_irontongue
+				set_culture_pillar = language_shorespeak
 			}
 		}
 	}
 
 	option = {
 		name = reunity_steelbelter_langauge.b
-		custom_tooltip = reunity_steelbelter_language_shorespeak
+		custom_tooltip = reunity_steelbelter_language_irontongue
 		hidden_effect = {
 			culture:ate_new_steelbelter = {
-				set_culture_pillar = language_shorespeak
+				set_culture_pillar = language_irontongue
 			}
 		}
 	}
@@ -140,6 +138,35 @@ ate_ce_custom.005 = { # Different language Question
 				set_culture_pillar = language_ancient_english
 			}
 		}
-		remove_short_term_gold = 100
+		remove_short_term_gold = 500
+	}
+}
+
+ate_ce_custom.006 = { # Restore America Flavor
+	type = character_event
+	title = restore_america_flavor.t
+	desc = restore_america_flavor.desc
+	theme = stewardship_duty_focus
+	override_background = {
+		reference = garden 
+	}
+
+	left_portrait = {
+		character = root
+		animation = steward
+	}
+
+	option = {
+		name = restore_america_flavor.a
+		culture:beltway = {
+			remove_culture_tradition = tradition_american_legacy
+			add_culture_tradition = tradition_heart_of_nation
+		}
+		if = {
+			limit = { NOT = { root.culture = culture:beltway } }
+			root.culture = {
+				add_culture_tradition = tradition_heart_of_nation
+			}
+		}
 	}
 }
