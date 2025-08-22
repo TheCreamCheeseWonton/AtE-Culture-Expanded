@@ -1,13 +1,15 @@
 ﻿cajun = {
 	color = { 178 153 204 }
 
+	created = 1763.1.1
+	parents = { acadien }
+	
 	ethos = ethos_stoic
 	heritage = heritage_louisianais
 	language = language_franse
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_cajun
-	created = 1763.1.1
-	parents = { acadien }
 	
 	traditions = {
 		#TODO

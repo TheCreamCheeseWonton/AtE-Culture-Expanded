@@ -5,6 +5,7 @@
 	heritage = heritage_rockland
 	language = language_rockymount
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_herd
 	name_list = name_list_coloradan
 	created = 2266.1.1
 	parents = { ate_rocklander }
@@ -36,6 +37,7 @@
 	}
 	clothing_gfx = {
 		tie_dye_clothing_gfx
+		new_age_clothes_gfx
 		western_clothing_gfx
 	}
 	unit_gfx = {

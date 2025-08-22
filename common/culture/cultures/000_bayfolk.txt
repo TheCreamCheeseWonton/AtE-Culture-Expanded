@@ -5,6 +5,7 @@
 	heritage = heritage_norcalifornine
 	language = language_californine
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_bayfolk
 	created = 2266.1.1
 	parents = { ate_californian }

@@ -8,6 +8,8 @@
 	heritage = heritage_cafe_com_leite
 	language = language_fluminense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	
 	name_list = name_list_fluminense
 	
 	traditions = {
@@ -35,6 +37,7 @@
 		malandro_clothing_gfx
 		mauricinho_clothing_gfx
 		byzantine_clothing_gfx
+		bahiana_clothes_gfx
 	}
 	unit_gfx = {
 		eastern_unit_gfx

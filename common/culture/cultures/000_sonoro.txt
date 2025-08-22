@@ -1,0 +1,59 @@
+﻿sonoro = {
+	color = { 199 169 62  }
+	
+	created = 2266.1.1
+	parents = { ate_norteno }
+	
+	history_loc_override = after_event_ate_long
+	
+	ethos = ethos_courtly
+	heritage = heritage_normexa
+	language = language_lengua_del_arre
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_list = name_list_sonoro
+	
+	traditions = {
+		tradition_ancient_miners
+		tradition_soldados_de_cuera
+		tradition_talent_acquisition
+		tradition_bbqs
+		tradition_megico_maxico
+	}
+	
+	coa_gfx = {
+		sonoro_coa_gfx
+		norteno_group_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		xepeno_building_gfx
+		heritage_vaquero_building_gfx
+		mexican_north_building_gfx #Architecture-style
+		mexican_building_gfx #Style
+		frontier_building_gfx #Super-style
+		iranian_building_gfx
+		mena_building_gfx
+	}
+	clothing_gfx = {
+		vaquero_clothes_gfx
+		mexicano_group_gfx
+		mena_clothing_gfx
+		latina_clothes_gfx
+	}
+	unit_gfx = {
+		mena_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		3 = asian
+		5 = caucasian
+		25 = mediterranean
+		5 = asian_austronesian
+		5 = asian_southern_han
+		20 = mesoamerican_yuto_aztec
+		30 = aridoamerican_chichimec
+	
+	}
+}

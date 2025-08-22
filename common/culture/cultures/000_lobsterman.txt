@@ -5,6 +5,7 @@
 	heritage = heritage_new_englander
 	language = language_yankee
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_lobsterman
 	created = 2266.1.1
 	parents = { ate_new_yankee }
@@ -28,15 +29,13 @@
 		north_atlantic_coa_gfx
 	}
 	building_gfx = {
-		lobsterman_building_gfx
 		celtic_building_gfx #Architecture-style
-		na_north_building_gfx #Style
-		anglo_building_gfx #Super-style
-		heritage_new_englander_building_gfx
-		western_building_gfx
+		#na_north_building_gfx #Style
+		#anglo_building_gfx #Super-style
 	}
 	clothing_gfx = {
 		northern_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		norse_unit_gfx

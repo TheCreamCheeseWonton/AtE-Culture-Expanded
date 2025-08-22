@@ -5,6 +5,7 @@
 	heritage = heritage_spitzberger
 	language = language_svalbarder
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_svalbarder
 	created = 2066.1.1
 	parents = { ate_nordic }
@@ -13,7 +14,7 @@
 	
 	traditions = {
 		tradition_isolationist
-		tradition_tundra_dwellers
+		tradition_polar_navigators
 		tradition_practiced_pirates
 		tradition_RICE_master_whalers
 	}
@@ -45,8 +46,8 @@
 		60 = caucasian
 		10 = slavic
 		10 = yupik
-		20 = white_asian
-		1 = asian_southeast_asian
+		10 = white_asian
+		10 = asian_southeast_asian
 	
 	}
 }

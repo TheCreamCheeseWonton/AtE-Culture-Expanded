@@ -247,8 +247,6 @@ GetMedievalDance = {
 				root.location.culture = { has_cultural_pillar = heritage_northlake }
 				root.location.culture = { has_cultural_pillar = heritage_rockland }
 				root.location.culture = { has_cultural_pillar = heritage_old_south }
-				root.location.culture = { has_cultural_pillar = heritage_novohispano }
-				root.location.culture = { has_cultural_pillar = heritage_vaquero }
 				root.location.culture = { has_cultural_pillar = heritage_platense }
 			}
 		}
@@ -408,9 +406,7 @@ GetMedievalDance = {
 	text = {
 		trigger = {
 			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_vaquero }
 				root.location.culture = { has_cultural_pillar = heritage_centroamericano }
-				root.location.culture = { has_cultural_pillar = heritage_novohispano }
 				root.location.culture = { has_cultural_pillar = heritage_chileno }
 				root.location.culture = { has_cultural_pillar = heritage_colombian }
 				root.location.culture = { has_cultural_pillar = heritage_venezuelan }
@@ -490,8 +486,6 @@ GetMedievalDance = {
 			OR = {
 				root.location.culture = { has_cultural_pillar = heritage_british }
 				root.location.culture = { has_cultural_pillar = heritage_american }
-				root.location.culture = { has_cultural_pillar = heritage_novohispano }
-				root.location.culture = { has_cultural_pillar = heritage_vaquero }
 				root.location.culture = { has_cultural_pillar = heritage_texan }
 				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
 			}
@@ -502,8 +496,6 @@ GetMedievalDance = {
 	text = {
 		trigger = {
 			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_novohispano }
-				root.location.culture = { has_cultural_pillar = heritage_vaquero }
 				root.location.culture = { has_cultural_pillar = heritage_texan }
 				root.location.culture = { has_cultural_pillar = heritage_socalifornine }
 				root.location.culture = { has_cultural_pillar = heritage_frontieran }

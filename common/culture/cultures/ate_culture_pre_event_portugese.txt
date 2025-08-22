@@ -7,6 +7,7 @@ ate_portuguese = {
 	heritage = heritage_portuguese
 	language = language_ancient_portuguese
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_ancient_portuguese
 	
 	traditions = {
@@ -50,6 +51,7 @@ ate_brazilian = {
 	heritage = heritage_portuguese
 	language = language_ancient_portuguese
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_ancient_portuguese
 	
 	traditions = {
@@ -93,6 +95,7 @@ ate_sulista = {
 	heritage = heritage_portuguese
 	language = language_ancient_portuguese
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_ancient_portuguese
 	
 	traditions = {
@@ -154,6 +157,7 @@ ate_old_caipira = {
 	heritage = heritage_portuguese
 	language = language_caipira
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_caipira
 
 	traditions = {
@@ -213,6 +217,7 @@ ate_old_mineiro = {
 	heritage = heritage_portuguese
 	language = language_mineiro
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_mineiro
 	
 	traditions = {
@@ -270,6 +275,7 @@ ate_old_paulistano = {
 	heritage = heritage_portuguese
 	language = language_paulistano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_paulistano
 
 	traditions = {
@@ -325,7 +331,7 @@ ate_old_paulistano = {
 	}
 }
 
-ate_old_fluinense
+ate_old_fluinense = {
 	color = { 55 126 181  }
 	created = 2066.1.1
 	parents = { ate_brazilian }
@@ -336,6 +342,7 @@ ate_old_fluinense
 	heritage = heritage_portuguese
 	language = language_fluminense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_fluminense
 	
 	traditions = {
@@ -395,6 +402,7 @@ ate_baiano = {
 	heritage = heritage_portuguese
 	language = language_baiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_agrestino
 
 	traditions = {
@@ -449,6 +457,7 @@ ate_old_recifense = {
 	heritage = heritage_portuguese
 	language = language_recifense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_recifolindense
 	
 	traditions = {
@@ -510,6 +519,7 @@ ate_fronterizo = {
 	heritage = heritage_portuguese
 	language = language_amazonico
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_manauara
 
 	traditions = {
@@ -570,6 +580,7 @@ ate_old_nordestino = {
 	heritage = heritage_portuguese
 	language = language_nordestino
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_seridoense
 	
 	traditions = {
@@ -625,6 +636,7 @@ ate_new_nordestino = {
 	heritage = heritage_portuguese
 	language = language_nordestino
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_seridoense
 	
 	traditions = {
@@ -680,6 +692,7 @@ ate_cabano = {
 	heritage = heritage_portuguese
 	language = language_nordestino
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_paraense
 	
 	traditions = {
@@ -738,6 +751,7 @@ ate_old_sertanejo = {
 	heritage = heritage_portuguese
 	language = language_sertanejo
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_sertanejo
 	
 	traditions = {
@@ -795,6 +809,7 @@ ate_west_sertanejo = {
 	heritage = heritage_western_sertanejo
 	language = language_sertanejo
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_matogrossense
 	
 	traditions = {
@@ -860,6 +875,7 @@ ate_north_sertanejo = {
 	heritage = heritage_northern_sertanejo
 	language = language_sertanejo
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_sertanejo
 	
 	traditions = {
@@ -917,6 +933,7 @@ ate_brasiliensec = {
 	heritage = heritage_western_sertanejo
 	language = language_sertanejo
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_candango
 	
 	traditions = {

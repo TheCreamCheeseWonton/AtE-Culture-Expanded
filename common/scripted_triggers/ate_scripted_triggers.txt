@@ -30,7 +30,7 @@ is_barbecue_culture = {
 		culture = { has_cultural_pillar = heritage_texan }
 		culture = { has_cultural_pillar = heritage_floridian }
 		culture = { has_cultural_pillar = heritage_upland }
-		culture = culture:gaucho
+		culture = culture:gauderio
 		culture = culture:gatewayan
 		culture = culture:matogrossense
 		culture = culture:ate_old_texan
@@ -159,6 +159,9 @@ can_eventually_form_republic_trigger = {
 			}
 
 		}
+		#or you are commonfolk!
+		has_trait = populist_leader
+		has_trait = peasant_leader
 	}
 }
 
@@ -219,6 +222,30 @@ can_form_republic_trigger = {
 			prestige_level >= 4
 			#...and has maximum authority
 			has_realm_law_flag = max_authority_level
+		}
+		
+		#or you are commonfolk!
+		AND = {
+			OR = {
+				has_trait = populist_leader
+				has_trait = peasant_leader
+			}
+			NOT = {
+				#...and none of your powerful vassals...
+				any_powerful_vassal = {
+				
+					opinion = {
+						target = root
+						value < 0
+					}
+					#only check for unhappy nobles
+					#if you're forming it as a folk leader,
+					#other folk leaders should support you
+					is_lowborn = no
+					has_trait = populist_leader
+					has_trait = peasant_leader
+				}
+			}
 		}
 	}
 }
@@ -568,6 +595,15 @@ can_form_imperial_trigger = {
 						#...is from a culture that doesn't support imperials...
 						culture = { NOT = { has_cultural_parameter = can_form_imperial } }
 					}
+				}
+			}
+		}
+		AND = {
+			government_has_flag = government_is_nomadic
+			domicile.domicile_location = {
+				OR = {
+					geographical_region = world_south_america_brasil_coast
+					culture = { has_cultural_parameter = can_form_imperial }
 				}
 			}
 		}
@@ -1528,5 +1564,56 @@ favorite_treat_parameter_trigger = {
 	}
 	trigger_else = {
 		always = no
+	}
+}
+
+#If you add new dynamic titles, add them to this trigger
+has_ate_dynamic_title = {
+	OR = {
+		#Argentina Dynamic Titles
+		has_title = title:k_buenos_aires
+		#Brazil Dynamic Titles
+		has_title = title:e_brazil
+		has_title = title:e_parana
+		has_title = title:k_sao_paulo
+		has_title = title:k_rio_de_janeiro
+		has_title = title:k_ilheus
+		has_title = title:k_espirito_santo
+		has_title = title:k_pernambuco
+		has_title = title:k_baixo_sao_francisco
+		has_title = title:k_piaui
+		has_title = title:k_bons_pastos
+		has_title = title:k_amazonas
+		has_title = title:k_goias
+		has_title = title:k_mato_grosso
+		has_title = title:k_minas_gerais
+		#California Dynamic Titles
+		has_title = title:e_california
+		#Florida Dynamic Titles
+		has_title = title:d_eyefour
+		has_title = title:k_florida
+		has_title = title:k_florida_waltney
+		has_title = title:k_soflo
+		#Guyanas Dynamic Titles
+		has_title = title:k_oyapock
+		#Maritimes Dynamic Titles
+		has_title = title:k_maritimes
+	}
+}
+
+has_ate_dynamic_brazil_kingdom_title = {
+	OR = {
+		has_title = title:k_sao_paulo
+		has_title = title:k_rio_de_janeiro
+		has_title = title:k_ilheus
+		has_title = title:k_espirito_santo
+		has_title = title:k_pernambuco
+		has_title = title:k_baixo_sao_francisco
+		has_title = title:k_piaui
+		has_title = title:k_bons_pastos
+		has_title = title:k_amazonas
+		has_title = title:k_goias
+		has_title = title:k_mato_grosso
+		has_title = title:k_minas_gerais
 	}
 }

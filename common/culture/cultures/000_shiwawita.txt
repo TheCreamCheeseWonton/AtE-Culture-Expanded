@@ -1,0 +1,58 @@
+﻿shiwawita = {
+	color = { 209 188 102 }
+	
+	created = 2266.1.1
+	parents = { ate_norteno }
+	
+	history_loc_override = after_event_ate_long
+	
+	ethos = ethos_stoic
+	heritage = heritage_normexa
+	language = language_lengua_del_arre
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_list = name_list_shiwawita
+	
+	traditions = {
+		tradition_bbqs
+		tradition_corridos
+		tradition_soldados_de_cuera
+		tradition_soldaderas
+		tradition_megico_maxico
+	}
+	
+	coa_gfx = {
+		shiwawita_coa_gfx
+		norteno_group_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		altiplanense_building_gfx
+		mexican_north_building_gfx #Architecture-style
+		mexican_building_gfx #Style
+		frontier_building_gfx #Super-style
+		heritage_vaquero_building_gfx
+		iranian_building_gfx
+		mena_building_gfx
+	}
+	clothing_gfx = {
+		vaquero_clothes_gfx
+		mexicano_group_gfx
+		mena_clothing_gfx
+		latina_clothes_gfx
+	}
+	unit_gfx = {
+		mena_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = asian
+		10 = caucasian
+		30 = mediterranean
+		4 = mesoamerican_maya
+		10 = mesoamerican_yuto_aztec
+		55 = aridoamerican_chichimec
+	
+	}
+}

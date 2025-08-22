@@ -30,7 +30,7 @@ wind_furnace_01 = {
 	construction_time = standard_construction_time
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
 	}
 
@@ -48,6 +48,7 @@ wind_furnace_01 = {
 	character_modifier = {
 		#knight_effectiveness_mult = normal_knight_effectiveness_mult_tier_1
 	}
+	
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.25
@@ -79,7 +80,7 @@ wind_furnace_02 = {
 	construction_time = standard_construction_time
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder.culture = {
 			has_innovation = innovation_barracks
@@ -100,12 +101,12 @@ wind_furnace_02 = {
 	character_modifier = {
 		#knight_effectiveness_mult = normal_knight_effectiveness_mult_tier_2
 	}
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.3
 		levy_size = 0.03
 	}
-
 	next_building = wind_furnace_03
 
 	ai_value = {
@@ -123,7 +124,7 @@ wind_furnace_03 = {
 	construction_time = standard_construction_time
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -136,13 +137,12 @@ wind_furnace_03 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
 	}
-	
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.35
 		levy_size = 0.04
 	}
-
 	cost_gold = normal_building_tier_3_cost
 
 	province_modifier = {
@@ -168,7 +168,7 @@ wind_furnace_04 = {
 	effect_desc = windfurnaces_effects_desc
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -181,13 +181,12 @@ wind_furnace_04 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
 	}
-	
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.4
 		levy_size = 0.05
 	}
-
 	cost_gold = normal_building_tier_4_cost
 
 	province_modifier = {
@@ -213,7 +212,7 @@ wind_furnace_05 = {
 	effect_desc = windfurnaces_effects_desc
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -226,13 +225,12 @@ wind_furnace_05 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
 	}
-	
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.45
 		levy_size = 0.06
 	}
-
 	cost_gold = normal_building_tier_5_cost
 
 	province_modifier = {
@@ -258,7 +256,7 @@ wind_furnace_06 = {
 	effect_desc = windfurnaces_effects_desc
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -277,7 +275,6 @@ wind_furnace_06 = {
 		monthly_income = 0.5
 		levy_size = 0.07
 	}
-
 	cost_gold = normal_building_tier_6_cost
 
 	province_modifier = {
@@ -303,7 +300,7 @@ wind_furnace_07 = {
 	effect_desc = windfurnaces_effects_desc
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -316,13 +313,12 @@ wind_furnace_07 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
 	}
-	
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.55
 		levy_size = 0.08
 	}
-
 	cost_gold = normal_building_tier_7_cost
 
 	province_modifier = {
@@ -348,7 +344,7 @@ wind_furnace_08 = {
 	effect_desc = windfurnaces_effects_desc
 
 	can_construct_potential = {
-		building_wind_furnace_requirement_terrain_ate = yes
+		building_wind_furnace_requirement_terrain = yes
 	}
 
 	can_construct = {
@@ -361,13 +357,12 @@ wind_furnace_08 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
 	}
-	
+
 	province_culture_modifier = {
 		parameter = wind_furnace_bonuses
 		monthly_income = 0.6
 		levy_size = 0.1
 	}
-
 	cost_gold = normal_building_tier_8_cost
 
 	province_modifier = {

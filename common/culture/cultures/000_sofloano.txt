@@ -7,6 +7,7 @@
 	heritage = heritage_floridian
 	language = language_caribeno
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_sofloano
 	
 	traditions = {
@@ -34,6 +35,7 @@
 		floridian_clothing_gfx
 		floral_clothing_gfx
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		western_unit_gfx

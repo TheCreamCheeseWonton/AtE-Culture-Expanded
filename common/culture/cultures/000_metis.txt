@@ -1,22 +1,27 @@
 ﻿metis = {
 	color = { 255 240 74 }
 	created = 1869.1.1
-	parents = { ate_old_quebecois plains_cree }
+	parents = { ate_old_quebecois nehiyaw }
 	
 	ethos = ethos_spiritual
 	heritage = heritage_plains
 	language = language_michif
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_metis
 	
 	traditions = {
 		tradition_language_scholars
-		tradition_hunters
 		tradition_zealous_people
 		tradition_equitable
 		tradition_exogamous_marriages
 	}
-	
+
+	dlc_tradition = {
+		trait = tradition_mpo_wolves_of_the_deep_steppe
+		requires_dlc_flag = khans_of_the_steppe
+		fallback = tradition_hunters
+	}
 	coa_gfx = {
 		metis_coa_gfx
 		prairie_group_gfx

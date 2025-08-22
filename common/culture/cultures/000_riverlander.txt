@@ -5,6 +5,7 @@
 	heritage = heritage_upland
 	language = language_backcountry
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_riverlander
 	created = 2266.1.1
 	parents = { ate_uplander }

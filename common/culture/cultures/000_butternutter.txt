@@ -5,6 +5,7 @@
 	heritage = heritage_upland
 	language = language_backcountry
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_butternutter
 	created = 2266.1.1
 	parents = { ate_uplander }
@@ -35,6 +36,7 @@
 	}
 	clothing_gfx = {
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		western_unit_gfx

@@ -6,17 +6,18 @@
 	history_loc_override = after_event_ate_long
 	
 	ethos = ethos_egalitarian
-	heritage = heritage_novohispano
-	language = language_yucateco
+	heritage = heritage_sudmexa
+	language = language_lengua_del_uay
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_yucateco
 	
 	traditions = {
-		tradition_culinary_art
-		tradition_jungle_warriors
-		tradition_xenophilic
-		tradition_language_scholars
-		tradition_hidden_cities #testing city_states there
+		tradition_megico_maxico
+		tradition_lords_of_the_mayab
+		tradition_stalwart_defenders
+		tradition_parochialism
+		tradition_metropolitan_arrogance
 	}
 	
 	coa_gfx = {

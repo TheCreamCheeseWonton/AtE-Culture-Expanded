@@ -7,9 +7,10 @@
 
 	ethos = ethos_courtly
 	heritage = heritage_gaucho
-	language = language_gaucho
+	language = language_gauderio
 	martial_custom = martial_custom_equal
-	name_list = name_list_gaucho	# Create a proper name_list_piatolino whenever possible.
+	head_determination = head_determination_domain
+	name_list = name_list_gauderio	# Create a proper name_list_piatolino whenever possible.
 	
 	traditions = {
 		tradition_bbqs

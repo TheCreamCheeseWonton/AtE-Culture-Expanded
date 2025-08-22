@@ -5,18 +5,23 @@
 	
 	history_loc_override = after_event_ate_extra_long
 	
-	ethos = ethos_spiritual
-	heritage = heritage_novohispano
-	language = language_metropolitano
+	ethos = ethos_bellicose
+	heritage = heritage_centromexa
+	language = language_lengua_del_si 
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_abajeno
 	
 	traditions = {
 		tradition_warrior_monks
-		tradition_dia_de_muertos
-		tradition_ancient_miners
 		tradition_life_is_just_a_joke
 		tradition_charreria
+		tradition_megico_maxico
+	}
+
+	dlc_tradition = {
+		trait = tradition_artisans
+		requires_dlc_flag = royal_court
 	}
 	
 	coa_gfx = {

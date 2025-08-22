@@ -9,6 +9,7 @@
 	heritage = heritage_ciclico
 	language = language_amazonico
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_roraimense
 	
 	traditions = {
@@ -38,6 +39,7 @@
 	}
 	clothing_gfx = {
 		african_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		mena_unit_gfx

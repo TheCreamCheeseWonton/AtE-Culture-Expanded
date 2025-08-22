@@ -7,6 +7,7 @@
 	heritage = heritage_midwestern
 	language = language_plainspeak
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_okie
 
 	history_loc_override = after_event_ate_combine
@@ -36,6 +37,7 @@
 	clothing_gfx = {
 		cowboy_clothing_gfx
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		western_unit_gfx

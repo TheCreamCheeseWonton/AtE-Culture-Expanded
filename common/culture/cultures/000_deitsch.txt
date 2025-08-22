@@ -5,6 +5,7 @@
 	heritage = heritage_amish
 	language = language_pennsilfaanisch
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_deitsch
 	created = 2066.1.1
 	parents = { ate_german }
@@ -24,8 +25,6 @@
 		amerodeutsch_group_gfx
 	}
 	building_gfx = {
-		deitsch_building_gfx
-		na_middle_building_gfx #Architecture-style-2
 		carpenter_building_gfx #Architecture-style
 		na_north_building_gfx #Style
 		anglo_building_gfx #Super-style

@@ -9,6 +9,7 @@
 	heritage = heritage_paulistanico
 	language = language_paulistano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_paulistano
 	
 	traditions = {
@@ -32,6 +33,7 @@
 		latam_building_gfx #Super-style
 		heritage_paulistanico_building_gfx
 		mediterranean_building_gfx
+		byzantine_building_gfx
 	}
 	clothing_gfx = {
 		mauricinho_clothing_gfx

@@ -5,6 +5,7 @@
 	heritage = heritage_northlake
 	language = language_shorespeak
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_minnesotan
 	created = 2266.1.1
 	parents = { ate_northlaker }

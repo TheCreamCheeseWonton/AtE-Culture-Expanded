@@ -9,6 +9,7 @@
 	heritage = heritage_serra_do_mar
 	language = language_paulistano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_caicara
 	
 	traditions = {
@@ -35,6 +36,7 @@
 		malandro_clothing_gfx
 		mauricinho_clothing_gfx
 		byzantine_clothing_gfx
+		bahiana_clothes_gfx
 	}
 	unit_gfx = {
 		eastern_unit_gfx
@@ -44,7 +46,7 @@
 		
 		6 = african
 		10 = arab
-		3 = asian
+		10 = asian
 		1 = asian_austronesian
 		1 = byzantine
 		10 = caucasian

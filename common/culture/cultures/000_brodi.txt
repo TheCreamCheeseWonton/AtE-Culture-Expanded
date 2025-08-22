@@ -1,0 +1,61 @@
+﻿brodi = {
+	color = { 241 236 115 }
+
+	created = 2266.1.1
+	parents = { ate_metropolitano }
+	
+	history_loc_override = after_event_ate_extra_long
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_sudmexa
+	language = language_lengua_del_puejclaro
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_list = name_list_brodi
+	
+	traditions = {
+		tradition_culinary_art
+		tradition_fishermen
+		tradition_concubines
+		tradition_megico_maxico
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_loyal_soldiers
+	}
+	
+	coa_gfx = {
+		jarocho_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		jarocho_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+		latina_clothes_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = african
+		15 = mediterranean
+		20 = mesoamerican_maya
+		50 = mesoamerican_yuto_aztec
+		5 = asian_southern_han
+		5 = black_white
+	
+	}
+}

@@ -9,6 +9,7 @@
 	heritage = heritage_serra_do_mar
 	language = language_fluminense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_carioca
 	
 	traditions = {
@@ -35,6 +36,7 @@
 	clothing_gfx = {
 		malandro_clothing_gfx
 		byzantine_clothing_gfx
+		bahiana_clothes_gfx
 	}
 	unit_gfx = {
 		eastern_unit_gfx

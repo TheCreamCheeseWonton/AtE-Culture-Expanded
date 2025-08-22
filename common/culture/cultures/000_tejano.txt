@@ -5,6 +5,7 @@
 	heritage = heritage_texan
 	language = language_espangles
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_tejano
 	created = 2266.1.1
 	parents = { ate_old_texan ate_viejomexicano }
@@ -40,6 +41,7 @@
 		vaquero_clothes_gfx
 		iberian_christian_clothing_gfx
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		mongol_unit_gfx

@@ -9,10 +9,11 @@
 	heritage = heritage_centroamericano
 	language = language_centrano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_catracho
 	
 	traditions = {
-		tradition_milpa
+		tradition_kool
 		tradition_coffee_making
 		tradition_hard_working
 		tradition_ancient_miners

@@ -5,6 +5,7 @@
 	heritage = heritage_mid_atlantic
 	language = language_atlantican
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_youser
     created = 2266.1.1
 	parents = { ate_atlantic }

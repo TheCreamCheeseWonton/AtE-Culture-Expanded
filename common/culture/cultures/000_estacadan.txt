@@ -5,6 +5,7 @@
 	heritage = heritage_texan
 	language = language_spanglish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_estacadan
 	created = 2266.1.1
 	parents = { ate_old_texan ate_viejomexicano }

@@ -5,6 +5,7 @@
 	heritage = heritage_old_south
 	language = language_hoi_toidish
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_hoi_toider
 	created = 2266.1.1
 	parents = { ate_old_southern }

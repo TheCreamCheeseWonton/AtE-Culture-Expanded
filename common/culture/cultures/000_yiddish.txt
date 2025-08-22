@@ -5,6 +5,7 @@
 	heritage = heritage_shtetl
 	language = language_yiddish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_yiddish
 	created = 2066.1.1
 	parents = { ate_ashkenazi_jew }
@@ -39,6 +40,7 @@
 	}
 	clothing_gfx = {
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		northern_unit_gfx

@@ -5,6 +5,7 @@
 	heritage = heritage_midwestern
 	language = language_plainspeak
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_gatewayan
 	created = 2158.1.1
 	parents = { ate_plainslander }

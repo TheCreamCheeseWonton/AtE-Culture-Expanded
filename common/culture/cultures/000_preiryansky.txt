@@ -5,6 +5,7 @@
 	heritage = heritage_prairie
 	language = language_kanadskyj
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_preiryansky
 	created = 2066.1.1
 	parents = { ate_ukranian }
@@ -15,7 +16,7 @@
 		tradition_fervent_temple_builders
 		tradition_quarrelsome
 		tradition_family_entrepreneurship
-		tradition_agrarian
+		tradition_frontier_folk
 		tradition_cowboys
 	}
 	

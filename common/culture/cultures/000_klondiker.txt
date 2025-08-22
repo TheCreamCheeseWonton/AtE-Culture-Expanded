@@ -5,6 +5,7 @@
 	heritage = heritage_boreal
 	language = language_arctic
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_klondiker
 	created = 2244.1.1
 	parents = { ate_borealian }
@@ -19,6 +20,10 @@
 	dlc_tradition = {
 		trait = tradition_fp1_northern_stories
 		requires_dlc_flag = the_northern_lords
+	}
+	dlc_tradition = {
+		trait = tradition_mpo_northern_tribes
+		requires_dlc_flag = khans_of_the_steppe
 	}
 	
 	coa_gfx = {
@@ -37,6 +42,7 @@
 	clothing_gfx = {
 		harsh_canadian_clothing_gfx
 		canadian_common_clothing_gfx
+		sami_clothing_gfx
 		northern_clothing_gfx
 		fp1_norse_clothing_gfx
 	}

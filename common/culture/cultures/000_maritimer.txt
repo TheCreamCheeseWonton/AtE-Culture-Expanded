@@ -5,6 +5,7 @@
 	heritage = heritage_atlantic_canadian
 	language = language_maritime
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_maritimer
 	created = 2166.1.1
 	parents = { ate_atlantic_canadian }
@@ -23,13 +24,9 @@
 		north_atlantic_coa_gfx
 	}
 	building_gfx = {
-		maritimer_building_gfx
 		celtic_building_gfx #Architecture-style
 		na_north_building_gfx #Style
 		anglo_building_gfx #Super-style
-		heritage_atlantic_canadian_building_gfx
-		western_building_gfx
-		celtic_building_gfx
 	}
 	clothing_gfx = {
 		

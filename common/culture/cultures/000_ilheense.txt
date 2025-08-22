@@ -9,6 +9,7 @@
 	heritage = heritage_costeiro
 	language = language_baiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_ilheense
 	
 	traditions = {
@@ -36,6 +37,7 @@
 		estino_group_gfx
 		malandro_clothing_gfx
 		african_clothing_gfx
+		bahiana_clothes_gfx
 	}
 	unit_gfx = {
 		mena_unit_gfx

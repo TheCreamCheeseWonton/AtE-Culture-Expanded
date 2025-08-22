@@ -9,6 +9,7 @@
 	heritage = heritage_colombian
 	language = language_colombiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_opita
 	
 	traditions = {
@@ -33,6 +34,7 @@
 	}
 	clothing_gfx = {
 		colombian_clothes_gfx
+		latina_clothes_gfx
 		western_clothing_gfx
 	}
 	unit_gfx = {

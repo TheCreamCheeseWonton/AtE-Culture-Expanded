@@ -5,6 +5,7 @@
 	heritage = heritage_greater_antillean
 	language = language_west_indian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_west_indian
 	
 	created = 2066.1.1

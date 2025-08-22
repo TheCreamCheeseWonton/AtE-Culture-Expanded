@@ -1,22 +1,24 @@
 ﻿bravo = {
 	color = { 255 187 66 }
+	
 	created = 2266.1.1
 	parents = { ate_norteno }
 	
 	history_loc_override = after_event_ate_long
 	
-	ethos = ethos_stoic
-	heritage = heritage_vaquero
-	language = language_norteno
+	ethos = ethos_bureaucratic
+	heritage = heritage_normexa
+	language = language_lengua_del_ei
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_bravo
 	
 	traditions = {
 		tradition_corridos
-		tradition_soldados_de_cuera
 		tradition_metal_craftsmanship
 		tradition_hard_working
 		tradition_bbqs
+		tradition_megico_maxico
 	}
 	
 	coa_gfx = {
@@ -35,6 +37,7 @@
 		vaquero_clothes_gfx
 		mexicano_group_gfx
 		mena_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		mena_unit_gfx

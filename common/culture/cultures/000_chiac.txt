@@ -7,6 +7,7 @@
 	heritage = heritage_canayen
 	language = language_chiac
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_chiac
 	
 	traditions = {
@@ -21,13 +22,10 @@
 		acadien_coa_gfx
 	}
 	building_gfx = {
-		chiac_building_gfx
 		eastern_canadian_building_gfx #Architecture-style
 		na_north_building_gfx #Style
 		anglo_building_gfx #Super-style
-		heritage_canayen_building_gfx
 		western_building_gfx
-		celtic_building_gfx
 	}
 	clothing_gfx = {
 		temperate_canadian_clothing_gfx

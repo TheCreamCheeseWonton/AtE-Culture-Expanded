@@ -5,13 +5,11 @@
 	
 	history_loc_override = after_event_ate_long
 	
-	created = 2066.1.1
-	parents = { geralista agrestino }
-	
 	ethos = ethos_stoic
 	heritage = heritage_geraizeiro
 	language = language_baiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_agrestino
 	
 	traditions = {

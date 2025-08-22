@@ -9,6 +9,7 @@
 	heritage = heritage_manguetowner
 	language = language_nordestino
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_pernambucano
 	
 	traditions = {
@@ -24,7 +25,7 @@
 		nordestino_group_gfx
 	}
 	building_gfx = {
-		pernambucano_building_gfx
+		pernambucano_building_gfx_hash
 		brazilian_tropical_building_gfx #Architecture-style
 		brazilian_building_gfx #Style
 		latam_building_gfx #Super-style

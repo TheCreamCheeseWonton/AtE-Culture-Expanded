@@ -5,6 +5,7 @@
 	heritage = heritage_geechee
 	language = language_gullah
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_gullah
 	created = 1820.1.1
 	parents = { ate_african ate_old_dixie }

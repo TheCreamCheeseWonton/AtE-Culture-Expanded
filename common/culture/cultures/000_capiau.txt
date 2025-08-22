@@ -9,6 +9,7 @@
 	heritage = heritage_cafe_com_leite
 	language = language_mineiro
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_capiau
 	
 	traditions = {

@@ -7,6 +7,7 @@ ate_new_steelbelter = {
 	heritage = heritage_american
 	language = language_irontongue
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_chicagoan
 	created = 2666.1.1
 	parents = { ate_steelbelter }

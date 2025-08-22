@@ -1,14 +1,15 @@
 ﻿acreano = {
 	color = { 23 87 48 }
+	
 	created = 2266.1.1
 	parents = { ate_fronterizo }
 	
 	history_loc_override = after_event_ate_long
-	
 	ethos = ethos_bellicose
 	heritage = heritage_ciclico
 	language = language_amazonico
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_acreano
 	
 	traditions = {
@@ -33,6 +34,7 @@
 	}
 	clothing_gfx = {
 		african_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		mena_unit_gfx

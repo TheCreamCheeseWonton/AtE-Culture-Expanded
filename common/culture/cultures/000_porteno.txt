@@ -9,6 +9,7 @@
 	heritage = heritage_platense
 	language = language_rioplatense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_porteno
 	
 	traditions = {
@@ -42,6 +43,7 @@
 	ethnicities = {
 		
 		1 = african
+		5 = andean
 		5 = asian
 		5 = arab
 		2 = byzantine

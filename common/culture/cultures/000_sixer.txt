@@ -5,6 +5,7 @@
 	heritage = heritage_laurentian
 	language = language_irontongue
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_sixer
 	created = 2266.1.1
 	parents = { ate_laurenian }
@@ -39,6 +40,7 @@
 		canadian_common_clothing_gfx
 		canadian_clothing_gfx
 		#fp1_norse_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		western_unit_gfx

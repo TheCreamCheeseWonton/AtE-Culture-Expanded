@@ -1,0 +1,1472 @@
+﻿namespace = ate_form #USE THIS WHEN MAKING FORMABLES
+
+#I formed Hispaniola!
+ate_form.0001 = { 
+	type = character_event
+	title = form_hispaniola.0001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						root.culture = culture:haitian
+					}
+				}
+				desc = form_hispaniola.0001.desc.haitian
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						root.culture = culture:quisqueyano
+					}
+				}
+				desc = form_hispaniola.0001.desc.quisqueyano
+			}
+		}
+		desc = form_hispaniola.0001.start.desc
+	}
+	
+	theme = realm
+	left_portrait = {
+		character = scope:hispaniola_former
+		animation = admiration
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+
+	}
+
+	option = {
+		name = form_hispaniola.0001.a
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:hispaniola_former.faith = {
+						OR = {
+							AND = {
+								religion_tag = catholic_religion
+								NOT = { has_doctrine = tenet_afro_diasporic_syncretism }
+							}
+							AND = {
+								religion_tag = afro_diasporic_religion
+								OR = {
+									NOT = { has_doctrine = tenet_catholic_syncretism }
+									NOT = { has_doctrine = tenet_christian_syncretism }
+								}
+							}
+						}
+					}
+				}
+				trigger_event = ate_form.1001
+			}
+		}
+	}
+}
+
+#Restore America 
+
+ate_form.0002 = {
+	type = character_event
+	title = american_restoration.0001.t
+	desc = {
+		desc = american_restoration.0001.desc.intro
+		first_valid = {
+			# Doing it as Americanists
+			triggered_desc = {
+				trigger = {
+						has_religion = religion:americanist_religion
+					}
+					desc = american_restoration.0001.desc.americanist
+				}
+			}
+			# Doing it as non-americanists
+			triggered_desc = {
+				trigger = {
+					OR = {
+						root.culture = { has_cultural_pillar = heritage_old_south }
+						root.culture = { has_cultural_pillar = heritage_deep_south }
+						root.culture = { has_cultural_pillar = heritage_riverine }
+						root.culture = { has_cultural_pillar = heritage_mid_atlantic }
+						root.culture = { has_cultural_pillar = heritage_new_englander }
+					}
+				}
+				desc = american_restoration.0001.desc.culture
+			}
+			
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+	}
+	option = {
+		name = american_restoration.0001.a
+		trigger_event = ate_ce_custom.006 # Restore America flavour
+	}
+}
+
+ate_form.0003 = {
+	type = character_event
+	title = haudenosaunee_restoration.0001.t
+	desc = {
+		desc = haudenosaunee_restoration.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+	}
+	option = {
+		name = haudenosaunee_restoration.0001.a
+	}
+}
+
+ate_form.0004 = {
+	type = character_event
+	title = form_iron_confederacy.0001.t
+	desc = {
+		desc = form_iron_confederacy.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+	}
+	option = {
+		name = form_iron_confederacy.0001.a
+		flavor = form_iron_confederacy.0001.a.tt
+	}
+}
+
+ate_form.0005 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = flag_chosen_competitor
+						is_female = yes
+					}
+				}
+				desc = up_restoration.0001.t_heroic_female
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = flag_chosen_competitor
+						is_female = no
+					}
+				}
+				desc = up_restoration.0001.t_heroic_male
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						faith = { has_doctrine = tenet_las_veinte_verdades }
+					}
+				}
+				desc = up_restoration.0001.t_peronist
+			}
+			desc = up_restoration.0001.t
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = flag_chosen_competitor
+						is_female = yes
+					}
+				}
+				desc = up_restoration.0001.desc_heroic_female
+				# desc = up_restoration.0001.desc_heroic_female_end
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = flag_chosen_competitor
+						is_female = no
+					}
+				}
+				desc = up_restoration.0001.desc_heroic_male
+				# desc = up_restoration.0001.desc_heroic_male_end
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						faith = { has_doctrine = tenet_las_veinte_verdades }
+					}
+				}
+				desc = up_restoration.0001.desc_peronist
+			}
+			desc = up_restoration.0001.desc
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+		### BECOMING THE MAN OF DESTINY
+		# If you have a Chosen by the Hand trait, that trait is removed and you receive the appropriate Man of Destiny trait and the nickname
+		if = {
+			limit = {
+				has_character_flag = flag_chosen_competitor
+			}
+			become_man_of_destiny_effect = { MAN_OF_DESTINY = root }
+		}
+	}
+	option = {
+		trigger = {
+			faith = {
+				religion = religion:platinean_religion
+			}
+		}
+		faith = {
+			if = {
+				limit = {
+					NOT = { has_doctrine = divine_destiny_doctrine }
+				}
+				add_doctrine = divine_destiny_doctrine
+			}
+		}
+		name = up_restoration.0001.platinean
+		
+	}
+	option = {
+		trigger = {
+			faith = {
+				NOT = {
+					religion = religion:platinean_religion
+				}
+			}
+		}
+		name = up_restoration.0001.a
+	}
+}
+
+# I formed Gran Colombia
+ate_form.0006 = {
+	type = character_event
+	title = gran_colombia_restoration.0001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root.faith = {
+						NOT = {
+							religion = religion:divina_patriota_religion
+						}
+						has_doctrine = special_doctrine_is_christian_faith
+					}
+				}
+				desc = gran_colombia_restoration.0001.desc_christian
+			}
+			desc = gran_colombia_restoration.0001.desc
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+	}
+	option = {
+		name = gran_colombia_restoration.0001.convert
+		ai_chance = {
+			base = 0
+		}
+		trigger = {
+			faith = {
+				NOT = {
+					religion = religion:divina_patriota_religion
+				}
+				has_doctrine = special_doctrine_is_christian_faith
+			}
+		}
+		set_character_faith_with_conversion = faith:patria_grande
+	}
+
+	option = {
+		name = gran_colombia_restoration.0001.a
+	}
+}
+
+ate_form.0007 = {
+	type = character_event
+	title = oregon_reforged.t
+	desc = oregon_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:oregon_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = oregon_reforged.a
+	}
+}
+
+ate_form.0008 = {
+	type = character_event
+	title = washington_reforged.t
+	desc = washington_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:washington_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = washington_reforged.a
+	}
+}
+
+ate_form.0009 = {
+	type = character_event
+	title = inland_reforged.t
+	desc = inland_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = inland_reforged.a
+	}
+}
+
+
+ate_form.0010 = {
+	type = character_event
+	title = retake_toledo.0001.t
+	desc = {
+		desc = retake_toledo.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = retake_toledo.0001.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0011 = {
+	type = character_event
+	title = unite_quebec.t
+	desc = {
+		desc = unite_quebec.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:quebec_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = unite_quebec.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0012 = {
+	type = character_event
+	title = form_colorado.t
+	desc = {
+		desc = form_colorado.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:colorado_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_colorado.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0013 = {
+	type = character_event
+	title = form_wyoming.t
+	desc = {
+		desc = form_wyoming.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:wyoming_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_wyoming.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0014 = {
+	type = character_event
+	title = form_new_cali.t
+	desc = {
+		desc = form_new_cali.desc
+		first_valid = {
+		# Doing it as anyone
+			triggered_desc = {
+				trigger = {
+					faith = faith:anahata
+				}
+				desc = form_new_cali.desc.anahata
+			}
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:new_cali_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_new_cali.a
+		add_piety = 300
+	}
+}
+
+ate_form.0015 = {
+	type = character_event
+	title = form_oklahoma.t
+	desc = {
+		desc = form_oklahoma.desc
+		
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:oklahoma_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_oklahoma.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0016 = {
+	type = character_event
+	title = form_huasteca.t
+	desc = {
+		desc = form_huasteca.desc
+		
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:huasteca_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_huasteca.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0017 = {
+	type = character_event
+	title = form_rio_grande_do_sul.t
+	desc = {
+		desc = form_rio_grande_do_sul.desc
+		
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:rio_grande_do_sul_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_rio_grande_do_sul.a
+		add_prestige = 300
+	}
+}
+
+ate_form.0018 = {
+	type = character_event
+	title = form_deseret.t
+	desc = form_deseret.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_deseret.a
+	}
+}
+
+
+ate_form.0019 = {
+	type = character_event
+	title = form_newfoundland_labrador.t
+	desc = form_newfoundland_labrador.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	immediate = {
+		add_prestige = 250
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_newfoundland_labrador.a
+	}
+}
+ate_form.0020 = {
+	type = character_event
+	title = reunite_canada.t
+	desc = reunite_canada.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	immediate = {
+		add_prestige = 5000
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = reunite_canada.a
+	}
+}
+
+ate_form.0021 = {
+	type = character_event
+	title = form_metis_confederacy.t
+	desc = form_metis_confederacy.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	immediate = {
+		add_prestige = 2000
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = form_metis_confederacy.a
+	}
+}
+
+##Ohio
+
+ate_form.0022 = {
+	type = character_event
+	title = ohio_reforged.t
+	desc = ohio_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:ohio_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = ohio_former
+	}
+	option = {
+		name = ohio_reforged.a
+	}
+}
+##Indiana
+
+ate_form.0023 = {
+	type = character_event
+	title = indiana_reforged.t
+	desc = indiana_reforged.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = indiana_reforged.a
+	}
+	option = {
+		trigger = {
+			NOT = {
+				title:k_indiana = { de_jure_liege = title:e_usa }
+			}
+		}
+		name = indiana_reforged.b
+		title:k_indiana = { set_de_jure_liege_title = title:e_steel_belt }
+	}
+}
+
+#I formed Keystone!
+ate_form.0024 = {
+	type = character_event
+	title = keystone_relaid.t
+	desc = keystone_relaid.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = keystone_relaid.a
+	}
+}
+
+#Retake Northlands
+
+ate_form.0025 = {
+	type = character_event
+	title = retake_northlands.0001.t
+	desc = {
+		desc = retake_northlands.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = retake_northlands.0001.a
+		add_prestige = 500
+	}
+}
+
+#Form Grand Virginia
+
+ate_form.0026 = {
+	type = character_event
+	title = grand_virginia_relaid.t
+	desc = grand_virginia_relaid.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = grand_virginia_relaid.a
+	}
+}
+ate_form.0027 = {
+	type = character_event
+	title = cascadia_formed.t
+	desc = cascadia_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = cascadia_formed.a
+	}
+}
+
+#Form New England
+ 
+ate_form.0028 = {
+	type = character_event
+	title = new_england_formed.t
+	desc = new_england_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = new_england_formed.a
+	}
+}
+
+#Form Bolivia
+
+ate_form.0029 = {
+	type = character_event
+	title = bolivia_formed.t
+	desc = bolivia_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = bolivia_formed.a
+	}
+}
+
+#Form New Jersey
+
+ate_form.0030 = {
+	type = character_event
+	title = new_jersey_formed.t
+	desc = new_jersey_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = new_jersey_formed.a
+	}
+}
+
+#Form Empire State
+
+ate_form.0031 = {
+	type = character_event
+	title = empire_state_relaid.t
+	desc = empire_state_relaid.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = empire_state_relaid.a
+	}
+
+}
+
+#Form Carolina
+
+ate_form.0032 = {
+	type = character_event
+	title = carolina_relaid.t
+	desc = carolina_relaid.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = carolina_relaid.a
+	}
+}
+
+#Reunite Connecticut
+
+ate_form.0033 = {
+	type = character_event
+	title = reunite_connecticut.t
+	desc = reunite_connecticut.desc
+	theme = realm
+	left_portrait = {
+		character = scope:connecticut_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		title:d_connecticut.de_jure_liege = {
+			save_scope_as = connecticut_de_jure
+		}
+		title:d_new_haven.de_jure_liege = {
+			save_scope_as = new_haven_de_jure
+		}
+	}
+	option = { # 
+		name = reunite_connecticut.connecticut
+		trigger = {
+			NAND = {
+				NOT = { scope:connecticut_de_jure = scope:new_haven_de_jure }
+				OR = {
+					is_vassal_of = scope:new_haven_de_jure.holder
+					is_vassal_of = scope:new_haven_de_jure.de_jure_liege.holder
+				}
+			}
+		}
+		title:d_connecticut = {
+			set_de_jure_liege_title = scope:connecticut_de_jure
+		}
+		title:d_new_haven = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_county }
+				set_de_jure_liege_title = title:d_connecticut
+			}
+		}
+		destroy_title = title:d_new_haven
+	}
+	option = {
+		name = reunite_connecticut.new_haven
+		trigger = {
+			#always = yes
+			NOT = {
+				scope:connecticut_de_jure = scope:new_haven_de_jure
+			}
+			OR = {
+				is_independent_ruler = yes
+				is_vassal_of = scope:new_haven_de_jure.holder
+				is_vassal_of = scope:new_haven_de_jure.de_jure_liege.holder
+			}
+		}
+		title:d_connecticut = {
+			set_de_jure_liege_title = scope:new_haven_de_jure
+		}
+		title:d_new_haven = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_county }
+				set_de_jure_liege_title = title:d_connecticut
+			}
+		}
+		destroy_title = title:d_new_haven
+	}
+}
+
+# I formed New Mexico!
+ate_form.0034 = { 
+	type = character_event
+	title = form_new_mexico.0001.t
+	desc = {
+		desc = form_new_mexico.0001.desc
+	}
+	
+	theme = realm
+	left_portrait = {
+		character = scope:new_mexico_former
+		animation = admiration
+	}
+
+	trigger = {
+		NOT = { has_title = title:e_usa }
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+	}
+	
+	option = {
+		name = form_new_mexico.0001.usa
+		trigger = {
+			exists = title:e_usa.holder
+		}
+		title:k_new_mexico = { set_de_jure_liege_title = title:e_usa }
+	}
+	
+	option = {
+		name = form_new_mexico.0001.deseret
+		trigger = {
+			title:k_utah.de_jure_liege = title:e_deseret
+			scope:new_mexico_former.faith = {
+				OR = {
+					has_doctrine = doctrine_is_mormon_faith
+					has_doctrine = tenet_mormon_syncretism
+				}
+			}
+		}
+		title:k_new_mexico = { set_de_jure_liege_title = title:e_deseret }
+	}
+
+	option = {
+		name = form_new_mexico.0001.a
+		title:k_new_mexico = { set_de_jure_liege_title = title:e_lone_star }
+	}
+
+	option = {
+		name = form_new_mexico.0001.b
+		title:k_new_mexico = { set_de_jure_liege_title = title:e_aridoamerica }
+	}
+
+	option = {
+		name = form_new_mexico.0001.c
+		title:k_new_mexico = { set_de_jure_liege_title = title:e_the_rockies }
+	}
+}
+
+# I formed Belize!
+ate_form.0035 = { 
+	type = character_event
+	title = form_belize.0001.t
+	desc = {
+		desc = form_belize.0001.desc
+	}
+	
+	theme = realm
+	left_portrait = {
+		character = scope:belize_former
+		animation = admiration
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+	}
+
+	option = {
+		name = form_belize.0001.a
+		title:k_belize = { set_de_jure_liege_title = title:e_mayab }
+	}
+
+	option = {
+		name = form_belize.0001.b
+		title:k_belize = { set_de_jure_liege_title = title:e_centroamerica }
+	}
+
+	option = {
+		name = form_belize.0001.c
+		title:k_belize = { set_de_jure_liege_title = title:e_caribbean }
+	}
+}
+
+#Palmares
+
+ate_form.0036= {
+	type = character_event
+	title = form_palmares.t
+	desc = { desc = form_palmares.desc }
+	theme = realm
+	left_portrait = {
+		character = scope:palmares_unifier
+		animation = personality_honorable
+	}
+	immediate = {
+	play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+	name = form_palmares.a
+	add_prestige = 350
+	set_primary_title_to = title:k_palmares
+	give_nickname = nick_the_ganga_zumba
+	}
+}
+
+#Staten Island
+
+ate_form.0037 = {
+	type = character_event
+	title = retake_staten_island.0001.t
+	desc = {
+		desc = retake_staten_island.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = retake_staten_island.0001.a
+		add_prestige = 300
+		add_legitimacy = 10
+	}
+}
+
+# I freed Guyana!
+ate_form.0038 = { 
+	type = character_event
+	title = form_guyana.0001.t
+	desc = form_guyana.0001.desc
+	
+	theme = realm
+	left_portrait = {
+		character = scope:guyana_former
+		animation = admiration
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+	}
+
+	option = {
+		name = form_guyana.0001.a
+		title:k_guyana = { set_de_jure_liege_title = title:e_caribbean }
+	}
+
+	option = {
+		name = form_guyana.0001.b
+		title:k_belize = { set_de_jure_liege_title = title:e_the_five_guyanas }
+	}
+
+}
+
+#Form Paulistania
+ate_form.0039 = {
+	type = character_event
+	title = paulistania_formed.t
+	desc = paulistania_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = paulistania_formed.a
+	}
+}
+#Form Gerais
+ate_form.0040 = {
+	type = character_event
+	title = gerais_formed.t
+	desc = gerais_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = gerais_formed.a
+	}
+}
+
+#Form e_parana
+ate_form.0041 = {
+	type = character_event
+	title = parana_formed.t
+	desc = parana_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = parana_formed.a
+	}
+}
+
+#Form Uruguay
+ate_form.0042 = {
+	type = character_event
+	title = uruguay_formed.t
+	desc = uruguay_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_king
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_king
+	}
+	option = {
+		name = uruguay_formed.a
+	}
+}
+
+#Old Northwest
+ate_form.0043 = {
+	type = character_event
+	title = old_northwest_formed.t
+	desc = {
+		first_valid = {
+		# Doing it as anyone
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_anishinaabe }
+						culture = { has_cultural_pillar = heritage_plains_sequoyan }
+					}
+				}
+				desc = old_northwest_formed.desc.native
+			}
+			desc = old_northwest_formed.desc
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:restore_the_old_northwest_former
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = restore_the_old_northwest_former
+	}
+	option = {
+		name = old_northwest_formed.a
+	}
+}
+
+#Forming Council of Three Fires fixed
+ate_form.0044 = {
+	type = character_event
+	title = reform_council_of_three_fires.0001.t
+	desc = {
+		desc = reform_council_of_three_fires.0001.desc
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_emperor
+	}
+	option = {
+		name = reform_council_of_three_fires.0001.a
+	}
+}
+
+# I united the Great Plains!
+ate_form.0045 = {
+	type = character_event
+	title = great_plains_formed.t
+	desc = great_plains_formed.desc
+	theme = realm
+	left_portrait = {
+		character = scope:great_plains_uniter
+		animation = personality_honorable
+
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = great_plains_formed_formed.a
+	}
+}
+
+# I splintered the Dakotas!
+ate_form.0046 = {
+	type = character_event
+	title = dakotas_splintered.t
+	desc = {
+		desc = dakotas_splintered.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_title = title:k_peace_garden
+				}
+				desc = dakotas_splintered.north
+			}
+			desc = dakotas_splintered.south
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					# you formed north dakota, and the former dakota holder now has south dakota and isn't e_usa
+					AND = {
+						has_title = title:k_peace_garden
+						exists = title:k_rushmore.holder
+						title:k_rushmore.holder ?= { NOT = { has_title = title:e_usa } }
+					}
+					# you formed south dakota, and the former dakota holder now has north dakota and isn't e_usa
+					AND = {
+						has_title = title:k_rushmore
+						exists = title:k_peace_garden.holder
+						title:k_peace_garden.holder ?= { NOT = { has_title = title:e_usa } }
+					}
+				}
+			}
+			desc = dakotas_splintered.remnant_gets_claim
+		}
+	}
+
+
+	theme = realm
+	left_portrait = {
+		character = scope:dakota_splitter
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = dakotas_splintered.a
+	}
+}
+
+ate_form.1001 = {
+	type = character_event
+	title = form_hispaniola.21.t
+	desc = form_hispaniola.21.desc
+	
+	theme = faith
+	left_portrait = {
+		character = scope:hispaniola_former
+		animation = personality_rational
+	}
+
+	immediate = {
+		faith:veintiunodivisiones = {
+			save_scope_as = heretic_faith
+		}
+	}
+
+	option = {
+		show_as_tooltip = {
+			scope:hispaniola_former = {
+				set_character_faith_with_conversion = scope:heretic_faith
+			}
+		}
+		
+		name = form_hispaniola.21.convert
+		ai_chance = {
+			base = 3
+		}
+		scope:hispaniola_former = {
+			save_scope_as = heretic_ruler
+		}
+		scope:hispaniola_former.primary_title = {
+			save_scope_as = heretic_title
+		}
+		scope:hispaniola_former.capital_county = {
+			save_scope_as = heretic_capital
+		}
+		scope:hispaniola_former.faith = {
+			save_scope_as = origin_faith
+		}
+		scope:origin_faith.religion = {
+			save_scope_as = origin_religion
+		}
+		hidden_effect = {
+			scope:origin_faith = {
+				set_variable = {
+					name = heresy_power
+					value = 9
+				}
+				set_variable = {
+					name = original_heresy_power
+					value = 9
+				}
+
+				# Modify heresy power for pluralist/fundamentalist
+				# Altered to 0.8 and 1.2 respectively
+				if = {
+					limit = {
+						has_doctrine_parameter = pluralism_pluralistic_resistant_to_heresy
+					}
+					change_variable = {
+						name = heresy_power
+						multiply = 0.8
+					}
+				}
+				else_if = {
+					limit = {
+						has_doctrine_parameter = pluralism_fundamentalist_vulnerable_to_heresy
+					}
+					change_variable = {
+						name = heresy_power
+						multiply = 1.2
+					}
+				}
+
+				set_variable = {
+					name = current_heresy
+					value = scope:heretic_faith
+					days = 3650
+				}
+			}
+		}
+		scope:heretic_ruler = {
+			trigger_event = {
+				id = heresy.0010
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			base = 7
+		}
+		name = form_hispaniola.21.do_not_convert
+		add_piety = medium_piety_gain
+		stress_impact = {
+			witch = medium_stress_impact_gain
+			zealous = medium_stress_impact_loss
+		}
+	}
+}
+
+ate_form.1002 = {
+	type = character_event
+	title = dakota_seceded.t
+	desc = dakota.seceded.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = scope:dakota_splitter
+		animation = war_defender
+	}
+
+	option = {
+		name = dakota.seceded.a
+		if = {
+			limit = {
+				has_title = title:k_peace_garden
+			}
+			add_pressed_claim = title:k_rushmore
+		}
+		else = {
+			add_pressed_claim = title:k_peace_garden
+		}
+	}
+}
+
+#Reclaim the Eastern Borders
+
+ate_form.0047 = {
+	type = character_event
+	title = reclaim_the_eastern_borders.0001.t
+	desc = {
+		desc = reclaim_the_eastern_borders.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = reclaim_the_eastern_borders.0001.a
+		add_prestige = 500
+	}
+}
+
+#Reclaim Quito
+
+ate_form.0048 = {
+	type = character_event
+	title = reclaim_quito.0001.t
+	desc = {
+		desc = reclaim_quito.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = reclaim_quito.0001.a
+		add_prestige = 250
+	}
+}
+
+
+#Expand the Collasuyu
+
+ate_form.0049 = {
+	type = character_event
+	title = expand_collasuyu.0001.t
+	desc = {
+		desc = expand_collasuyu.0001.desc
+		}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_emperor
+		animation = personality_honorable
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = expand_collasuyu.0001.a
+		add_prestige = 500
+	}
+}

@@ -5,6 +5,7 @@
 	heritage = heritage_canayen
 	language = language_canadien
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_quebecois
 	created = 2066.1.1
 	parents = { ate_old_quebecois }

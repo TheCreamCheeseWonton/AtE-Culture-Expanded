@@ -10,6 +10,7 @@ ate_spanish = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_castilian
 	
 	traditions = {
@@ -76,6 +77,7 @@ ate_caribeno = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_cubano
 	
 	traditions = {
@@ -140,6 +142,7 @@ ate_venezolano = {
 	heritage = heritage_venezuelan
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_cubano
 	
 	traditions = {
@@ -201,6 +204,7 @@ ate_novogranadan = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_costeno
 	
 	traditions = {
@@ -272,6 +276,7 @@ ate_colombiano = {
 	heritage = heritage_colombian
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_costeno
 	
 	traditions = {
@@ -342,6 +347,7 @@ ate_ecuatoriano = {
 	heritage = heritage_ecuatoriano
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_costeno
 	
 	traditions = {
@@ -396,6 +402,7 @@ ate_novospanish = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_castilian
 	
 	traditions = {
@@ -463,6 +470,7 @@ ate_centralamericano = {
 	heritage = heritage_centroamericano
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_nica
 	
 	traditions = {
@@ -519,11 +527,11 @@ ate_viejomexicano = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_castilian
 	
 	traditions = {
 		tradition_warrior_monks
-		tradition_dia_de_muertos
 		tradition_castle_keepers
 		tradition_medicinal_plants
 	}
@@ -573,14 +581,14 @@ ate_mexicano = {
 	history_loc_override = after_event_ate
 
 	ethos = ethos_bureaucratic
-	heritage = heritage_novohispano
-	language = language_metropolitano
+	heritage = heritage_centromexa
+	language = language_lengua_del_pipipipi
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_chilango
 	
 	traditions = {
 		tradition_warrior_monks
-		tradition_dia_de_muertos
 		tradition_medicinal_plants
 		tradition_culinary_art
 	}
@@ -630,16 +638,15 @@ ate_metropolitano = {
 	history_loc_override = after_event_ate_long
 
 	ethos = ethos_bureaucratic
-	heritage = heritage_novohispano
-	language = language_metropolitano
+	heritage = heritage_centromexa
+	language = language_lengua_del_pipipipi
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_chilango
 	
 	traditions = {
 		tradition_warrior_monks
-		tradition_dia_de_muertos
 		tradition_medicinal_plants
-		tradition_aztec_legacy
 	}
 
 	coa_gfx = {
@@ -687,10 +694,11 @@ ate_norteno = {
 	history_loc_override = after_event_ate
 
 	ethos = ethos_bellicose
-	heritage = heritage_vaquero
-	language = language_norteno
+	heritage = heritage_normexa
+	language = language_lengua_del_ei
 	martial_custom = martial_custom_male_only
-	name_list = name_list_altiplanense
+	head_determination = head_determination_domain
+	name_list = name_list_chilango
 	
 	traditions = {
 		tradition_warrior_monks
@@ -747,6 +755,7 @@ ate_amazonico = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_charapa
 	
 	traditions = {
@@ -803,6 +812,7 @@ ate_viehoadino = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_castilian
 	
 	traditions = {
@@ -865,6 +875,7 @@ ate_peruano = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_huascareno
 	
 	traditions = {
@@ -927,6 +938,7 @@ ate_viejoplatense = {
 	heritage = heritage_spanish
 	language = language_ancient_spanish
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_castilian
 	
 	traditions = {
@@ -981,6 +993,7 @@ ate_chileno = {
 	heritage = heritage_chileno
 	language = language_chileno
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_almagreno
 	
 	traditions = {
@@ -1035,6 +1048,7 @@ ate_viejispano = {
 	heritage = heritage_viejispano
 	language = language_mendozino
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_cuyano
 	
 	traditions = {
@@ -1084,6 +1098,7 @@ ate_rioplantese = {
 	heritage = heritage_platense
 	language = language_rioplatense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_litoraleno
 	
 	traditions = {
@@ -1139,6 +1154,7 @@ ate_patagon = {
 	heritage = heritage_patagon
 	language = language_patagon
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_santacruceno
 	
 	traditions = {
@@ -1191,6 +1207,7 @@ ate_platense = {
 	heritage = heritage_platense
 	language = language_rioplatense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_litoraleno
 	
 	traditions = {
@@ -1246,6 +1263,7 @@ ate_gaucho = {
 	heritage = heritage_gaucho
 	language = language_rioplatense
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_pampeano
 	
 	traditions = {

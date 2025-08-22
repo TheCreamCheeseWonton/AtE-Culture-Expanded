@@ -6,17 +6,18 @@
 	history_loc_override = after_event_ate_extra_long
 	
 	ethos = ethos_bureaucratic
-	heritage = heritage_novohispano
-	language = language_metropolitano
+	heritage = heritage_centromexa
+	language = language_lengua_del_pipipipi
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_chilango
 	
 	traditions = {
-		tradition_warrior_monks
-		tradition_dia_de_muertos
-		tradition_quarrelsome
-		tradition_medicinal_plants
-		tradition_aztec_legacy
+		tradition_culinary_art
+		tradition_megico_maxico
+		tradition_city_keepers
+		tradition_metropolitan_arrogance
+		tradition_cuates_de_provincia
 	}
 	
 	coa_gfx = {
@@ -35,6 +36,7 @@
 		mexicano_group_gfx
 		iberian_christian_clothing_gfx
 		western_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		iberian_christian_unit_gfx

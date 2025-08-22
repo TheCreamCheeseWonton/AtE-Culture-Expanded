@@ -5,6 +5,7 @@
 	heritage = heritage_floridian
 	language = language_deep_southern
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_sunshiner
 	created = 2266.1.1
 	parents = { ate_floridian }
@@ -35,6 +36,7 @@
 	clothing_gfx = {
 		floridian_clothing_gfx
 		floral_clothing_gfx
+		baseball_helmet_gfx
 		western_clothing_gfx
 	}
 	unit_gfx = {

@@ -9,6 +9,7 @@
 	heritage = heritage_lakelander
 	language = language_irontongue
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_buckeye
 	
 	traditions = {
@@ -36,6 +37,7 @@
 	clothing_gfx = {
 		west_slavic_clothing_gfx
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		western_unit_gfx

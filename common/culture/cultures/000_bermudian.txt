@@ -9,6 +9,7 @@
 	heritage = heritage_greater_antillean
 	language = language_bermudian
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_bermudian
 	
 	traditions = {

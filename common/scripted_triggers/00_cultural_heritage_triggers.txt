@@ -1,4 +1,41 @@
 ﻿##adding these "as needed"
+
+culture_has_east_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			always = no
+		}
+	}
+}
+culture_has_west_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			always = no
+		}
+	}
+}
+culture_has_south_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			always = no
+		}
+	}
+}
+culture_has_north_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			always = no
+		}
+	}
+}
+culture_has_central_asian_heritage_pillar_trigger = {
+	culture = {
+		OR = {
+			always = no
+		}
+	}
+}
+
 culture_has_pacific_northwest_heritage_pillar_trigger = {
 	OR = {
 		culture = { has_cultural_pillar = heritage_north_pacific }
@@ -46,7 +83,7 @@ culture_has_francophone_heritage_pillar_trigger = {
 	OR = {
 		culture = { has_cultural_pillar = heritage_canayen }
 		culture = { has_cultural_pillar = heritage_louisianais }
-		culture = { has_cultural_pillar = heritage_french }
+		culture = { has_cultural_pillar = heritage_british }
 	}
 }
 

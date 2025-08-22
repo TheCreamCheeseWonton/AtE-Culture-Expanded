@@ -9,6 +9,7 @@
 	heritage = heritage_ecuatoriano
 	language = language_ecuatorial
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_guayasense
 	
 	traditions = {

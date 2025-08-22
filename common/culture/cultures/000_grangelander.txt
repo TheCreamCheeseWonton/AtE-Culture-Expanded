@@ -5,6 +5,7 @@
 	heritage = heritage_midwestern
 	language = language_plainspeak
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_grangelander
 	created = 2266.1.1
 	parents = { ate_plainslander }
@@ -46,10 +47,11 @@
 		6 = african
 		3 = asian
 		1 = east_african
-		80 = caucasian
+		70 = caucasian
 		1 = indian
 		5 = mediterranean
 		10 = mesoamerican_yuto_aztec
+		10 = slavic
 		2 = asian_southern_han
 	
 	}

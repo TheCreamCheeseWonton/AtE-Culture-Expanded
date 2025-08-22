@@ -82,8 +82,9 @@ has_mexican_style_trigger = {
             has_cultural_pillar = heritage_centroamericano
             has_cultural_pillar = heritage_honduran
             has_cultural_pillar = heritage_mexonite
-            has_cultural_pillar = heritage_novohispano
-            has_cultural_pillar = heritage_vaquero
+            has_cultural_pillar = heritage_centromexa
+            has_cultural_pillar = heritage_sudmexa
+            has_cultural_pillar = heritage_normexa
         }
     }
 }
@@ -106,7 +107,7 @@ has_na_north_style_trigger = {
 			has_cultural_pillar = heritage_slavic 
 			has_cultural_pillar = heritage_french 
 			has_cultural_pillar = heritage_british 
-			has_cultural_pillar = heritage_american 			
+			has_cultural_pillar = heritage_american 
             has_cultural_pillar = heritage_amish
             has_cultural_pillar = heritage_atlantic_canadian
             has_cultural_pillar = heritage_lakelander
@@ -357,7 +358,7 @@ has_mexican_south_architecture_style_trigger = {
 has_mexican_north_architecture_style_trigger = {
     culture = {
         OR = {
-            has_cultural_pillar = heritage_vaquero
+            has_cultural_pillar = heritage_normexa
             has_building_gfx = mexican_north_building_gfx
         }
     }

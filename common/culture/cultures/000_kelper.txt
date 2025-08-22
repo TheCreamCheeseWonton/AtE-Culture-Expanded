@@ -5,6 +5,7 @@
 	heritage = heritage_british
 	language = language_falk
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_kelper
 	created = 2066.1.1
 	parents = { ate_british }
@@ -23,12 +24,9 @@
 		british_group_gfx
 	}
 	building_gfx = {
-		kelper_building_gfx
+		celtic_building_gfx #Architecture-style
 		native_austral_building_gfx #Style
 		native_cold_building_gfx #Super-style
-		heritage_patagon_building_gfx
-		western_building_gfx
-		celtic_building_gfx
 	}
 	clothing_gfx = {
 		western_clothing_gfx

@@ -9,6 +9,7 @@
 	heritage = heritage_ciclico
 	language = language_cerradiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_rondoniense
 	
 	traditions = {
@@ -36,6 +37,7 @@
 		rondoniense_clothing_gfx
 		byzantine_clothing_gfx
 		african_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		eastern_unit_gfx

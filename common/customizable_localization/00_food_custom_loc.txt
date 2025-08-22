@@ -479,7 +479,8 @@ RegionalAlcoholicDrink = {
 		localization_key = boilo
 		trigger = {
 			OR = {
-				culture = culture:boilo
+				culture = culture:yinzer
+				culture = culture:youser
 			}
 		}
 	}
@@ -609,7 +610,7 @@ RegionalAlcoholicDrink = {
 		localization_key = schnapps
 		trigger = { 
 			OR = {
-				culture = culture:hunsrickish				
+				culture = culture:hunsrickisch			
 				culture = culture:texaner
 				culture = { has_cultural_pillar = heritage_dutch }
 				culture = { has_cultural_pillar = heritage_german }
@@ -670,7 +671,7 @@ RegionalAlcoholicDrink = {
 		localization_key = pitorro
 		trigger = { 
 			OR = {
-				culture = culture:pitorro
+				culture = culture:boricua
 			}
 		}
 	}
@@ -678,10 +679,31 @@ RegionalAlcoholicDrink = {
 		localization_key = bourbon
 		trigger = { 
 			OR = {
-				culture = culture:bourbon
+				culture = culture:riverlander
+				culture = culture:dixie
+				culture = culture:nolan
 			}
 		}
 	}
+	text = {
+		localization_key = tesguino
+		trigger = { 
+			OR = {
+				culture = culture:raramuri
+			}
+		}
+	}
+	text = {
+		localization_key = colonche
+		trigger = { 
+			location = {
+				OR = {
+					geographical_region = world_mexico_north
+					geographical_region = world_mexico_central
+				}
+			}
+		}
+	}	
 	text = {
 		localization_key = balche
 		trigger = { 
@@ -1283,6 +1305,135 @@ RegionalEdibleAnimal = {
 		localization_key = regional_edible_animal_buffalo
 	}
 
+	#Marmot
+	text = {
+		trigger = {
+			location = {
+				geographical_region = world_steppe
+			}
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					has_cultural_pillar = heritage_mongolic
+					has_cultural_pillar = heritage_ugro_permian
+				}
+			}
+		}
+		localization_key = regional_edible_animal_marmot
+	}
+
+	#Goat
+	text = {
+		localization_key = regional_edible_animal_goat
+	}
+}
+
+RegionalEdibleAnimalPlural = {
+	type = character
+	random_valid = yes
+
+	#Hart
+	text = {
+		localization_key = regional_edible_animal_hart_plural
+	}
+
+	#Chicken
+	text = {
+		localization_key = regional_edible_animal_chicken_plural
+	}
+
+	#Hare
+	text = {
+		localization_key = regional_edible_animal_hare_plural
+	}
+
+	#Sheep
+	text = {
+		localization_key = regional_edible_animal_lamb_plural
+	}
+
+	#Pig
+	text = {
+		trigger = {
+			faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+			root.faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+		}
+		localization_key = regional_edible_animal_pig_plural
+	}
+
+	#Beef
+	text = {
+		trigger = {
+			faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+			root.faith = {
+				NOT = { religion_tag = hinduism_religion }
+			}
+		}
+		localization_key = regional_edible_animal_ox_plural
+	}
+
+	#Boar
+	text = {
+		trigger = {
+			faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+			root.faith = {
+				NOR = {
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+				}
+			}
+		}
+		localization_key = regional_edible_animal_boar_plural
+	}
+
+	#Gazelle
+	text = {
+		trigger = {
+			location = {
+				geographical_region = world_africa
+			}
+		}
+		localization_key = regional_edible_animal_gazelle_plural
+	}
+
+	#Marmot
+	#text = {
+	#	trigger = {
+	#		location = {
+	#			geographical_region = world_steppe
+	#		}
+	#		culture = {
+	#			OR = {
+	#				has_cultural_pillar = heritage_turkic
+	#				has_cultural_pillar = heritage_mongolic
+	#				has_cultural_pillar = heritage_ugro_permian
+	#			}
+	#		}
+	#	}
+	#	localization_key = regional_edible_animal_marmot_plural
+	#}
+
+	#Goat
+	text = {
+		localization_key = regional_edible_animal_goat_plural
+	}
 }
 
 RegionalEdibleMeat = {
@@ -1341,8 +1492,29 @@ RegionalEdibleMeat = {
 			}
 		}
 		localization_key = regional_edible_meat_pork
-	}	
+	}
 
+	#Marmot
+	text = {
+		trigger = {
+			location = {
+				geographical_region = world_steppe
+			}
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_turkic
+					has_cultural_pillar = heritage_mongolic
+					has_cultural_pillar = heritage_ugro_permian
+				}
+			}
+		}
+		localization_key = regional_edible_meat_marmot
+	}
+
+	#Goat
+	text = {
+		localization_key = regional_edible_meat_goat
+	}
 }
 
 #Favourite Treat 
@@ -2770,10 +2942,6 @@ GetLocalStreetFood = {
 	text = {
 		trigger = {
 			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_nordic }
-				root.location.culture = { has_cultural_pillar = heritage_dutch }
-				root.location.culture = { has_cultural_pillar = heritage_german }
-				root.location.culture = { has_cultural_pillar = heritage_jewish }
 				root.location.culture = { has_cultural_pillar = heritage_amish }
 				root.location.culture = { has_cultural_pillar = heritage_mennonite }
 			}
@@ -3203,8 +3371,9 @@ GetLocalStreetFoodPlural = {
 	text = {
 		trigger = {
 			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_novohispano }
-				root.location.culture = { has_cultural_pillar = heritage_vaquero }
+				root.location.culture = { has_cultural_pillar = heritage_centromexa }
+				root.location.culture = { has_cultural_pillar = heritage_sudmexa }
+				root.location.culture = { has_cultural_pillar = heritage_normexa }
 			}
 		}
 		localization_key = empanada_plural
@@ -3621,28 +3790,6 @@ GetExpensiveDrink_Singular = {
 			}
 		}
 		localization_key = expensive_drink_violet_sharbah
-	}
-}
-
-
-
-
-
-GetFoodDetail = {
-	type = character
-
-	random_valid = yes
-
-	text = {
-		localization_key = food_detail_cilantro
-	}
-
-	text = {
-		localization_key = food_detail_lemon
-	}
-
-	text = {
-		localization_key = food_detail_almond
 	}
 }
 

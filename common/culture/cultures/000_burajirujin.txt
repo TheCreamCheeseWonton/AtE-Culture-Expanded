@@ -7,8 +7,9 @@
 	
 	ethos = ethos_stoic
 	heritage = heritage_western_sertanejo
-	language = language_burajirujin #language_caipira
+	language = language_nikkeigo #language_caipira
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_burajirujin
 	
 	traditions = {

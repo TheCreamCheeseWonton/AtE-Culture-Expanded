@@ -5,6 +5,7 @@
 	heritage = heritage_north_pacific
 	language = language_transcascadian
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_canuck
 	created = 2266.1.1
 	parents = { ate_northwestern }

@@ -5,6 +5,7 @@
 	heritage = heritage_texan
 	language = language_texasdeutsch
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_texaner
 	created = 2066.1.1
 	parents = { ate_german ate_old_texan}
@@ -37,6 +38,7 @@
 		texan_clothing_gfx
 		texas_group_gfx
 		western_clothing_gfx
+		baseball_helmet_gfx
 	}
 	unit_gfx = {
 		mongol_unit_gfx

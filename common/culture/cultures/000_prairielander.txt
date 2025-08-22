@@ -5,6 +5,7 @@
 	heritage = heritage_prairie
 	language = language_prairian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_prairielander
 	created = 2266.1.1
 	parents = { ate_prairrier }

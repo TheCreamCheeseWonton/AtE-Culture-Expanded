@@ -1,0 +1,56 @@
+﻿choco = {
+	color = { 81 91 29 }
+	
+	created = 2266.1.1
+	parents = { ate_mexicano }
+	
+	history_loc_override = after_event_ate_long
+	
+	ethos = ethos_spiritual
+	heritage = heritage_sudmexa
+	language = language_lengua_del_puejclaro
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_list = name_list_choco
+	
+	traditions = {
+		tradition_wetlanders
+		tradition_loyal_soldiers
+		tradition_zealous_people
+		tradition_festivities
+		tradition_megico_maxico
+	}
+	
+	coa_gfx = {
+		choco_coa_gfx
+		mexicano_group_gfx
+	}
+	building_gfx = {
+		jarocho_building_gfx
+		heritage_novohispano_building_gfx
+		mexican_building_gfx #Style
+		latam_building_gfx #Super-style
+		mediterranean_building_gfx
+		iberian_building_gfx
+	}
+	clothing_gfx = {
+		mexicano_group_gfx
+		iberian_christian_clothing_gfx
+		western_clothing_gfx
+		latina_clothes_gfx
+	}
+	unit_gfx = {
+		iberian_christian_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		5 = african
+		15 = mediterranean
+		20 = mesoamerican_maya
+		50 = mesoamerican_yuto_aztec
+		5 = asian_southern_han
+		5 = black_white
+	
+	}
+}

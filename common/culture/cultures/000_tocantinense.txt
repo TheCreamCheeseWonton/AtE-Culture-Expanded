@@ -9,6 +9,7 @@
 	heritage = heritage_western_sertanejo
 	language = language_cerradiano
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_herd
 	name_list = name_list_tocantinense
 	
 	traditions = {

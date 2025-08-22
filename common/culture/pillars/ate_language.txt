@@ -718,11 +718,11 @@ language_blackfoot = {
     color = { 76 76 102 }
 }
 
-language_burajirujin = {
+language_nikkeigo = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_burajirujin
+            LANGUAGE = language_nikkeigo
         }
     }
     parameters = {
@@ -732,7 +732,7 @@ language_burajirujin = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_burajirujin }
+            limit = { has_cultural_pillar = language_nikkeigo }
             multiply = same_language_choice_factor
         }
         else_if = {
@@ -781,11 +781,11 @@ language_caddo = {
     color = { 61 75 105 }
 }
 
-language_cahita = {
+language_yoremnokki = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_cahita
+            LANGUAGE = language_yoremnokki
         }
     }
     parameters = {
@@ -795,7 +795,7 @@ language_cahita = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_cahita }
+            limit = { has_cultural_pillar = language_yoremnokki }
             multiply = same_language_choice_factor
         }
         else_if = {
@@ -1911,11 +1911,11 @@ language_dogrib = {
     color = { 254 55 108 }
 }
 
-language_east_cree = {
+language_eeyou = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_east_cree
+            LANGUAGE = language_eeyou
         }
     }
     parameters = {
@@ -1925,7 +1925,7 @@ language_east_cree = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_east_cree }
+            limit = { has_cultural_pillar = language_eeyou }
             multiply = same_language_choice_factor
         }
         else_if = {
@@ -2153,11 +2153,11 @@ language_franse = {
     color = { 25 25 127 }
 }
 
-language_fronterizo = {
+language_trifronterizo = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_fronterizo
+			LANGUAGE = language_trifronterizo
 		}
 	}
 	parameters = {
@@ -2170,7 +2170,7 @@ language_fronterizo = {
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_fronterizo }
+			limit = { has_cultural_pillar = language_trifronterizo }
 			multiply = same_language_choice_factor
 		}
 		else_if = {
@@ -2845,6 +2845,40 @@ language_irontongue = {
         }
     }
     color = { 153 140 114 }
+}
+
+language_jnatrjo = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_jnatrjo
+        }
+    }
+    parameters = {
+        language_group_mazahuan = yes
+        language_family_oto_manguean = yes
+        language_union_mesoamerican = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_jnatrjo }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_mazahuan }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_oto_manguean }
+            multiply = same_language_family_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_union_mesoamerican }
+            multiply = same_language_union_choice_factor
+        }
+    }
+    color = { 42 125 134 }
 }
 
 language_ka_igwu = {
@@ -4102,26 +4136,26 @@ language_mawe = {
     color = { 150 79 78 }
 }
 
-language_mazahua = {
+language_enna = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_mazahua
+            LANGUAGE = language_enna
         }
     }
     parameters = {
-        language_group_oto_pamean = yes
+        language_group_mazatecan = yes
         language_family_oto_manguean = yes
         language_union_mesoamerican = yes
     }
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_mazahua }
+            limit = { has_cultural_pillar = language_enna }
             multiply = same_language_choice_factor
         }
         else_if = {
-            limit = { has_cultural_parameter = language_group_oto_pamean }
+            limit = { has_cultural_parameter = language_group_mazatecan }
             multiply = same_language_group_choice_factor
         }
         else_if = {
@@ -4221,35 +4255,6 @@ language_menominee = {
         }
     }
     color = { 22 100 33 }
-}
-
-language_metropolitano = {
-    type = language
-    is_shown = {
-        language_is_shown_trigger = {
-            LANGUAGE = language_metropolitano
-        }
-    }
-    parameters = {
-        language_group_norteamericano = yes
-        language_family_hispanophonic = yes
-    }
-    ai_will_do = {
-        value = 10
-        if = {
-            limit = { has_cultural_pillar = language_metropolitano }
-            multiply = same_language_choice_factor
-        }
-        else_if = {
-            limit = { has_cultural_parameter = language_group_norteamericano }
-            multiply = same_language_group_choice_factor
-        }
-        else_if = {
-            limit = { has_cultural_parameter = language_family_hispanophonic }
-            multiply = same_language_family_choice_factor
-        }
-    }
-    color = { 102 204 76 }
 }
 
 language_mexicatlahtolli = {
@@ -4611,6 +4616,35 @@ language_muskogee = {
     color = { 127 204 178 }
 }
 
+language_naayari = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_naayari
+        }
+    }
+    parameters = {
+        language_group_corachol = yes
+        language_family_uto_aztecan = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_naayari }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_corachol }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_uto_aztecan }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 253 102 255 }
+}
+
 language_nambikwara = {
     type = language
     is_shown = {
@@ -4858,11 +4892,11 @@ language_nordestino = {
     color = { 183 112 107 }
 }
 
-language_norteno = {
+language_lengua_del_arre = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_norteno
+            LANGUAGE = language_lengua_del_arre
         }
     }
     parameters = {
@@ -4872,7 +4906,7 @@ language_norteno = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_norteno }
+            limit = { has_cultural_pillar = language_lengua_del_arre }
             multiply = same_language_choice_factor
         }
         else_if = {
@@ -4887,26 +4921,142 @@ language_norteno = {
     color = { 242 229 102 }
 }
 
-language_yucateco = {
+language_lengua_del_ei = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_yucateco
+            LANGUAGE = language_lengua_del_ei
         }
     }
     parameters = {
-        language_group_caribeno = yes
+        language_group_norteamericano = yes
+        language_family_hispanophonic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_lengua_del_ei }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_norteamericano }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_hispanophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 219 217 28 }
+}
+
+language_lengua_del_si = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_lengua_del_si
+        }
+    }
+    parameters = {
+        language_group_norteamericano = yes
+        language_family_hispanophonic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_lengua_del_si }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_norteamericano }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_hispanophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 0 229 102 }
+}
+
+language_lengua_del_puejclaro  = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_lengua_del_puejclaro
+        }
+    }
+    parameters = {
+        language_group_norteamericano = yes
+        language_family_hispanophonic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_lengua_del_puejclaro }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_norteamericano }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_hispanophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 219 162 186 }
+}
+
+language_lengua_del_pipipipi = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_lengua_del_pipipipi
+        }
+    }
+    parameters = {
+        language_group_norteamericano = yes
+        language_family_hispanophonic = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_lengua_del_pipipipi }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_norteamericano }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_hispanophonic }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 185 12 71 }
+}
+
+language_lengua_del_uay = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_lengua_del_uay
+        }
+    }
+    parameters = {
+        language_group_norteamericano = yes
         language_family_hispanophonic = yes
         language_union_mesoamerican = yes
     }
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_yucateco }
+            limit = { has_cultural_pillar = language_lengua_del_uay }
             multiply = same_language_choice_factor
         }
         else_if = {
-            limit = { has_cultural_parameter = language_group_caribeno }
+            limit = { has_cultural_parameter = language_group_norteamericano }
             multiply = same_language_group_choice_factor
         }
         else_if = {
@@ -4953,6 +5103,35 @@ language_numu_tekwapu = {
         }
     }
     color = { 204 204 229 }
+}
+
+language_odam = {
+    type = language
+    is_shown = {
+        language_is_shown_trigger = {
+            LANGUAGE = language_odam
+        }
+    }
+    parameters = {
+        language_group_oodham = yes
+        language_family_uto_aztecan = yes
+    }
+    ai_will_do = {
+        value = 10
+        if = {
+            limit = { has_cultural_pillar = language_odam }
+            multiply = same_language_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_group_oodham }
+            multiply = same_language_group_choice_factor
+        }
+        else_if = {
+            limit = { has_cultural_parameter = language_family_uto_aztecan }
+            multiply = same_language_family_choice_factor
+        }
+    }
+    color = { 232 130 155 }
 }
 
 language_o_odham = {
@@ -5013,26 +5192,26 @@ language_oji_cree = {
     color = { 232 130 155 }
 }
 
-language_otomi = {
+language_hnahnu = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_otomi
+            LANGUAGE = language_hnahnu
         }
     }
     parameters = {
-        language_group_oto_pamean = yes
+        language_group_otomi = yes
         language_family_oto_manguean = yes
         language_union_mesoamerican = yes
     }
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_otomi }
+            limit = { has_cultural_pillar = language_hnahnu }
             multiply = same_language_choice_factor
         }
         else_if = {
-            limit = { has_cultural_parameter = language_group_oto_pamean }
+            limit = { has_cultural_parameter = language_group_otomi }
             multiply = same_language_group_choice_factor
         }
         else_if = {
@@ -5318,11 +5497,11 @@ language_pennsilfaanisch = {
     color = { 102 102 76 }
 }
 
-language_plains_cree = {
+language_nehiyaw = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_plains_cree
+            LANGUAGE = language_nehiyaw
         }
     }
     parameters = {
@@ -5333,7 +5512,7 @@ language_plains_cree = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_plains_cree }
+            limit = { has_cultural_pillar = language_nehiyaw }
             multiply = same_language_choice_factor
         }
         else_if = {
@@ -6203,11 +6382,11 @@ language_manezinho = {
     color = { 28 104 181 }
 }
 
-language_gaucho = {
+language_gauderio = {
     type = language
     is_shown = {
         language_is_shown_trigger = {
-            LANGUAGE = language_gaucho
+            LANGUAGE = language_gauderio
         }
     }
     parameters = {
@@ -6218,7 +6397,7 @@ language_gaucho = {
     ai_will_do = {
         value = 10
         if = {
-            limit = { has_cultural_pillar = language_gaucho }
+            limit = { has_cultural_pillar = language_gauderio }
             multiply = same_language_choice_factor
         }
         else_if = {

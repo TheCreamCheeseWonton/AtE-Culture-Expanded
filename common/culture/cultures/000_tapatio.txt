@@ -1,22 +1,23 @@
 ﻿tapatio = {
-	color = { 255 78 38  }
+	color = { 172 134 71  }
 	created = 2266.1.1
 	parents = { ate_metropolitano }
 	
 	history_loc_override = after_event_ate_extra_long
 	
 	ethos = ethos_courtly
-	heritage = heritage_novohispano
-	language = language_metropolitano
+	heritage = heritage_centromexa
+	language = language_lengua_del_si
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_tapatio
 	
 	traditions = {
-		tradition_warrior_monks
-		tradition_dia_de_muertos
-		tradition_loyal_soldiers
-		tradition_carnival
+		tradition_corridos
+		tradition_life_is_just_a_joke
 		tradition_charreria
+		tradition_soldaderas
+		tradition_megico_maxico
 	}
 	
 	coa_gfx = {
@@ -35,10 +36,12 @@
 		mexicano_group_gfx
 		iberian_christian_clothing_gfx
 		western_clothing_gfx
+		latina_clothes_gfx
 	}
 	unit_gfx = {
 		iberian_christian_unit_gfx
 	}
+	
 	
 	ethnicities = {
 		

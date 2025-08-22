@@ -1,14 +1,15 @@
 ﻿almagreno = {
 	color = { 117 19 15 }
+	
 	created = 2266.1.1
 	parents = { ate_chileno }
 	
 	history_loc_override = after_event_ate
-	
 	ethos = ethos_bureaucratic
 	heritage = heritage_chileno
 	language = language_chileno
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_almagreno
 	
 	traditions = {

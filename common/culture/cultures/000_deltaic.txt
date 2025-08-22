@@ -5,6 +5,7 @@
 	heritage = heritage_deep_south
 	language = language_deep_southern
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_deltaic
 	created = 2266.1.1
 	parents = { ate_african_american ate_deep_southern }

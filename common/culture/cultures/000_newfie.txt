@@ -5,6 +5,7 @@
 	heritage = heritage_atlantic_canadian
 	language = language_newfinese
 	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
 	name_list = name_list_newfie
 	created = 2266.1.1
 	parents = { ate_atlantic_canadian }
@@ -24,13 +25,9 @@
 		north_atlantic_coa_gfx
 	}
 	building_gfx = {
-		newfie_building_gfx
 		celtic_building_gfx #Architecture-style
 		na_north_building_gfx #Style
 		anglo_building_gfx #Super-style
-		heritage_atlantic_canadian_building_gfx
-		western_building_gfx
-		celtic_building_gfx
 	}
 	clothing_gfx = {
 		maritime_canadian_clothing_gfx

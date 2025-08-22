@@ -5,6 +5,7 @@
 	heritage = heritage_norcalifornine
 	language = language_californine
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	name_list = name_list_valleyan
 	created = 2266.1.1
 	parents = { ate_californian }
@@ -34,6 +35,7 @@
 		floral_clothing_gfx
 		tie_dye_clothing_gfx
 		byzantine_clothing_gfx
+		new_age_clothes_gfx
 	}
 	unit_gfx = {
 		mongol_unit_gfx

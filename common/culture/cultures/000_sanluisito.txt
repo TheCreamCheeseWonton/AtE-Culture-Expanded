@@ -1,0 +1,62 @@
+﻿sanluisito = {
+	color = { 126 79 79 }
+	
+	created = 2266.1.1
+	parents = { ate_metropolitano }
+	
+	history_loc_override = after_event_ate_extra_long
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_centromexa
+	language = language_lengua_del_ei
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_list = name_list_sanluisito
+	
+	traditions = {
+		tradition_ancient_miners
+		tradition_loyal_soldiers
+		tradition_xenophilic
+		tradition_megico_maxico
+	}
+	dlc_tradition = {
+		trait = tradition_artisans
+		requires_dlc_flag = royal_court
+	}
+	
+	coa_gfx = {
+		sanluisito_coa_gfx
+	}
+	building_gfx = {
+		bravo_building_gfx
+		heritage_vaquero_building_gfx
+		mexican_north_building_gfx #Architecture-style
+		mexican_building_gfx #Style
+		frontier_building_gfx #Super-style
+		iranian_building_gfx
+		mena_building_gfx
+	}
+	clothing_gfx = {
+		vaquero_clothes_gfx
+		mexicano_group_gfx
+		mena_clothing_gfx
+		latina_clothes_gfx
+	}
+	unit_gfx = {
+		mena_unit_gfx
+	}
+	
+	ethnicities = {
+		
+		1 = african
+		1 = asian
+		1 = asian_southern_han
+		1 = asian_southeast_asian
+		9 = caucasian
+		30 = mediterranean
+		30 = med_black_ind
+		10 = mesoamerican_maya
+		5 = mesoamerican_yuto_aztec
+	
+	}
+}
