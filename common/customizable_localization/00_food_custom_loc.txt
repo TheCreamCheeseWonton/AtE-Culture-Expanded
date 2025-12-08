@@ -3501,7 +3501,8 @@ GetExpensiveMealAlt = {
 				OR = {
 					religion_tag = catholic_religion #Due to Lent prohibitions.
 					religion_tag = eastern_christian_religion #Due to Lent prohibitions.
-					religion_tag = protestant_religion #Due to Lent prohibitions.
+					# religion_tag = protestant_religion #Due to Lent prohibitions.
+					# commenting out protestants, since the big ones don't do that
 				}
 			}
 		}

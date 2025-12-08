@@ -394,6 +394,14 @@ ate_coa_islam_trigger = {
 	}
 }
 
+ate_coa_satanism_trigger = {
+	holder.faith = {
+		OR = {
+			religion = religion:satanism_religion 
+		}
+	}
+}
+
 ate_coa_french_trigger = {
 	holder.culture = {
 		OR = {

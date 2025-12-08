@@ -34,6 +34,7 @@
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 	doctrine = doctrine_funeral_consecrative
 	doctrine = doctrine_building_temple_civic
+	doctrine = doctrine_no_anointment
 	
 	# Syncretism
 	doctrine = special_doctrine_is_americanist_faith
@@ -51,7 +52,7 @@
 	}
 
 	custom_faith_icons = {
-		custom1 custom2 custom3 custom4 custom5 custom6 custom7 custom8 custom9 custom10 custom11 custom12 custom13 custom14 custom15 custom16 custom17 custom18 custom19 custom20 custom21 custom22 custom23 custom24 custom25 custom26 custom27 custom28 custom29 custom30 custom31 custom32 custom33 custom34 custom35 custom36 custom37 custom38 custom39 custom40 custom41 custom42 custom43 custom44 custom45 custom46 custom47 custom48 custom49 custom50 custom51 custom52 custom53 custom54 custom55 custom56 custom57 custom58 custom59 custom60 custom61 custom62 custom63 custom64 custom65 custom66 custom67 custom68 custom69 custom70 custom71 custom72 custom73 custom74 custom75 custom76 custom77 custom78 custom79 custom80 custom81 custom82 custom83 custom84 custom85 custom86 custom87 custom88 custom89 custom90 custom91 custom92 custom93 custom94 custom95 custom96 custom97 custom98 custom99 custom100 custom101 custom102 custom103 custom104 custom105 custom106 custom107 custom108 custom109 custom110 custom111 custom112 custom113 custom114 custom115 custom116 custom117 custom118 custom119 custom120 custom121 custom122 custom123 custom124 custom125 custom126 custom127 custom128 custom129 custom130 custom131 custom132 custom133 custom134 custom135 custom136 custom137 custom138 custom139 custom140 custom141 custom142 custom143 custom144 custom145 custom146 custom147 custom148 custom149 custom150 custom151 custom152 custom153 custom154 custom155 custom156 custom157 custom158 custom159 custom160 custom161 custom162 custom163 custom164 custom165 custom166 custom167 custom168 custom169 custom170 custom171 custom172 custom173 custom174 custom175 custom176 custom177 custom178 custom179 custom180 custom181 custom182 custom183 custom184 custom185 custom186 custom187 custom188 custom189 custom190 custom191 custom192 custom193 custom194 custom195 custom196 custom197 custom198 custom199 custom200 custom201 custom202 custom203 custom204 custom205 custom206 custom207 custom208 custom209 custom210 custom211 custom212 custom213 custom214 custom215 custom216 custom217 custom218 custom219 custom220 custom221 custom222 custom223 custom224 custom225 custom226 custom227 custom228 custom229 custom230 custom231 custom232 custom233 custom234 custom235 custom236 custom237 custom238 custom239 custom240 custom241 custom242 custom243 custom244 custom245 custom246 custom247 custom248 custom249 custom250 custom251 custom252 custom253 custom254 custom255 custom256 custom257 custom258 custom259 custom260 custom261 custom262 custom263 custom264 custom265 custom266 custom267 custom268 custom269 custom270 custom271 custom272 custom273 custom274 custom275 custom276 custom277 custom278 custom279 custom280 custom281 custom282 custom283 custom284 custom285 custom286 custom287 custom288 custom289 custom290
+		custom1 custom2 custom3 custom4 custom5 custom6 custom7 custom8 custom9 custom10 custom11 custom12 custom13 custom14 custom15 custom16 custom17 custom18 custom19 custom20 custom21 custom22 custom23 custom24 custom25 custom26 custom27 custom28 custom29 custom30 custom31 custom32 custom33 custom34 custom35 custom36 custom37 custom38 custom39 custom40 custom41 custom42 custom43 custom44 custom45 custom46 custom47 custom48 custom49 custom50 custom51 custom52 custom53 custom54 custom55 custom56 custom57 custom58 custom59 custom60 custom61 custom62 custom63 custom64 custom65 custom66 custom67 custom68 custom69 custom70 custom71 custom72 custom73 custom74 custom75 custom76 custom77 custom78 custom79 custom80 custom81 custom82 custom83 custom84 custom85 custom86 custom87 custom88 custom89 custom90 custom91 custom92 custom93 custom94 custom95 custom96 custom97 custom98 custom99 custom100 custom101 custom102 custom103 custom104 custom105 custom106 custom107 custom108 custom109 custom110 custom111 custom112 custom113 custom114 custom115 custom116 custom117 custom118 custom119 custom120 custom121 custom122 custom123 custom124 custom125 custom126 custom127 custom128 custom129 custom130 custom131 custom132 custom133 custom134 custom135 custom136 custom137 custom138 custom139 custom140 custom141 custom142 custom143 custom144 custom145 custom146 custom147 custom148 custom149 custom150 custom151 custom152 custom153 custom154 custom155 custom156 custom157 custom158 custom159 custom160 custom161 custom162 custom163 custom164 custom165 custom166 custom167 custom168 custom169 custom170 custom171 custom172 custom173 custom174 custom175 custom176 custom177 custom178 custom179 custom180 custom181 custom182 custom183 custom184 custom185 custom186 custom187 custom188 custom189 custom190 custom191 custom192 custom193 custom194 custom195 custom196 custom197 custom198 custom199 custom200 custom201 custom202 custom203 custom204 custom205 custom206 custom207 custom208 custom209 custom210 custom211 custom212 custom213 custom214 custom215 custom216 custom217 custom218 custom219 custom220 custom221 custom222 custom223 custom224 custom225 custom226 custom227 custom228 custom229 custom230 custom231 custom232 custom233 custom234 custom235 custom236 custom237 custom238 custom239 custom240 custom241 custom242 custom243 custom244 custom245 custom246 custom247 custom248 custom249 custom250 custom251 custom252 custom253 custom254 custom255 custom256 custom257 custom258 custom259 custom260 custom261 custom262 custom263 custom264 custom265 custom266 custom267 custom268 custom269 custom270 custom271 custom272 custom273 custom274 custom275 custom276 custom277 custom278 custom279 custom280 custom281 custom282 custom283 custom284 custom285 custom286 custom287 custom288 custom289 custom290 custom291 custom292 custom293 custom294 custom295 custom296 custom297 custom298 custom299 custom300 custom301 custom302 custom303
     }
 
 	holy_order_names = {
@@ -342,8 +343,8 @@
 			holy_site = boston
 			holy_site = mt_rushmore
 			holy_site = monticello
-			
 			holy_site = americanist_detroit
+			
 			religious_head = d_constitutionalist
 
 			#special doctrine
@@ -524,9 +525,9 @@
 			holy_site = west_point
 			holy_site = lexington_concord
 			holy_site = the_alamo
-			holy_site = san_juan_hill
-
+			holy_site = mt_rushmore
 			holy_site = americanist_detroit
+			
 			religious_head = k_presidency # set in on_actions
 
 			#special doctrine
@@ -534,7 +535,7 @@
 			doctrine = special_doctrine_supreme_law
 
 			doctrine = tenet_liberty_or_death
-			doctrine = tenet_interventionism
+			doctrine = tenet_warmonger
 			doctrine = tenet_vows_of_poverty
 
 			#altered doctrines
@@ -550,19 +551,36 @@
 			}
 
 			localization = {
+				HighGodNameAlternate = exceptionalist_six_star_general
+				HighGodNameAlternatePossessive = exceptionalist_six_star_general_possessive
+				
 				#WealthGod
-				WealthGodName = americanist_polk
-				WealthGodNamePossessive = americanist_polk_possessive
+				WealthGodName = americanist_eisenhower
+				WealthGodNamePossessive = americanist_eisenhower_possessive
 				WealthGodSheHe = CHARACTER_SHEHE_HE
 				WealthGodHerHis = CHARACTER_HERHIS_HIS
 				WealthGodHerHim = CHARACTER_HERHIM_HIM
 
 				#WaterGod
-				WaterGodName = exceptionalist_jones
-				WaterGodNamePossessive = exceptionalist_jones_possessive
+				WaterGodName = exceptionalist_nimitz
+				WaterGodNamePossessive = exceptionalist_nimitz_possessive
 				WaterGodSheHe = CHARACTER_SHEHE_HE
 				WaterGodHerHis = CHARACTER_HERHIS_HIS
 				WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = exceptionalist_sherman
+				KnowledgeGodNamePossessive = exceptionalist_sherman_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_IT
+				KnowledgeGodHerHis = CHARACTER_HERHIS_ITS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_IT
+
+				#FateGod
+				FateGodName = exceptionalist_grant
+				FateGodNamePossessive = exceptionalist_grant_possessive
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 
 				GoodGodNames = {
 					americanist_polk
@@ -573,6 +591,8 @@
 					exceptionalist_patton
 					exceptionalist_macarthur
 					exceptionalist_bradley
+					exceptionalist_six_star_general
+					exceptionalist_nimitz
 					americanist_washington
 					americanist_lincoln
 					americanist_eisenhower
@@ -582,7 +602,10 @@
 					americanist_uncle_sam
 					americanist_the_flag
 					americanist_ol_ironsides
+					
 				}
+				PantheonTerm = pantheon_the_few_the_proud
+				PantheonTermHasHave = pantheon_term_have
 			}
 		}
 
@@ -596,8 +619,8 @@
 			holy_site = omaha
 			holy_site = denver
 			holy_site = saint_louis
-		
 			holy_site = americanist_detroit
+			
 			religious_head = d_heartful
 
 			#special doctrine
@@ -622,6 +645,12 @@
 			doctrine = doctrine_clerical_gender_male_only
 			doctrine = doctrine_funeral_stoic
 
+			reserved_male_names = {
+				Adam Abe Abraham Abraham_Lincoln Adlai Alexander Amicus Amtrak Arthur Arthur_Sewall Atlarge Bannister Benjamin Brandon Bryan Burr Carter Charles Chester Clark Corpus Crausoffgold Daniel Dallas David Davy Delano Dwight Eisenhower Eugene Field Filibuster Franklin George Gerald Glenn Grover Hamilton Hannibal Harry Herbert Howard Hubert Ike James Jefferson Jimmy John John_Adams Johnny Josephus Kern Lewis Lyndon Millard Motion Onus Perot Potus Preamble Robert Roosevelt Ross Rutherford Sam Seward Statute Theodore Thomas Tom Truman Turner Ulysses Union Warren William_Henry William_Jennings William_Jennings_Bryan Woodrow Writ
+			}
+			reserved_female_names = {
+				Abigail Audit Audita Betsy Betty Carolina Cienen Claudia Columbia Culpa Debs Dee Dorothy Edith Eleanor Elizabeth Ellen Emancipata Equity Florence Flotus Georgia Gloria Grace Harriet Helen Ida Industria Interdicta Invicta Iowa Flotus Frances Jackie Jane Jennings Julia Jurisprudence Kansas Kennedy Letita Libertas Louisa Lucy Marilyn Martha Mary Mary_Baird Mary_Elizabeth Nebraska Omaha Pat Peggy Prosperity Publicia Quaraea Regula Respublia Rosalynn Rose Ruth Sandra Sarah Scripta Sewakk Sienbecie Sojourner Susan Virtue Weaver
+			}
 
 			localization = {
 				HighGodName = americanist_providence #just main name change
@@ -716,13 +745,6 @@
 				PantheonTerm = americanist_providence
 				PantheonTermHasHave = pantheon_term_has
 
-				reserved_male_names = {
-					Adam Abe Abraham Abraham_Lincoln Adlai Alexander Amicus Amtrak Arthur Arthur_Sewall Atlarge Bannister Benjamin Brandon Bryan Burr Carter Charles Chester Clark Corpus Crausoffgold Daniel Dallas David Davy Delano Dwight Eisenhower Eugene Field Filibuster Franklin George Gerald Glenn Grover Hamilton Hannibal Harry Herbert Howard Hubert Ike James Jefferson Jimmy John John_Adams Johnny Josephus Kern Lewis Lyndon Millard Motion Onus Perot Potus Preamble Robert Roosevelt Ross Rutherford Sam Seward Statute Theodore Thomas Tom Truman Turner Ulysses Union Warren William_Henry William_Jennings William_Jennings_Bryan Woodrow Writ
-				}
-				reserved_female_names = {
-					Abigail Audit Audita Betsy Betty Carolina Cienen Claudia Columbia Culpa Debs Dee Dorothy Edith Eleanor Elizabeth Ellen Emancipata Equity Florence Flotus Georgia Gloria Grace Harriet Helen Ida Industria Interdicta Invicta Iowa Flotus Frances Jackie Jane Jennings Julia Jurisprudence Kansas Kennedy Letita Libertas Louisa Lucy Marilyn Martha Mary Mary_Baird Mary_Elizabeth Nebraska Omaha Pat Peggy Prosperity Publicia Quaraea Regula Respublia Rosalynn Rose Ruth Sandra Sarah Scripta Sewakk Sienbecie Sojourner Susan Virtue Weaver
-				}
-
 				GHWName = ghw_great_crusade
 				GHWNamePlural = ghw_great_crusades	
 
@@ -767,10 +789,9 @@
 			holy_site = manhattan
 			holy_site = hollywood
 			holy_site = johnson_space_center
-
 			holy_site = chicago
-
 			holy_site = americanist_detroit
+
 			religious_head = k_presidency # set in on_actions
 
 			#special doctrine
@@ -779,7 +800,7 @@
 
 			doctrine = tenet_ritual_celebrations
 			doctrine = tenet_inward_perfection
-			doctrine = tenet_armed_pilgrimages
+			doctrine = tenet_interventionism
 
 			#Main Group
 			doctrine = doctrine_pluralism_pluralistic
@@ -941,8 +962,9 @@
 			holy_site = plymouth
 			holy_site = providence
 			holy_site = philadelphia
-			
+			holy_site = jamestown_williamsburg
 			holy_site = americanist_detroit
+
 			#special doctrine
 			doctrine = special_doctrine_sic_semper_tyrannis
 			doctrine = special_doctrine_executive_overreach
@@ -1081,9 +1103,8 @@
 			holy_site = boston
 			holy_site = mt_rushmore
 			holy_site = chicago
-
 			holy_site = americanist_detroit
-			
+
 			religious_head = k_presidency # set in on_actions
 
 			#special doctrine
@@ -1111,9 +1132,8 @@
 			holy_site = nisqually
 			holy_site = mt_rushmore
 			holy_site = placer
-
 			holy_site = americanist_detroit
-			
+
 			#special doctrine
 			doctrine = special_doctrine_executive_overreach
 			doctrine = special_doctrine_partisan_politics

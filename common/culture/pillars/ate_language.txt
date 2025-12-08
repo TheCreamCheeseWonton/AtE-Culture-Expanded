@@ -849,6 +849,7 @@ language_californine = {
     parameters = {
         language_group_western = yes
         language_family_englic = yes
+		language_union_inglanol = yes
     }
     ai_will_do = {
         value = 10

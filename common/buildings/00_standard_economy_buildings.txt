@@ -8169,9 +8169,9 @@ qanats_08 = {
 tixinda_01 = {
 	construction_time = standard_construction_time
 
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 
 	can_construct_potential = {
 		building_tixinda_requirement_terrain = yes
@@ -8230,9 +8230,9 @@ tixinda_01 = {
 
 tixinda_02 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -8278,9 +8278,9 @@ tixinda_02 = {
 
 tixinda_03 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 02 }
@@ -8326,9 +8326,9 @@ tixinda_03 = {
 
 tixinda_04 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 02 }
@@ -8374,9 +8374,9 @@ tixinda_04 = {
 
 tixinda_05 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 03 }
@@ -8422,9 +8422,9 @@ tixinda_05 = {
 
 tixinda_06 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 03 }
@@ -8470,9 +8470,9 @@ tixinda_06 = {
 
 tixinda_07 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 04 }
@@ -8518,9 +8518,9 @@ tixinda_07 = {
 
 tixinda_08 = {
 	construction_time = standard_construction_time
-	effect_desc = {
-		desc = building_type_tixinda_01_effect
-	}
+	#effect_desc = {
+	#	desc = building_type_tixinda_01_effect
+	#}
 	can_construct_potential = {
 		building_tixinda_requirement_terrain  = yes
 		building_requirement_castle_city_church = { LEVEL = 04 }
@@ -9019,9 +9019,9 @@ coffee_house_08 = {
 winery_01 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_1_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -9069,9 +9069,9 @@ winery_01 = {
 winery_02 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_1_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -9114,9 +9114,9 @@ winery_02 = {
 winery_03 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_1_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9164,9 +9164,9 @@ winery_03 = {
 winery_04 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_1_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9214,9 +9214,9 @@ winery_04 = {
 winery_05 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_2_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9265,9 +9265,9 @@ winery_05 = {
 winery_06 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_2_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9316,9 +9316,9 @@ winery_06 = {
 winery_07 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_2_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9368,9 +9368,9 @@ winery_07 = {
 winery_08 = {
 	construction_time = slow_construction_time
 	effect_desc = winery_wedding_effect_3_toto_desc
-	effect_desc = {
-		desc = building_type_winery_wine_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_winery_wine_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_wine_requirement_terrain = yes
 	}
@@ -9419,7 +9419,7 @@ winery_08 = {
 grove_olive_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_1_desc
-	effect_desc = building_type_grove_olive_01_effect
+	#effect_desc = building_type_grove_olive_01_effect
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -9467,7 +9467,7 @@ grove_olive_01 = {
 grove_olive_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_1_desc
-	effect_desc = building_type_grove_olive_01_effect
+	#effect_desc = building_type_grove_olive_01_effect
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -9510,7 +9510,7 @@ grove_olive_02 = {
 grove_olive_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_1_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9558,7 +9558,7 @@ grove_olive_03 = {
 grove_olive_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_1_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9606,7 +9606,7 @@ grove_olive_04 = {
 grove_olive_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_2_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9655,7 +9655,7 @@ grove_olive_05 = {
 grove_olive_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_2_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9704,7 +9704,7 @@ grove_olive_06 = {
 grove_olive_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_3_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9754,7 +9754,7 @@ grove_olive_07 = {
 grove_olive_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = grove_olive_effect_3_desc
-	effect_desc = building_type_grove_olive_01_effect	
+	#effect_desc = building_type_grove_olive_01_effect	
 	can_construct_potential = {
 		building_plantation_olive_requirement_terrain = yes
 	}
@@ -9803,7 +9803,7 @@ grove_olive_08 = {
 plantation_coffee_01 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_1_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -9855,7 +9855,7 @@ plantation_coffee_01 = {
 plantation_coffee_02 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_1_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -9903,7 +9903,7 @@ plantation_coffee_02 = {
 plantation_coffee_03 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_1_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -9956,7 +9956,7 @@ plantation_coffee_03 = {
 plantation_coffee_04 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_1_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -10009,7 +10009,7 @@ plantation_coffee_04 = {
 plantation_coffee_05 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_2_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -10063,7 +10063,7 @@ plantation_coffee_05 = {
 plantation_coffee_06 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_2_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -10117,7 +10117,7 @@ plantation_coffee_06 = {
 plantation_coffee_07 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_3_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -10172,7 +10172,7 @@ plantation_coffee_07 = {
 plantation_coffee_08 = {
 	construction_time = slow_construction_time
 	effect_desc = plantation_coffee_effect_3_desc
-	effect_desc = building_type_plantation_coffee_01_effect
+	#effect_desc = building_type_plantation_coffee_01_effect
 
 	can_construct_potential = {
 		building_plantation_coffee_requirement_terrain = yes
@@ -10226,9 +10226,9 @@ plantation_coffee_08 = {
 plantation_tobacco_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -10280,9 +10280,9 @@ plantation_tobacco_01 = {
 plantation_tobacco_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -10329,9 +10329,9 @@ plantation_tobacco_02 = {
 plantation_tobacco_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10383,9 +10383,9 @@ plantation_tobacco_03 = {
 plantation_tobacco_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10437,9 +10437,9 @@ plantation_tobacco_04 = {
 plantation_tobacco_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_2_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10492,9 +10492,9 @@ plantation_tobacco_05 = {
 plantation_tobacco_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_2_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10547,9 +10547,9 @@ plantation_tobacco_06 = {
 plantation_tobacco_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_3_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10603,9 +10603,9 @@ plantation_tobacco_07 = {
 plantation_tobacco_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_tobacco_effect_3_desc
-	effect_desc = {
-		desc = building_type_plantation_tobacco_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_tobacco_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_tobacco_requirement_terrain = yes
 	}
@@ -10658,10 +10658,10 @@ plantation_tobacco_08 = {
 plantation_sugar_cane_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -10713,10 +10713,10 @@ plantation_sugar_cane_01 = {
 plantation_sugar_cane_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -10763,10 +10763,10 @@ plantation_sugar_cane_02 = {
 plantation_sugar_cane_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -10818,10 +10818,10 @@ plantation_sugar_cane_03 = {
 plantation_sugar_cane_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -10873,10 +10873,10 @@ plantation_sugar_cane_04 = {
 plantation_sugar_cane_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -10929,10 +10929,10 @@ plantation_sugar_cane_05 = {
 plantation_sugar_cane_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -10985,10 +10985,10 @@ plantation_sugar_cane_06 = {
 plantation_sugar_cane_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -11042,10 +11042,10 @@ plantation_sugar_cane_07 = {
 plantation_sugar_cane_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_sugar_cane_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_sugar_cane_01_effect
-	}	
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_sugar_cane_01_effect
+	#}	
 	can_construct_potential = {
 		building_plantation_sugar_cane_requirement_terrain = yes
 	}
@@ -11098,9 +11098,9 @@ plantation_sugar_cane_08 = {
 plantation_cocoa_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -11152,9 +11152,9 @@ plantation_cocoa_01 = {
 plantation_cocoa_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}	
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}		
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -11201,9 +11201,9 @@ plantation_cocoa_02 = {
 plantation_cocoa_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11255,9 +11255,9 @@ plantation_cocoa_03 = {
 plantation_cocoa_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11309,9 +11309,9 @@ plantation_cocoa_04 = {
 plantation_cocoa_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_2_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11364,9 +11364,9 @@ plantation_cocoa_05 = {
 plantation_cocoa_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_2_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11419,9 +11419,9 @@ plantation_cocoa_06 = {
 plantation_cocoa_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_3_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11475,9 +11475,9 @@ plantation_cocoa_07 = {
 plantation_cocoa_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_cocoa_effect_3_desc
-	effect_desc = {
-		desc = building_type_plantation_cocoa_01_effect
-	}		
+	#effect_desc = {
+	#	desc = building_type_plantation_cocoa_01_effect
+	#}			
 	can_construct_potential = {
 		building_plantation_cocoa_requirement_terrain = yes
 	}
@@ -11530,9 +11530,10 @@ plantation_cocoa_08 = {
 plantation_maple_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_1_desc
-	effect_desc = {
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -11556,7 +11557,7 @@ plantation_maple_01 = {
 		is_coastal = yes
 		tax_mult = 0.02
 	}
-
+	
 	province_culture_modifier = {
 		parameter = forest_syrup_extraction
 		monthly_income = poor_building_tax_tier_1
@@ -11589,10 +11590,10 @@ plantation_maple_01 = {
 plantation_maple_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -11644,10 +11645,10 @@ plantation_maple_02 = {
 plantation_maple_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11705,10 +11706,10 @@ plantation_maple_03 = {
 plantation_maple_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11766,10 +11767,10 @@ plantation_maple_04 = {
 plantation_maple_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11828,10 +11829,10 @@ plantation_maple_05 = {
 plantation_maple_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11890,10 +11891,10 @@ plantation_maple_06 = {
 plantation_maple_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11925,7 +11926,6 @@ plantation_maple_07 = {
 		tax_mult = 0.07
 	}
 	
-	
 	province_culture_modifier = {
 		parameter = forest_syrup_extraction
 		monthly_income = poor_building_tax_tier_1
@@ -11953,10 +11953,10 @@ plantation_maple_07 = {
 plantation_maple_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_maple_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_maple_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_maple_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_maple_requirement_terrain = yes
 	}
@@ -11987,6 +11987,7 @@ plantation_maple_08 = {
 		is_coastal = yes
 		tax_mult = 0.08
 	}
+	
 	province_culture_modifier = {
 		parameter = forest_syrup_extraction
 		monthly_income = poor_building_tax_tier_1
@@ -12014,10 +12015,10 @@ plantation_maple_08 = {
 plantation_mate_01 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -12069,10 +12070,10 @@ plantation_mate_01 = {
 plantation_mate_02 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -12119,10 +12120,10 @@ plantation_mate_02 = {
 plantation_mate_03 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12174,10 +12175,10 @@ plantation_mate_03 = {
 plantation_mate_04 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_1_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12229,10 +12230,10 @@ plantation_mate_04 = {
 plantation_mate_05 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12285,10 +12286,10 @@ plantation_mate_05 = {
 plantation_mate_06 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_2_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12341,10 +12342,10 @@ plantation_mate_06 = {
 plantation_mate_07 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12398,10 +12399,10 @@ plantation_mate_07 = {
 plantation_mate_08 = {
 	construction_time = slow_construction_time
 	#effect_desc = plantation_mate_effect_3_desc
-	effect_desc = {
-		
-		desc = building_type_plantation_mate_01_effect
-	}
+	#effect_desc = {
+	#	
+	#	desc = building_type_plantation_mate_01_effect
+	#}
 	can_construct_potential = {
 		building_plantation_mate_requirement_terrain = yes
 	}
@@ -12832,7 +12833,7 @@ terrace_farms_08 = {
 
 cochineal_farm_01 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 	can_construct_potential = {
 		building_cochineal_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -12897,7 +12898,7 @@ cochineal_farm_01 = {
 
 cochineal_farm_02 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -12951,7 +12952,7 @@ cochineal_farm_02 = {
 
 cochineal_farm_03 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13005,7 +13006,7 @@ cochineal_farm_03 = {
 
 cochineal_farm_04 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13059,7 +13060,7 @@ cochineal_farm_04 = {
 
 cochineal_farm_05 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13113,7 +13114,7 @@ cochineal_farm_05 = {
 
 cochineal_farm_06 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13167,7 +13168,7 @@ cochineal_farm_06 = {
 
 cochineal_farm_07 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13221,7 +13222,7 @@ cochineal_farm_07 = {
 
 cochineal_farm_08 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_cochineal_farm_01_effect
+	#effect_desc =  building_type_cochineal_farm_01_effect
 
 	can_construct_potential = {
 		building_cochineal_requirement_terrain  = yes
@@ -13275,7 +13276,7 @@ cochineal_farm_08 = {
 #Silk Farm/Sericulture - County Level
 silk_farm_01 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 	can_construct_potential = {
 		is_county_capital = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -13339,7 +13340,7 @@ silk_farm_01 = {
 
 silk_farm_02 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13392,7 +13393,7 @@ silk_farm_02 = {
 
 silk_farm_03 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13445,7 +13446,7 @@ silk_farm_03 = {
 
 silk_farm_04 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13498,7 +13499,7 @@ silk_farm_04 = {
 
 silk_farm_05 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13551,7 +13552,7 @@ silk_farm_05 = {
 
 silk_farm_06 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13604,7 +13605,7 @@ silk_farm_06 = {
 
 silk_farm_07 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes
@@ -13657,7 +13658,7 @@ silk_farm_07 = {
 
 silk_farm_08 = {
 	construction_time = standard_construction_time
-	effect_desc =  building_type_silk_farm_01_effect
+	#effect_desc =  building_type_silk_farm_01_effect
 
 	can_construct_potential = {
 		is_county_capital = yes

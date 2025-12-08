@@ -8,7 +8,12 @@
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_mn_nice
+		OR = { 
+			has_cultural_tradition = tradition_mn_nice
+			any_parent_culture_or_above = {
+				this = culture:minnesotan
+			}
+		}
 	}
 
 	can_pick = {
@@ -109,7 +114,16 @@ tradition_unions = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_unions
+		OR = { 
+			has_cultural_tradition = tradition_unions
+			has_cultural_pillar = heritage_laurentian
+			has_cultural_pillar = heritage_upland
+			has_cultural_pillar = heritage_lakelander
+			has_cultural_pillar = heritage_northlake
+			has_cultural_pillar = heritage_mid_atlantic
+			has_cultural_pillar = heritage_british
+			has_cultural_pillar = heritage_american
+		}
 	}
 
 	can_pick = {
@@ -237,7 +251,15 @@ tradition_steelworkers = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_steelworkers
+		OR = { 
+			has_cultural_tradition = tradition_steelworkers
+			has_cultural_pillar = heritage_laurentian
+			has_cultural_pillar = heritage_upland
+			has_cultural_pillar = heritage_lakelander
+			has_cultural_pillar = heritage_northlake
+			has_cultural_pillar = heritage_british
+			has_cultural_pillar = heritage_american
+		}
 	}
 
 	can_pick = {
@@ -346,7 +368,12 @@ tradition_cosmopolitan_yorkism = {
 	}
 
 	is_shown = {
-		has_cultural_tradition = tradition_cosmopolitan_yorkism
+		OR = { 
+			has_cultural_tradition = tradition_cosmopolitan_yorkism
+			any_parent_culture_or_above = {
+				this = culture:gothamite
+			}
+		}
 	}
 
 	can_pick = {
@@ -440,7 +467,13 @@ tradition_american_legacy = {
 	}
 
 	is_shown = {
-		has_cultural_tradition = tradition_american_legacy
+		OR = { 
+			has_cultural_tradition = tradition_american_legacy
+			has_cultural_pillar = heritage_american
+			any_parent_culture_or_above = {
+				this = culture:beltway
+			}
+		}
 	}
 
 	can_pick = {
@@ -561,7 +594,10 @@ tradition_heart_of_nation = {
 	}
 
 	is_shown = {
-		has_cultural_tradition = tradition_american_legacy
+		OR = { 
+			has_cultural_tradition = tradition_american_legacy
+			has_cultural_pillar = heritage_american
+		}
 	}
 
 	can_pick = {
@@ -682,7 +718,12 @@ tradition_papal_legacy = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_papal_legacy
+		OR = { 
+			has_cultural_tradition = tradition_papal_legacy
+			any_parent_culture_or_above = {
+				this = culture:gatewayan
+			}
+		}
 	}
 
 	can_pick = {
@@ -790,7 +831,12 @@ tradition_imaginerians = {
 	category = regional
 	
 	is_shown = {
-		has_cultural_tradition = tradition_imaginerians
+		OR = { 
+			has_cultural_tradition = tradition_imaginerians
+			any_parent_culture_or_above = {
+				this = culture:ate_floridian
+			}
+		}
 	}
 
 	can_pick = {
@@ -886,7 +932,28 @@ tradition_skiiing_mountains = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_skiiing_mountains
+		OR = { 
+			has_cultural_tradition = tradition_skiiing_mountains
+			AND = { 
+				any_parent_culture_or_above = {
+					OR = { 
+						this = culture:ate_rocklander
+						this = culture:ate_deseretan
+					}
+				}
+				custom_description = {
+					text = culture_in_mountains_desc
+					any_culture_county = {
+						any_county_province = {
+							OR = {
+								terrain = mountains
+								terrain = desert_mountains
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	can_pick = {
@@ -1018,7 +1085,12 @@ tradition_new_cannan = {
 	category = regional
 	
 	is_shown = {
-		has_cultural_tradition = tradition_new_cannan
+		OR = { 
+			has_cultural_tradition = tradition_new_cannan
+			any_parent_culture_or_above = {
+				this = culture:ate_deseretan
+			}
+		}
 	}
 
 	can_pick = {
@@ -1142,7 +1214,18 @@ tradition_cascadian_liberalism = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_cascadian_liberalism
+		OR = { 
+			has_cultural_tradition = tradition_cascadian_liberalism
+			any_parent_culture_or_above = {
+				this = culture:cascadian
+			}
+		}
+	}
+	
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:cascadian
+		}
 	}
 	
 	parameters = {
@@ -1199,7 +1282,18 @@ tradition_keepers_of_brazilia = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_keepers_of_brazilia
+		OR = { 
+			has_cultural_tradition = tradition_keepers_of_brazilia
+			any_parent_culture_or_above = {
+				this = culture:candango
+			}
+		}
+	}
+	
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:candango
+		}
 	}
 	
 	parameters = {
@@ -1298,7 +1392,18 @@ tradition_apalachian_ruralism = {
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_apalachian_ruralism
+		OR = { 
+			has_cultural_tradition = tradition_apalachian_ruralism
+			any_parent_culture_or_above = {
+				this = culture:appalachian
+			}
+		}
+	}
+	
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:appalachian
+		}
 	}
 	
 	parameters = {
@@ -1521,7 +1626,18 @@ tradition_college_legacy = { # Offshoot of tradition_philosopher_culture
 	}
 	
 	is_shown = {
-		has_cultural_tradition = tradition_college_legacy
+		OR = { 
+			has_cultural_tradition = tradition_college_legacy
+			any_parent_culture_or_above = {
+				this = culture:chowderfolk
+			}
+		}
+	}
+	
+	can_pick = {
+		any_parent_culture_or_above = {
+			this = culture:chowderfolk
+		}
 	}
 	
 	parameters = {

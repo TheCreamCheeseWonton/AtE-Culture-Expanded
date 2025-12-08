@@ -2014,19 +2014,17 @@ oyotunji = {
 
 #nguillatun
 
-villarica = {
-	county = c_temuco
-	barony = b_cl_04_loncoche
+villarrica = {
+	county = c_villarrica
 	character_modifier = {
-		name = holy_site_villarica_effect_name
+		name = holy_site_villarrica_effect_name
 		prowess_per_piety_level = 1
 		knight_limit = 2
 	}
 }
 
 arauco = {
-	county = c_concepcion_chile
-	barony = b_cl_06_coronel
+	county = c_arauco
 	character_modifier = {
 		name = holy_site_arauco_effect_name
 		prowess_per_piety_level = 1
@@ -2044,7 +2042,7 @@ neuquen = {
 }
 
 chiloe = {
-	county = c_puerto_montt
+	county = c_chiloe
 	character_modifier = {
 		name = holy_site_chiloe_effect_name
 		health = 0.1
@@ -5315,13 +5313,29 @@ parana = {
 
 san_luis_del_palmar = {
 	county = c_gran_corrientes
+	barony = b_ar_w_san_luis_del_palmar
 	character_modifier = {
 		light_cavalry_damage_mult = 0.05
 		raid_speed = 0.05
 	}
 }
 
-gualeguaych = {
+corrientes = {
+	county = c_gran_corrientes
+	character_modifier = {
+		stress_gain_mult = -0.15
+	}
+}
+
+artigas = {
+	county = c_artigas
+	character_modifier = {
+		prowess_per_piety_level = 1
+		martial = 1
+	}
+}
+
+gualeguaychu = {
 	county = c_ibicuy
 	barony = b_ar_e_gualeguaychu
 	character_modifier = {
@@ -6546,7 +6560,7 @@ puno = {
 	}
 }
 la_tirana = {
-	county = c_calama
+	county = c_tamarugal
 	character_modifier = {
 		name = holy_site_la_tirana_effect_name
 		monthly_piety_gain_per_knight_mult = 0.02
@@ -6580,7 +6594,8 @@ chacaltaya = {
 	}
 }
 atacama_giant = {
-	county = c_huara
+	county = c_tamarugal
+	barony = b_cl_ta_huara
 	character_modifier = {
 		name = holy_site_atacama_giant_effect_name
 		development_growth_factor = 0.1
@@ -7359,4 +7374,180 @@ oakland = {
 		learning = 1
 		character_travel_safety_mult = 0.10
 	}
+}
+
+#Patriote
+
+frontenac = {
+	county = c_frontenac
+	character_modifier = {
+		fort_level = 1
+		monthly_prestige_gain_per_knight_mult = 0.01
+	}
+}
+
+#Delver
+
+hell_mi = {
+	county = c_jacksonburg
+	character_modifier = {
+		dread_baseline_add = 10
+	}
+}
+
+lake_geneva = {
+	county = c_milwaukee
+	barony = b_us_wi_racine
+	character_modifier = {
+		intrigue = 2
+	}
+}
+
+arkham = {
+	county = c_essex_mass
+	character_modifier = {
+		stress_gain_mult = -0.2
+	}
+}
+
+# Mayflower/Continental
+
+jamestown_williamsburg = {
+    county = c_chesapeake
+    barony = b_us_va_williamsbur
+    character_modifier = {
+        learning = 1
+        same_faith_opinion = 5
+    }
+}
+
+#O'odham and Apache
+
+magdalena_de_kino = {
+	county = c_magdalena_de_kino
+	character_modifier = {
+		stewardship_per_piety_level = 1
+	}
+}
+
+shuk_toak = {
+	county = c_gran_altar
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		opinion_of_same_faith = 10
+		opinion_of_same_culture = 10
+	}
+}
+
+quitobaquito = {
+	barony = b_us_az_ajo
+	county = c_yuma
+	character_modifier = {
+		diplomacy = 1
+		intrigue = 1
+	}
+}
+
+waw_kiwulik = {
+	county = c_tucson
+	character_modifier = {
+		learning = 3
+		monthly_prestige = 0.5
+		monthly_piety = 0.5
+	}
+}
+
+muhadag_doag = {
+	county = c_phoenix
+	character_modifier = {
+		domain_tax_same_faith_mult = 0.1
+		vassal_limit = 1
+	}
+}
+
+sengaah = {
+	barony = b_us_az_globe
+	county = c_san_carlos
+	character_modifier = {
+		diplomacy_per_piety_level = 1
+		stewardship = 1
+	}
+}
+
+loosi = {
+	barony = b_us_nm_dulce
+	county = c_rio_arriba
+	character_modifier = {
+		martial = 1
+		prowess_per_prestige_level = 2
+	}
+}
+
+mashgal = {
+	barony = b_us_nm_ruidoso
+	county = c_ruidoso
+	character_modifier = {
+		monthly_war_income_mult = 0.1
+		knight_limit = 1
+	}
+}
+
+dragoon_mountains = {
+	barony = b_us_az_sunizona
+	county = c_cochise
+	character_modifier = {
+		councillor_opinion = 15
+		controlled_province_advantage = 5
+	}
+}
+
+dzil_nchaa_sian = {
+	barony = b_us_az_safford
+	county = c_graham
+	character_modifier = {
+		learning = 1
+		same_faith_opinion = 10
+	}
+}
+
+#Hopi
+
+ohkay_owingeh = {
+    county = c_taos
+    character_modifier = {
+        martial_per_piety_level = 1
+    }
+}
+
+sipapu = {
+    barony = b_us_az_meadview
+    county = c_parashant
+    character_modifier = {
+        stewardship = 1
+        same_faith_opinion = 10
+    }
+}
+
+nuvatukyaovi = {
+    county = c_coconino
+    character_modifier = {
+        direct_vassal_opinion = 5
+        councillor_opinion = 5
+    }
+}
+
+kothluwalawa = {
+    county = c_el_malpais
+    character_modifier = {
+        diplomacy = 3
+    }
+}
+
+yupkoyvi = {
+    barony = b_us_nm_nageezi
+    county = c_mckinley
+    character_modifier = {
+        learning = 2
+        monthly_prestige_from_buildings_mult = 0.15
+    }
 }

@@ -617,20 +617,24 @@ can_form_imperial_trigger = {
 }
 
 can_eventually_form_state_bureaucracy_trigger = {
-	OR = {
-		#either your faith allows it...
-		AND = {
-			faith = {
-				has_doctrine_parameter = can_form_state_bureaucracy
-			}
-		}
-		#...or your culture allows it...
-		AND = {
-			culture = {
-				has_cultural_parameter = can_form_state_bureaucracy
-			}
-		}
+	#Revisit with AUH
+	faith = {
+		has_doctrine_parameter = can_form_state_bureaucracy
 	}
+	#OR = {
+	#	#either your faith allows it...
+	#	AND = {
+	#		faith = {
+	#			has_doctrine_parameter = can_form_state_bureaucracy
+	#		}
+	#	}
+	#	#...or your culture allows it...
+	#	AND = {
+	#		culture = {
+	#			has_cultural_parameter = can_form_state_bureaucracy
+	#		}
+	#	}
+	#}
 }
 
 can_form_state_bureaucracy_trigger = {
@@ -656,26 +660,27 @@ can_form_state_bureaucracy_trigger = {
 			}
 
 		}
+		#Revisit with AUH
 		#...or your culture allows it...
-		AND = {
-			culture = { has_cultural_parameter = can_form_state_bureaucracy }
-			#...and you are very prestigious...
-			prestige_level >= 4
-			NOT = {
-				#...and none of your powerful vassals...
-				any_powerful_vassal = {
-					OR = {
-						#...either dislikes you or...
-						opinion = {
-							target = root
-							value < 0
-						}
-						#...is from a culture that doesn't support state_bureaucracys...
-						culture = { NOT = { has_cultural_parameter = can_form_state_bureaucracy } }
-					}
-				}
-			}
-		}
+		#AND = {
+		#	culture = { has_cultural_parameter = can_form_state_bureaucracy }
+		#	#...and you are very prestigious...
+		#	prestige_level >= 4
+		#	NOT = {
+		#		#...and none of your powerful vassals...
+		#		any_powerful_vassal = {
+		#			OR = {
+		#				#...either dislikes you or...
+		#				opinion = {
+		#					target = root
+		#					value < 0
+		#				}
+		#				#...is from a culture that doesn't support state_bureaucracys...
+		#				culture = { NOT = { has_cultural_parameter = can_form_state_bureaucracy } }
+		#			}
+		#		}
+		#	}
+		#}
 		#or you have the target title
 		has_title = title:e_california
 	}
@@ -963,15 +968,12 @@ vaguely_related_to_christianity_trigger = { #for artifacts
 	$CHARACTER$ = {
 		faith = {
 			OR = {
-				religion = religion:catholic_religion
-				religion = religion:protestant_religion
-				religion = religion:mormon_religion
-				religion = religion:eastern_christian_religion
-				religion = religion:divina_patriota_religion
+				has_doctrine = special_doctrine_is_christian_faith
+
 				religion = religion:intercessory_religion
-				religion = religion:reawakened_religion
 				religion = religion:rastafari_religion
 				religion = religion:sombrism_religion
+
 				has_doctrine = tenet_christian_syncretism
 			}
 		}

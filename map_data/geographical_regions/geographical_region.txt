@@ -188,7 +188,7 @@ world_mexico_north = {
 
 world_mexico_central = {
 	duchies = {
-		d_totonacapan d_papaloapan d_tierra_caliente d_pais_monarca d_altos_de_jalisco d_nayarit d_costalegre d_colima d_de_ruffo d_tequila d_guadalajara d_san_luis_potosi d_el_potosi d_alta_huasteca d_aguascalientes d_guanajuato d_queretaro d_atoyac d_michoacan d_lerma d_costa_grande d_la_montana d_edomex d_valle_de_mexico d_hidalgo d_puebla d_tlaxcala d_baja_huasteca d_sotavento d_sierra_madre_del_sur d_mixteca d_istmo d_olmeca
+		d_totonacapan d_papaloapan d_tierra_caliente d_pais_monarca d_altos_de_jalisco d_nayarit d_costalegre d_colima d_de_ruffo d_tequila d_guadalajara d_san_luis_potosi d_alta_huasteca d_aguascalientes d_guanajuato d_queretaro d_atoyac d_michoacan d_lerma d_costa_grande d_la_montana d_edomex d_valle_de_mexico d_hidalgo d_puebla d_tlaxcala d_baja_huasteca d_sotavento d_sierra_madre_del_sur d_mixteca d_istmo d_olmeca
 	}
 }
 
@@ -293,7 +293,7 @@ world_brazil_region = { #spills out, so "old brazil" is still needed separately
 
 world_south_america_andes = {
 	duchies = {
-		d_manabi d_pichincha d_sucumbios d_tungurahua d_guayas d_azuay d_amotape d_chaparri d_moche d_ancash d_lima d_mantaro d_chanchamayo d_ica d_choquequirao d_ayacucho d_camana d_arequipa d_puno d_vilcanota d_la_paz d_cochabamba d_potosi d_chichas d_tarapaca d_antofagasta d_copiapo d_jachal d_tucuman d_catamarca d_la_rioja d_san_juan d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_nuble d_galapagos
+		d_manabi d_pichincha d_sucumbios d_tungurahua d_guayas d_azuay d_amotape d_chaparri d_moche d_ancash d_lima d_mantaro d_chanchamayo d_ica d_choquequirao d_ayacucho d_camana d_arequipa d_puno d_vilcanota d_la_paz d_cochabamba d_potosi d_chichas d_tarapaca d_antofagasta d_copiapo d_jachal d_tucuman d_catamarca d_la_rioja d_san_juan d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_biobio d_galapagos
 	}
 }
 
@@ -305,7 +305,7 @@ world_south_america_la_plata = {
 
 world_south_america_patagonia = {
 	duchies = {
-		d_neuquen d_bariloche d_pehuenches d_rawson d_san_jorge d_futaleufu d_low_monte d_valle_inferior d_somun_cura d_magallanes d_tierra_del_fuego d_aysen d_alto_valle d_santa_cruz_de_patagonia d_deseado d_los_glaciares d_falkland_islands d_biobio d_araucania d_los_lagos d_los_rios
+		d_neuquen d_bariloche d_pehuenches d_rawson d_san_jorge d_futaleufu d_low_monte d_valle_inferior d_somun_cura d_magallanes d_tierra_del_fuego d_aysen d_alto_valle d_santa_cruz_de_patagonia d_deseado d_los_glaciares d_falkland_islands d_araucania d_los_lagos d_valdivia d_chiloe
 	}
 }
 
@@ -1276,9 +1276,15 @@ ghw_region_paraguay = {
 	}
 }
 
-ghw_region_grigota = {
+ghw_region_guapay = {
 	duchies = {
-		d_santa_cruz d_madre_de_dios d_guarayos d_beni d_pando d_chiquitania
+		d_santa_cruz d_guarayos d_chiquitania
+	}
+}
+
+ghw_region_beni = {
+	duchies = {
+		d_madre_de_dios d_beni d_pando
 	}
 }
 
@@ -1374,13 +1380,13 @@ ghw_region_cuyo = {
 
 ghw_region_chile = {
 	duchies = {
-		d_santiago d_valparaiso d_maule d_ohiggins d_nuble
+		d_santiago d_valparaiso d_maule d_ohiggins d_biobio
 	}
 }
 
 ghw_region_araucania = {
 	duchies = {
-		d_biobio d_araucania d_los_lagos d_los_rios
+		d_araucania d_los_lagos d_valdivia d_chiloe
 	}
 }
 
@@ -2485,7 +2491,7 @@ custom_california = {
 
 custom_old_chile = {
 	duchies = {
-		d_tarapaca d_antofagasta d_copiapo d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_nuble d_biobio d_araucania d_los_rios d_los_lagos d_aysen d_magallanes
+		d_tarapaca d_antofagasta d_copiapo d_coquimbo d_valparaiso d_santiago d_ohiggins d_maule d_biobio d_araucania d_valdivia d_los_lagos d_aysen d_magallanes d_chiloe
 	}
 }
 
@@ -2526,6 +2532,7 @@ custom_indiana = {
 		c_gary
 	}
 }
+#Quonton
 custom_illinois = {
 	duchies = {
 		d_chicagoland d_peoria d_kankakee d_sangamon d_little_egypt d_chambana d_forgottonia
@@ -3425,7 +3432,7 @@ commodity_region_wine_south = {
 		d_copiapo
 		d_coquimbo
 		d_maule
-		d_nuble
+		d_biobio
 		d_ohiggins
 		d_santiago
 		d_valparaiso
@@ -3808,7 +3815,8 @@ precordillera_region = {
 gran_chaco_region = {
 	regions = {
 		ghw_region_chaco
-		ghw_region_grigota
+		# ghw_region_beni # Has been moved to amazonia
+		ghw_region_guapay
 		ghw_region_paraguay
 	}
 }
@@ -3843,10 +3851,10 @@ chile_region = {
 
 inca_region = {
 	regions = {
-		ghw_region_chile
-		ghw_region_collao
+		ghw_region_cusco
 		ghw_region_peru
 		ghw_region_sipan
+		ghw_region_collao
 	}
 }
 
@@ -4085,7 +4093,6 @@ graphical_western = {
 		world_central_canada
 		world_western_canada
 		world_us_eastern
-		world_us_great_plains
 	}
 }
 
@@ -4212,3 +4219,13 @@ divergence_island_regions = {
 #		
 #	}
 #}
+
+
+pittsburgh_steel_region = {
+	regions = {
+		world_us_great_lakes
+	}
+	duchies = {
+		d_nickel_belt d_thunder d_algoma d_greater_toronto d_grand_river d_thames d_massasauga d_trent d_huronia d_algonquin d_finger_lakes
+	}
+}

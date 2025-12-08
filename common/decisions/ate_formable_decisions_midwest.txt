@@ -592,6 +592,7 @@ restore_the_old_northwest_decision = {
 		}
 		AND = {
 			completely_controls = title:k_illinois
+			completely_controls = title:k_chicagoland
 			completely_controls = title:k_michigan
 			completely_controls = title:k_wisconsin
 		}
