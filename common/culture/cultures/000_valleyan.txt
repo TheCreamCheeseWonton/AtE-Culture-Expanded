@@ -17,7 +17,8 @@
 		tradition_family_entrepreneurship
 		tradition_gardening
 		tradition_agrarian
-		tradition_californian_succession
+		tradition_city_keepers
+		tradition_strength_in_numbers
 	}
 	
 	coa_gfx = {

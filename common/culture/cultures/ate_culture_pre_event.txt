@@ -919,7 +919,8 @@ ate_californian = {
 		tradition_family_entrepreneurship
 		tradition_gardening
 		tradition_agrarian
-		tradition_californian_succession
+		tradition_cosmopolitan_elitism
+		tradition_parochialism
 	}
 	
 	coa_gfx = {

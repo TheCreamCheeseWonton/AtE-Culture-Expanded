@@ -3,7 +3,7 @@
 	
 	ethos = ethos_courtly
 	heritage = heritage_norcalifornine
-	language = language_spanglish
+	language = language_californine
 	martial_custom = martial_custom_equal
 	head_determination = head_determination_domain
 	name_list = name_list_angeleno
@@ -13,15 +13,22 @@
 	history_loc_override = after_event_ate_combine_spanish
 	
 	traditions = {
-		tradition_dryland_dwellers
 		tradition_festivities
-		tradition_desert_ribat
-		tradition_californian_succession
+		tradition_storytellers
+		tradition_parochialism
+		tradition_RICE_munya_estates
 	}
 	
 	dlc_tradition = {
-		trait = tradition_culture_blending
-		requires_dlc_flag = hybridize_culture
+		trait = tradition_fp3_irrigation_experts
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_dryland_dwellers
+	}
+	
+	dlc_tradition = {
+		trait = tradition_music_theory
+		requires_dlc_flag = royal_court
+		fallback = tradition_poetry
 	}
 	
 	coa_gfx = {
